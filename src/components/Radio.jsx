@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const TextComponent = React.memo(() => {
+export const RadioComponent = React.memo(() => {
     return (
       <div>Button</div>
     )
