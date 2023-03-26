@@ -1,7 +1,13 @@
 import React from 'react'
 
-export const TextComponent = React.memo(() => {
+export const Heading = React.memo(({children}) => {
     return (
-      <div>Button</div>
+      <h1>{children}</h1>
+    )
+})
+
+export const Paragraph = React.memo(({children}) => {
+    return (
+      <p>{children}</p>
     )
 })

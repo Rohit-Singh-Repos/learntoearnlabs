@@ -1,7 +1,7 @@
 import React from 'react'
 
-export const ButtonComponent = React.memo(() => {
+export const Button = React.memo(({buttonClass,children}) => {
     return (
-      <div>Button</div>
+      <button className={buttonClass}>{children}</button>
     )
 })

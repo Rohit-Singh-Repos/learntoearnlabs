@@ -1,6 +1,7 @@
+import React from 'react'
 import styled from 'styled-components';
 
-export const LandingPageCardBorder = styled.div`
+const LandingPageCard = styled.div`
     width: 1;
     height: 80px; 
     border: 2px solid white;
@@ -10,3 +11,4 @@ export const LandingPageCardBorder = styled.div`
         border: 2px solid white;
   }
 `
+export const LandingPageCardBorder = React.memo(LandingPageCard)
