@@ -14,7 +14,7 @@ export const Header = React.memo(() => {
         <Bars />
         <NavBrand>
             <NavBrandLink to="/">
-                Learn2Earn Labs
+                <h1 className="brand-name">Learn2Earn Labs</h1>
             </NavBrandLink>
         </NavBrand>
         <NavMenu>

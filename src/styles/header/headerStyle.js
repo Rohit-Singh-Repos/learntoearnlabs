@@ -19,7 +19,7 @@ export const NavBrandLink = styled(Link)`
   font-weight: bold;
   align-items: center;
   text-decoration: none;
-  padding: 0 1rem;
+  padding: 0 2rem;
   height: 100%;
   cursor: pointer;
   &:hover {
@@ -59,8 +59,10 @@ export const NavBrand = styled.div`
   display: flex;
   align-items: center;
   margin-right: -15px;
-  font-size: 25px;
   color: #fff;
+  .brand-name{
+    font-size: 25px;
+  }
   /* Second Nav */
   /* margin-right: 24px; */
   /* Third Nav */
