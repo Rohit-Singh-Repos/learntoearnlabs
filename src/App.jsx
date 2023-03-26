@@ -1,9 +1,10 @@
 import React from 'react'
+import { Layout } from 'layout'
 
-const App = () => {
+const App = React.memo(() => {
   return (
-    <div>App</div>
+    <Layout/>
   )
-}
+})
 
 export default App
