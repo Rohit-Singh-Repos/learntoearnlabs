@@ -4,7 +4,7 @@ import styled from 'styled-components';
   
 export const Nav = styled.nav`
   background: #0D6EFD;
-  height: 85px;
+  height: 65px;
   display: flex;
   justify-content: space-between;
   padding: 0.2rem calc((100vw - 1500px) / 2);
@@ -43,7 +43,7 @@ export const NavLink = styled(Link)`
   
 export const Bars = styled(FaBars)`
   display: none;
-  color: #000;
+  color: #fff;
   @media screen and (max-width: 768px) {
     display: block;
     position: absolute;
@@ -67,14 +67,14 @@ export const NavBrand = styled.div`
   /* width: 100vw;
   white-space: nowrap; */
   @media screen and (max-width: 768px) {
-    display: none;
+    font-size: 18px;
   }
 `;
 
 export const NavMenu = styled.div`
   display: flex;
   align-items: center;
-  margin-right: -24px;
+  /* margin-right: -24px; */
   /* Second Nav */
   /* margin-right: 24px; */
   /* Third Nav */

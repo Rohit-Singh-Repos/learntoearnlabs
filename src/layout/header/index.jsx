@@ -18,23 +18,29 @@ export const Header = React.memo(() => {
             </NavBrandLink>
         </NavBrand>
         <NavMenu>
-          <NavLink to="/about">
-            About
+          <NavLink to="/">
+            Home
           </NavLink>
-          <NavLink to="/events">
-            Events
+          <NavLink to="/aboutus">
+            About Us
           </NavLink>
-          <NavLink to="/annual">
-            Annual Report
+          <NavLink to="/courses">
+            Courses
           </NavLink>
-          <NavLink to="/team">
-            Teams
+          <NavLink to="/placements">
+            Placements
           </NavLink>
-          <NavLink to="/blogs">
-            Blogs
+          <NavLink to="/blog">
+            Blog
           </NavLink>
-          <NavLink to="/sign-up">
-            Sign Up
+          <NavLink to="/contact">
+            Contact
+          </NavLink>
+          <NavLink to="/download">
+            Downloads
+          </NavLink>
+          <NavLink to="/practise">
+            Practice
           </NavLink>
         </NavMenu>
         {/* <NavBtn>
