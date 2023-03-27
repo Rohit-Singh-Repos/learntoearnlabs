@@ -11,32 +11,32 @@ export const ShortTermCourses = React.memo(() => {
         <Div divClass='row mt-5'>
             <Div divClass="col-lg-4 col-md-6 col-sm-12 mb-2">
                 <CommonCard cardClass="card d-flex align-items-center rounded-0">
-                    <Paragraph paragraphClass="text-dark fw-bold text-center pt-2 mb-2">C / C++ / Data Structure</Paragraph>
+                    <Paragraph paragraphClass="text-dark fw-bold text-center pt-2 mb-2 text-15">C / C++ / Data Structure</Paragraph>
                 </CommonCard>
             </Div>
             <Div divClass="col-lg-4 col-md-6 col-sm-12 mb-2">
                 <CommonCard cardClass="card d-flex align-items-center rounded-0">
-                    <Paragraph paragraphClass="text-dark fw-bold text-center pt-2 mb-2">Java Programming</Paragraph>
+                    <Paragraph paragraphClass="text-dark fw-bold text-center pt-2 mb-2 text-15">Java Programming</Paragraph>
                 </CommonCard>
             </Div>
             <Div divClass="col-lg-4 col-md-6 col-sm-12 mb-2">
                 <CommonCard cardClass="card d-flex align-items-center rounded-0">
-                    <Paragraph paragraphClass="text-dark fw-bold text-center pt-2 mb-2">Python Programming</Paragraph>
+                    <Paragraph paragraphClass="text-dark fw-bold text-center pt-2 mb-2 text-15">Python Programming</Paragraph>
                 </CommonCard>
             </Div>    
             <Div divClass="col-lg-4 col-md-6 col-sm-12 mb-2">
                 <CommonCard cardClass="card d-flex align-items-center rounded-0">
-                    <Paragraph paragraphClass="text-dark fw-bold text-center pt-2 mb-2">MySQL Database</Paragraph>
+                    <Paragraph paragraphClass="text-dark fw-bold text-center pt-2 mb-2 text-15">MySQL Database</Paragraph>
                 </CommonCard>
             </Div>    
             <Div divClass="col-lg-4 col-md-6 col-sm-12 mb-2">
                 <CommonCard cardClass="card d-flex align-items-center rounded-0">
-                    <Paragraph paragraphClass="text-dark fw-bold text-center pt-2 mb-2">Linux & AWS</Paragraph>
+                    <Paragraph paragraphClass="text-dark fw-bold text-center pt-2 mb-2 text-15">Linux & AWS</Paragraph>
                 </CommonCard>
             </Div>    
             <Div divClass="col-lg-4 col-md-6 col-sm-12 mb-2">
                 <CommonCard cardClass="card d-flex align-items-center rounded-0">
-                    <Paragraph paragraphClass="text-dark fw-bold text-center pt-2 mb-2">HTML/CSS/JavaScript</Paragraph>
+                    <Paragraph paragraphClass="text-dark fw-bold text-center pt-2 mb-2 text-15">HTML/CSS/JavaScript</Paragraph>
                 </CommonCard>
             </Div>    
         </Div>
