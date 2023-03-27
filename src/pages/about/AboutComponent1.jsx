@@ -1,5 +1,5 @@
 import React from 'react'
-import { LandingPageCard, Div, Paragraph, Button, SubHeading, Heading, Image, Break } from "components"
+import { Div, Paragraph, SubHeading, Image} from "components"
 
 export const AboutLandingPage = React.memo(() => {
     return (
