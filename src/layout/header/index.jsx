@@ -21,7 +21,7 @@ export const Header = React.memo(() => {
           <NavLink to="/">
             Home
           </NavLink>
-          <NavLink to="/aboutus">
+          <NavLink to="/about">
             About Us
           </NavLink>
           <NavLink to="/courses">
