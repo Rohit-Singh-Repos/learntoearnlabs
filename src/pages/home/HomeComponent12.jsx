@@ -1,5 +1,5 @@
 import React from "react";
-import { CommonCard, Div, Paragraph, SubHeading } from "components";
+import { Div, Paragraph, SubHeading } from "components";
 
 export const Placements = React.memo(() => {
   return (

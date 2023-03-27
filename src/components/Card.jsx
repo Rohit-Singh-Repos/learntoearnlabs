@@ -1,6 +1,6 @@
 import React from "react";
 import { LandingPageCardBorder } from "styles/homePage/homePageStyles";
-import { Div, Heading, Paragraph } from "components";
+import { Div, Heading, Paragraph, Image } from "components";
 
 export const LandingPageCard = React.memo(
   ({ cardText, cardText2, borderShow }) => {
@@ -24,4 +24,21 @@ export const CommonCard = React.memo(({cardClass,children}) => {
       </Div>
     </Div>
   )
+})
+
+export const CardImage = React.memo(({imagePath,imageClass,imageAltText,cardClass,children}) => {
+  return (
+    <Div divClass={cardClass}>
+      <Div divClass="row g-0">
+        <Div divClass="col-md-4">
+          <Image imagePath={imagePath} imageClass={imageClass} imageAltText={imageAltText}/>
+        </Div>
+        <Div divClass="col-md-8">
+          <Div divClass="card-body">
+            {children}
+          </Div>
+        </Div>
+      </Div>
+    </Div>
+  );
 })

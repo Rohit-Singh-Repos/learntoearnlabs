@@ -13,6 +13,7 @@ const YoungTalent = lazy(() => import('pages/home/HomeComponent9').then(module =
 const JobAssistance = lazy(() => import('pages/home/HomeComponent10').then(module => ({ default: module.JobAssistance })));
 const TrainingPerks = lazy(() => import('pages/home/HomeComponent11').then(module => ({ default: module.TrainingPerks })));
 const Placements = lazy(() => import('pages/home/HomeComponent12').then(module => ({ default: module.Placements })));
+const StudentReviews = lazy(() => import('pages/home/HomeComponent13').then(module => ({ default: module.StudentReviews })));
 
 export const HomePage = React.memo(() => {
   return (
@@ -29,6 +30,7 @@ export const HomePage = React.memo(() => {
       <JobAssistance/>
       <TrainingPerks/>
       <Placements/>
+      <StudentReviews/>
     </Suspense>
   )
 })
