@@ -11,6 +11,7 @@ const UpskillKnowledge = lazy(() => import('pages/home/HomeComponent7').then(mod
 const TrainerProgram = lazy(() => import('pages/home/HomeComponent8').then(module => ({ default: module.TrainerProgram })));
 const YoungTalent = lazy(() => import('pages/home/HomeComponent9').then(module => ({ default: module.YoungTalent })));
 const JobAssistance = lazy(() => import('pages/home/HomeComponent10').then(module => ({ default: module.JobAssistance })));
+const TrainingPerks = lazy(() => import('pages/home/HomeComponent11').then(module => ({ default: module.TrainingPerks })));
 
 export const HomePage = React.memo(() => {
   return (
@@ -25,6 +26,7 @@ export const HomePage = React.memo(() => {
       <TrainerProgram/>
       <YoungTalent/>
       <JobAssistance/>
+      <TrainingPerks/>
     </Suspense>
   )
 })
