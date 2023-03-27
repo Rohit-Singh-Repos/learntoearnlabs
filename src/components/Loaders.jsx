@@ -6,7 +6,7 @@ import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 const loaderContainer = document.getElementById("loader");
 
-const Loader = React.memo(() => {
+export const FallbackLoader = React.memo(() => {
     return (
       <div className="modal" style={{display:"block"}}>
         <Lottie animationData={Loader} loop={true} />
@@ -15,5 +15,5 @@ const Loader = React.memo(() => {
 })
 
 export const LoaderComponent = React.memo(() => {
-    return ReactDOM.createPortal(<Loader/>,loaderContainer)
+    return ReactDOM.createPortal(<FallbackLoader/>,loaderContainer)
 })
