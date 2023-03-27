@@ -14,22 +14,22 @@ export const JoinComponent = React.memo(() => {
       </Div>
         <Div divClass='row mt-5'>
             <Div divClass="col-lg-3 col-md-6 col-sm-12 mb-2">
-                <CommonCard cardClass="card bg-primary d-flex align-items-center">
+                <CommonCard cardClass="card bg-primary d-flex align-items-center border-0 rounded-0">
                     <Paragraph paragraphClass="text-light text-center pt-2 mb-2">Practical Based Live <br /> Training Sessions</Paragraph>
                 </CommonCard>
             </Div>
             <Div divClass="col-lg-3 col-md-6 col-sm-12 mb-2">
-                <CommonCard cardClass="card bg-primary d-flex align-items-center">
+                <CommonCard cardClass="card bg-primary d-flex align-items-center border-0 rounded-0">
                     <Paragraph paragraphClass="text-light text-center pt-2 mb-2">Online Live Classes for <br /> Remote Learners</Paragraph>
                 </CommonCard>
             </Div>
             <Div divClass="col-lg-3 col-md-6 col-sm-12 mb-2">
-                <CommonCard cardClass="card bg-primary d-flex align-items-center">
+                <CommonCard cardClass="card bg-primary d-flex align-items-center border-0 rounded-0">
                     <Paragraph paragraphClass="text-light text-center pt-2 mb-2">Live Projects & Working <br /> Experience</Paragraph>
                 </CommonCard>
             </Div>    
             <Div divClass="col-lg-3 col-md-6 col-sm-12">
-                <CommonCard cardClass="card bg-primary d-flex align-items-center">
+                <CommonCard cardClass="card bg-primary d-flex align-items-center border-0 rounded-0">
                     <Paragraph paragraphClass="text-light text-center pt-2 mb-2">Career Assistance & <br /> Corporate Networking</Paragraph>
                 </CommonCard>
             </Div>    
