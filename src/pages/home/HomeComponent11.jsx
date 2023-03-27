@@ -52,6 +52,12 @@ export const TrainingPerks = React.memo(() => {
                 </CommonCard>
             </Div>    
         </Div>
+        <Div divClass='row mt-5'>
+            <Div divClass="col-lg-12 col-md-12 col-sm-12">
+                <Paragraph paragraphClass="align-justify text-primary">We offers various training perks and benefits to our students to make them delighted and stay motivated for getting better results.
+                </Paragraph>
+            </Div>
+        </Div>
     </Div>
   )
 })
