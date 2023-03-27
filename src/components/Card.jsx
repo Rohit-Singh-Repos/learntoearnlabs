@@ -2,7 +2,7 @@ import React from "react";
 import { LandingPageCardBorder } from "styles/homePage/homePageStyles";
 import { Div, Heading, Paragraph } from "components";
 
-export const Card = React.memo(
+export const LandingPageCard = React.memo(
   ({ cardText, cardText2, borderShow }) => {
     return (
       <Div divClass="card d-flex flex-lg-row align-items-center col-sm-12 col-md-6 col-lg-3 bg-transparent border-0 text-center">
@@ -15,3 +15,13 @@ export const Card = React.memo(
     );
   }
 );
+
+export const CommonCard = React.memo(({cardClass,children}) => {
+  return(
+    <Div divClass={cardClass}>
+      <Div divClass="card-body">
+        {children}
+      </Div>
+    </Div>
+  )
+})

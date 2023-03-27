@@ -1,13 +1,19 @@
 import React from 'react'
 
-export const Heading = React.memo(({children}) => {
+export const Heading = React.memo(({children,headingClass}) => {
     return (
-      <h1>{children}</h1>
+      <h1 className={headingClass}>{children}</h1>
     )
 })
 
-export const Paragraph = React.memo(({children}) => {
+export const SubHeading = React.memo(({children,subheadingClass}) => {
+  return (
+    <h4 className={subheadingClass}>{children}</h4>
+  )
+})
+
+export const Paragraph = React.memo(({children,paragraphClass}) => {
     return (
-      <p>{children}</p>
+      <p className={paragraphClass}>{children}</p>
     )
 })
