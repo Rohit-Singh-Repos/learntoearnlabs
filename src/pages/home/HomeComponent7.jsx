@@ -10,32 +10,32 @@ export const UpskillKnowledge = React.memo(() => {
       </Div>
         <Div divClass='row mt-5'>
             <Div divClass="col-lg-4 col-md-6 col-sm-12 mb-2">
-                <CommonCard cardClass="card d-flex align-items-center">
+                <CommonCard cardClass="card d-flex align-items-center rounded-0">
                     <Paragraph paragraphClass="text-dark fw-bold text-center pt-2 mb-2">Wordpress & Blogging</Paragraph>
                 </CommonCard>
             </Div>
             <Div divClass="col-lg-4 col-md-6 col-sm-12 mb-2">
-                <CommonCard cardClass="card d-flex align-items-center">
+                <CommonCard cardClass="card d-flex align-items-center rounded-0">
                     <Paragraph paragraphClass="text-dark fw-bold text-center pt-2 mb-2">Google Ads</Paragraph>
                 </CommonCard>
             </Div>
             <Div divClass="col-lg-4 col-md-6 col-sm-12 mb-2">
-                <CommonCard cardClass="card d-flex align-items-center">
+                <CommonCard cardClass="card d-flex align-items-center rounded-0">
                     <Paragraph paragraphClass="text-dark fw-bold text-center pt-2 mb-2">Social Media Marketing</Paragraph>
                 </CommonCard>
             </Div>    
             <Div divClass="col-lg-4 col-md-6 col-sm-12 mb-2">
-                <CommonCard cardClass="card d-flex align-items-center">
+                <CommonCard cardClass="card d-flex align-items-center rounded-0">
                     <Paragraph paragraphClass="text-dark fw-bold text-center pt-2 mb-2">Search Engine Optimization</Paragraph>
                 </CommonCard>
             </Div>    
             <Div divClass="col-lg-4 col-md-6 col-sm-12 mb-2">
-                <CommonCard cardClass="card d-flex align-items-center">
+                <CommonCard cardClass="card d-flex align-items-center rounded-0">
                     <Paragraph paragraphClass="text-dark fw-bold text-center pt-2 mb-2">Content Marketing</Paragraph>
                 </CommonCard>
             </Div>    
             <Div divClass="col-lg-4 col-md-6 col-sm-12 mb-2">
-                <CommonCard cardClass="card d-flex align-items-center">
+                <CommonCard cardClass="card d-flex align-items-center rounded-0">
                     <Paragraph paragraphClass="text-dark fw-bold text-center pt-2 mb-2">Affiliate Marketing</Paragraph>
                 </CommonCard>
             </Div>    

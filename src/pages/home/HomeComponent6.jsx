@@ -10,32 +10,32 @@ export const ShortTermCourses = React.memo(() => {
       </Div>
         <Div divClass='row mt-5'>
             <Div divClass="col-lg-4 col-md-6 col-sm-12 mb-2">
-                <CommonCard cardClass="card d-flex align-items-center">
+                <CommonCard cardClass="card d-flex align-items-center rounded-0">
                     <Paragraph paragraphClass="text-dark fw-bold text-center pt-2 mb-2">C / C++ / Data Structure</Paragraph>
                 </CommonCard>
             </Div>
             <Div divClass="col-lg-4 col-md-6 col-sm-12 mb-2">
-                <CommonCard cardClass="card d-flex align-items-center">
+                <CommonCard cardClass="card d-flex align-items-center rounded-0">
                     <Paragraph paragraphClass="text-dark fw-bold text-center pt-2 mb-2">Java Programming</Paragraph>
                 </CommonCard>
             </Div>
             <Div divClass="col-lg-4 col-md-6 col-sm-12 mb-2">
-                <CommonCard cardClass="card d-flex align-items-center">
+                <CommonCard cardClass="card d-flex align-items-center rounded-0">
                     <Paragraph paragraphClass="text-dark fw-bold text-center pt-2 mb-2">Python Programming</Paragraph>
                 </CommonCard>
             </Div>    
             <Div divClass="col-lg-4 col-md-6 col-sm-12 mb-2">
-                <CommonCard cardClass="card d-flex align-items-center">
+                <CommonCard cardClass="card d-flex align-items-center rounded-0">
                     <Paragraph paragraphClass="text-dark fw-bold text-center pt-2 mb-2">MySQL Database</Paragraph>
                 </CommonCard>
             </Div>    
             <Div divClass="col-lg-4 col-md-6 col-sm-12 mb-2">
-                <CommonCard cardClass="card d-flex align-items-center">
+                <CommonCard cardClass="card d-flex align-items-center rounded-0">
                     <Paragraph paragraphClass="text-dark fw-bold text-center pt-2 mb-2">Linux & AWS</Paragraph>
                 </CommonCard>
             </Div>    
             <Div divClass="col-lg-4 col-md-6 col-sm-12 mb-2">
-                <CommonCard cardClass="card d-flex align-items-center">
+                <CommonCard cardClass="card d-flex align-items-center rounded-0">
                     <Paragraph paragraphClass="text-dark fw-bold text-center pt-2 mb-2">HTML/CSS/JavaScript</Paragraph>
                 </CommonCard>
             </Div>    

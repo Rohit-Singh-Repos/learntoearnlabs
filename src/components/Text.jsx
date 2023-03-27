@@ -18,8 +18,8 @@ export const Paragraph = React.memo(({children,paragraphClass}) => {
     )
 })
 
-export const Span = React.memo(({children,paragraphClass}) => {
+export const Span = React.memo(({children,spanClass}) => {
     return (
-      <span className={paragraphClass}>{children}</span>
+      <span className={spanClass}>{children}</span>
     )
 })

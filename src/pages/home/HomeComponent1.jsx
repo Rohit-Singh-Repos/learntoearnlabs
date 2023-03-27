@@ -10,7 +10,7 @@ export const LandingPage = React.memo(() => {
           <Paragraph>
             When no one understand your talent, then we believe that you have the capabilities to do miracles…
           </Paragraph>
-          <Button buttonClass="btn btn-primary">
+          <Button buttonClass="btn btn-primary border-0 rounded-0">
             Join Now
           </Button>
         </Div>

@@ -12,3 +12,11 @@ html,body{
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
+
+.align-center{
+    text-align: center;
+}
+
+.align-justify{
+    text-align: justify;
+}
