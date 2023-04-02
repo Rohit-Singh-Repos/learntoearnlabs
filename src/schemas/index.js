@@ -1,1 +1,2 @@
 export { homePageSchema } from "./homePageScheme"
+export { cloudDevopsSchema, dataScienceSchema, designThinkingSchema, javaFullStackSchema, mernStackSchema, trainTheTrainerSchema } from "./coursesPageSchema"

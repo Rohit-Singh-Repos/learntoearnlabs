@@ -6,3 +6,4 @@ export { Image } from "components/Image";
 export { Break } from "components/Break";
 export { OrderedList, UnorderedList, ListItem } from "components/Lists";
 export { SliderComponent } from "components/Slider";
+export { LinkComponent } from "components/Link";

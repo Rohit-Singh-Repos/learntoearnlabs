@@ -8,7 +8,6 @@ const Relationship = lazy(() => import('pages/about/AboutComponent4').then(modul
 const DirectorsBlock = lazy(() => import('pages/about/AboutComponent5').then(module => ({ default: module.DirectorsBlock })));
 const CoreTeamMembers = lazy(() => import('pages/about/AboutComponent6').then(module => ({ default: module.CoreTeamMembers })));
 const PictureGallery = lazy(() => import('pages/about/AboutComponent7').then(module => ({ default: module.PictureGallery })));
-const CoursesPage = lazy(() => import('pages/about/AboutComponent8').then(module => ({ default: module.CoursesPages })));
 
 export const AboutPage = () => {
   return (
@@ -20,7 +19,6 @@ export const AboutPage = () => {
         <DirectorsBlock/>
         <CoreTeamMembers/>
         <PictureGallery/>
-        <CoursesPage/>
     </Suspense>
   )
 }

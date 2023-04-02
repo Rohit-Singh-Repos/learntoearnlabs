@@ -7,6 +7,7 @@ const Header = lazy(() => import('layout/header').then(module => ({ default: mod
 const Footer = lazy(() => import('layout/footer').then(module => ({ default: module.Footer })));
 const HomePage = lazy(() => import('pages/home/Home').then(module => ({ default: module.HomePage })));
 const AboutPage = lazy(() => import('pages/about/About').then(module => ({ default: module.AboutPage })));
+const DevopsPage = lazy(() => import('pages/courses/devops/Devops').then(module => ({ default: module.DevopsPage })));
 
 export const Layout = React.memo(() => {
   return (
@@ -16,6 +17,7 @@ export const Layout = React.memo(() => {
         <Routes>
           <Route path="/" element={<HomePage/>}/>
           <Route path="/about" element={<AboutPage/>}/>
+          <Route path="/cloud-computing-and-devops-course" element={<DevopsPage/>}/>
         </Routes>
         <Footer />
       </Suspense>

@@ -1,7 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-export const LinkComponent = React.memo(() => {
+export const LinkComponent = React.memo(({pathName,children}) => {
     return (
-      <div>Button</div>
+      <Link to={pathName} className='text-dark text-decoration-none'>{children}</Link>
     )
 })
