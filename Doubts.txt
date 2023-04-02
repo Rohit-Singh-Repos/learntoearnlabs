@@ -4,3 +4,4 @@ Questionaire
 => Importing a non react component file with lazy loading.
 => why lazy loading renders component that is first accessible.
 => Reusable Content and Css using Schemas
+=> categorize schema according to inputs / icons & content.
