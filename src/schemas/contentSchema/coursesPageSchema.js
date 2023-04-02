@@ -7,7 +7,7 @@ export const cloudDevopsSchema = {
         {id:uuid(),heading:"4/6",subHeading:"Months Duration",borderShow:true},
         {id:uuid(),heading:"6 LPA",subHeading:"Avg. Salary Package",borderShow:false}
     ],
-    CloudDevopsCareerSection:{
+    cloudDevopsCareerSection:{
         cardTextData:[
             {id:uuid(),cardText:"Increase Demand"},
             {id:uuid(),cardText:"Lot of Opportunities"},
