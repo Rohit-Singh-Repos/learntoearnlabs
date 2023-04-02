@@ -10,7 +10,7 @@ const AboutPage = lazy(() => import('pages/about/About').then(module => ({ defau
 
 export const Layout = React.memo(() => {
   return (
-    <ErrorLogger>
+    <ErrorLogger></ErrorLogger>
       <Suspense fallback={<FallbackLoader/>}>
         <Header />
         <Routes>
