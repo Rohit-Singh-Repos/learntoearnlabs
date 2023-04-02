@@ -16,29 +16,47 @@ export const LandingPageCard = React.memo(
   }
 );
 
-export const CommonCard = React.memo(({cardClass,children}) => {
-  return(
-    <Div divClass={cardClass}>
-      <Div divClass="card-body">
-        {children}
-      </Div>
-    </Div>
-  )
-})
-
-export const CardImage = React.memo(({imagePath,imageClass,imageAltText,cardClass,children}) => {
+export const CommonCard = React.memo(({ cardClass, children }) => {
   return (
     <Div divClass={cardClass}>
-      <Div divClass="row g-0">
-        <Div divClass="col-md-4">
-          <Image imagePath={imagePath} imageClass={imageClass} imageAltText={imageAltText}/>
-        </Div>
-        <Div divClass="col-md-8">
-          <Div divClass="card-body">
-            {children}
+      <Div divClass="card-body">{children}</Div>
+    </Div>
+  );
+});
+
+export const CardImage = React.memo(
+  ({
+    directorName,
+    directorQualification,
+    imagePath,
+    imageClass,
+    imageAltText,
+    cardClass,
+    children,
+  }) => {
+    return (
+      <Div divClass={cardClass}>
+        <Div divClass="row g-0">
+          <Div divClass="col-md-4">
+            <Image
+              imagePath={imagePath}
+              imageClass={imageClass}
+              imageAltText={imageAltText}
+            />
+            {directorName && (
+              <Paragraph paragraphClass="fw-bold">{directorName}</Paragraph>
+            )}
+            {directorQualification && (
+              <Paragraph paragraphClass="fw-bold">
+                {directorQualification}
+              </Paragraph>
+            )}
+          </Div>
+          <Div divClass="col-md-8">
+            <Div divClass="card-body">{children}</Div>
           </Div>
         </Div>
       </Div>
-    </Div>
-  );
-})
+    );
+  }
+);

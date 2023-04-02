@@ -7,7 +7,7 @@ import {
   Paragraph
 } from "components";
 
-export const NeedToJoin = () => {
+export const NeedToJoin = React.memo(() => {
   return (
     <Div divClass="container mt-5">
       <Div divClass='row'>
@@ -26,4 +26,4 @@ export const NeedToJoin = () => {
       </Div>
     </Div>
   );
-};
+});

@@ -1,7 +1,7 @@
 import React from 'react'
 import { ErrorBoundary } from 'react-error-boundary'
 
-const ErrorFallbackComponent = ({error}) => {
+const ErrorFallbackComponent = React.memo(({error}) => {
   console.log("errorData",)
   return(
     <div>
@@ -9,12 +9,12 @@ const ErrorFallbackComponent = ({error}) => {
         <h3>Error Description : {error.message}</h3>
     </div>
   )
-}
+})
 
-export const ErrorLogger = ({children}) => {
+export const ErrorLogger = React.memo(({children}) => {
   return (
     <ErrorBoundary FallbackComponent={ErrorFallbackComponent}>
         {children}
     </ErrorBoundary>
   )
-}
+})

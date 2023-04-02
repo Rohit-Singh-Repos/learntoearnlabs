@@ -6,7 +6,7 @@ import {
   Heading,
 } from "components";
 
-export const VissionAndMission = () => {
+export const VissionAndMission = React.memo(() => {
   return (
     <Div divClass="container mt-5">
       <Div divClass="row">
@@ -46,4 +46,4 @@ export const VissionAndMission = () => {
       </Div>
     </Div>
   );
-};
+});

@@ -1,7 +1,7 @@
 import React from 'react'
 
-export const Break = () => {
+export const Break = React.memo(() => {
   return (
     <br/>
   )
-}
+})
