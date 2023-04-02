@@ -11,7 +11,7 @@ export const VissionAndMission = () => {
     <Div divClass="container mt-5">
       <Div divClass="row">
         <Div divClass="col-lg-12 col-md-12 col-sm-12">
-          <CommonCard cardClass="card pt-2 pb-2 ps-4 rounded-0 bg-primary text-light">
+          <CommonCard cardClass="card pt-2 pb-2 ps-4 pe-4 rounded-0 bg-primary text-light">
             <Heading headingClass="fw-bold">Vision</Heading>
             <Paragraph paragraphClass="align-justify text-15">
               To be an institute that provides a transformative learning to
