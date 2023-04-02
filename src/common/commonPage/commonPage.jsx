@@ -1,14 +1,13 @@
-import React,{Suspense,lazy} from 'react'
-
-const FallbackLoader = lazy(() => import('components/Loaders').then(module => ({ default: module.FallbackLoader })));
-const LandingPage = lazy(() => import('common/commonPage/CommonPageComponent1').then(module => ({ default: module.LandingPage })));
-const CloudDevopsCareer = lazy(() => import('common/commonPage/CommonPageComponent2').then(module => ({ default: module.CloudDevopsCareer })));
-const TrainingRoadMap = lazy(() => import('common/commonPage/CommonPageComponent3').then(module => ({ default: module.TrainingRoadMap })));
+import React from 'react'
+import { LandingPage } from 'common/commonPage/CommonPageComponent1'
+import { CloudDevopsCareer } from 'common/commonPage/CommonPageComponent2'
+import { TrainingRoadMap } from 'common/commonPage/CommonPageComponent3'
+import { CareerOptions } from 'common/commonPage/CommonPageComponent4'
 
 export const CommonPageComponent = React.memo(({sectionData,headingText,primaryButtonText,outlinedButtonText}) => {
     return (
-      <Suspense fallback={<FallbackLoader/>}>
-          <LandingPage
+      <>
+        <LandingPage
             cardData={sectionData.landingPageSection}
             headingText={headingText}
             primaryButtonText={primaryButtonText}
@@ -17,7 +16,12 @@ export const CommonPageComponent = React.memo(({sectionData,headingText,primaryB
           <CloudDevopsCareer
             sectionData={sectionData}
           />
-          <TrainingRoadMap/>
-      </Suspense>
+          <TrainingRoadMap
+            sectionData={sectionData}
+          />
+          <CareerOptions
+            sectionData={sectionData}
+          />
+      </>
     )
 })

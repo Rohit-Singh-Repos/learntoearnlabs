@@ -8,6 +8,7 @@ export const cloudDevopsSchema = {
         {id:uuid(),heading:"6 LPA",subHeading:"Avg. Salary Package",borderShow:false}
     ],
     cloudDevopsCareerSection:{
+        headingText:"Why, choose Cloud & Devops as a career ?",
         cardTextData:[
             {id:uuid(),cardText:"Increase Demand"},
             {id:uuid(),cardText:"Lot of Opportunities"},
@@ -35,6 +36,7 @@ export const cloudDevopsSchema = {
         ]
     },
     careerOptionSection:{
+        headingText:"Career Options",
         cardHeadingText1:"Middle Level Career Options",
         cardHeadingText2:"Top Level Career Options",
         paragraphText:"As a Cloud Computing and DevOps professional, you will have a variety to job roles to work and get success in your career.",
