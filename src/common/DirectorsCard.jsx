@@ -1,8 +1,17 @@
-import React from 'react'
-import { CardImage, Div } from 'components';
-import { SubHeading } from 'components';
+import React from "react";
+import { CardImage, Div } from "components";
+import { SubHeading } from "components";
 
-export const InstituteDirector = React.memo(({directorName,directorQualification,imagePath,imageClass,imageAltText,cardClass,children}) => {
+export const InstituteDirector = React.memo(
+  ({
+    directorName,
+    directorQualification,
+    imagePath,
+    imageClass,
+    imageAltText,
+    cardClass,
+    children,
+  }) => {
     return (
       <Div divClass="container mt-5">
         <Div divClass="row">
@@ -11,12 +20,12 @@ export const InstituteDirector = React.memo(({directorName,directorQualification
               Institute Director(s)
             </SubHeading>
             <CardImage
-                directorName={directorName}
-                directorQualification={directorQualification}
-                imagePath={imagePath}
-                imageClass={imageClass}
-                imageAltText={imageAltText}
-                cardClass={cardClass}
+              directorName={directorName}
+              directorQualification={directorQualification}
+              imagePath={imagePath}
+              imageClass={imageClass}
+              imageAltText={imageAltText}
+              cardClass={cardClass}
             >
               {children}
             </CardImage>
@@ -24,5 +33,5 @@ export const InstituteDirector = React.memo(({directorName,directorQualification
         </Div>
       </Div>
     );
-  });
-  
+  }
+);
