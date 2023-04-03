@@ -74,11 +74,12 @@ export const cloudDevopsSchema = {
     whoCanJoinSection:{
         headingText:"Who can join",
         paragraphText1:"Any graduate or post graduate student from B.tech or M.tech (any specialization), BCA or MCA, B.Sc. or M.Sc. (CS / IT) can join the Cloud Computing & DevOps training program . The student must have hands-on experience with operating system with basic knowledge of shells or windows commands.",
-        paragraphText1:"Any working professional, belongs to computer science or IT specialization, having some experience in IT or related industry and now looking for salary hike or promotions can also join the Cloud Computing & DevOps  training program."
+        paragraphText2:"Any working professional, belongs to computer science or IT specialization, having some experience in IT or related industry and now looking for salary hike or promotions can also join the Cloud Computing & DevOps  training program."
     },
     trainingModeSection:{
+        headingText:"Training Mode",
         cardData1:{
-            headingText:"Online Live Classes are available",
+            headingText1:"Online Live Classes are available",
             listTextData:[
                 {id:uuid(),listText:"4x more effective way of learning"},
                 {id:uuid(),listText:"Hands-on experience with projects & assignments"},
@@ -87,14 +88,14 @@ export const cloudDevopsSchema = {
                 {id:uuid(),listText:"Masterclass from industry experts & leaders"},
                 {id:uuid(),listText:"Live class recordings for revision purpose"},
             ],
-            buttonText:"Apply Now"
+            buttonText1:"Apply Now"
         },
         cardData2:{
-            headingText:"Clod Computing & DevOps Training in Agra",
+            headingText2:"Clod Computing & DevOps Training in Agra",
             addressHeading:"Learn2Earn Labs",
             addressText:"F-4, First Floor, Anna Ikon Complex, In Front of Deviram Food Circle, Sikandra-Bodla Road, Sikandra, Agra, Uttar Pradesh – 282007",
             phoneText:"+91-9548868337",
-            buttonText:"Download Syllabus"
+            buttonText2:"Download Syllabus"
         }
     },
     programDetailsSection:{
