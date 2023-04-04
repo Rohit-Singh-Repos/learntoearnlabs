@@ -65,12 +65,18 @@ html,body{
 
 /* HeroSection End */
 
-/* Homepage Starts */
+/* ============================================= Homepage Starts ======================================== */
 
 @media screen and (max-width: 992px) { 
     .align-justify-sm{
         text-align: justify;
     }
+
+    /* WorkingExperience CSS */
+
+    .card-image-bottom-margin{
+        margin-bottom: 20px;
+    }
 }
 
-/* Homepage Ends */
+/* ============================================= Homepage Ends ======================================== */

@@ -6,6 +6,9 @@ import fullStackDeveloperCoverImage from "assets/images/Cover Images/full-stack-
 import javaFullStackCoverImage from "assets/images/Cover Images/java_full_stack_development_course.png";
 import mernStackCoverImage from "assets/images/Cover Images/mern_stack_development_course_cover.png";
 
+import fullStackSoftwareImage from "assets/images/Home/digital-marketing-course-cover.webp";
+import digitalMarketingImage from "assets/images/Home/man-with-laptop-doing-programming.webp";
+
 
 export const COVER_IMAGES = {
     homePageCoverImage,
@@ -15,4 +18,9 @@ export const COVER_IMAGES = {
     fullStackDeveloperCoverImage,
     javaFullStackCoverImage,
     mernStackCoverImage
+}
+
+export const HOME_PAGE_IMAGES = {
+    fullStackSoftwareImage,
+    digitalMarketingImage
 }
