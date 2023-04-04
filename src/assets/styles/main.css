@@ -21,6 +21,56 @@ html,body{
     text-align: justify;
 }
 
+
+.fs-17{
+    font-size: 17px;
+}
+
+.fs-36{
+    font-size: 36px;
+}
+
+.fs-30{
+    font-size: 30px;
+}
+
+
+.fs-24{
+    font-size: 24px;
+}
+
 .text-15{
     font-size: 15px;
 }
+
+/* HeroSection Start */
+
+@media screen and (max-width: 992px) { 
+    .fs-30{
+        font-size: 24px;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .button-div{
+        display: flex;
+        justify-content: center;
+    }
+
+    .button{
+        width: 100px;
+        height: 40px;
+    }
+}
+
+/* HeroSection End */
+
+/* Homepage Starts */
+
+@media screen and (max-width: 992px) { 
+    .align-justify-sm{
+        text-align: justify;
+    }
+}
+
+/* Homepage Ends */

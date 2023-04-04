@@ -16,10 +16,10 @@ export const LandingPageCard = React.memo(
   }
 );
 
-export const CommonCard = React.memo(({ cardClass, children }) => {
+export const CommonCard = React.memo(({ cardClass, children, verticalAlign }) => {
   return (
     <Div divClass={cardClass}>
-      <Div divClass="card-body">{children}</Div>
+      <Div divClass={verticalAlign ? "card-body d-flex justify-content-center align-items-center" : "card-body"}>{children}</Div>
     </Div>
   );
 });
