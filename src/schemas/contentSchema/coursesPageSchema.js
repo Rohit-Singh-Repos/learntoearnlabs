@@ -94,28 +94,28 @@ export const cloudDevopsSchema = {
             headingText2:"Clod Computing & DevOps Training in Agra",
             addressHeading:"Learn2Earn Labs",
             addressText:"F-4, First Floor, Anna Ikon Complex, In Front of Deviram Food Circle, Sikandra-Bodla Road, Sikandra, Agra, Uttar Pradesh – 282007",
-            phoneText:"+91-9548868337",
+            phoneText:"Call: +91-9548868337",
             buttonText2:"Download Syllabus"
         }
     },
     programDetailsSection:{
+        headingText:"Program Details",
         paragraphText:"During training you will go through with with cloud infrastructure components such as virtual machines, storage, and networking, and will deploy & manage applications on cloud platforms. The candidates will learn how to work with different cloud computing and DevOps tools, such as AWS, version control or git, Jenkins, Docker, Ansible & Kubernetes, and understand how to integrate these tools into their workflow.",
         moduleTextData:[
             {id:uuid(),moduleName:"Module 1",listText:"Introduction & Python Programming"},
             {id:uuid(),moduleName:"Module 2",listText:"Numpy"},
         ],
         contactCardData1:{
-            iconName:"",
             phoneNumber:"+91-9548868337"
         },
         contactCardData2:{
             buttonText:"Submit"
         },
-    },
-    discountAndOffersSection:{
-        headingText:"Discount & Offers",
-        cardText1:"25% Cashback Available",
-        cardText2:"Work Incentives"
+        discountAndOffersSection:{
+            discountHeadingText:"Discount & Offers",
+            cardText1:"25% Cashback Available",
+            cardText2:"Work Incentives"
+        }
     },
     applyNowSection:{
         paragraphText:"Please enter the following details to initiate your application for Cloud Computing & DevOps training program offered by Learn2Earn Labs, Agra.",

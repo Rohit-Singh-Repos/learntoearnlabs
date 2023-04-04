@@ -5,3 +5,4 @@ Questionaire
 => why lazy loading renders component that is first accessible.
 => Reusable Content and Css using Schemas
 => categorize schema according to inputs / icons & content.
+=> create common classes 

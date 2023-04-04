@@ -7,3 +7,5 @@ export { Break } from "components/Break";
 export { OrderedList, UnorderedList, ListItem } from "components/Lists";
 export { SliderComponent } from "components/Slider";
 export { LinkComponent } from "components/Link";
+export { Accordion } from "components/Accordion";
+export { TextInput, SelectInput } from "components/FormInput";
