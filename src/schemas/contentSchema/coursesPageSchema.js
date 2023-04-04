@@ -118,12 +118,15 @@ export const cloudDevopsSchema = {
         }
     },
     applyNowSection:{
+        headingText:"Apply Now",
         paragraphText:"Please enter the following details to initiate your application for Cloud Computing & DevOps training program offered by Learn2Earn Labs, Agra.",
         buttonText:"Submit",
-        headingText:"Eligibility Criteria",
-        paragraphText1:"A bachelor’s / master’s degree in Engg / Computers.",
-        paragraphText2:"Knowledge of operating system & shell script (preferred).",
-        paragraphText3:"Having basic programming & development knowledge.",
+        subheadingText:"Eligibility Criteria",
+        paragrphTextData:[
+            {id:uuid(),text:"A bachelor’s / master’s degree in Engg / Computers."},
+            {id:uuid(),text:"Knowledge of operating system & shell script (preferred)."},
+            {id:uuid(),text:"Having basic programming & development knowledge."},
+        ]
     }
 }
 

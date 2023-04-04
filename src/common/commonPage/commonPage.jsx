@@ -7,6 +7,7 @@ import { CloudDevopsTraining } from "common/commonPage/CommonPageComponent5";
 import { WhoCanJoin } from "common/commonPage/CommonPageComponent6";
 import { TrainingMode } from "common/commonPage/CommonPageComponent7";
 import { ProgramDetails } from "common/commonPage/CommonPageComponent8";
+import { ApplyNow } from "common/commonPage/CommonPageComponent9";
 
 export const CommonPageComponent = React.memo(
   ({
@@ -31,6 +32,7 @@ export const CommonPageComponent = React.memo(
         <WhoCanJoin sectionData={sectionData} />
         <TrainingMode sectionData={sectionData} />
         <ProgramDetails sectionData={sectionData} inputSchemas={inputSchemas} />
+        <ApplyNow sectionData={sectionData} inputSchemas={inputSchemas}/>
       </>
     );
   }
