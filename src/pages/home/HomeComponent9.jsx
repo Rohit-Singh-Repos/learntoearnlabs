@@ -1,5 +1,6 @@
 import React from "react";
-import { CommonCard, Div, Paragraph, SubHeading, Span } from "components";
+import { CommonCard, Div, Paragraph, SubHeading, Image, Span } from "components";
+import { HOME_PAGE_IMAGES } from "assets/images";
 
 export const YoungTalent = React.memo(() => {
   return (
@@ -15,12 +16,14 @@ export const YoungTalent = React.memo(() => {
       <Div divClass="row mt-5">
         <Div divClass="col-lg-4 col-md-4 col-sm-12 mb-2"></Div>
         <Div divClass="col-lg-4 col-md-4 col-sm-12 mb-2">
-          <CommonCard cardClass="card d-flex align-items-center">
-            
+          <CommonCard cardClass="card d-flex align-items-center border-0">
+            <Image imagePath={HOME_PAGE_IMAGES.nikhilGarg} imageClass="img-thumbnail img-dimensions"/>
           </CommonCard>
-          <Paragraph paragraphClass="pt-2 fw-bold fs-5 text-center">Nikhil Garg</Paragraph>
-          <Paragraph paragraphClass="text-center">Chief Executive Officer</Paragraph>
-          <Paragraph paragraphClass="text-center">ByteCube Techsolutions Pvt. Ltd., Agra</Paragraph>
+          <Paragraph paragraphClass="d-flex justify-content-center flex-column">
+            <Span spanClass="pt-2 fw-bold fs-5 align-center">Nikhil Garg</Span>
+            <Span spanClass="text-center">Chief Executive Officer</Span>
+            <Span spanClass="text-center">ByteCube Techsolutions Pvt. Ltd., Agra</Span>
+          </Paragraph>
         </Div>
         <Div divClass="col-lg-4 col-md-4 col-sm-12 mb-2"></Div>
         <Div divClass="col-lg-12 col-md-12 col-sm-12 mb-2">

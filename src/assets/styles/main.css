@@ -43,6 +43,25 @@ html,body{
     font-size: 15px;
 }
 
+.bg-1{
+    background-color: #3B4CC0;
+}
+.bg-2{
+    background-color: #7B9FF9;
+}
+.bg-3{
+    background-color: #DDDDDD;
+}
+.bg-4{
+    background-color: #F7AD8F;
+}
+.bg-5{
+    background-color: #D75344;
+}
+.bg-6{
+    background-color: #B40426;
+}
+
 /* HeroSection Start */
 
 @media screen and (max-width: 992px) { 
@@ -86,6 +105,10 @@ html,body{
 .img-dimensions{
     width:250px;
     height: 250px;
+}
+
+.bold-text{
+    font-weight: bold;
 }
 
 /* ============================================= Aboutpage Ends ======================================== */

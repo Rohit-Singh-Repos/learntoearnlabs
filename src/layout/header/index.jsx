@@ -33,14 +33,14 @@ export const Header = React.memo(() => {
           <NavLink to="/blog">
             Blog
           </NavLink>
-          <NavLink to="/contact">
-            Contact
-          </NavLink>
           <NavLink to="/download">
             Downloads
           </NavLink>
           <NavLink to="/practise">
             Practice
+          </NavLink>
+          <NavLink to="/contact">
+            Contact
           </NavLink>
         </NavMenu>
         {/* <NavBtn>

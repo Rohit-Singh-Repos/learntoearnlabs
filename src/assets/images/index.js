@@ -29,6 +29,7 @@ import socialMediaMarketingImage from "assets/images/Home/social-media-marketing
 import searchEngineOptimization from "assets/images/Home/search-engine-optimization-course.webp";
 import contentMarketingImage from "assets/images/Home/content-marketing-course.webp";
 import affiliateMarketingImage from "assets/images/Home/affiliate-marketing-course.webp";
+import nikhilGarg from "assets/images/Persons/nikhil-garg.webp";
 
 // Aboutus Images
 import mohitSinghImage from "assets/images/Persons/mohit-singh-director-ninepages-techsolutions-private-limited.webp";
@@ -101,7 +102,8 @@ export const HOME_PAGE_IMAGES = {
     socialMediaMarketingImage,
     searchEngineOptimization,
     contentMarketingImage,
-    affiliateMarketingImage
+    affiliateMarketingImage,
+    nikhilGarg
 }
 
 export const ABOUTUS_PAGE_IMAGES = {

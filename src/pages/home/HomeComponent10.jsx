@@ -19,6 +19,32 @@ export const JobAssistance = React.memo(() => {
         </Div>
       </Div>
       <Div divClass="row mt-5">
+        <Div divClass="row col-sm-12 col-md-12 col-lg-12">
+          <Div divClass="col-sm-12 col-lg-2 bg-1 border border-5 border-light">
+              Candidate Registration
+          </Div>
+          <Div divClass="row col-sm-12 col-lg-2">
+              <Div divClass="col-sm-12 col-md-12 col-lg-12 bg-2 border border-5 border-light p-5">Weekly Classes</Div>
+              <Div divClass="col-sm-12 col-md-12 col-lg-12 bg-2 border border-5 border-light p-5">5-10 Interview Questions Per Class</Div>
+              <Div divClass="col-sm-12 col-md-12 col-lg-12 bg-2 border border-5 border-light p-5">Home Assignments for Practice</Div>
+              <Div divClass="col-sm-12 col-md-12 col-lg-12 bg-2 border border-5 border-light p-5">Interview Techniques</Div>
+          </Div>
+          <Div divClass="row col-sm-12 col-lg-2">
+              <Div divClass="col-sm-12 col-md-12 col-lg-12 bg-3 border border-5 border-light">Presentations (twice in a month)</Div>
+              <Div divClass="col-sm-12 col-md-12 col-lg-12 bg-3 border border-5 border-light">Mock Interviews (twice in a month)</Div>
+          </Div>
+          <Div divClass="row col-sm-12 col-lg-2">
+              <Div divClass="col-sm-12 col-md-12 col-lg-12 bg-4 border border-5 border-light">Capstone Projects</Div>
+              <Div divClass="col-sm-12 col-md-12 col-lg-12 bg-4 border border-5 border-light">Live Projects (on basis of experience)</Div>
+          </Div>
+          <Div divClass="row col-sm-12 col-lg-2">
+              <Div divClass="col-sm-12 col-md-12 col-lg-12 bg-5 border border-5 border-light">Video Resume</Div>
+              <Div divClass="col-sm-12 col-md-12 col-lg-12 bg-5 border border-5 border-light">Portfolio</Div>
+              <Div divClass="col-sm-12 col-md-12 col-lg-12 bg-5 border border-5 border-light">Corporate Connections</Div>
+              <Div divClass="col-sm-12 col-md-12 col-lg-12 bg-5 border border-5 border-light">Job Leads & Support</Div>
+          </Div>
+          <Div divClass="col-sm-12 col-lg-2 bg-6 border border-5 border-light">Get Hired</Div>
+        </Div>
       </Div>
     </Div>
   );

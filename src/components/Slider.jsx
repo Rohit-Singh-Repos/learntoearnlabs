@@ -38,7 +38,7 @@ export const SliderComponent = React.memo(({sliderData}) => {
       {sliderData && sliderData.length !== 0 ? (
         sliderData.map((item) => (
           <SwiperSlide key={item.id}>
-            <CommonCard cardClass="card border-1 rounded-0 text-light">
+            <CommonCard cardClass={item.imageName ? `card border-1 rounded-0 text-light` : "border-1 rounded-0 text-light"}>
               <Image
                 imageClass="img-fluid"
                 imageAltText={item.altText}

@@ -72,7 +72,7 @@ export const PictureGallery = React.memo(() => {
     <Div divClass="container mt-5">
       <Div divClass="row">
          <SubHeading subheadingClass="fw-bold">Picture Gallery</SubHeading>
-        <Div divClass="col-lg-12 col-md-12 col-sm-12">
+        <Div divClass="col-lg-12 col-md-12 col-sm-12 mt-5">
           <SliderComponent 
             sliderData={sliderData}
           />
