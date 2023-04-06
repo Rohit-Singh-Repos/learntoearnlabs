@@ -34,10 +34,41 @@ import affiliateMarketingImage from "assets/images/Home/affiliate-marketing-cour
 import mohitSinghImage from "assets/images/Persons/mohit-singh-director-ninepages-techsolutions-private-limited.webp";
 import shubendraGuptaImage from "assets/images/Persons/dr-shubhendra-gupta-director-learn2earn-labs.webp";
 import uttamKumarImage from "assets/images/Persons/dr-uttam-gupta.webp";
-import rajatKumarImage from "assets/images/Persons/dr-uttam-gupta.webp";
-import peeyushImage from "assets/images/Persons/dr-uttam-gupta.webp";
-import yashImage from "assets/images/Persons/dr-uttam-gupta.webp";
-import mikinImage from "assets/images/Persons/dr-uttam-gupta.webp";
+import rajatKumarImage from "assets/images/Persons/rajat-kumar.webp";
+import peeyushImage from "assets/images/Persons/dr.-peeyush-kumar-kamlesh.webp";
+import yashImage from "assets/images/Persons/Yash Agarwal.webp";
+import bharteshImage from "assets/images/Persons/Bhartesh Raj.webp";
+import mikinImage from "assets/images/Persons/mikin-kumar.webp";
+import galleryImage1 from "assets/images/Gallery/learntoearn-labs-gallery (1).webp";
+import galleryImage2 from "assets/images/Gallery/learntoearn-labs-gallery (2).webp";
+import galleryImage3 from "assets/images/Gallery/learntoearn-labs-gallery (3).webp";
+import galleryImage4 from "assets/images/Gallery/learntoearn-labs-gallery (4).webp";
+import galleryImage5 from "assets/images/Gallery/learntoearn-labs-gallery (5).webp";
+import galleryImage6 from "assets/images/Gallery/learntoearn-labs-gallery (6).webp";
+import galleryImage7 from "assets/images/Gallery/learntoearn-labs-gallery (7).webp";
+import galleryImage8 from "assets/images/Gallery/learntoearn-labs-gallery (8).webp";
+import galleryImage9 from "assets/images/Gallery/learntoearn-labs-gallery (9).webp";
+import galleryImage10 from "assets/images/Gallery/learntoearn-labs-gallery (10).webp";
+import galleryImage11 from "assets/images/Gallery/learntoearn-labs-gallery (11).webp";
+import galleryImage12 from "assets/images/Gallery/learntoearn-labs-gallery (12).webp";
+import galleryImage13 from "assets/images/Gallery/learntoearn-labs-gallery (13).webp";
+import galleryImage14 from "assets/images/Gallery/learntoearn-labs-gallery (14).webp";
+import galleryImage15 from "assets/images/Gallery/learntoearn-labs-gallery (2).webp";
+import galleryImage16 from "assets/images/Gallery/learntoearn-labs-gallery (2).webp";
+import galleryImage17 from "assets/images/Gallery/learntoearn-labs-gallery (2).webp";
+import galleryImage18 from "assets/images/Gallery/learntoearn-labs-gallery (18).webp";
+import galleryImage19 from "assets/images/Gallery/learntoearn-labs-gallery (19).webp";
+import galleryImage20 from "assets/images/Gallery/learntoearn-labs-gallery (20).webp";
+import galleryImage21 from "assets/images/Gallery/learntoearn-labs-gallery (21).webp";
+import galleryImage22 from "assets/images/Gallery/learntoearn-labs-gallery (22).webp";
+import galleryImage23 from "assets/images/Gallery/learntoearn-labs-gallery (23).webp";
+import galleryImage24 from "assets/images/Gallery/learntoearn-labs-gallery (24).webp";
+import galleryImage25 from "assets/images/Gallery/learntoearn-labs-gallery (25).webp";
+import galleryImage26 from "assets/images/Gallery/learntoearn-labs-gallery (26).webp";
+import galleryImage27 from "assets/images/Gallery/learntoearn-labs-gallery (27).webp";
+import galleryImage28 from "assets/images/Gallery/learntoearn-labs-gallery (28).webp";
+import galleryImage29 from "assets/images/Gallery/learntoearn-labs-gallery (29).webp";
+import galleryImage30 from "assets/images/Gallery/learntoearn-labs-gallery (30).webp";
 
 export const COVER_IMAGES = {
     homePageCoverImage,
@@ -80,5 +111,36 @@ export const ABOUTUS_PAGE_IMAGES = {
     rajatKumarImage,
     peeyushImage,
     yashImage,
-    mikinImage
+    bharteshImage,
+    mikinImage,
+    galleryImage1,
+    galleryImage2,
+    galleryImage3,
+    galleryImage4,
+    galleryImage5,
+    galleryImage6,
+    galleryImage7,
+    galleryImage8,
+    galleryImage9,
+    galleryImage10,
+    galleryImage11,
+    galleryImage12,
+    galleryImage13,
+    galleryImage14,
+    galleryImage15,
+    galleryImage16,
+    galleryImage17,
+    galleryImage18,
+    galleryImage19,
+    galleryImage20,
+    galleryImage21,
+    galleryImage22,
+    galleryImage23,
+    galleryImage24,
+    galleryImage25,
+    galleryImage26,
+    galleryImage27,
+    galleryImage28,
+    galleryImage29,
+    galleryImage30
 }

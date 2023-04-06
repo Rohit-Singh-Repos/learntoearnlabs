@@ -18,7 +18,7 @@ export const VissionAndMission = React.memo(() => {
               produce highly skilled & competent professionals and to create
               leaders and innovators for society and industry.
             </Paragraph>
-            <Heading headingClass="fw-bold">Mission</Heading>
+            <Heading headingClass="fw-bold mt-5">Mission</Heading>
             <Paragraph paragraphClass="align-justify text-15">
               To provide quality education and learning solutions to students
               and working professionals in order to enhance their practical
