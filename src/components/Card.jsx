@@ -37,22 +37,20 @@ export const CardImage = React.memo(
     return (
       <Div divClass={cardClass}>
         <Div divClass="row g-0">
-          <Div divClass="col-md-4">
+          <Div divClass="col-md-3 col-lg-3 d-flex flex-column align-items-start">
             <Image
               imagePath={imagePath}
               imageClass={imageClass}
               imageAltText={imageAltText}
             />
             {directorName && (
-              <Paragraph paragraphClass="fw-bold">{directorName}</Paragraph>
-            )}
-            {directorQualification && (
               <Paragraph paragraphClass="fw-bold">
+                {directorName} <br />
                 {directorQualification}
               </Paragraph>
             )}
           </Div>
-          <Div divClass="col-md-8">
+          <Div divClass="col-md-9 col-lg-9">
             <Div divClass="card-body">{children}</Div>
           </Div>
         </Div>

@@ -1,12 +1,13 @@
 import React from 'react'
 import { Div, Paragraph, SubHeading, Image} from "components"
+import { COVER_IMAGES } from 'assets/images'
 
 export const AboutLandingPage = React.memo(() => {
     return (
       <Div divClass="container mt-5">
         <Div divClass="row">
             <Div divClass="col-lg-12 col-md-12 col-sm-12">
-                <Image imagePath="" imageClass="" imageAltText=""/>
+                <Image imagePath={COVER_IMAGES.aboutUsImage} imageClass="img-thumbnail img-fluid mb-5" imageAltText=""/>
                 <SubHeading subheadingClass="fw-bold text-primary">All you need to know about</SubHeading>
                 <SubHeading subheadingClass="fw-bold">Learn2Earn Labs</SubHeading>
                 <Paragraph paragraphClass="align-justify text-15">The foundation of the institute was laid on the basis of providing a dynamic & vibrant learning environment to the learners where they can learn by doing and then start their earning by doing job in a reputed organization or freelancing or their own business.  The objective of an experimental lab is to produce a quality and reliable product who can fulfill the demand. Hence the founders decided to named the institute as Learn2Earn Labs, where they can focus on outcome based learning by which the learners will get better career opportunities in their respective domains.</Paragraph>

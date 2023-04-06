@@ -1,3 +1,4 @@
+// Landingpage Cover Images
 import homePageCoverImage from "assets/images/Cover Images/homepage-cover-image.webp";
 import cloudDevopsCoverImage from "assets/images/Cover Images/Cloud_and_devops_course_cover.png";
 import dataScienceCoverImage from "assets/images/Cover Images/Data_Science_Course_cover.png";
@@ -5,7 +6,9 @@ import digitalMarketingCoverImage from "assets/images/Cover Images/Digital_Marke
 import fullStackDeveloperCoverImage from "assets/images/Cover Images/full-stack-development-cover.png";
 import javaFullStackCoverImage from "assets/images/Cover Images/java_full_stack_development_course.png";
 import mernStackCoverImage from "assets/images/Cover Images/mern_stack_development_course_cover.png";
+import aboutUsImage from "assets/images/Cover Images/about-us-cover.webp";
 
+// Homepage Images
 import fullStackSoftwareImage from "assets/images/Home/digital-marketing-course-cover.webp";
 import digitalMarketingImage from "assets/images/Home/man-with-laptop-doing-programming.webp";
 import javaFullStackImage from "assets/images/Home/java-full-stack-training-program.webp";
@@ -27,6 +30,14 @@ import searchEngineOptimization from "assets/images/Home/search-engine-optimizat
 import contentMarketingImage from "assets/images/Home/content-marketing-course.webp";
 import affiliateMarketingImage from "assets/images/Home/affiliate-marketing-course.webp";
 
+// Aboutus Images
+import mohitSinghImage from "assets/images/Persons/mohit-singh-director-ninepages-techsolutions-private-limited.webp";
+import shubendraGuptaImage from "assets/images/Persons/dr-shubhendra-gupta-director-learn2earn-labs.webp";
+import uttamKumarImage from "assets/images/Persons/dr-uttam-gupta.webp";
+import rajatKumarImage from "assets/images/Persons/dr-uttam-gupta.webp";
+import peeyushImage from "assets/images/Persons/dr-uttam-gupta.webp";
+import yashImage from "assets/images/Persons/dr-uttam-gupta.webp";
+import mikinImage from "assets/images/Persons/dr-uttam-gupta.webp";
 
 export const COVER_IMAGES = {
     homePageCoverImage,
@@ -35,7 +46,8 @@ export const COVER_IMAGES = {
     digitalMarketingCoverImage,
     fullStackDeveloperCoverImage,
     javaFullStackCoverImage,
-    mernStackCoverImage
+    mernStackCoverImage,
+    aboutUsImage
 }
 
 export const HOME_PAGE_IMAGES = {
@@ -59,4 +71,14 @@ export const HOME_PAGE_IMAGES = {
     searchEngineOptimization,
     contentMarketingImage,
     affiliateMarketingImage
+}
+
+export const ABOUTUS_PAGE_IMAGES = {
+    mohitSinghImage,
+    shubendraGuptaImage,
+    uttamKumarImage,
+    rajatKumarImage,
+    peeyushImage,
+    yashImage,
+    mikinImage
 }

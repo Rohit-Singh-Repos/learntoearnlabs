@@ -4,6 +4,7 @@ import {
   Paragraph,
 } from "components";
 import { InstituteDirector } from "./../../common/DirectorsCard";
+import { ABOUTUS_PAGE_IMAGES } from "assets/images";
 
 export const DirectorsBlock = React.memo(() => {
   return (
@@ -13,8 +14,8 @@ export const DirectorsBlock = React.memo(() => {
           <InstituteDirector
             directorName="Mr. Mohit Singh"
             directorQualification="M.Tech, B.Tech (C.S.E)"
-            imagePath=""
-            imageClass=""
+            imagePath={ABOUTUS_PAGE_IMAGES.mohitSinghImage}
+            imageClass="img-thumbnail img-fluid img-dimensions mb-3"
             imageAltText=""
             cardClass=""
           >
@@ -39,8 +40,8 @@ export const DirectorsBlock = React.memo(() => {
           <InstituteDirector
             directorName="Dr. Shubhendra Gupta"
             directorQualification="Phd, B.Ed, M.Sc (Physics)"
-            imagePath=""
-            imageClass=""
+            imagePath={ABOUTUS_PAGE_IMAGES.shubendraGuptaImage}
+            imageClass="img-thumbnail img-fluid img-dimensions mb-3"
             imageAltText=""
             cardClass=""
           >
