@@ -14,6 +14,17 @@ const DevopsPage = lazy(() => import('pages/courses/devops/Devops').then(module 
 const TrainTheTrainerProgram = lazy(() => import('pages/courses/trainTheTrainer/TrainTheTrainer').then(module => ({ default: module.TrainTheTrainerProgram })));
 const DesignThinking = lazy(() => import('pages/courses/designThinking/DesignThinking').then(module => ({ default: module.DesignThinking })));
 const ProgramingFundamentals = lazy(() => import('pages/courses/programmingFundamentals/ProgramingFundamentals').then(module => ({ default: module.ProgramingFundamentals })));
+const JavaCourse = lazy(() => import('pages/courses/java/Java').then(module => ({ default: module.JavaCourse })));
+const PythonCourse = lazy(() => import('pages/courses/python/Python').then(module => ({ default: module.PythonCourse })));
+const MySQLDatabase = lazy(() => import('pages/courses/mySQLDatabase/MySQLDatabase').then(module => ({ default: module.MySQLDatabase })));
+const LinuxAndAWS = lazy(() => import('pages/courses/linuxAndAws/LinuxAndAws').then(module => ({ default: module.LinuxAndAWS })));
+const HtmlCssJsCourse = lazy(() => import('pages/courses/htmlCssJs/HtmlCssJs').then(module => ({ default: module.HtmlCssJsCourse })));
+const WordpressAndBlogging = lazy(() => import('pages/courses/wordpressAndBlogging/WordpressAndBlogging').then(module => ({ default: module.WordpressAndBlogging })));
+const GoogldAdsCourse = lazy(() => import('pages/courses/googleAds/GoogleAds').then(module => ({ default: module.GoogldAdsCourse })));
+const SocialMediaMarketing = lazy(() => import('pages/courses/socialMediaMarketing/SocialMediaMarketing').then(module => ({ default: module.SocialMediaMarketing })));
+const SearchEngineOptimization = lazy(() => import('pages/courses/searchEngineOptimization/SearchEngineOptimizaton').then(module => ({ default: module.SearchEngineOptimization })));
+const ContentMarketingCourse = lazy(() => import('pages/courses/contentMarketing/ContentMarketing').then(module => ({ default: module.ContentMarketingCourse })));
+const AffiliateMarketingCourse = lazy(() => import('pages/courses/affiliateMarketing/AffiliateMarketing').then(module => ({ default: module.AffiliateMarketingCourse })));
 const ContactPage = lazy(() => import('pages/contact/Contact').then(module => ({ default: module.ContactPage })));
 const ErrorPage = lazy(() => import('pages/404/404Page').then(module => ({ default: module.ErrorPage })));
 
@@ -36,22 +47,22 @@ export const Layout = React.memo(() => {
           <Route path="/train-the-trainer-program" element={<TrainTheTrainerProgram/>}/>
           <Route path="/design-thinking-and-ui-ux-course" element={<DesignThinking/>}/>
           <Route path="/programming-fundamentals-course" element={<ProgramingFundamentals/>}/>
-          <Route path="/java-programming-course" element={<DevopsPage/>}/>
-          <Route path="/python-programming-course" element={<DevopsPage/>}/>
-          <Route path="/mysql-database-course" element={<DevopsPage/>}/>
-          <Route path="/linux-and-aws-course" element={<DevopsPage/>}/>
-          <Route path="/html-css-javascript-course" element={<DevopsPage/>}/>
+          <Route path="/java-programming-course" element={<JavaCourse/>}/>
+          <Route path="/python-programming-course" element={<PythonCourse/>}/>
+          <Route path="/mysql-database-course" element={<MySQLDatabase/>}/>
+          <Route path="/linux-and-aws-course" element={<LinuxAndAWS/>}/>
+          <Route path="/html-css-javascript-course" element={<HtmlCssJsCourse/>}/>
           <Route path="/c-programming-course" element={<DevopsPage/>}/>
           <Route path="/cpp-programming-course" element={<DevopsPage/>}/>
           <Route path="/data-structure-and-algorithm-course" element={<DevopsPage/>}/>
           <Route path="/power-bi-course" element={<DevopsPage/>}/>
           <Route path="/mentorship-program" element={<DevopsPage/>}/>
-          <Route path="/wordpress-and-blogging-course" element={<DevopsPage/>}/>
-          <Route path="/google-ads-course" element={<DevopsPage/>}/>
-          <Route path="/social-media-marketing-course" element={<DevopsPage/>}/>
-          <Route path="/search-engine-optimization-course" element={<DevopsPage/>}/>
-          <Route path="/content-marketing-course" element={<DevopsPage/>}/>
-          <Route path="/affiliate-marketing-course" element={<DevopsPage/>}/>
+          <Route path="/wordpress-and-blogging-course" element={<WordpressAndBlogging/>}/>
+          <Route path="/google-ads-course" element={<GoogldAdsCourse/>}/>
+          <Route path="/social-media-marketing-course" element={<SocialMediaMarketing/>}/>
+          <Route path="/search-engine-optimization-course" element={<SearchEngineOptimization/>}/>
+          <Route path="/content-marketing-course" element={<ContentMarketingCourse/>}/>
+          <Route path="/affiliate-marketing-course" element={<AffiliateMarketingCourse/>}/>
           <Route path="/claim-cashback" element={<DevopsPage/>}/>
           <Route path="/verify-certificate" element={<DevopsPage/>}/>
           <Route path="*" element={<ErrorPage/>}/>

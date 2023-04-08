@@ -1,14 +1,14 @@
 import React,{Suspense,lazy} from 'react'
-import { javaSchema, coursesInputSchemas } from 'schemas';
+import { wordpressSchema, coursesInputSchemas } from 'schemas';
 
 const FallbackLoader = lazy(() => import('components/Loaders').then(module => ({ default: module.FallbackLoader })));
 const CommonPageComponent = lazy(() => import('common/commonPage/CommonPage').then(module => ({ default: module.CommonPageComponent })));
 
-export const JavaCourse = React.memo(() => {
+export const WordpressAndBlogging = React.memo(() => {
     return (
       <Suspense fallback={<FallbackLoader/>}>
           <CommonPageComponent
-            sectionData={javaSchema}
+            sectionData={wordpressSchema}
             inputSchemas={coursesInputSchemas}
           />
       </Suspense>
