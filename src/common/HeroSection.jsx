@@ -1,28 +1,67 @@
-import React from "react";
-import { Div, Image, LandingPageCard, Heading, Paragraph, Button } from "components";
+import React, { useState, useEffect } from "react";
+import {
+  Div,
+  Image,
+  LandingPageCard,
+  Heading,
+  Paragraph,
+  Button,
+} from "components";
 
 export const HeroSection = React.memo(
-  ({ headingText, paragraphText, primaryButtonText, outlinedButtonText, cardData, coverImage, imagePath }) => {
-   
+  ({
+    headingText,
+    paragraphText,
+    primaryButtonText,
+    outlinedButtonText,
+    cardData,
+    coverImage,
+    imagePath,
+  }) => {
+
+    const [mobile, setMobile] = useState(false);
+
+    const handleResize = () => {
+      if (window.innerWidth < 990) {
+        setMobile(true);
+      } else {
+        setMobile(false);
+      }
+    };
+
+    useEffect(() => {
+      window.addEventListener("resize", handleResize);
+    });
+
+    console.log("headingText",headingText)
+
     return (
       <Div divClass="row align-items-center">
         <Div divClass="col-sm-12 col-md-7 col-lg-7">
-          <Image width="1200" height="800" imagePath={coverImage ? coverImage : imagePath} imageClass="img-fluid" imageAltText="learn2earnlabs-home-cover"/>
+          <Image
+            width="1200"
+            height="800"
+            imagePath={coverImage ? coverImage : imagePath}
+            imageClass="img-fluid"
+            imageAltText="learn2earnlabs-home-cover"
+          />
         </Div>
         <Div divClass="col-sm-12 col-md-5 col-lg-5">
           {headingText && (
             <Heading headingClass="text-primary fw-bold">{headingText}</Heading>
           )}
-          {paragraphText && <Paragraph paragraphClass="fs-30 align-justify">{paragraphText}</Paragraph>}
+          {paragraphText && (
+            <Paragraph paragraphClass="fs-30 align-justify">
+              {paragraphText}
+            </Paragraph>
+          )}
           {primaryButtonText && (
-            <Div divClass="button-div">
-              <Button buttonClass="btn btn-primary rounded-0 border-0 mt-3 button">
-                {primaryButtonText}
-              </Button>
-            </Div>
+            <Button buttonClass={`btn btn-primary rounded-0 border-0 mt-3 button ${mobile ? "w-100" : ""}`}>
+              {primaryButtonText}
+            </Button>
           )}
           {outlinedButtonText && (
-            <Button buttonClass="btn btn-outline-primary rounded-0 mt-3">
+            <Button buttonClass={`btn btn-outline-primary rounded-0 mt-3 ${mobile ? "w-100" : "ms-3"}`}>
               {outlinedButtonText}
             </Button>
           )}
