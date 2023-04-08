@@ -12,19 +12,14 @@ import { ApplyNow } from "common/commonPage/CommonPageComponent9";
 export const CommonPageComponent = React.memo(
   ({
     sectionData,
-    headingText,
-    primaryButtonText,
-    outlinedButtonText,
+    // headingText,
+    // primaryButtonText,
+    // outlinedButtonText,
     inputSchemas,
   }) => {
     return (
       <>
-        <LandingPage
-          cardData={sectionData.landingPageSection}
-          headingText={headingText}
-          primaryButtonText={primaryButtonText}
-          outlinedButtonText={outlinedButtonText}
-        />
+        <LandingPage sectionData={sectionData}/>
         <CloudDevopsCareer sectionData={sectionData} />
         <TrainingRoadMap sectionData={sectionData} />
         <CareerOptions sectionData={sectionData} />

@@ -1,12 +1,17 @@
 import { uuid } from "helpers/utils/uuid"
 
 export const cloudDevopsSchema = {
-    landingPageSection:[
-        {id:uuid(),heading:"8",subHeading:"Training Modules",borderShow:true},
-        {id:uuid(),heading:"10",subHeading:"Platforms",borderShow:true},
-        {id:uuid(),heading:"4/6",subHeading:"Months Duration",borderShow:true},
-        {id:uuid(),heading:"6 LPA",subHeading:"Avg. Salary Package",borderShow:false}
-    ],
+    landingPageSection:{
+        headingText:"Cloud Computing & Devops Training Program",
+        primaryButtonText:"Apply Now",
+        outlinedButtonText:"Download Syllabus",
+        cardData:[
+            {id:uuid(),heading:"8",subHeading:"Training Modules",borderShow:true},
+            {id:uuid(),heading:"10",subHeading:"Platforms",borderShow:true},
+            {id:uuid(),heading:"4/6",subHeading:"Months Duration",borderShow:true},
+            {id:uuid(),heading:"6 LPA",subHeading:"Avg. Salary Package",borderShow:false}
+        ]
+    },
     cloudDevopsCareerSection:{
         headingText:"Why, choose Cloud & Devops as a career ?",
         cardTextData:[
@@ -131,12 +136,17 @@ export const cloudDevopsSchema = {
 }
 
 export const dataScienceSchema = {
-    landingPageSection:[
-        {id:1,heading:"12",subHeading:"Training Modules",borderShow:true},
-        {id:2,heading:"40+",subHeading:"Case Studies",borderShow:true},
-        {id:3,heading:"4/6",subHeading:"Months Duration",borderShow:true},
-        {id:4,heading:"6 LPA",subHeading:"Avg. Salary Package",borderShow:false}
-    ],
+    landingPageSection:{
+        headingText:"Cloud Computing & Devops Training Program",
+        primaryButtonText:"Apply Now",
+        outlinedButtonText:"Download Syllabus",
+        cardData:[
+            {id:1,heading:"12",subHeading:"Training Modules",borderShow:true},
+            {id:2,heading:"40+",subHeading:"Case Studies",borderShow:true},
+            {id:3,heading:"4/6",subHeading:"Months Duration",borderShow:true},
+            {id:4,heading:"6 LPA",subHeading:"Avg. Salary Package",borderShow:false}
+        ]
+    },
     cloudDevopsCareerSection:{
         headingText:"Why, choose Data Science & ML as a career ?",
         cardTextData:[
@@ -260,13 +270,17 @@ export const dataScienceSchema = {
 }
 
 export const designThinkingSchema = {
-    
-    landingPageSection:[
-        {id:1,heading:"50+",subHeading:"Exercises",borderShow:true},
-        {id:2,heading:"10+",subHeading:"Professional Tools",borderShow:true},
-        {id:3,heading:"4/6",subHeading:"Months Duration",borderShow:true},
-        {id:4,heading:"5-6 LPA",subHeading:"Avg. Salary Package",borderShow:false},
-    ],
+    landingPageSection:{
+        headingText:"Cloud Computing & Devops Training Program",
+        primaryButtonText:"Apply Now",
+        outlinedButtonText:"Download Syllabus",
+        cardData:[
+            {id:1,heading:"50+",subHeading:"Exercises",borderShow:true},
+            {id:2,heading:"10+",subHeading:"Professional Tools",borderShow:true},
+            {id:3,heading:"4/6",subHeading:"Months Duration",borderShow:true},
+            {id:4,heading:"5-6 LPA",subHeading:"Avg. Salary Package",borderShow:false},
+        ]
+    },
     cloudDevopsCareerSection:{
         headingText:"Why, choose Data Science & ML as a career ?",
         cardTextData:[
@@ -391,13 +405,17 @@ export const designThinkingSchema = {
 }
 
 export const javaFullStackSchema = {
-   
-    landingPageSection:[
-        {id:1,heading:"8",subHeading:"Training Modules",borderShow:true},
-    {id:2,heading:"5+",subHeading:"Projects",borderShow:true},
-    {id:3,heading:"4/6",subHeading:"Months Duration",borderShow:true},
-    {id:4,heading:"6 LPA",subHeading:"Avg. Salary Package",borderShow:false},
-    ],
+    landingPageSection:{
+        headingText:"Cloud Computing & Devops Training Program",
+        primaryButtonText:"Apply Now",
+        outlinedButtonText:"Download Syllabus",
+        cardData:[
+            {id:1,heading:"8",subHeading:"Training Modules",borderShow:true},
+            {id:2,heading:"5+",subHeading:"Projects",borderShow:true},
+            {id:3,heading:"4/6",subHeading:"Months Duration",borderShow:true},
+            {id:4,heading:"6 LPA",subHeading:"Avg. Salary Package",borderShow:false},
+        ]
+    },
     cloudDevopsCareerSection:{
         headingText:"Why, choose Java Full Stack as a career ?",
         cardTextData:[
@@ -521,13 +539,17 @@ export const javaFullStackSchema = {
 }
 
 export const mernStackSchema = {
-   
-    landingPageSection:[
-        {id:1,heading:"8",subHeading:"Training Modules",borderShow:true},
-    {id:2,heading:"5+",subHeading:"Projects",borderShow:true},
-    {id:3,heading:"4/6",subHeading:"Months Duration",borderShow:true},
-    {id:4,heading:"5 LPA",subHeading:"Avg. Salary Package",borderShow:false},
-    ],
+    landingPageSection:{
+        headingText:"Cloud Computing & Devops Training Program",
+        primaryButtonText:"Apply Now",
+        outlinedButtonText:"Download Syllabus",
+        cardData:[
+            {id:1,heading:"8",subHeading:"Training Modules",borderShow:true},
+            {id:2,heading:"5+",subHeading:"Projects",borderShow:true},
+            {id:3,heading:"4/6",subHeading:"Months Duration",borderShow:true},
+            {id:4,heading:"5 LPA",subHeading:"Avg. Salary Package",borderShow:false},
+        ]
+    },
     cloudDevopsCareerSection:{
         headingText:"Why, choose Data Science & ML as a career ?",
         cardTextData:[
@@ -651,13 +673,17 @@ export const mernStackSchema = {
 }
 
 export const trainTheTrainerSchema = {
-    
-    landingPageSection:[
-        {id:1,heading:"8",subHeading:"Training Modules",borderShow:true},
-    {id:2,heading:"10+",subHeading:"Tools",borderShow:true},
-    {id:3,heading:"2/3",subHeading:"Months Duration",borderShow:true},
-    {id:4,heading:"3-5 LPA",subHeading:"Avg. Salary Package",borderShow:false},
-    ],
+    landingPageSection:{
+        headingText:"Cloud Computing & Devops Training Program",
+        primaryButtonText:"Apply Now",
+        outlinedButtonText:"Download Syllabus",
+        cardData:[
+            {id:1,heading:"8",subHeading:"Training Modules",borderShow:true},
+            {id:2,heading:"10+",subHeading:"Tools",borderShow:true},
+            {id:3,heading:"2/3",subHeading:"Months Duration",borderShow:true},
+            {id:4,heading:"3-5 LPA",subHeading:"Avg. Salary Package",borderShow:false},
+        ]
+    },
     cloudDevopsCareerSection:{
         headingText:"Why, choose Digital Training as a career ?",
         cardTextData:[
@@ -779,14 +805,17 @@ export const trainTheTrainerSchema = {
 }
 
 export const HTMLCSSJSSchema = {
-    
-    landingPageSection:[
-        {id:1,heading:"5",subHeading:"Training Modules",borderShow:true},
-    {id:2,heading:"500+",subHeading:"Programs",borderShow:true},
-    {id:3,heading:"60/90",subHeading:"Days Duration",borderShow:true},
-    {id:4,heading:"10+",subHeading:"Minor Projects",borderShow:false},
-    ],
-    
+    landingPageSection:{
+        headingText:"Cloud Computing & Devops Training Program",
+        primaryButtonText:"Apply Now",
+        outlinedButtonText:"Download Syllabus",
+        cardData:[
+            {id:1,heading:"5",subHeading:"Training Modules",borderShow:true},
+            {id:2,heading:"500+",subHeading:"Programs",borderShow:true},
+            {id:3,heading:"60/90",subHeading:"Days Duration",borderShow:true},
+            {id:4,heading:"10+",subHeading:"Minor Projects",borderShow:false},
+        ]
+    },
     trainingRoadmapSection:{
         headingPrimaryText:"Training Roadmap",
         headingSecondaryText:"HTML, CSS & JS",
@@ -873,14 +902,17 @@ export const HTMLCSSJSSchema = {
 }
 
 export const JavaSchema = {
-    
-    landingPageSection:[
-        {id:1,heading:"5",subHeading:"Training Modules",borderShow:true},
-    {id:2,heading:"800+",subHeading:"Programs",borderShow:true},
-    {id:3,heading:"30/60/90",subHeading:"Days Duration",borderShow:true},
-    {id:4,heading:"5+",subHeading:"Minor Projects",borderShow:false},
-    ],
-    
+    landingPageSection:{
+        headingText:"Cloud Computing & Devops Training Program",
+        primaryButtonText:"Apply Now",
+        outlinedButtonText:"Download Syllabus",
+        cardData:[
+            {id:1,heading:"5",subHeading:"Training Modules",borderShow:true},
+            {id:2,heading:"800+",subHeading:"Programs",borderShow:true},
+            {id:3,heading:"30/60/90",subHeading:"Days Duration",borderShow:true},
+            {id:4,heading:"5+",subHeading:"Minor Projects",borderShow:false},
+        ]
+    },
     trainingRoadmapSection:{
         headingPrimaryText:"Training Roadmap",
         headingSecondaryText:"Java Programming",
@@ -967,14 +999,17 @@ export const JavaSchema = {
 }
 
 export const PythonSchema = {
-    
-    landingPageSection:[
-        {id:1,heading:"5",subHeading:"Training Modules",borderShow:true},
-    {id:2,heading:"800+",subHeading:"Programs",borderShow:true},
-    {id:3,heading:"30/60/90",subHeading:"Days Duration",borderShow:true},
-    {id:4,heading:"5+",subHeading:"Minor Projects",borderShow:false},
-    ],
-    
+    landingPageSection:{
+        headingText:"Cloud Computing & Devops Training Program",
+        primaryButtonText:"Apply Now",
+        outlinedButtonText:"Download Syllabus",
+        cardData:[
+            {id:1,heading:"5",subHeading:"Training Modules",borderShow:true},
+            {id:2,heading:"800+",subHeading:"Programs",borderShow:true},
+            {id:3,heading:"30/60/90",subHeading:"Days Duration",borderShow:true},
+            {id:4,heading:"5+",subHeading:"Minor Projects",borderShow:false},
+        ]
+    },
     trainingRoadmapSection:{
         headingPrimaryText:"Training Roadmap",
         headingSecondaryText:"Python Programming",
@@ -1061,14 +1096,17 @@ export const PythonSchema = {
 }
 
 export const LinuxSchema = {
-    
-    landingPageSection:[
-        {id:1,heading:"4",subHeading:"Training Modules",borderShow:true},
-    {id:2,heading:"300+",subHeading:"Exercises",borderShow:true},
-    {id:3,heading:"60/90",subHeading:"Days Duration",borderShow:true},
-    {id:4,heading:"5+",subHeading:"Minor Projects",borderShow:false},
-    ],
-    
+    landingPageSection:{
+        headingText:"Cloud Computing & Devops Training Program",
+        primaryButtonText:"Apply Now",
+        outlinedButtonText:"Download Syllabus",
+        cardData:[
+            {id:1,heading:"4",subHeading:"Training Modules",borderShow:true},
+            {id:2,heading:"300+",subHeading:"Exercises",borderShow:true},
+            {id:3,heading:"60/90",subHeading:"Days Duration",borderShow:true},
+            {id:4,heading:"5+",subHeading:"Minor Projects",borderShow:false},
+        ]
+    },
     trainingRoadmapSection:{
         headingPrimaryText:"Training Roadmap",
         headingSecondaryText:"Linux & AWS",
@@ -1155,14 +1193,17 @@ export const LinuxSchema = {
 }
 
 export const MySQLSchema = {
-    
-    landingPageSection:[
-        {id:1,heading:"7",subHeading:"Training Modules",borderShow:true},
-    {id:2,heading:"200+",subHeading:"Programs",borderShow:true},
-    {id:3,heading:"30/45",subHeading:"Days Duration",borderShow:true},
-    {id:4,heading:"5+",subHeading:"Minor Projects",borderShow:false},
-    ],
-    
+    landingPageSection:{
+        headingText:"Cloud Computing & Devops Training Program",
+        primaryButtonText:"Apply Now",
+        outlinedButtonText:"Download Syllabus",
+        cardData:[
+            {id:1,heading:"7",subHeading:"Training Modules",borderShow:true},
+            {id:2,heading:"200+",subHeading:"Programs",borderShow:true},
+            {id:3,heading:"30/45",subHeading:"Days Duration",borderShow:true},
+            {id:4,heading:"5+",subHeading:"Minor Projects",borderShow:false},
+        ]
+    },
     trainingRoadmapSection:{
         headingPrimaryText:"Training Roadmap",
         headingSecondaryText:"MySQL Database",
@@ -1249,14 +1290,17 @@ export const MySQLSchema = {
 }
 
 export const ProgrammingSchema = {
-    
-    landingPageSection:[
-        {id:1,heading:"5",subHeading:"Training Modules",borderShow:true},
-    {id:2,heading:"500+",subHeading:"Programs",borderShow:true},
-    {id:3,heading:"60/90",subHeading:"Days Duration",borderShow:true},
-    {id:4,heading:"10+",subHeading:"Minor Projects",borderShow:false},
-    ],
-    
+    landingPageSection:{
+        headingText:"Cloud Computing & Devops Training Program",
+        primaryButtonText:"Apply Now",
+        outlinedButtonText:"Download Syllabus",
+        cardData:[
+            {id:1,heading:"5",subHeading:"Training Modules",borderShow:true},
+            {id:2,heading:"500+",subHeading:"Programs",borderShow:true},
+            {id:3,heading:"60/90",subHeading:"Days Duration",borderShow:true},
+            {id:4,heading:"10+",subHeading:"Minor Projects",borderShow:false},
+        ]
+    },
     trainingRoadmapSection:{
         headingPrimaryText:"Training Roadmap",
         headingSecondaryText:"Programming Fundamentals",
@@ -1343,14 +1387,17 @@ export const ProgrammingSchema = {
 }
 
 export const CProgrammingSchema = {
-    
-    landingPageSection:[
-        {id:1,heading:"4",subHeading:"Training Modules",borderShow:true},
-    {id:2,heading:"300+",subHeading:"Programs",borderShow:true},
-    {id:3,heading:"30/60",subHeading:"Days Duration",borderShow:true},
-    {id:4,heading:"5+",subHeading:"Minor Projects",borderShow:false},
-    ],
-    
+    landingPageSection:{
+        headingText:"Cloud Computing & Devops Training Program",
+        primaryButtonText:"Apply Now",
+        outlinedButtonText:"Download Syllabus",
+        cardData:[
+            {id:1,heading:"4",subHeading:"Training Modules",borderShow:true},
+            {id:2,heading:"300+",subHeading:"Programs",borderShow:true},
+            {id:3,heading:"30/60",subHeading:"Days Duration",borderShow:true},
+            {id:4,heading:"5+",subHeading:"Minor Projects",borderShow:false},
+        ]
+    },
     trainingRoadmapSection:{
         headingPrimaryText:"Training Roadmap",
         headingSecondaryText:"C Programming",
@@ -1437,14 +1484,17 @@ export const CProgrammingSchema = {
 }
 
 export const CPlusSchema = {
-    
-    landingPageSection:[
-        {id:1,heading:"4",subHeading:"Training Modules",borderShow:true},
-    {id:2,heading:"300+",subHeading:"Programs",borderShow:true},
-    {id:3,heading:"30/60",subHeading:"Days Duration",borderShow:true},
-    {id:4,heading:"5+",subHeading:"Minor Projects",borderShow:false},
-    ],
-    
+    landingPageSection:{
+        headingText:"Cloud Computing & Devops Training Program",
+        primaryButtonText:"Apply Now",
+        outlinedButtonText:"Download Syllabus",
+        cardData:[
+            {id:1,heading:"4",subHeading:"Training Modules",borderShow:true},
+            {id:2,heading:"300+",subHeading:"Programs",borderShow:true},
+            {id:3,heading:"30/60",subHeading:"Days Duration",borderShow:true},
+            {id:4,heading:"5+",subHeading:"Minor Projects",borderShow:false},
+        ]
+    },
     trainingRoadmapSection:{
         headingPrimaryText:"Training Roadmap",
         headingSecondaryText:"C++ Programming",
@@ -1531,14 +1581,17 @@ export const CPlusSchema = {
 }
 
 export const DSSchema = {
-    
-    landingPageSection:[
-        {id:1,heading:"8",subHeading:"Training Modules",borderShow:true},
-    {id:2,heading:"200+",subHeading:"Programs",borderShow:true},
-    {id:3,heading:"60",subHeading:"Days Duration",borderShow:true},
-    {id:4,heading:"10+",subHeading:"Case Studies",borderShow:false},
-    ],
-    
+    landingPageSection:{
+        headingText:"Cloud Computing & Devops Training Program",
+        primaryButtonText:"Apply Now",
+        outlinedButtonText:"Download Syllabus",
+        cardData:[
+            {id:1,heading:"8",subHeading:"Training Modules",borderShow:true},
+            {id:2,heading:"200+",subHeading:"Programs",borderShow:true},
+            {id:3,heading:"60",subHeading:"Days Duration",borderShow:true},
+            {id:4,heading:"10+",subHeading:"Case Studies",borderShow:false},
+        ]
+    },
     trainingRoadmapSection:{
         headingPrimaryText:"Training Roadmap",
         headingSecondaryText:"Data Structure & Algorithms",
@@ -1625,14 +1678,17 @@ export const DSSchema = {
 }
 
 export const SocialMediaSchema = {
-    
-    landingPageSection:[
-        {id:1,heading:"7",subHeading:"Training Modules",borderShow:true},
-    {id:2,heading:"10+",subHeading:"Case Studies",borderShow:true},
-    {id:3,heading:"30/60/90",subHeading:"Days Duration",borderShow:true},
-    {id:4,heading:"5+",subHeading:"Minor Projects",borderShow:false},
-    ],
-    
+    landingPageSection:{
+        headingText:"Cloud Computing & Devops Training Program",
+        primaryButtonText:"Apply Now",
+        outlinedButtonText:"Download Syllabus",
+        cardData:[
+            {id:1,heading:"7",subHeading:"Training Modules",borderShow:true},
+            {id:2,heading:"10+",subHeading:"Case Studies",borderShow:true},
+            {id:3,heading:"30/60/90",subHeading:"Days Duration",borderShow:true},
+            {id:4,heading:"5+",subHeading:"Minor Projects",borderShow:false},
+        ]
+    },
     trainingRoadmapSection:{
         headingPrimaryText:"Training Roadmap",
         headingSecondaryText:"Social Media Marketing",
@@ -1719,14 +1775,17 @@ export const SocialMediaSchema = {
 }
 
 export const GoogleAdsSchema = {
-    
-    landingPageSection:[
-        {id:1,heading:"10",subHeading:"Training Modules",borderShow:true},
-    {id:2,heading:"10+",subHeading:"Case Studies",borderShow:true},
-    {id:3,heading:"30/60",subHeading:"Days Duration",borderShow:true},
-    {id:4,heading:"5+",subHeading:"Minor Projects",borderShow:false},
-    ],
-    
+    landingPageSection:{
+        headingText:"Cloud Computing & Devops Training Program",
+        primaryButtonText:"Apply Now",
+        outlinedButtonText:"Download Syllabus",
+        cardData:[
+            {id:1,heading:"10",subHeading:"Training Modules",borderShow:true},
+            {id:2,heading:"10+",subHeading:"Case Studies",borderShow:true},
+            {id:3,heading:"30/60",subHeading:"Days Duration",borderShow:true},
+            {id:4,heading:"5+",subHeading:"Minor Projects",borderShow:false},
+        ]
+    },
     trainingRoadmapSection:{
         headingPrimaryText:"Training Roadmap",
         headingSecondaryText:"Google Ads",
@@ -1813,14 +1872,17 @@ export const GoogleAdsSchema = {
 }
 
 export const WordpressSchema = {
-    
-    landingPageSection:[
-        {id:1,heading:"9",subHeading:"Training Modules",borderShow:true},
-    {id:2,heading:"10+",subHeading:"Case Studies",borderShow:true},
-    {id:3,heading:"30/60",subHeading:"Days Duration",borderShow:true},
-    {id:4,heading:"5+",subHeading:"Minor Projects",borderShow:false},
-    ],
-    
+    landingPageSection:{
+        headingText:"Cloud Computing & Devops Training Program",
+        primaryButtonText:"Apply Now",
+        outlinedButtonText:"Download Syllabus",
+        cardData:[
+            {id:1,heading:"9",subHeading:"Training Modules",borderShow:true},
+            {id:2,heading:"10+",subHeading:"Case Studies",borderShow:true},
+            {id:3,heading:"30/60",subHeading:"Days Duration",borderShow:true},
+            {id:4,heading:"5+",subHeading:"Minor Projects",borderShow:false},
+        ]
+    },
     trainingRoadmapSection:{
         headingPrimaryText:"Training Roadmap",
         headingSecondaryText:"WordPress & Blogging",
@@ -1907,14 +1969,17 @@ export const WordpressSchema = {
 }
 
 export const SeoSchema = {
-    
-    landingPageSection:[
-        {id:1,heading:"5",subHeading:"Training Modules",borderShow:true},
-    {id:2,heading:"10+",subHeading:"Case Studies",borderShow:true},
-    {id:3,heading:"30",subHeading:"Days Duration",borderShow:true},
-    {id:4,heading:"5+",subHeading:"Minor Projects",borderShow:false},
-    ],
-    
+    landingPageSection:{
+        headingText:"Cloud Computing & Devops Training Program",
+        primaryButtonText:"Apply Now",
+        outlinedButtonText:"Download Syllabus",
+        cardData:[
+            {id:1,heading:"5",subHeading:"Training Modules",borderShow:true},
+            {id:2,heading:"10+",subHeading:"Case Studies",borderShow:true},
+            {id:3,heading:"30",subHeading:"Days Duration",borderShow:true},
+            {id:4,heading:"5+",subHeading:"Minor Projects",borderShow:false},
+        ]
+    },
     trainingRoadmapSection:{
         headingPrimaryText:"Training Roadmap",
         headingSecondaryText:"SEO Certification",
@@ -2001,14 +2066,17 @@ export const SeoSchema = {
 }
 
 export const ContentMarketingSchema = {
-    
-    landingPageSection:[
-        {id:1,heading:"20+",subHeading:"Topics & Strategies",borderShow:true},
-    {id:2,heading:"10+",subHeading:"Case Studies",borderShow:true},
-    {id:3,heading:"30",subHeading:"Days Duration",borderShow:true},
-    {id:4,heading:"5+",subHeading:"Minor Projects",borderShow:false},
-    ],
-    
+    landingPageSection:{
+        headingText:"Cloud Computing & Devops Training Program",
+        primaryButtonText:"Apply Now",
+        outlinedButtonText:"Download Syllabus",
+        cardData:[
+            {id:1,heading:"20+",subHeading:"Topics & Strategies",borderShow:true},
+            {id:2,heading:"10+",subHeading:"Case Studies",borderShow:true},
+            {id:3,heading:"30",subHeading:"Days Duration",borderShow:true},
+            {id:4,heading:"5+",subHeading:"Minor Projects",borderShow:false},
+        ]
+    },
     trainingRoadmapSection:{
         headingPrimaryText:"Training Roadmap",
         headingSecondaryText:"Content Marketing",
@@ -2095,14 +2163,17 @@ export const ContentMarketingSchema = {
 }
 
 export const AffiliateMarketingSchema = {
-    
-    landingPageSection:[
-        {id:1,heading:"20+",subHeading:"Topics & Strategies",borderShow:true},
-        {id:2,heading:"10+",subHeading:"Case Studies",borderShow:true},
-        {id:3,heading:"30",subHeading:"Days Duration",borderShow:true},
-        {id:4,heading:"5+",subHeading:"Minor Projects",borderShow:false},
-    ],
-    
+    landingPageSection:{
+        headingText:"Cloud Computing & Devops Training Program",
+        primaryButtonText:"Apply Now",
+        outlinedButtonText:"Download Syllabus",
+        cardData:[
+            {id:1,heading:"20+",subHeading:"Topics & Strategies",borderShow:true},
+            {id:2,heading:"10+",subHeading:"Case Studies",borderShow:true},
+            {id:3,heading:"30",subHeading:"Days Duration",borderShow:true},
+            {id:4,heading:"5+",subHeading:"Minor Projects",borderShow:false},
+        ]
+    },
     trainingRoadmapSection:{
         headingPrimaryText:"Training Roadmap",
         headingSecondaryText:"Affiliate Marketing",

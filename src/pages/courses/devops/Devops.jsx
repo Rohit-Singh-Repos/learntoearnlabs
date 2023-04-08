@@ -8,9 +8,6 @@ export const DevopsPage = React.memo(() => {
     return (
       <Suspense fallback={<FallbackLoader/>}>
           <CommonPageComponent
-            headingText="Cloud Computing & Devops Training Program"
-            primaryButtonText="Apply Now"
-            outlinedButtonText="Download Syllabus"
             sectionData={cloudDevopsSchema}
             inputSchemas={coursesInputSchemas}
           />
