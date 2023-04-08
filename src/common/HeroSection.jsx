@@ -17,23 +17,10 @@ export const HeroSection = React.memo(
     cardData,
     coverImage,
     imagePath,
+    mobileDetector
   }) => {
 
-    const [mobile, setMobile] = useState(false);
-
-    const handleResize = () => {
-      if (window.innerWidth < 990) {
-        setMobile(true);
-      } else {
-        setMobile(false);
-      }
-    };
-
-    useEffect(() => {
-      window.addEventListener("resize", handleResize);
-    });
-
-    console.log("headingText",headingText)
+    
 
     return (
       <Div divClass="row align-items-center">
@@ -56,12 +43,12 @@ export const HeroSection = React.memo(
             </Paragraph>
           )}
           {primaryButtonText && (
-            <Button buttonClass={`btn btn-primary rounded-0 border-0 mt-3 button ${mobile ? "w-100" : ""}`}>
+            <Button buttonClass={`btn btn-primary rounded-0 border-0 mt-3 button ${mobileDetector ? "w-100" : ""}`}>
               {primaryButtonText}
             </Button>
           )}
           {outlinedButtonText && (
-            <Button buttonClass={`btn btn-outline-primary rounded-0 mt-3 ${mobile ? "w-100" : "ms-3"}`}>
+            <Button buttonClass={`btn btn-outline-primary rounded-0 mt-3 ${mobileDetector ? "w-100" : "ms-3"}`}>
               {outlinedButtonText}
             </Button>
           )}

@@ -2,7 +2,7 @@ import React from 'react';
 import { Div } from 'components';
 import { HeroSection } from 'common/HeroSection'
 
-export const LandingPage = React.memo(({sectionData}) => {
+export const LandingPage = React.memo(({sectionData,mobileDetector}) => {
     const { landingPageSection : {
       imagePath,
       headingText,
@@ -14,6 +14,7 @@ export const LandingPage = React.memo(({sectionData}) => {
     return (
       <Div divClass="container mb-5 mt-5">
         <HeroSection
+          mobileDetector={mobileDetector}
           imagePath={imagePath}
           cardData={cardData}
           headingText={headingText}

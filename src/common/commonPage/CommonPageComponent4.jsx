@@ -9,7 +9,7 @@ import {
   SubHeading,
 } from "components";
 
-export const CareerOptions = React.memo(({ sectionData }) => {
+export const CareerOptions = React.memo(({ sectionData, mobileDetector }) => {
   const {
     careerOptionSection: {
       headingText,
@@ -23,12 +23,12 @@ export const CareerOptions = React.memo(({ sectionData }) => {
     } = {},
   } = sectionData;
   return (
-    <Div divClass="container mt-5">
+    <Div divClass="container mt-5 pt-3">
       <Heading headingClass="fw-bold">{headingText}</Heading>
-      <Paragraph paragraphClass="align-justify">{paragraphText}</Paragraph>
-      <Div divClass="row d-flex justify-content-between">
-        <Div divClass="col-sm-12 col-md-6 col-lg-5">
-          <CommonCard cardClass="card rounded-0">
+      <Paragraph paragraphClass="align-justify mt-4 mb-4">{paragraphText}</Paragraph>
+      <Div divClass="row d-flex justify-content-between ">
+        <Div divClass="col-sm-12 col-md-6 col-lg-6">
+          <CommonCard cardClass="card rounded-0 h-100">
             <SubHeading subheadingClass="fw-bold">
               {cardHeadingText1}
             </SubHeading>
@@ -46,8 +46,8 @@ export const CareerOptions = React.memo(({ sectionData }) => {
             </UnorderedList>
           </CommonCard>
         </Div>
-        <Div divClass="col-sm-12 col-md-6 col-lg-5">
-          <CommonCard cardClass="card rounded-0">
+        <Div divClass={mobileDetector ? "col-sm-12 col-md-6 col-lg-6 mt-3" : "col-sm-12 col-md-6 col-lg-6"}>
+          <CommonCard cardClass="card rounded-0 h-100">
             <SubHeading subheadingClass="fw-bold">
               {cardHeadingText2}
             </SubHeading>

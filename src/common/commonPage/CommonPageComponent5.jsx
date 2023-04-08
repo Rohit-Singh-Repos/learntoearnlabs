@@ -20,10 +20,10 @@ export const CloudDevopsTraining = React.memo(({ sectionData }) => {
     } = {},
   } = sectionData;
   return (
-    <Div divClass="container mt-5">
+    <Div divClass="container mt-5 pt-3">
       <Div divClass="row">
         <Div divClass="col-sm-12 col-md-5 col-lg-5">
-            <CommonCard cardClass="bg-primary p-3">
+            <CommonCard cardClass="bg-primary p-3 h-100">
                 <SubHeading subheadingClass="fw-bold text-light">{headingText}</SubHeading>
                 <Paragraph paragraphClass="align-justify mt-4 text-light">{paragraphText}</Paragraph>
                 <Button buttonClass="btn btn-light rounded-0">{buttonText}</Button>

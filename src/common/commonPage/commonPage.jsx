@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { LandingPage } from "common/commonPage/CommonPageComponent1";
 import { CloudDevopsCareer } from "common/commonPage/CommonPageComponent2";
 import { TrainingRoadMap } from "common/commonPage/CommonPageComponent3";
@@ -14,12 +14,27 @@ export const CommonPageComponent = React.memo(
     sectionData,
     inputSchemas,
   }) => {
+
+    const [mobile, setMobile] = useState(false);
+
+    const handleResize = () => {
+      if (window.innerWidth < 990) {
+        setMobile(true);
+      } else {
+        setMobile(false);
+      }
+    };
+
+    useEffect(() => {
+      window.addEventListener("resize", handleResize);
+    });
+
     return (
       <>
-        <LandingPage sectionData={sectionData}/>
+        <LandingPage sectionData={sectionData} mobileDetector={mobile}/>
         <CloudDevopsCareer sectionData={sectionData} />
-        <TrainingRoadMap sectionData={sectionData} />
-        <CareerOptions sectionData={sectionData} />
+        <TrainingRoadMap sectionData={sectionData} mobileDetector={mobile}/>
+        <CareerOptions sectionData={sectionData} mobileDetector={mobile}/>
         <CloudDevopsTraining sectionData={sectionData} />
         <WhoCanJoin sectionData={sectionData} />
         <TrainingMode sectionData={sectionData} />
