@@ -1,114 +1,118 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
-html,body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.align-center{
-    text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
-.align-justify{
-    text-align: justify;
+.align-center {
+  text-align: center;
 }
 
-
-.fs-17{
-    font-size: 17px;
+.align-justify {
+  text-align: justify;
 }
 
-.fs-36{
-    font-size: 36px;
+.fs-17 {
+  font-size: 17px;
 }
 
-.fs-30{
-    font-size: 30px;
+.fs-36 {
+  font-size: 36px;
 }
 
-
-.fs-24{
-    font-size: 24px;
+.fs-30 {
+  font-size: 30px;
 }
 
-.text-15{
-    font-size: 15px;
+.fs-24 {
+  font-size: 24px;
 }
 
-.bg-1{
-    background-color: #3B4CC0;
+.text-15 {
+  font-size: 15px;
 }
-.bg-2{
-    background-color: #7B9FF9;
+
+.bg-1 {
+  background-color: #3b4cc0;
 }
-.bg-3{
-    background-color: #DDDDDD;
+.bg-2 {
+  background-color: #7b9ff9;
 }
-.bg-4{
-    background-color: #F7AD8F;
+.bg-3 {
+  background-color: #dddddd;
 }
-.bg-5{
-    background-color: #D75344;
+.bg-4 {
+  background-color: #f7ad8f;
 }
-.bg-6{
-    background-color: #B40426;
+.bg-5 {
+  background-color: #d75344;
 }
+.bg-6 {
+  background-color: #b40426;
+}
+
+/* .gap-2 {
+  gap: 10px;
+} */
 
 /* HeroSection Start */
 
-@media screen and (max-width: 992px) { 
-    .fs-30{
-        font-size: 24px;
-        text-align: center;
-        margin-top: 50px;
-    }
+@media screen and (max-width: 992px) {
+  .fs-30 {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 50px;
+  }
 
-    .button-div{
-        display: flex;
-        justify-content: center;
-    }
+  .button-div {
+    display: flex;
+    justify-content: center;
+  }
 
-    .button{
-        width: 100px;
-        height: 40px;
-    }
+  .button {
+    width: 100px;
+    height: 40px;
+  }
+
 }
 
 /* HeroSection End */
 
 /* ============================================= Homepage Starts ======================================== */
 
-@media screen and (max-width: 992px) { 
-    .align-justify-sm{
-        text-align: justify;
-    }
+@media screen and (max-width: 992px) {
+  .align-justify-sm {
+    text-align: justify;
+  }
 
-    /* WorkingExperience CSS */
+  /* WorkingExperience CSS */
 
-    .card-image-bottom-margin{
-        margin-bottom: 20px;
-    }
+  .card-image-bottom-margin {
+    margin-bottom: 20px;
+  }
 }
 
 /* ============================================= Homepage Ends ======================================== */
 
 /* ============================================= Aboutpage Starts ======================================== */
 
-.img-dimensions{
-    width:250px;
-    height: 250px;
+.img-dimensions {
+  width: 250px;
+  height: 250px;
 }
 
-.bold-text{
-    font-weight: bold;
+.bold-text {
+  font-weight: bold;
 }
 
 /* ============================================= Aboutpage Ends ======================================== */
