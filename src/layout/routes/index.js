@@ -9,6 +9,7 @@ const HomePage = lazy(() => import('pages/home/Home').then(module => ({ default:
 const AboutPage = lazy(() => import('pages/about/About').then(module => ({ default: module.AboutPage })));
 const DevopsPage = lazy(() => import('pages/courses/devops/Devops').then(module => ({ default: module.DevopsPage })));
 const ContactPage = lazy(() => import('pages/contact/Contact').then(module => ({ default: module.ContactPage })));
+const ErrorPage = lazy(() => import('pages/404/404Page').then(module => ({ default: module.ErrorPage })));
 
 export const Layout = React.memo(() => {
   return (
@@ -33,12 +34,20 @@ export const Layout = React.memo(() => {
           <Route path="/mysql-database-course" element={<DevopsPage/>}/>
           <Route path="/linux-and-aws-course" element={<DevopsPage/>}/>
           <Route path="/html-css-javascript-course" element={<DevopsPage/>}/>
+          <Route path="/c-programming-course" element={<DevopsPage/>}/>
+          <Route path="/cpp-programming-course" element={<DevopsPage/>}/>
+          <Route path="/data-structure-and-algorithm-course" element={<DevopsPage/>}/>
+          <Route path="/power-bi-course" element={<DevopsPage/>}/>
+          <Route path="/mentorship-program" element={<DevopsPage/>}/>
           <Route path="/wordpress-and-blogging-course" element={<DevopsPage/>}/>
           <Route path="/google-ads-course" element={<DevopsPage/>}/>
           <Route path="/social-media-marketing-course" element={<DevopsPage/>}/>
           <Route path="/search-engine-optimization-course" element={<DevopsPage/>}/>
           <Route path="/content-marketing-course" element={<DevopsPage/>}/>
           <Route path="/affiliate-marketing-course" element={<DevopsPage/>}/>
+          <Route path="/claim-cashback" element={<DevopsPage/>}/>
+          <Route path="/verify-certificate" element={<DevopsPage/>}/>
+          <Route path="*" element={<ErrorPage/>}/>
         </Routes>
         <Footer />
       </Suspense>
