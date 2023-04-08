@@ -137,7 +137,7 @@ export const cloudDevopsSchema = {
 
 export const dataScienceSchema = {
     landingPageSection:{
-        headingText:"Cloud Computing & Devops Training Program",
+        headingText:"Data Science and Machine Learning",
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
         cardData:[
@@ -804,7 +804,7 @@ export const trainTheTrainerSchema = {
     }
 }
 
-export const HTMLCSSJSSchema = {
+export const htmlCssJSScheme = {
     landingPageSection:{
         headingText:"Cloud Computing & Devops Training Program",
         primaryButtonText:"Apply Now",
@@ -901,7 +901,7 @@ export const HTMLCSSJSSchema = {
     }
 }
 
-export const JavaSchema = {
+export const javaSchema = {
     landingPageSection:{
         headingText:"Cloud Computing & Devops Training Program",
         primaryButtonText:"Apply Now",
@@ -998,7 +998,7 @@ export const JavaSchema = {
     }
 }
 
-export const PythonSchema = {
+export const pythonSchema = {
     landingPageSection:{
         headingText:"Cloud Computing & Devops Training Program",
         primaryButtonText:"Apply Now",
@@ -1095,7 +1095,7 @@ export const PythonSchema = {
     }
 }
 
-export const LinuxSchema = {
+export const linuxSchema = {
     landingPageSection:{
         headingText:"Cloud Computing & Devops Training Program",
         primaryButtonText:"Apply Now",
@@ -1192,7 +1192,7 @@ export const LinuxSchema = {
     }
 }
 
-export const MySQLSchema = {
+export const mySQLSchema = {
     landingPageSection:{
         headingText:"Cloud Computing & Devops Training Program",
         primaryButtonText:"Apply Now",
@@ -1289,7 +1289,7 @@ export const MySQLSchema = {
     }
 }
 
-export const ProgrammingSchema = {
+export const programmingSchema = {
     landingPageSection:{
         headingText:"Cloud Computing & Devops Training Program",
         primaryButtonText:"Apply Now",
@@ -1386,7 +1386,7 @@ export const ProgrammingSchema = {
     }
 }
 
-export const CProgrammingSchema = {
+export const cProgrammingSchema = {
     landingPageSection:{
         headingText:"Cloud Computing & Devops Training Program",
         primaryButtonText:"Apply Now",
@@ -1483,7 +1483,7 @@ export const CProgrammingSchema = {
     }
 }
 
-export const CPlusSchema = {
+export const cPlusSchema = {
     landingPageSection:{
         headingText:"Cloud Computing & Devops Training Program",
         primaryButtonText:"Apply Now",
@@ -1580,7 +1580,7 @@ export const CPlusSchema = {
     }
 }
 
-export const DSSchema = {
+export const dsSchema = {
     landingPageSection:{
         headingText:"Cloud Computing & Devops Training Program",
         primaryButtonText:"Apply Now",
@@ -1677,7 +1677,7 @@ export const DSSchema = {
     }
 }
 
-export const SocialMediaSchema = {
+export const socialMediaSchema = {
     landingPageSection:{
         headingText:"Cloud Computing & Devops Training Program",
         primaryButtonText:"Apply Now",
@@ -1774,7 +1774,7 @@ export const SocialMediaSchema = {
     }
 }
 
-export const GoogleAdsSchema = {
+export const googleAdsSchema = {
     landingPageSection:{
         headingText:"Cloud Computing & Devops Training Program",
         primaryButtonText:"Apply Now",
@@ -1871,7 +1871,7 @@ export const GoogleAdsSchema = {
     }
 }
 
-export const WordpressSchema = {
+export const wordpressSchema = {
     landingPageSection:{
         headingText:"Cloud Computing & Devops Training Program",
         primaryButtonText:"Apply Now",
@@ -1968,7 +1968,7 @@ export const WordpressSchema = {
     }
 }
 
-export const SeoSchema = {
+export const seoSchema = {
     landingPageSection:{
         headingText:"Cloud Computing & Devops Training Program",
         primaryButtonText:"Apply Now",
@@ -2065,7 +2065,7 @@ export const SeoSchema = {
     }
 }
 
-export const ContentMarketingSchema = {
+export const contentMarketingSchema = {
     landingPageSection:{
         headingText:"Cloud Computing & Devops Training Program",
         primaryButtonText:"Apply Now",
@@ -2162,7 +2162,7 @@ export const ContentMarketingSchema = {
     }
 }
 
-export const AffiliateMarketingSchema = {
+export const affiliateMarketingSchema = {
     landingPageSection:{
         headingText:"Cloud Computing & Devops Training Program",
         primaryButtonText:"Apply Now",

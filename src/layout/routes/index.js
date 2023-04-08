@@ -7,7 +7,13 @@ const Header = lazy(() => import('layout/header').then(module => ({ default: mod
 const Footer = lazy(() => import('layout/footer').then(module => ({ default: module.Footer })));
 const HomePage = lazy(() => import('pages/home/Home').then(module => ({ default: module.HomePage })));
 const AboutPage = lazy(() => import('pages/about/About').then(module => ({ default: module.AboutPage })));
+const JavaFullStack = lazy(() => import('pages/courses/javaFullStack/JavaFullStack').then(module => ({ default: module.JavaFullStack })));
+const DataScience = lazy(() => import('pages/courses/dataScience/DataScience').then(module => ({ default: module.DataScience })));
+const FullStackWebDevelopment = lazy(() => import('pages/courses/fullStack/FullStackWebDevlopment').then(module => ({ default: module.FullStackWebDevelopment })));
 const DevopsPage = lazy(() => import('pages/courses/devops/Devops').then(module => ({ default: module.DevopsPage })));
+const TrainTheTrainerProgram = lazy(() => import('pages/courses/trainTheTrainer/TrainTheTrainer').then(module => ({ default: module.TrainTheTrainerProgram })));
+const DesignThinking = lazy(() => import('pages/courses/designThinking/DesignThinking').then(module => ({ default: module.DesignThinking })));
+const ProgramingFundamentals = lazy(() => import('pages/courses/programmingFundamentals/ProgramingFundamentals').then(module => ({ default: module.ProgramingFundamentals })));
 const ContactPage = lazy(() => import('pages/contact/Contact').then(module => ({ default: module.ContactPage })));
 const ErrorPage = lazy(() => import('pages/404/404Page').then(module => ({ default: module.ErrorPage })));
 
@@ -23,12 +29,13 @@ export const Layout = React.memo(() => {
           <Route path="/practise" element={<ContactPage/>}/>
           <Route path="/full-stack-engineer-course" element={<ContactPage/>}/>
           <Route path="/digital-marketing-course" element={<ContactPage/>}/>
-          <Route path="/java-full-stack-course" element={<DevopsPage/>}/>
-          <Route path="/data-science-and-machine-learning-course" element={<DevopsPage/>}/>
-          <Route path="/full-stack-web-development-course" element={<DevopsPage/>}/>
+          <Route path="/java-full-stack-course" element={<JavaFullStack/>}/>
+          <Route path="/data-science-and-machine-learning-course" element={<DataScience/>}/>
+          <Route path="/full-stack-web-development-course" element={<FullStackWebDevelopment/>}/>
           <Route path="/cloud-computing-and-devops-course" element={<DevopsPage/>}/>
-          <Route path="/train-the-trainer-program" element={<DevopsPage/>}/>
-          <Route path="/programming-fundamentals-course" element={<DevopsPage/>}/>
+          <Route path="/train-the-trainer-program" element={<TrainTheTrainerProgram/>}/>
+          <Route path="/design-thinking-and-ui-ux-course" element={<DesignThinking/>}/>
+          <Route path="/programming-fundamentals-course" element={<ProgramingFundamentals/>}/>
           <Route path="/java-programming-course" element={<DevopsPage/>}/>
           <Route path="/python-programming-course" element={<DevopsPage/>}/>
           <Route path="/mysql-database-course" element={<DevopsPage/>}/>
