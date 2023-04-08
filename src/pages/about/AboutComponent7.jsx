@@ -75,6 +75,10 @@ export const PictureGallery = React.memo(() => {
         <Div divClass="col-lg-12 col-md-12 col-sm-12 mt-5">
           <SliderComponent 
             sliderData={sliderData}
+            contentClass="rounded-0"
+            imgClass="img-thumbnail"
+            imgWidth={250}
+            imgHeight={250}
           />
         </Div>
       </Div>

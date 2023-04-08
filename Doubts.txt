@@ -6,3 +6,11 @@ Questionaire
 => Reusable Content and Css using Schemas
 => categorize schema according to inputs / icons & content.
 => create common classes 
+
+=> Navbar
+=> submenu 
+=> blog page with backend connect
+=> seo 
+=> admin panel 
+=> resume builder
+=> quiz

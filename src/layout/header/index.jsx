@@ -21,13 +21,13 @@ export const Header = React.memo(() => {
           <NavLink to="/">
             Home
           </NavLink>
-          <NavLink to="/about">
+          <NavLink to="/about-us">
             About Us
           </NavLink>
           <NavLink to="/training">
             Training Programs
           </NavLink>
-          <NavLink to="/placements">
+          {/* <NavLink to="/placements">
             Placements
           </NavLink>
           <NavLink to="/blog">
@@ -35,11 +35,11 @@ export const Header = React.memo(() => {
           </NavLink>
           <NavLink to="/download">
             Downloads
-          </NavLink>
+          </NavLink> */}
           <NavLink to="/practise">
             Practice
           </NavLink>
-          <NavLink to="/contact">
+          <NavLink to="/contact-us">
             Contact
           </NavLink>
         </NavMenu>

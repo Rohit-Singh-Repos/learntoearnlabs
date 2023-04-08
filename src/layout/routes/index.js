@@ -17,9 +17,28 @@ export const Layout = React.memo(() => {
         <Header />
         <Routes>
           <Route path="/" element={<HomePage/>}/>
-          <Route path="/about" element={<AboutPage/>}/>
-          <Route path="/contact" element={<ContactPage/>}/>
+          <Route path="/about-us" element={<AboutPage/>}/>
+          <Route path="/contact-us" element={<ContactPage/>}/>
+          <Route path="/practise" element={<ContactPage/>}/>
+          <Route path="/full-stack-engineer-course" element={<ContactPage/>}/>
+          <Route path="/digital-marketing-course" element={<ContactPage/>}/>
+          <Route path="/java-full-stack-course" element={<DevopsPage/>}/>
+          <Route path="/data-science-and-machine-learning-course" element={<DevopsPage/>}/>
+          <Route path="/full-stack-web-development-course" element={<DevopsPage/>}/>
           <Route path="/cloud-computing-and-devops-course" element={<DevopsPage/>}/>
+          <Route path="/train-the-trainer-program" element={<DevopsPage/>}/>
+          <Route path="/programming-fundamentals-course" element={<DevopsPage/>}/>
+          <Route path="/java-programming-course" element={<DevopsPage/>}/>
+          <Route path="/python-programming-course" element={<DevopsPage/>}/>
+          <Route path="/mysql-database-course" element={<DevopsPage/>}/>
+          <Route path="/linux-and-aws-course" element={<DevopsPage/>}/>
+          <Route path="/html-css-javascript-course" element={<DevopsPage/>}/>
+          <Route path="/wordpress-and-blogging-course" element={<DevopsPage/>}/>
+          <Route path="/google-ads-course" element={<DevopsPage/>}/>
+          <Route path="/social-media-marketing-course" element={<DevopsPage/>}/>
+          <Route path="/search-engine-optimization-course" element={<DevopsPage/>}/>
+          <Route path="/content-marketing-course" element={<DevopsPage/>}/>
+          <Route path="/affiliate-marketing-course" element={<DevopsPage/>}/>
         </Routes>
         <Footer />
       </Suspense>

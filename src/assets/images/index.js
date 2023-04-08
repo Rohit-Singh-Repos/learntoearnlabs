@@ -9,8 +9,8 @@ import mernStackCoverImage from "assets/images/Cover Images/mern_stack_developme
 import aboutUsImage from "assets/images/Cover Images/about-us-cover.webp";
 
 // Homepage Images
-import fullStackSoftwareImage from "assets/images/Home/digital-marketing-course-cover.webp";
-import digitalMarketingImage from "assets/images/Home/man-with-laptop-doing-programming.webp";
+import digitalMarketingImage from "assets/images/Home/digital-marketing-course-cover.webp";
+import fullStackSoftwareImage from "assets/images/Home/man-with-laptop-doing-programming.webp";
 import javaFullStackImage from "assets/images/Home/java-full-stack-training-program.webp";
 import dataScienceAndMachineLearningImage from "assets/images/Home/data-science-and-machine-learning-course.webp";
 import mernStackDevelopmentImage from "assets/images/Home/full-stack-web-development-course.webp";
@@ -30,6 +30,41 @@ import searchEngineOptimization from "assets/images/Home/search-engine-optimizat
 import contentMarketingImage from "assets/images/Home/content-marketing-course.webp";
 import affiliateMarketingImage from "assets/images/Home/affiliate-marketing-course.webp";
 import nikhilGarg from "assets/images/Persons/nikhil-garg.webp";
+import accentureLogo from "assets/images/Home/Companies Logo/accenture-logo.webp"
+import amazonImage from "assets/images/Home/Companies Logo/amazon-logo.webp"
+import byjuImage from "assets/images/Home/Companies Logo/byju-logo.webp"
+import congnizantImage from "assets/images/Home/Companies Logo/cognizant-logo.webp"
+import commvaultImage from "assets/images/Home/Companies Logo/commvault-company-logo.webp"
+import credImage from "assets/images/Home/Companies Logo/cred-logo.webp"
+import globalLogicImage from "assets/images/Home/Companies Logo/global-logic-logo.webp"
+import googleImage from "assets/images/Home/Companies Logo/google-logo.webp"
+import hotstarImage from "assets/images/Home/Companies Logo/hotstar-logo.webp"
+import mobileProgrammingImage from "assets/images/Home/Companies Logo/mobile-programming-logo.webp"
+import morganStanley from "assets/images/Home/Companies Logo/morgan-stanley-logo.webp"
+import nagarrowImage from "assets/images/Home/Companies Logo/nagarro-logo.webp"
+import nttDataImage from "assets/images/Home/Companies Logo/ntt-data-company-logo.webp"
+import oyoImage from "assets/images/Home/Companies Logo/oyo-rooms-logo.webp"
+import paytmImage from "assets/images/Home/Companies Logo/paytm-logo.webp"
+import publicSapientImage from "assets/images/Home/Companies Logo/public-is-sapient-logo.webp"
+import tataConsultancyImage from "assets/images/Home/Companies Logo/tata-consultancy-services-logo.webp"
+import uberImage from "assets/images/Home/Companies Logo/uber-logo.webp"
+import urbanCompanyImage from "assets/images/Home/Companies Logo/urbam-company-logo.webp"
+import vedantuImage from "assets/images/Home/Companies Logo/vedantu-logo.webp"
+import zomatoImage from "assets/images/Home/Companies Logo/zomato-logo.webp"
+import aditiImage from "assets/images/Students/aditi-khandelwal.webp"
+import amishaImahe from "assets/images/Students/amisha-singh.webp"
+import faisalImage from "assets/images/Students/faisal-iqbal.webp"
+import latikaImage from "assets/images/Students/latika-sharma.webp"
+import mansiImage from "assets/images/Students/mansi-tomar.webp"
+import mohitImage from "assets/images/Students/mohit-gulati.webp"
+import mukulImage from "assets/images/Students/mukul-gupta.webp"
+import prachiImage from "assets/images/Students/prachi-singhal.webp"
+import rajatImage from "assets/images/Students/rajat-sharma.webp"
+import ridhimaImage from "assets/images/Students/riddhima-barsaiyan.webp"
+import rohitImage from "assets/images/Students/rohit-sikarwaar.webp"
+import shanuImage from "assets/images/Students/shanu-pareek.webp"
+import shivangiImage from "assets/images/Students/shivangi-gupta.webp"
+import tanyaImage from "assets/images/Students/tanya-jain.webp"
 
 // Aboutus Images
 import mohitSinghImage from "assets/images/Persons/mohit-singh-director-ninepages-techsolutions-private-limited.webp";
@@ -103,7 +138,42 @@ export const HOME_PAGE_IMAGES = {
     searchEngineOptimization,
     contentMarketingImage,
     affiliateMarketingImage,
-    nikhilGarg
+    nikhilGarg,
+    accentureLogo,
+    amazonImage,
+    byjuImage,
+    congnizantImage,
+    commvaultImage,
+    credImage,
+    globalLogicImage,
+    googleImage,
+    hotstarImage,
+    mobileProgrammingImage,
+    morganStanley,
+    nagarrowImage,
+    nttDataImage,
+    oyoImage,
+    paytmImage,
+    publicSapientImage,
+    tataConsultancyImage,
+    uberImage,
+    urbanCompanyImage,
+    vedantuImage,
+    zomatoImage,
+    aditiImage,
+    amishaImahe,
+    faisalImage,
+    latikaImage,
+    mansiImage,
+    mohitImage,
+    mukulImage,
+    prachiImage,
+    rajatImage,
+    ridhimaImage,
+    rohitImage,
+    shanuImage,
+    shivangiImage,
+    tanyaImage
 }
 
 export const ABOUTUS_PAGE_IMAGES = {

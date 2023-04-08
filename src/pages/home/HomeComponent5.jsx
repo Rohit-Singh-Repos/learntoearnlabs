@@ -22,17 +22,17 @@ export const TrainingPrograms = React.memo(() => {
       </Div>
       <Div divClass="row mt-5 pt-2">
         <Div divClass="col-lg-4 col-md-6 col-sm-12 mb-2">
-          <LinkComponent pathName="/cloud-computing-and-devops-course">
+          <LinkComponent pathName="/java-full-stack-course">
             <CommonCard cardClass="card d-flex align-items-center rounded-0">
               <Image width="200" height="200" imagePath={HOME_PAGE_IMAGES.javaFullStackImage} imageClass="img-fluid" imageAltText=""/>
               <Paragraph paragraphClass="text-dark fw-bold text-center pt-2 mb-2 text-15">
-                Java FullStack
+                Java Full Stack
               </Paragraph>
             </CommonCard>
           </LinkComponent>
         </Div>
         <Div divClass="col-lg-4 col-md-6 col-sm-12 mb-2">
-          <LinkComponent pathName="/cloud-computing-and-devops-course">
+          <LinkComponent pathName="/data-science-and-machine-learning-course">
             <CommonCard cardClass="card d-flex align-items-center rounded-0">
               <Image width="200" height="200" imagePath={HOME_PAGE_IMAGES.dataScienceAndMachineLearningImage} imageClass="img-fluid" imageAltText=""/>
               <Paragraph paragraphClass="text-dark fw-bold text-center pt-2 mb-2 text-15">
@@ -42,11 +42,11 @@ export const TrainingPrograms = React.memo(() => {
           </LinkComponent>
         </Div>
         <Div divClass="col-lg-4 col-md-6 col-sm-12 mb-2">
-          <LinkComponent pathName="/cloud-computing-and-devops-course">
+          <LinkComponent pathName="/full-stack-web-development-course">
             <CommonCard cardClass="card d-flex align-items-center rounded-0">
               <Image width="200" height="200" imagePath={HOME_PAGE_IMAGES.mernStackDevelopmentImage} imageClass="img-fluid" imageAltText=""/>
               <Paragraph paragraphClass="text-dark fw-bold text-center pt-2 mb-2 text-15">
-                FullStack Web Development
+                Full Stack Web Development
               </Paragraph>
             </CommonCard>
           </LinkComponent>
@@ -56,15 +56,13 @@ export const TrainingPrograms = React.memo(() => {
             <CommonCard cardClass="card d-flex align-items-center rounded-0">
               <Image width="200" height="200" imagePath={HOME_PAGE_IMAGES.cloudComputingImage} imageClass="img-fluid" imageAltText=""/>
               <Paragraph paragraphClass="text-dark fw-bold text-center pt-2 mb-2 text-15">
-                
                   Cloud Computing & Devops
-     
               </Paragraph>
             </CommonCard>
           </LinkComponent>
         </Div>
         <Div divClass="col-lg-4 col-md-6 col-sm-12 mb-2">
-          <LinkComponent pathName="/cloud-computing-and-devops-course">
+          <LinkComponent pathName="/train-the-trainer-program">
             <CommonCard cardClass="card d-flex align-items-center rounded-0">
               <Image width="200" height="200" imagePath={HOME_PAGE_IMAGES.trainTheTrainerImage} imageClass="img-fluid" imageAltText=""/>
               <Paragraph paragraphClass="text-dark fw-bold text-center pt-2 mb-2 text-15">
@@ -74,7 +72,7 @@ export const TrainingPrograms = React.memo(() => {
           </LinkComponent>
         </Div>
         <Div divClass="col-lg-4 col-md-6 col-sm-12 mb-2">
-          <LinkComponent pathName="/cloud-computing-and-devops-course">
+          <LinkComponent pathName="/design-thinking-and-ui-ux-course">
             <CommonCard cardClass="card d-flex align-items-center rounded-0">
               <Image width="200" height="200" imagePath={HOME_PAGE_IMAGES.designThinkingImage} imageClass="img-fluid" imageAltText=""/>
               <Paragraph paragraphClass="text-dark fw-bold text-center pt-2 mb-2 text-15">
