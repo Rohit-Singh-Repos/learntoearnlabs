@@ -1,3 +1,4 @@
+import { COVER_IMAGES } from "assets/images"
 import { uuid } from "helpers/utils/uuid"
 
 export const cloudDevopsSchema = {
@@ -406,6 +407,7 @@ export const designThinkingSchema = {
 
 export const javaFullStackSchema = {
     landingPageSection:{
+        imagePath:COVER_IMAGES.javaFullStackCoverImage,
         headingText:"Cloud Computing & Devops Training Program",
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",

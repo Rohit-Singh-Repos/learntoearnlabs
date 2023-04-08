@@ -2,11 +2,12 @@ import React from "react";
 import { Div, Image, LandingPageCard, Heading, Paragraph, Button } from "components";
 
 export const HeroSection = React.memo(
-  ({ headingText, paragraphText, primaryButtonText, outlinedButtonText, cardData, coverImage }) => {
+  ({ headingText, paragraphText, primaryButtonText, outlinedButtonText, cardData, coverImage, imagePath }) => {
+   
     return (
       <Div divClass="row align-items-center">
         <Div divClass="col-sm-12 col-md-7 col-lg-7">
-          <Image width="1200" height="800" imagePath={coverImage} imageClass="img-fluid" imageAltText="learn2earnlabs-home-cover"/>
+          <Image width="1200" height="800" imagePath={coverImage ? coverImage : imagePath} imageClass="img-fluid" imageAltText="learn2earnlabs-home-cover"/>
         </Div>
         <Div divClass="col-sm-12 col-md-5 col-lg-5">
           {headingText && (

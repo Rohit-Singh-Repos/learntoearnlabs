@@ -1,11 +1,11 @@
 // Landingpage Cover Images
-import homePageCoverImage from "assets/images/Cover Images/homepage-cover-image.webp";
-import cloudDevopsCoverImage from "assets/images/Cover Images/Cloud_and_devops_course_cover.png";
-import dataScienceCoverImage from "assets/images/Cover Images/Data_Science_Course_cover.png";
-import digitalMarketingCoverImage from "assets/images/Cover Images/Digital_Marketing_course_cover.png";
-import fullStackDeveloperCoverImage from "assets/images/Cover Images/full-stack-development-cover.png";
-import javaFullStackCoverImage from "assets/images/Cover Images/java_full_stack_development_course.png";
-import mernStackCoverImage from "assets/images/Cover Images/mern_stack_development_course_cover.png";
+import homePageCoverImage from "assets/images/Cover Images/learn2earn-homepage-cover.webp";
+import cloudDevopsCoverImage from "assets/images/Cover Images/Cloud-and-devops-cover.webp";
+import dataScienceCoverImage from "assets/images/Cover Images/data-science-cover.webp";
+import digitalMarketingCoverImage from "assets/images/Cover Images/digital-marketing-cover.webp";
+import fullStackEngineerCoverImage from "assets/images/Cover Images/full-stack-development-cover.webp";
+import javaFullStackCoverImage from "assets/images/Cover Images/java-full-stack-development-cover.webp";
+import mernStackCoverImage from "assets/images/Cover Images/mern-stack-development-cover.webp";
 import aboutUsImage from "assets/images/Cover Images/about-us-cover.webp";
 
 // Homepage Images
@@ -111,7 +111,7 @@ export const COVER_IMAGES = {
     cloudDevopsCoverImage,
     dataScienceCoverImage,
     digitalMarketingCoverImage,
-    fullStackDeveloperCoverImage,
+    fullStackEngineerCoverImage,
     javaFullStackCoverImage,
     mernStackCoverImage,
     aboutUsImage

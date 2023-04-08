@@ -14,3 +14,5 @@ Questionaire
 => admin panel 
 => resume builder
 => quiz
+=> server images
+=> optimize images using reactjs

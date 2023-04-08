@@ -12,9 +12,6 @@ import { ApplyNow } from "common/commonPage/CommonPageComponent9";
 export const CommonPageComponent = React.memo(
   ({
     sectionData,
-    // headingText,
-    // primaryButtonText,
-    // outlinedButtonText,
     inputSchemas,
   }) => {
     return (
