@@ -10,7 +10,7 @@ import {
   Button,
 } from "components";
 
-export const TrainingMode = React.memo(({ sectionData }) => {
+export const TrainingMode = React.memo(({ sectionData, mobileDetector }) => {
   const {
     trainingModeSection: {
       headingText,
@@ -40,8 +40,8 @@ export const TrainingMode = React.memo(({ sectionData }) => {
                 <></>
               )}
             </UnorderedList>
-            <Div divClass="d-grid mt-5">
-              <Button buttonClass="btn btn-primary rounded-0 border-0 mt-5">
+            <Div divClass={mobileDetector ? "d-grid gap-2" : "d-grid gap-2 col-6 mx-auto mt-5"}>
+              <Button buttonClass="btn btn-primary rounded-0 border-0">
                 {buttonText1}
               </Button>
             </Div>
@@ -51,13 +51,12 @@ export const TrainingMode = React.memo(({ sectionData }) => {
           <CommonCard cardClass="card rounded-0 bg-primary text-white p-4 h-100">
             <Heading headingClass="fw-bold fs-25 text-center">{headingText2}</Heading>
             <Div divClass="col-sm-4 col-md-4 col-lg-4"></Div>
-            <Div divClass="col-sm-8 col-md-8 col-lg-8 mt-5">
+            <Div divClass={mobileDetector ? "col-sm-8 col-md-8 col-lg-8 mt-5 pt-3" : "col-sm-8 col-md-8 col-lg-8 mt-5 mb-5 pb-5"}>
               <Paragraph paragraphClass="fw-bold">{addressHeading}</Paragraph>
               <Paragraph>{addressText}</Paragraph>
               <Paragraph>{phoneText}</Paragraph>
-              
             </Div>
-            <Div divClass="d-grid mt-5">
+            <Div divClass={mobileDetector ? "d-grid gap-2" : "d-grid mt-5d-grid col-6 mx-auto"}>
                 <Button buttonClass="btn btn-outline-light rounded-0">
                   {buttonText2}
                 </Button>

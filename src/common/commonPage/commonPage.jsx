@@ -37,7 +37,7 @@ export const CommonPageComponent = React.memo(
         <CareerOptions sectionData={sectionData} mobileDetector={mobile}/>
         <CloudDevopsTraining sectionData={sectionData} mobileDetector={mobile}/>
         <WhoCanJoin sectionData={sectionData} />
-        <TrainingMode sectionData={sectionData} />
+        <TrainingMode sectionData={sectionData} mobileDetector={mobile}/>
         <ProgramDetails sectionData={sectionData} inputSchemas={inputSchemas} />
         <ApplyNow sectionData={sectionData} inputSchemas={inputSchemas}/>
       </>
