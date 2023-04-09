@@ -67,6 +67,10 @@ body {
   bottom: 10%;
 }
 
+
+.bg-0{
+  background-color: #0D6EFD;
+}
 .bg-1 {
   background-color: #3b4cc0;
 }
