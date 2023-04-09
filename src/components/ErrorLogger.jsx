@@ -2,7 +2,6 @@ import React from 'react'
 import { ErrorBoundary } from 'react-error-boundary'
 
 const ErrorFallbackComponent = React.memo(({error}) => {
-  console.log("errorData",)
   return(
     <div>
         <h1>Something Went Wrong</h1>

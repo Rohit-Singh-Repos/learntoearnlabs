@@ -8,8 +8,8 @@ const loaderContainer = document.getElementById("loader");
 
 export const FallbackLoader = React.memo(() => {
     return (
-      <div className="modal" style={{display:"block"}}>
-        <Lottie animationData={Loader} loop={true} />
+      <div className="modal" style={{display:"flex",justifyContent:"center",alignItems:"center", width:"100%",height:"100%"}}>
+        <Lottie animationData={Loader} loop={true} style={{width:"300px",height:"300px"}}/>
       </div>
     );
 })

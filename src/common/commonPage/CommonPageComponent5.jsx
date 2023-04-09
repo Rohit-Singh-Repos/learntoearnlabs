@@ -7,7 +7,6 @@ import {
   Button,
   Image,
 } from "components";
-import { uuid } from "helpers/utils/uuid";
 
 export const CloudDevopsTraining = React.memo(
   ({ sectionData, mobileDetector }) => {
@@ -25,7 +24,7 @@ export const CloudDevopsTraining = React.memo(
         <Div divClass="row">
           <Div divClass="col-sm-12 col-md-5 col-lg-5">
             <CommonCard cardClass="bg-primary p-3 h-100 pt-5 ps-5 pe-5 d-flex">
-              <SubHeading subheadingClass="fw-bold text-light text-center fs-30">
+              <SubHeading subheadingClass="fw-bold text-light text-center fs-25">
                 {headingText}
               </SubHeading>
               <Paragraph paragraphClass="align-justify mt-4 text-light">
@@ -51,7 +50,7 @@ export const CloudDevopsTraining = React.memo(
           >
             {cardData && cardData.length !== 0 ? (
               cardData.map((item) => (
-                <Div key={uuid()} divClass="d-flex mb-2">
+                <Div key={item.id} divClass="d-flex mb-2">
                   <Div divClass="col-sm-2 col-md-2 col-lg-2">
                     <Image
                       imagePath={item.imagePath}

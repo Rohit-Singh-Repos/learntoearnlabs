@@ -20,8 +20,6 @@ export const HeroSection = React.memo(
     mobileDetector
   }) => {
 
-    
-
     return (
       <Div divClass="row align-items-center">
         <Div divClass="col-sm-12 col-md-7 col-lg-6">

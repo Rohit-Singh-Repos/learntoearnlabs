@@ -35,7 +35,7 @@ export const CareerOptions = React.memo(({ sectionData, mobileDetector }) => {
             <Paragraph paragraphClass="align-justify">
               {cardParagraphText1}
             </Paragraph>
-            <UnorderedList>
+            <UnorderedList unorderedListClass="mt-3">
               {cardListTextData1 && cardListTextData1.length !== 0 ? (
                 cardListTextData1.map((item) => (
                   <ListItem key={item.id}>{item.listText}</ListItem>
@@ -54,7 +54,7 @@ export const CareerOptions = React.memo(({ sectionData, mobileDetector }) => {
             <Paragraph paragraphClass="align-justify">
               {cardParagraphText2}
             </Paragraph>
-            <UnorderedList>
+            <UnorderedList unorderedListClass="mt-5">
               {cardListTextData2 && cardListTextData2.length !== 0 ? (
                 cardListTextData2.map((item) => (
                   <ListItem key={item.id}>{item.listText}</ListItem>

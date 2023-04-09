@@ -7,6 +7,7 @@ import fullStackEngineerCoverImage from "assets/images/Cover Images/full-stack-d
 import javaFullStackCoverImage from "assets/images/Cover Images/java-full-stack-development-cover.webp";
 import mernStackCoverImage from "assets/images/Cover Images/mern-stack-development-cover.webp";
 import aboutUsImage from "assets/images/Cover Images/about-us-cover.webp";
+// import designThinkingCoverImage from "assets/images/Cover Images";
 
 // Homepage Images
 import digitalMarketingImage from "assets/images/Home/digital-marketing-course-cover.webp";

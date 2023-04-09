@@ -17,7 +17,7 @@ export const CloudDevopsCareer = React.memo(({
             <Div divClass="col-sm-12 col-md-5 col-lg-5 mt-4">
                {
                 cardTextData && cardTextData.length !== 0 ? cardTextData.map((item) => (
-                  <CommonCard key={item.id} cardClass="card mb-3 rounded-0 bg-light text-center fw-bold">
+                  <CommonCard key={item.id} cardClass="card mb-4 pt-1 pb-1 rounded-0 bg-light text-center fw-bold">
                     {item.cardText}
                   </CommonCard>
                 )) : <></>
@@ -27,7 +27,7 @@ export const CloudDevopsCareer = React.memo(({
                 <UnorderedList>
                     {
                       listItemData && listItemData.length !== 0 ? listItemData.map((item) => (
-                        <ListItem listItemClass="align-justify">{item.listText}</ListItem>
+                        <ListItem key={item.id} listItemClass="align-justify mb-3">{item.listText}</ListItem>
                       )) : <></>
                     }
                 </UnorderedList>

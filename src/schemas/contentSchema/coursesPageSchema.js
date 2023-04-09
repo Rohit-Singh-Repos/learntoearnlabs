@@ -3,6 +3,7 @@ import { COURSES_PAGE_IMAGES, COVER_IMAGES } from "assets/images"
 
 export const cloudDevopsSchema = {
     landingPageSection:{
+        imagePath:COVER_IMAGES.cloudDevopsCoverImage,
         headingText:"Cloud Computing & Devops Training Program",
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
@@ -70,11 +71,11 @@ export const cloudDevopsSchema = {
         paragraphText:"This program is designed to train students with the skills and experience to work with virtual machines, cloud services, containers, version control system & DevOps tools.",
         buttonText:"Download Syllabus",
         cardData:[
-            {id:uuid(),imagePath:"",subheadingText:"Practical Based Sessions",paragraphText:"Training program available in four months & six months duration"},
-            {id:uuid(),imagePath:"",subheadingText:"Dummy Projects",paragraphText:"To build your hands-on expertise & portfolio"},
-            {id:uuid(),imagePath:"",subheadingText:"Resume Building Assistance",paragraphText:"To create an attractive resume for you"},
-            {id:uuid(),imagePath:"",subheadingText:"Interview Preparation",paragraphText:"So you can present yourself in a better way"},
-            {id:uuid(),imagePath:"",subheadingText:"Mentoring & Job Assistance",paragraphText:"To help you in getting good career or placements"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage1,subheadingText:"Practical Based Sessions",paragraphText:"Training program available in four months & six months duration"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage2,subheadingText:"Dummy Projects",paragraphText:"To build your hands-on expertise & portfolio"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage3,subheadingText:"Resume Building Assistance",paragraphText:"To create an attractive resume for you"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage4,subheadingText:"Interview Preparation",paragraphText:"So you can present yourself in a better way"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage5,subheadingText:"Mentoring & Job Assistance",paragraphText:"To help you in getting good career or placements"},
         ]
     },
     whoCanJoinSection:{
@@ -119,8 +120,10 @@ export const cloudDevopsSchema = {
         },
         discountAndOffersSection:{
             discountHeadingText:"Discount & Offers",
-            cardText1:"25% Cashback Available",
-            cardText2:"Work Incentives"
+            discountCard:[
+                {id:uuid(),cardText:"25% Cashback Available",cardImage:COURSES_PAGE_IMAGES.cashbackImage},
+                {id:uuid(),cardText:"Work Incentives",cardImage:COURSES_PAGE_IMAGES.workIncentivesImage},
+            ]
         }
     },
     applyNowSection:{
@@ -138,6 +141,7 @@ export const cloudDevopsSchema = {
 
 export const dataScienceSchema = {
     landingPageSection:{
+        imagePath:COVER_IMAGES.dataScienceCoverImage,
         headingText:"Data Science and Machine Learning",
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
@@ -203,12 +207,13 @@ export const dataScienceSchema = {
     cloudDevopsTrainingSection:{
         headingText:"Data Science and Machine Learning Training Program",
         paragraphText:"This program is designed to train students with the skills and experience to extract insights from the data and develop predictive models for decision making.",
+        buttonText:"Download Syllabus",
         cardData:[
-            {id:uuid(),imagePath:"",subheadingText:"Practical Based Sessions",paragraphText:"Training program available in four months & six months duration"},
-            {id:uuid(),imagePath:"",subheadingText:"Dummy Projects",paragraphText:"To build your hands-on expertise & portfolio"},
-            {id:uuid(),imagePath:"",subheadingText:"Resume Building Assistance",paragraphText:"To create an attractive resume for you"},
-            {id:uuid(),imagePath:"",subheadingText:"Interview Preparation",paragraphText:"So you can present yourself in a better way"},
-            {id:uuid(),imagePath:"",subheadingText:"Mentoring & Job Assistance",paragraphText:"To help you in getting good career or placements"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage1,subheadingText:"Practical Based Sessions",paragraphText:"Training program available in four months & six months duration"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage2,subheadingText:"Dummy Projects",paragraphText:"To build your hands-on expertise & portfolio"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage3,subheadingText:"Resume Building Assistance",paragraphText:"To create an attractive resume for you"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage4,subheadingText:"Interview Preparation",paragraphText:"So you can present yourself in a better way"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage5,subheadingText:"Mentoring & Job Assistance",paragraphText:"To help you in getting good career or placements"},
         ]
     },
     whoCanJoinSection:{
@@ -253,8 +258,10 @@ export const dataScienceSchema = {
         },
         discountAndOffersSection:{
             discountHeadingText:"Discount & Offers",
-            cardText1:"25% Cashback Available",
-            cardText2:"Work Incentives"
+            discountCard:[
+                {id:uuid(),cardText:"25% Cashback Available",cardImage:COURSES_PAGE_IMAGES.cashbackImage},
+                {id:uuid(),cardText:"Work Incentives",cardImage:COURSES_PAGE_IMAGES.workIncentivesImage},
+            ]
         }
     },
     applyNowSection:{
@@ -272,7 +279,8 @@ export const dataScienceSchema = {
 
 export const designThinkingSchema = {
     landingPageSection:{
-        headingText:"Cloud Computing & Devops Training Program",
+        imagePath:COVER_IMAGES.digitalMarketingCoverImage,
+        headingText:"Design Thinking & UI/UX Training Program",
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
         cardData:[
@@ -283,7 +291,7 @@ export const designThinkingSchema = {
         ]
     },
     cloudDevopsCareerSection:{
-        headingText:"Why, choose Data Science & ML as a career ?",
+        headingText:"Why, You Should Join Design Thinking & UI/UX ?",
         cardTextData:[
             {id:uuid(),cardText:"High Demand"},
             {id:uuid(),cardText:"Creative & Innovative"},
@@ -337,12 +345,13 @@ export const designThinkingSchema = {
     cloudDevopsTrainingSection:{
         headingText:"Design Thinking & UI/UX Training Program",
         paragraphText:"This program is designed to train students with the skills and experience to design products or services by focusing on user experiences, engagement, retention, and loyalty.",
+        buttonText:"Download Syllabus",
         cardData:[
-            {id:uuid(),imagePath:"",subheadingText:"Practical Based Sessions",paragraphText:"Training program available in four months & six months duration"},
-            {id:uuid(),imagePath:"",subheadingText:"Dummy Projects",paragraphText:"To build your hands-on expertise & portfolio"},
-            {id:uuid(),imagePath:"",subheadingText:"Resume Building Assistance",paragraphText:"To create an attractive resume for you"},
-            {id:uuid(),imagePath:"",subheadingText:"Interview Preparation",paragraphText:"So you can present yourself in a better way"},
-            {id:uuid(),imagePath:"",subheadingText:"Mentoring & Job Assistance",paragraphText:"To help you in getting good career or placements"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage1,subheadingText:"Practical Based Sessions",paragraphText:"Training program available in four months & six months duration"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage2,subheadingText:"Dummy Projects",paragraphText:"To build your hands-on expertise & portfolio"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage3,subheadingText:"Resume Building Assistance",paragraphText:"To create an attractive resume for you"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage4,subheadingText:"Interview Preparation",paragraphText:"So you can present yourself in a better way"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage5,subheadingText:"Mentoring & Job Assistance",paragraphText:"To help you in getting good career or placements"},
         ]
     },
     whoCanJoinSection:{
@@ -388,8 +397,10 @@ export const designThinkingSchema = {
         },
         discountAndOffersSection:{
             discountHeadingText:"Discount & Offers",
-            cardText1:"25% Cashback Available",
-            cardText2:"Work Incentives"
+            discountCard:[
+                {id:uuid(),cardText:"25% Cashback Available",cardImage:COURSES_PAGE_IMAGES.cashbackImage},
+                {id:uuid(),cardText:"Work Incentives",cardImage:COURSES_PAGE_IMAGES.workIncentivesImage},
+            ]
         }
     },
     applyNowSection:{
@@ -563,7 +574,8 @@ export const javaFullStackSchema = {
 
 export const mernStackSchema = {
     landingPageSection:{
-        headingText:"Cloud Computing & Devops Training Program",
+        imagePath:COVER_IMAGES.mernStackCoverImage,
+        headingText:"Full Stack Web Development with MERN",
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
         cardData:[
@@ -574,7 +586,7 @@ export const mernStackSchema = {
         ]
     },
     cloudDevopsCareerSection:{
-        headingText:"Why, choose Data Science & ML as a career ?",
+        headingText:"Why, choose full stack web development as a career ?",
         cardTextData:[
             {id:uuid(),cardText:"Universal Demand"},
             {id:uuid(),cardText:"Opportunities for Innovation"},
@@ -628,12 +640,13 @@ export const mernStackSchema = {
     cloudDevopsTrainingSection:{
         headingText:"Full Stack Web Development Training Program",
         paragraphText:"This program is designed to train students with the skills and experience to develop web applications by working with front-end, back-end along with database connectivity and management.",
+        buttonText:"Download Syllabus",
         cardData:[
-            {id:uuid(),imagePath:"",subheadingText:"Practical Based Sessions",paragraphText:"Training program available in four months & six months duration"},
-            {id:uuid(),imagePath:"",subheadingText:"Dummy Projects",paragraphText:"To build your hands-on expertise & portfolio"},
-            {id:uuid(),imagePath:"",subheadingText:"Resume Building Assistance",paragraphText:"To create an attractive resume for you"},
-            {id:uuid(),imagePath:"",subheadingText:"Interview Preparation",paragraphText:"So you can present yourself in a better way"},
-            {id:uuid(),imagePath:"",subheadingText:"Mentoring & Job Assistance",paragraphText:"To help you in getting good career or placements"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage1,subheadingText:"Practical Based Sessions",paragraphText:"Training program available in four months & six months duration"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage2,subheadingText:"Dummy Projects",paragraphText:"To build your hands-on expertise & portfolio"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage3,subheadingText:"Resume Building Assistance",paragraphText:"To create an attractive resume for you"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage4,subheadingText:"Interview Preparation",paragraphText:"So you can present yourself in a better way"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage5,subheadingText:"Mentoring & Job Assistance",paragraphText:"To help you in getting good career or placements"},
         ]
     },
     whoCanJoinSection:{
@@ -678,8 +691,10 @@ export const mernStackSchema = {
         },
         discountAndOffersSection:{
             discountHeadingText:"Discount & Offers",
-            cardText1:"25% Cashback Available",
-            cardText2:"Work Incentives"
+            discountCard:[
+                {id:uuid(),cardText:"25% Cashback Available",cardImage:COURSES_PAGE_IMAGES.cashbackImage},
+                {id:uuid(),cardText:"Work Incentives",cardImage:COURSES_PAGE_IMAGES.workIncentivesImage},
+            ]
         }
     },
     applyNowSection:{
@@ -697,7 +712,8 @@ export const mernStackSchema = {
 
 export const trainTheTrainerSchema = {
     landingPageSection:{
-        headingText:"Cloud Computing & Devops Training Program",
+        imagePath:COVER_IMAGES.digitalMarketingCoverImage,
+        headingText:"Train The Trainer Program (Become a digital trainer)",
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
         cardData:[
@@ -760,12 +776,13 @@ export const trainTheTrainerSchema = {
     cloudDevopsTrainingSection:{
         headingText:"Train The Trainer Training Program",
         paragraphText:"This program is designed to train students with the skills and experience to work in diverse areas from digital content design & development to successfully training delivery through digital platforms.",
+        buttonText:"Download Syllabus",
         cardData:[
-            {id:uuid(),imagePath:"",subheadingText:"Practical Based Sessions",paragraphText:"Training program available in four months & six months duration"},
-            {id:uuid(),imagePath:"",subheadingText:"Dummy Projects",paragraphText:"To build your hands-on expertise & portfolio"},
-            {id:uuid(),imagePath:"",subheadingText:"Resume Building Assistance",paragraphText:"To create an attractive resume for you"},
-            {id:uuid(),imagePath:"",subheadingText:"Interview Preparation",paragraphText:"So you can present yourself in a better way"},
-            {id:uuid(),imagePath:"",subheadingText:"Mentoring & Job Assistance",paragraphText:"To help you in getting good career or placements"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage1,subheadingText:"Practical Based Sessions",paragraphText:"Training program available in four months & six months duration"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage2,subheadingText:"Dummy Projects",paragraphText:"To build your hands-on expertise & portfolio"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage3,subheadingText:"Resume Building Assistance",paragraphText:"To create an attractive resume for you"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage4,subheadingText:"Interview Preparation",paragraphText:"So you can present yourself in a better way"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage5,subheadingText:"Mentoring & Job Assistance",paragraphText:"To help you in getting good career or placements"},
         ]
     },
     whoCanJoinSection:{
@@ -810,8 +827,10 @@ export const trainTheTrainerSchema = {
         },
         discountAndOffersSection:{
             discountHeadingText:"Discount & Offers",
-            cardText1:"25% Cashback Available",
-            cardText2:"Work Incentives"
+            discountCard:[
+                {id:uuid(),cardText:"25% Cashback Available",cardImage:COURSES_PAGE_IMAGES.cashbackImage},
+                {id:uuid(),cardText:"Work Incentives",cardImage:COURSES_PAGE_IMAGES.workIncentivesImage},
+            ]
         }
     },
     applyNowSection:{
@@ -856,12 +875,13 @@ export const htmlCssJSScheme = {
     cloudDevopsTrainingSection:{
         headingText:"HTML, CSS & JS Training Program",
         paragraphText:"This program is designed to train students with the skills and experience to design the web pages using HTML, CSS & JavaScript by managing the styles, responsiveness and interactivity.",
+        buttonText:"Download Syllabus",
         cardData:[
-            {id:uuid(),imagePath:"",subheadingText:"Practical Based Sessions",paragraphText:"Training program available in four months & six months duration"},
-            {id:uuid(),imagePath:"",subheadingText:"Dummy Projects",paragraphText:"To build your hands-on expertise & portfolio"},
-            {id:uuid(),imagePath:"",subheadingText:"Resume Building Assistance",paragraphText:"To create an attractive resume for you"},
-            {id:uuid(),imagePath:"",subheadingText:"Interview Preparation",paragraphText:"So you can present yourself in a better way"},
-            {id:uuid(),imagePath:"",subheadingText:"Mentoring & Job Assistance",paragraphText:"To help you in getting good career or placements"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage1,subheadingText:"Practical Based Sessions",paragraphText:"Training program available in four months & six months duration"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage2,subheadingText:"Dummy Projects",paragraphText:"To build your hands-on expertise & portfolio"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage3,subheadingText:"Resume Building Assistance",paragraphText:"To create an attractive resume for you"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage4,subheadingText:"Interview Preparation",paragraphText:"So you can present yourself in a better way"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage5,subheadingText:"Mentoring & Job Assistance",paragraphText:"To help you in getting good career or placements"},
         ]
     },
     whoCanJoinSection:{
@@ -907,8 +927,10 @@ export const htmlCssJSScheme = {
         },
         discountAndOffersSection:{
             discountHeadingText:"Discount & Offers",
-            cardText1:"25% Cashback Available",
-            cardText2:"Work Incentives"
+            discountCard:[
+                {id:uuid(),cardText:"25% Cashback Available",cardImage:COURSES_PAGE_IMAGES.cashbackImage},
+                {id:uuid(),cardText:"Work Incentives",cardImage:COURSES_PAGE_IMAGES.workIncentivesImage},
+            ]
         }
     },
     applyNowSection:{
@@ -953,12 +975,13 @@ export const javaSchema = {
     cloudDevopsTrainingSection:{
         headingText:"Java Programming Training Program",
         paragraphText:"This program is designed to train students with the skills and experience to write java programs by understanding the object oriented programing & software development concepts.",
+        buttonText:"Download Syllabus",
         cardData:[
-            {id:uuid(),imagePath:"",subheadingText:"Practical Based Sessions",paragraphText:"Training program available in four months & six months duration"},
-            {id:uuid(),imagePath:"",subheadingText:"Dummy Projects",paragraphText:"To build your hands-on expertise & portfolio"},
-            {id:uuid(),imagePath:"",subheadingText:"Resume Building Assistance",paragraphText:"To create an attractive resume for you"},
-            {id:uuid(),imagePath:"",subheadingText:"Interview Preparation",paragraphText:"So you can present yourself in a better way"},
-            {id:uuid(),imagePath:"",subheadingText:"Mentoring & Job Assistance",paragraphText:"To help you in getting good career or placements"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage1,subheadingText:"Practical Based Sessions",paragraphText:"Training program available in four months & six months duration"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage2,subheadingText:"Dummy Projects",paragraphText:"To build your hands-on expertise & portfolio"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage3,subheadingText:"Resume Building Assistance",paragraphText:"To create an attractive resume for you"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage4,subheadingText:"Interview Preparation",paragraphText:"So you can present yourself in a better way"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage5,subheadingText:"Mentoring & Job Assistance",paragraphText:"To help you in getting good career or placements"},
         ]
     },
     whoCanJoinSection:{
@@ -1004,8 +1027,10 @@ export const javaSchema = {
         },
         discountAndOffersSection:{
             discountHeadingText:"Discount & Offers",
-            cardText1:"25% Cashback Available",
-            cardText2:"Work Incentives"
+            discountCard:[
+                {id:uuid(),cardText:"25% Cashback Available",cardImage:COURSES_PAGE_IMAGES.cashbackImage},
+                {id:uuid(),cardText:"Work Incentives",cardImage:COURSES_PAGE_IMAGES.workIncentivesImage},
+            ]
         }
     },
     applyNowSection:{
@@ -1050,12 +1075,13 @@ export const pythonSchema = {
     cloudDevopsTrainingSection:{
         headingText:"Python Programming Training Program",
         paragraphText:"This program is designed to train students with the skills and experience to write programs by using python programming, tools, libraries, case studies and to work on minor projects.",
+        buttonText:"Download Syllabus",
         cardData:[
-            {id:uuid(),imagePath:"",subheadingText:"Practical Based Sessions",paragraphText:"Training program available in four months & six months duration"},
-            {id:uuid(),imagePath:"",subheadingText:"Dummy Projects",paragraphText:"To build your hands-on expertise & portfolio"},
-            {id:uuid(),imagePath:"",subheadingText:"Resume Building Assistance",paragraphText:"To create an attractive resume for you"},
-            {id:uuid(),imagePath:"",subheadingText:"Interview Preparation",paragraphText:"So you can present yourself in a better way"},
-            {id:uuid(),imagePath:"",subheadingText:"Mentoring & Job Assistance",paragraphText:"To help you in getting good career or placements"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage1,subheadingText:"Practical Based Sessions",paragraphText:"Training program available in four months & six months duration"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage2,subheadingText:"Dummy Projects",paragraphText:"To build your hands-on expertise & portfolio"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage3,subheadingText:"Resume Building Assistance",paragraphText:"To create an attractive resume for you"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage4,subheadingText:"Interview Preparation",paragraphText:"So you can present yourself in a better way"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage5,subheadingText:"Mentoring & Job Assistance",paragraphText:"To help you in getting good career or placements"},
         ]
     },
     whoCanJoinSection:{
@@ -1101,8 +1127,10 @@ export const pythonSchema = {
         },
         discountAndOffersSection:{
             discountHeadingText:"Discount & Offers",
-            cardText1:"25% Cashback Available",
-            cardText2:"Work Incentives"
+            discountCard:[
+                {id:uuid(),cardText:"25% Cashback Available",cardImage:COURSES_PAGE_IMAGES.cashbackImage},
+                {id:uuid(),cardText:"Work Incentives",cardImage:COURSES_PAGE_IMAGES.workIncentivesImage},
+            ]
         }
     },
     applyNowSection:{
@@ -1147,12 +1175,13 @@ export const linuxSchema = {
     cloudDevopsTrainingSection:{
         headingText:"Linux & AWS Training Program",
         paragraphText:"This program is designed to train students with the skills and experience to work on Linux, resource management, cloud environment and managing AWS services.",
+        buttonText:"Download Syllabus",
         cardData:[
-            {id:uuid(),imagePath:"",subheadingText:"Practical Based Sessions",paragraphText:"Training program available in four months & six months duration"},
-            {id:uuid(),imagePath:"",subheadingText:"Dummy Projects",paragraphText:"To build your hands-on expertise & portfolio"},
-            {id:uuid(),imagePath:"",subheadingText:"Resume Building Assistance",paragraphText:"To create an attractive resume for you"},
-            {id:uuid(),imagePath:"",subheadingText:"Interview Preparation",paragraphText:"So you can present yourself in a better way"},
-            {id:uuid(),imagePath:"",subheadingText:"Mentoring & Job Assistance",paragraphText:"To help you in getting good career or placements"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage1,subheadingText:"Practical Based Sessions",paragraphText:"Training program available in four months & six months duration"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage2,subheadingText:"Dummy Projects",paragraphText:"To build your hands-on expertise & portfolio"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage3,subheadingText:"Resume Building Assistance",paragraphText:"To create an attractive resume for you"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage4,subheadingText:"Interview Preparation",paragraphText:"So you can present yourself in a better way"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage5,subheadingText:"Mentoring & Job Assistance",paragraphText:"To help you in getting good career or placements"},
         ]
     },
     whoCanJoinSection:{
@@ -1198,8 +1227,10 @@ export const linuxSchema = {
         },
         discountAndOffersSection:{
             discountHeadingText:"Discount & Offers",
-            cardText1:"25% Cashback Available",
-            cardText2:"Work Incentives"
+            discountCard:[
+                {id:uuid(),cardText:"25% Cashback Available",cardImage:COURSES_PAGE_IMAGES.cashbackImage},
+                {id:uuid(),cardText:"Work Incentives",cardImage:COURSES_PAGE_IMAGES.workIncentivesImage},
+            ]
         }
     },
     applyNowSection:{
@@ -1244,12 +1275,13 @@ export const mySQLSchema = {
     cloudDevopsTrainingSection:{
         headingText:"MySQL-DBA Training Program",
         paragraphText:"This program is designed to train students with the skills and experience to work on MySQL database, CRUD Operations, data retrieval, indexing, managing user and permissions, etc.",
+        buttonText:"Download Syllabus",
         cardData:[
-            {id:uuid(),imagePath:"",subheadingText:"Practical Based Sessions",paragraphText:"Training program available in four months & six months duration"},
-            {id:uuid(),imagePath:"",subheadingText:"Dummy Projects",paragraphText:"To build your hands-on expertise & portfolio"},
-            {id:uuid(),imagePath:"",subheadingText:"Resume Building Assistance",paragraphText:"To create an attractive resume for you"},
-            {id:uuid(),imagePath:"",subheadingText:"Interview Preparation",paragraphText:"So you can present yourself in a better way"},
-            {id:uuid(),imagePath:"",subheadingText:"Mentoring & Job Assistance",paragraphText:"To help you in getting good career or placements"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage1,subheadingText:"Practical Based Sessions",paragraphText:"Training program available in four months & six months duration"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage2,subheadingText:"Dummy Projects",paragraphText:"To build your hands-on expertise & portfolio"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage3,subheadingText:"Resume Building Assistance",paragraphText:"To create an attractive resume for you"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage4,subheadingText:"Interview Preparation",paragraphText:"So you can present yourself in a better way"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage5,subheadingText:"Mentoring & Job Assistance",paragraphText:"To help you in getting good career or placements"},
         ]
     },
     whoCanJoinSection:{
@@ -1295,8 +1327,10 @@ export const mySQLSchema = {
         },
         discountAndOffersSection:{
             discountHeadingText:"Discount & Offers",
-            cardText1:"25% Cashback Available",
-            cardText2:"Work Incentives"
+            discountCard:[
+                {id:uuid(),cardText:"25% Cashback Available",cardImage:COURSES_PAGE_IMAGES.cashbackImage},
+                {id:uuid(),cardText:"Work Incentives",cardImage:COURSES_PAGE_IMAGES.workIncentivesImage},
+            ]
         }
     },
     applyNowSection:{
@@ -1341,12 +1375,13 @@ export const programmingSchema = {
     cloudDevopsTrainingSection:{
         headingText:"Programming Fundamentals Training Program",
         paragraphText:"This program is designed to train students with the skills and experience to extract insights from the data and develop predictive models for decision making.",
+        buttonText:"Download Syllabus",
         cardData:[
-            {id:uuid(),imagePath:"",subheadingText:"Practical Based Sessions",paragraphText:"Training program available in four months & six months duration"},
-            {id:uuid(),imagePath:"",subheadingText:"Dummy Projects",paragraphText:"To build your hands-on expertise & portfolio"},
-            {id:uuid(),imagePath:"",subheadingText:"Resume Building Assistance",paragraphText:"To create an attractive resume for you"},
-            {id:uuid(),imagePath:"",subheadingText:"Interview Preparation",paragraphText:"So you can present yourself in a better way"},
-            {id:uuid(),imagePath:"",subheadingText:"Mentoring & Job Assistance",paragraphText:"To help you in getting good career or placements"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage1,subheadingText:"Practical Based Sessions",paragraphText:"Training program available in four months & six months duration"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage2,subheadingText:"Dummy Projects",paragraphText:"To build your hands-on expertise & portfolio"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage3,subheadingText:"Resume Building Assistance",paragraphText:"To create an attractive resume for you"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage4,subheadingText:"Interview Preparation",paragraphText:"So you can present yourself in a better way"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage5,subheadingText:"Mentoring & Job Assistance",paragraphText:"To help you in getting good career or placements"},
         ]
     },
     whoCanJoinSection:{
@@ -1392,8 +1427,10 @@ export const programmingSchema = {
         },
         discountAndOffersSection:{
             discountHeadingText:"Discount & Offers",
-            cardText1:"25% Cashback Available",
-            cardText2:"Work Incentives"
+            discountCard:[
+                {id:uuid(),cardText:"25% Cashback Available",cardImage:COURSES_PAGE_IMAGES.cashbackImage},
+                {id:uuid(),cardText:"Work Incentives",cardImage:COURSES_PAGE_IMAGES.workIncentivesImage},
+            ]
         }
     },
     applyNowSection:{
@@ -1438,12 +1475,13 @@ export const cProgrammingSchema = {
     cloudDevopsTrainingSection:{
         headingText:"C Programming Training Program",
         paragraphText:"This program is designed to train students with the skills and experience to understand the C programing concepts and write programs to solve complex problems.",
+        buttonText:"Download Syllabus",
         cardData:[
-            {id:uuid(),imagePath:"",subheadingText:"Practical Based Sessions",paragraphText:"Training program available in four months & six months duration"},
-            {id:uuid(),imagePath:"",subheadingText:"Dummy Projects",paragraphText:"To build your hands-on expertise & portfolio"},
-            {id:uuid(),imagePath:"",subheadingText:"Resume Building Assistance",paragraphText:"To create an attractive resume for you"},
-            {id:uuid(),imagePath:"",subheadingText:"Interview Preparation",paragraphText:"So you can present yourself in a better way"},
-            {id:uuid(),imagePath:"",subheadingText:"Mentoring & Job Assistance",paragraphText:"To help you in getting good career or placements"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage1,subheadingText:"Practical Based Sessions",paragraphText:"Training program available in four months & six months duration"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage2,subheadingText:"Dummy Projects",paragraphText:"To build your hands-on expertise & portfolio"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage3,subheadingText:"Resume Building Assistance",paragraphText:"To create an attractive resume for you"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage4,subheadingText:"Interview Preparation",paragraphText:"So you can present yourself in a better way"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage5,subheadingText:"Mentoring & Job Assistance",paragraphText:"To help you in getting good career or placements"},
         ]
     },
     whoCanJoinSection:{
@@ -1489,8 +1527,10 @@ export const cProgrammingSchema = {
         },
         discountAndOffersSection:{
             discountHeadingText:"Discount & Offers",
-            cardText1:"25% Cashback Available",
-            cardText2:"Work Incentives"
+            discountCard:[
+                {id:uuid(),cardText:"25% Cashback Available",cardImage:COURSES_PAGE_IMAGES.cashbackImage},
+                {id:uuid(),cardText:"Work Incentives",cardImage:COURSES_PAGE_IMAGES.workIncentivesImage},
+            ]
         }
     },
     applyNowSection:{
@@ -1535,12 +1575,13 @@ export const cPlusSchema = {
     cloudDevopsTrainingSection:{
         headingText:"C++ Programming Training Program",
         paragraphText:"This program is designed to train students with the skills and experience to understand the C++ programing concepts and their implementation to develop projects.",
+        buttonText:"Download Syllabus",
         cardData:[
-            {id:uuid(),imagePath:"",subheadingText:"Practical Based Sessions",paragraphText:"Training program available in four months & six months duration"},
-            {id:uuid(),imagePath:"",subheadingText:"Dummy Projects",paragraphText:"To build your hands-on expertise & portfolio"},
-            {id:uuid(),imagePath:"",subheadingText:"Resume Building Assistance",paragraphText:"To create an attractive resume for you"},
-            {id:uuid(),imagePath:"",subheadingText:"Interview Preparation",paragraphText:"So you can present yourself in a better way"},
-            {id:uuid(),imagePath:"",subheadingText:"Mentoring & Job Assistance",paragraphText:"To help you in getting good career or placements"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage1,subheadingText:"Practical Based Sessions",paragraphText:"Training program available in four months & six months duration"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage2,subheadingText:"Dummy Projects",paragraphText:"To build your hands-on expertise & portfolio"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage3,subheadingText:"Resume Building Assistance",paragraphText:"To create an attractive resume for you"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage4,subheadingText:"Interview Preparation",paragraphText:"So you can present yourself in a better way"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage5,subheadingText:"Mentoring & Job Assistance",paragraphText:"To help you in getting good career or placements"},
         ]
     },
     whoCanJoinSection:{
@@ -1586,8 +1627,10 @@ export const cPlusSchema = {
         },
         discountAndOffersSection:{
             discountHeadingText:"Discount & Offers",
-            cardText1:"25% Cashback Available",
-            cardText2:"Work Incentives"
+            discountCard:[
+                {id:uuid(),cardText:"25% Cashback Available",cardImage:COURSES_PAGE_IMAGES.cashbackImage},
+                {id:uuid(),cardText:"Work Incentives",cardImage:COURSES_PAGE_IMAGES.workIncentivesImage},
+            ]
         }
     },
     applyNowSection:{
@@ -1632,12 +1675,13 @@ export const dsSchema = {
     cloudDevopsTrainingSection:{
         headingText:"Data Structure Training Program",
         paragraphText:"This program is designed to train students with the skills and experience to understand the algorithms & data structures to write more clear and concise code by using optimized memory and reducing the runtime complexity.",
+        buttonText:"Download Syllabus",
         cardData:[
-            {id:uuid(),imagePath:"",subheadingText:"Practical Based Sessions",paragraphText:"Training program available in four months & six months duration"},
-            {id:uuid(),imagePath:"",subheadingText:"Dummy Projects",paragraphText:"To build your hands-on expertise & portfolio"},
-            {id:uuid(),imagePath:"",subheadingText:"Resume Building Assistance",paragraphText:"To create an attractive resume for you"},
-            {id:uuid(),imagePath:"",subheadingText:"Interview Preparation",paragraphText:"So you can present yourself in a better way"},
-            {id:uuid(),imagePath:"",subheadingText:"Mentoring & Job Assistance",paragraphText:"To help you in getting good career or placements"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage1,subheadingText:"Practical Based Sessions",paragraphText:"Training program available in four months & six months duration"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage2,subheadingText:"Dummy Projects",paragraphText:"To build your hands-on expertise & portfolio"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage3,subheadingText:"Resume Building Assistance",paragraphText:"To create an attractive resume for you"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage4,subheadingText:"Interview Preparation",paragraphText:"So you can present yourself in a better way"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage5,subheadingText:"Mentoring & Job Assistance",paragraphText:"To help you in getting good career or placements"},
         ]
     },
     whoCanJoinSection:{
@@ -1683,8 +1727,10 @@ export const dsSchema = {
         },
         discountAndOffersSection:{
             discountHeadingText:"Discount & Offers",
-            cardText1:"25% Cashback Available",
-            cardText2:"Work Incentives"
+            discountCard:[
+                {id:uuid(),cardText:"25% Cashback Available",cardImage:COURSES_PAGE_IMAGES.cashbackImage},
+                {id:uuid(),cardText:"Work Incentives",cardImage:COURSES_PAGE_IMAGES.workIncentivesImage},
+            ]
         }
     },
     applyNowSection:{
@@ -1729,12 +1775,13 @@ export const socialMediaSchema = {
     cloudDevopsTrainingSection:{
         headingText:"Social Media Marketing Training Program",
         paragraphText:"This program is designed to train students with the skills and experience to work with various social media platforms like Facebook, Instagram, Twitter, LinkedIn, YouTube, etc. to promote services or products.",
+        buttonText:"Download Syllabus",
         cardData:[
-            {id:uuid(),imagePath:"",subheadingText:"Practical Based Sessions",paragraphText:"Training program available in four months & six months duration"},
-            {id:uuid(),imagePath:"",subheadingText:"Dummy Projects",paragraphText:"To build your hands-on expertise"},
-            {id:uuid(),imagePath:"",subheadingText:"Portfolio Building Assistance",paragraphText:"To create an attractive portfolio for you"},
-            {id:uuid(),imagePath:"",subheadingText:"Pitch Preparation",paragraphText:"So you can present yourself in a better way"},
-            {id:uuid(),imagePath:"",subheadingText:"Mentoring & Career Assistance",paragraphText:"To help you in getting good career or placements"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage1,subheadingText:"Practical Based Sessions",paragraphText:"Training program available in four months & six months duration"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage2,subheadingText:"Dummy Projects",paragraphText:"To build your hands-on expertise & portfolio"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage3,subheadingText:"Resume Building Assistance",paragraphText:"To create an attractive resume for you"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage4,subheadingText:"Interview Preparation",paragraphText:"So you can present yourself in a better way"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage5,subheadingText:"Mentoring & Job Assistance",paragraphText:"To help you in getting good career or placements"},
         ]
     },
     whoCanJoinSection:{
@@ -1780,8 +1827,10 @@ export const socialMediaSchema = {
         },
         discountAndOffersSection:{
             discountHeadingText:"Discount & Offers",
-            cardText1:"25% Cashback Available",
-            cardText2:"Work Incentives"
+            discountCard:[
+                {id:uuid(),cardText:"25% Cashback Available",cardImage:COURSES_PAGE_IMAGES.cashbackImage},
+                {id:uuid(),cardText:"Work Incentives",cardImage:COURSES_PAGE_IMAGES.workIncentivesImage},
+            ]
         }
     },
     applyNowSection:{
@@ -1826,12 +1875,13 @@ export const googleAdsSchema = {
     cloudDevopsTrainingSection:{
         headingText:"Google Ads Training Program",
         paragraphText:"This program is designed to train students with the skills and experience to reach the target audiences of business through display ads, video ads and paid search using Google Ads.",
+        buttonText:"Download Syllabus",
         cardData:[
-            {id:uuid(),imagePath:"",subheadingText:"Practical Based Sessions",paragraphText:"Training program available in four months & six months duration"},
-            {id:uuid(),imagePath:"",subheadingText:"Dummy Projects",paragraphText:"To build your hands-on expertise"},
-            {id:uuid(),imagePath:"",subheadingText:"Portfolio Building Assistance",paragraphText:"To create an attractive portfolio for you"},
-            {id:uuid(),imagePath:"",subheadingText:"Pitch Preparation",paragraphText:"So you can present yourself in a better way"},
-            {id:uuid(),imagePath:"",subheadingText:"Mentoring & Career Assistance",paragraphText:"To help you in getting good career or placements"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage1,subheadingText:"Practical Based Sessions",paragraphText:"Training program available in four months & six months duration"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage2,subheadingText:"Dummy Projects",paragraphText:"To build your hands-on expertise & portfolio"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage3,subheadingText:"Resume Building Assistance",paragraphText:"To create an attractive resume for you"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage4,subheadingText:"Interview Preparation",paragraphText:"So you can present yourself in a better way"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage5,subheadingText:"Mentoring & Job Assistance",paragraphText:"To help you in getting good career or placements"},
         ]
     },
     whoCanJoinSection:{
@@ -1877,8 +1927,10 @@ export const googleAdsSchema = {
         },
         discountAndOffersSection:{
             discountHeadingText:"Discount & Offers",
-            cardText1:"25% Cashback Available",
-            cardText2:"Work Incentives"
+            discountCard:[
+                {id:uuid(),cardText:"25% Cashback Available",cardImage:COURSES_PAGE_IMAGES.cashbackImage},
+                {id:uuid(),cardText:"Work Incentives",cardImage:COURSES_PAGE_IMAGES.workIncentivesImage},
+            ]
         }
     },
     applyNowSection:{
@@ -1923,12 +1975,13 @@ export const wordpressSchema = {
     cloudDevopsTrainingSection:{
         headingText:"WordPress & Blogging Training Program",
         paragraphText:"This program is designed to train students with the skills and experience to work WordPress, webpage design, themes, plugins, SEO, landing pages, blogging, website customization etc.",
+        buttonText:"Download Syllabus",
         cardData:[
-            {id:uuid(),imagePath:"",subheadingText:"Practical Based Sessions",paragraphText:"Training program available in four months & six months duration"},
-            {id:uuid(),imagePath:"",subheadingText:"Dummy Projects",paragraphText:"To build your hands-on expertise"},
-            {id:uuid(),imagePath:"",subheadingText:"Portfolio Building Assistance",paragraphText:"To create an attractive portfolio for you"},
-            {id:uuid(),imagePath:"",subheadingText:"Pitch Preparation",paragraphText:"So you can present yourself in a better way"},
-            {id:uuid(),imagePath:"",subheadingText:"Mentoring & Career Assistance",paragraphText:"To help you in getting good career or placements"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage1,subheadingText:"Practical Based Sessions",paragraphText:"Training program available in four months & six months duration"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage2,subheadingText:"Dummy Projects",paragraphText:"To build your hands-on expertise & portfolio"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage3,subheadingText:"Resume Building Assistance",paragraphText:"To create an attractive resume for you"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage4,subheadingText:"Interview Preparation",paragraphText:"So you can present yourself in a better way"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage5,subheadingText:"Mentoring & Job Assistance",paragraphText:"To help you in getting good career or placements"},
         ]
     },
     whoCanJoinSection:{
@@ -1974,8 +2027,10 @@ export const wordpressSchema = {
         },
         discountAndOffersSection:{
             discountHeadingText:"Discount & Offers",
-            cardText1:"25% Cashback Available",
-            cardText2:"Work Incentives"
+            discountCard:[
+                {id:uuid(),cardText:"25% Cashback Available",cardImage:COURSES_PAGE_IMAGES.cashbackImage},
+                {id:uuid(),cardText:"Work Incentives",cardImage:COURSES_PAGE_IMAGES.workIncentivesImage},
+            ]
         }
     },
     applyNowSection:{
@@ -2020,12 +2075,13 @@ export const seoSchema = {
     cloudDevopsTrainingSection:{
         headingText:"SEO Certification Training Program",
         paragraphText:"This program is designed to train students with the skills and experience to work with SEO tools and techniques, keyword research and their impact on Search Engine Result Page (or SERP).",
+        buttonText:"Download Syllabus",
         cardData:[
-            {id:uuid(),imagePath:"",subheadingText:"Practical Based Sessions",paragraphText:"Training program available in four months & six months duration"},
-            {id:uuid(),imagePath:"",subheadingText:"Dummy Projects",paragraphText:"To build your hands-on expertise"},
-            {id:uuid(),imagePath:"",subheadingText:"Portfolio Building Assistance",paragraphText:"To create an attractive portfolio for you"},
-            {id:uuid(),imagePath:"",subheadingText:"Pitch Preparation",paragraphText:"So you can present yourself in a better way"},
-            {id:uuid(),imagePath:"",subheadingText:"Mentoring & Career Assistance",paragraphText:"To help you in getting good career or placements"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage1,subheadingText:"Practical Based Sessions",paragraphText:"Training program available in four months & six months duration"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage2,subheadingText:"Dummy Projects",paragraphText:"To build your hands-on expertise & portfolio"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage3,subheadingText:"Resume Building Assistance",paragraphText:"To create an attractive resume for you"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage4,subheadingText:"Interview Preparation",paragraphText:"So you can present yourself in a better way"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage5,subheadingText:"Mentoring & Job Assistance",paragraphText:"To help you in getting good career or placements"},
         ]
     },
     whoCanJoinSection:{
@@ -2071,8 +2127,10 @@ export const seoSchema = {
         },
         discountAndOffersSection:{
             discountHeadingText:"Discount & Offers",
-            cardText1:"25% Cashback Available",
-            cardText2:"Work Incentives"
+            discountCard:[
+                {id:uuid(),cardText:"25% Cashback Available",cardImage:COURSES_PAGE_IMAGES.cashbackImage},
+                {id:uuid(),cardText:"Work Incentives",cardImage:COURSES_PAGE_IMAGES.workIncentivesImage},
+            ]
         }
     },
     applyNowSection:{
@@ -2117,12 +2175,13 @@ export const contentMarketingSchema = {
     cloudDevopsTrainingSection:{
         headingText:"Content Marketing Training Program",
         paragraphText:"This program is designed to train students with the skills and experience to reach the target audiences by using various content formats like blog posts, infographics, podcasts and videos.",
+        buttonText:"Download Syllabus",
         cardData:[
-            {id:uuid(),imagePath:"",subheadingText:"Practical Based Sessions",paragraphText:"Training program available in four months & six months duration"},
-            {id:uuid(),imagePath:"",subheadingText:"Dummy Projects",paragraphText:"To build your hands-on expertise"},
-            {id:uuid(),imagePath:"",subheadingText:"Portfolio Building Assistance",paragraphText:"To create an attractive portfolio for you"},
-            {id:uuid(),imagePath:"",subheadingText:"Pitch Preparation",paragraphText:"So you can present yourself in a better way"},
-            {id:uuid(),imagePath:"",subheadingText:"Mentoring & Career Assistance",paragraphText:"To help you in getting good career or placements"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage1,subheadingText:"Practical Based Sessions",paragraphText:"Training program available in four months & six months duration"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage2,subheadingText:"Dummy Projects",paragraphText:"To build your hands-on expertise & portfolio"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage3,subheadingText:"Resume Building Assistance",paragraphText:"To create an attractive resume for you"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage4,subheadingText:"Interview Preparation",paragraphText:"So you can present yourself in a better way"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage5,subheadingText:"Mentoring & Job Assistance",paragraphText:"To help you in getting good career or placements"},
         ]
     },
     whoCanJoinSection:{
@@ -2168,8 +2227,10 @@ export const contentMarketingSchema = {
         },
         discountAndOffersSection:{
             discountHeadingText:"Discount & Offers",
-            cardText1:"25% Cashback Available",
-            cardText2:"Work Incentives"
+            discountCard:[
+                {id:uuid(),cardText:"25% Cashback Available",cardImage:COURSES_PAGE_IMAGES.cashbackImage},
+                {id:uuid(),cardText:"Work Incentives",cardImage:COURSES_PAGE_IMAGES.workIncentivesImage},
+            ]
         }
     },
     applyNowSection:{
@@ -2214,12 +2275,13 @@ export const affiliateMarketingSchema = {
     cloudDevopsTrainingSection:{
         headingText:"Affiliate Marketing Training Program",
         paragraphText:"This program is designed to train students with the skills and experience to use Affiliate Marketing for getting the rewards from businesses to reach large audience groups, increase revenue and generate profits.",
+        buttonText:"Download Syllabus",
         cardData:[
-            {id:uuid(),imagePath:"",subheadingText:"Practical Based Sessions",paragraphText:"Training program available in four months & six months duration"},
-            {id:uuid(),imagePath:"",subheadingText:"Dummy Projects",paragraphText:"To build your hands-on expertise"},
-            {id:uuid(),imagePath:"",subheadingText:"Portfolio Building Assistance",paragraphText:"To create an attractive portfolio for you"},
-            {id:uuid(),imagePath:"",subheadingText:"Pitch Preparation",paragraphText:"So you can present yourself in a better way"},
-            {id:uuid(),imagePath:"",subheadingText:"Mentoring & Career Assistance",paragraphText:"To help you in getting good career or placements"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage1,subheadingText:"Practical Based Sessions",paragraphText:"Training program available in four months & six months duration"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage2,subheadingText:"Dummy Projects",paragraphText:"To build your hands-on expertise & portfolio"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage3,subheadingText:"Resume Building Assistance",paragraphText:"To create an attractive resume for you"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage4,subheadingText:"Interview Preparation",paragraphText:"So you can present yourself in a better way"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage5,subheadingText:"Mentoring & Job Assistance",paragraphText:"To help you in getting good career or placements"},
         ]
     },
     whoCanJoinSection:{
@@ -2265,8 +2327,10 @@ export const affiliateMarketingSchema = {
         },
         discountAndOffersSection:{
             discountHeadingText:"Discount & Offers",
-            cardText1:"25% Cashback Available",
-            cardText2:"Work Incentives"
+            discountCard:[
+                {id:uuid(),cardText:"25% Cashback Available",cardImage:COURSES_PAGE_IMAGES.cashbackImage},
+                {id:uuid(),cardText:"Work Incentives",cardImage:COURSES_PAGE_IMAGES.workIncentivesImage},
+            ]
         }
     },
     applyNowSection:{
