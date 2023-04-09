@@ -11,6 +11,7 @@ import {
   Button,
   Image
 } from "components";
+import { MdOutlinePhoneInTalk } from "assets/icons"
 
 export const ProgramDetails = React.memo(({ sectionData, inputSchemas }) => {
   const {
@@ -33,16 +34,16 @@ export const ProgramDetails = React.memo(({ sectionData, inputSchemas }) => {
           <Accordion accordionData={moduleTextData} />
         </Div>
         <Div divClass="col-sm-12 col-md-6 col-lg-4">
-          <CommonCard cardClass="card rounded-0 col-sm-12 col-md-12 col-lg-12">
+          <CommonCard cardClass="card rounded-0 col-sm-12 col-md-12 col-lg-12 text-center">
             <Paragraph paragraphClass="fw-bold fs-25">
               Feel free to call
             </Paragraph>
             <SubHeading subheadingClass="text-primary fw-bold">
-              {phoneNumber}
+               <MdOutlinePhoneInTalk size={30}/> {phoneNumber}
             </SubHeading>
           </CommonCard>
           <CommonCard cardClass="card rounded-0 col-sm-12 col-md-12 col-lg-12 mt-3">
-            <SubHeading subheadingClass="text-center fw-bold">
+            <SubHeading subheadingClass="text-center fw-bold mb-5">
               Request More Information
             </SubHeading>
             {textInput && textInput.length !== 0 ? (
@@ -63,9 +64,9 @@ export const ProgramDetails = React.memo(({ sectionData, inputSchemas }) => {
               selectInputData={selectInputOptions}
               selectInputClass="form-select rounded-0"
             />
-            <Button buttonClass="btn btn-primary rounded-0 mt-3">
-              {buttonText}
-            </Button>
+              <Div divClass="d-grid mt-5">
+                  <Button buttonClass="btn btn-primary rounded-0">{buttonText}</Button>
+                </Div>
           </CommonCard>
         </Div>
         <Div divClass="row col-sm-12 col-md-12 col-lg-12 d-flex justify-content-around mt-5 pt-3">

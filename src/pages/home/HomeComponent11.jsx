@@ -54,7 +54,7 @@ export const TrainingPerks = React.memo(() => {
         </Div>
         <Div divClass='row mt-5'>
             <Div divClass="col-lg-12 col-md-12 col-sm-12">
-                <Paragraph paragraphClass="align-justify text-primary">In respect of fee submission, the candidate gets benefitted with 25% cashback offers with some work incentives.
+                <Paragraph paragraphClass="align-justify text-primary text-center fw-bold fs-20">In respect of fee submission, the candidate gets benefitted with 25% cashback offers with some work incentives.
                 </Paragraph>
             </Div>
         </Div>

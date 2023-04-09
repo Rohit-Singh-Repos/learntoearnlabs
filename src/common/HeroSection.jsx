@@ -24,7 +24,7 @@ export const HeroSection = React.memo(
 
     return (
       <Div divClass="row align-items-center">
-        <Div divClass="col-sm-12 col-md-7 col-lg-7">
+        <Div divClass="col-sm-12 col-md-7 col-lg-6">
           <Image
             width="1200"
             height="800"
@@ -33,9 +33,9 @@ export const HeroSection = React.memo(
             imageAltText="learn2earnlabs-home-cover"
           />
         </Div>
-        <Div divClass="col-sm-12 col-md-5 col-lg-5">
+        <Div divClass="col-sm-12 col-md-5 col-lg-6">
           {headingText && (
-            <Heading headingClass="text-primary fw-bold">{headingText}</Heading>
+            <Heading headingClass="text-primary fw-bold fs-30">{headingText}</Heading>
           )}
           {paragraphText && (
             <Paragraph paragraphClass="fs-30 align-justify">
