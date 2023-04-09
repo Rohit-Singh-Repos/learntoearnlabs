@@ -1,7 +1,7 @@
 import React from 'react'
 
-export const Div = React.memo(({children,divClass}) => {
+export const Div = React.memo(({children,divClass,...props}) => {
     return (
-      <div className={divClass}>{children}</div>
+      <div className={divClass} {...props}>{children}</div>
     )
 })

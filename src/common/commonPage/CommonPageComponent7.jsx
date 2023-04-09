@@ -25,38 +25,43 @@ export const TrainingMode = React.memo(({ sectionData }) => {
     } = {},
   } = sectionData;
   return (
-    <Div divClass="container mt-5">
+    <Div divClass="container mt-5 pt-3">
+      <SubHeading subheadingClass="fw-bold mb-4">{headingText}</SubHeading>
       <Div divClass="row">
-        <Heading headingClass="fw-bold">{headingText}</Heading>
         <Div divClass="col-sm-12 col-md-6 col-lg-6">
-          <CommonCard cardClass="card rounded-0 p-4">
-            <SubHeading subheadingClass="fw-bold">{headingText1}</SubHeading>
-            <UnorderedList>
+          <CommonCard cardClass="card rounded-0 p-4 h-100">
+            <SubHeading subheadingClass="fw-bold fs-25 text-center">{headingText1}</SubHeading>
+            <UnorderedList unorderedListClass="mt-5">
               {listTextData && listTextData.length !== 0 ? (
                 listTextData.map((item) => (
-                  <ListItem key={item.id}>{item.listText}</ListItem>
+                  <ListItem key={item.id} listItemClass="mt-3">{item.listText}</ListItem>
                 ))
               ) : (
                 <></>
               )}
             </UnorderedList>
-            <Button buttonClass="btn btn-primary rounded-0 border-0">
-              {buttonText1}
-            </Button>
+            <Div divClass="d-grid mt-5">
+              <Button buttonClass="btn btn-primary rounded-0 border-0 mt-5">
+                {buttonText1}
+              </Button>
+            </Div>
           </CommonCard>
         </Div>
         <Div divClass="col-sm-12 col-md-6 col-lg-6">
-          <CommonCard cardClass="row card rounded-0 bg-primary text-white p-4">
-            <SubHeading subheadingClass="fw-bold">{headingText2}</SubHeading>
+          <CommonCard cardClass="card rounded-0 bg-primary text-white p-4 h-100">
+            <Heading headingClass="fw-bold fs-25 text-center">{headingText2}</Heading>
             <Div divClass="col-sm-4 col-md-4 col-lg-4"></Div>
-            <Div divClass="col-sm-8 col-md-8 col-lg-8">
+            <Div divClass="col-sm-8 col-md-8 col-lg-8 mt-5">
               <Paragraph paragraphClass="fw-bold">{addressHeading}</Paragraph>
               <Paragraph>{addressText}</Paragraph>
               <Paragraph>{phoneText}</Paragraph>
-              <Button buttonClass="btn btn-outline-light rounded-0">
-                {buttonText2}
-              </Button>
+              
             </Div>
+            <Div divClass="d-grid mt-5">
+                <Button buttonClass="btn btn-outline-light rounded-0">
+                  {buttonText2}
+                </Button>
+              </Div>
           </CommonCard>
         </Div>
       </Div>

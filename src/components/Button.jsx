@@ -1,7 +1,7 @@
 import React from 'react'
 
-export const Button = React.memo(({buttonClass,children}) => {
+export const Button = React.memo(({buttonClass,children,buttonHandler,...props}) => {
     return (
-      <button className={buttonClass}>{children}</button>
+      <button className={buttonClass} onClick={buttonHandler} {...props}>{children}</button>
     )
 })

@@ -106,6 +106,16 @@ import galleryImage28 from "assets/images/Gallery/learntoearn-labs-gallery (28).
 import galleryImage29 from "assets/images/Gallery/learntoearn-labs-gallery (29).webp";
 import galleryImage30 from "assets/images/Gallery/learntoearn-labs-gallery (30).webp";
 
+// Courses Images
+import careerSupportImage1 from "assets/images/Career Support/career_support_image_1.JPG";
+import careerSupportImage2 from "assets/images/Career Support/career_support_image_2.JPG";
+import careerSupportImage3 from "assets/images/Career Support/career_support_image_3.JPG";
+import careerSupportImage4 from "assets/images/Career Support/career_support_image_4.JPG";
+import careerSupportImage5 from "assets/images/Career Support/career_support_image_5.JPG";
+import cashbackImage from "assets/images/Benefits/cashback.webp";
+import workIncentivesImage from "assets/images/Benefits/work-incentives.webp";
+
+
 export const COVER_IMAGES = {
     homePageCoverImage,
     cloudDevopsCoverImage,
@@ -215,4 +225,14 @@ export const ABOUTUS_PAGE_IMAGES = {
     galleryImage28,
     galleryImage29,
     galleryImage30
+}
+
+export const COURSES_PAGE_IMAGES = {
+    careerSupportImage1,
+    careerSupportImage2,
+    careerSupportImage3,
+    careerSupportImage4,
+    careerSupportImage5,
+    cashbackImage,
+    workIncentivesImage
 }

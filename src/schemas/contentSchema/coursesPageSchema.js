@@ -1,5 +1,5 @@
-import { COVER_IMAGES } from "assets/images"
 import { uuid } from "helpers/utils/uuid"
+import { COURSES_PAGE_IMAGES, COVER_IMAGES } from "assets/images"
 
 export const cloudDevopsSchema = {
     landingPageSection:{
@@ -473,12 +473,13 @@ export const javaFullStackSchema = {
     cloudDevopsTrainingSection:{
         headingText:"Java Full Stack Training Program",
         paragraphText:"This program is designed to train students with the skills and experience to work with Object oriented programming, Java, Web Technologies, Database and popular Java frameworks like Spring & Hibernate.",
+        buttonText:"Download Syllabus",
         cardData:[
-            {id:uuid(),imagePath:"",subheadingText:"Practical Based Sessions",paragraphText:"Training program available in four months & six months duration"},
-            {id:uuid(),imagePath:"",subheadingText:"Dummy Projects",paragraphText:"To build your hands-on expertise & portfolio"},
-            {id:uuid(),imagePath:"",subheadingText:"Resume Building Assistance",paragraphText:"To create an attractive resume for you"},
-            {id:uuid(),imagePath:"",subheadingText:"Interview Preparation",paragraphText:"So you can present yourself in a better way"},
-            {id:uuid(),imagePath:"",subheadingText:"Mentoring & Job Assistance",paragraphText:"To help you in getting good career or placements"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage1,subheadingText:"Practical Based Sessions",paragraphText:"Training program available in four months & six months duration"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage2,subheadingText:"Dummy Projects",paragraphText:"To build your hands-on expertise & portfolio"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage3,subheadingText:"Resume Building Assistance",paragraphText:"To create an attractive resume for you"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage4,subheadingText:"Interview Preparation",paragraphText:"So you can present yourself in a better way"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage5,subheadingText:"Mentoring & Job Assistance",paragraphText:"To help you in getting good career or placements"},
         ]
     },
     whoCanJoinSection:{
@@ -512,6 +513,24 @@ export const javaFullStackSchema = {
         headingText:"Program Details",
         paragraphText:"During training you will go through with programming methodologies, oops concepts, java approaches, String handling, exception handling, multithreading, web technologies, database connectivity, API Design, popular java frameworks and mini projects that will help you to become an expert java full stack professional. You would get a hands-on expertise over the most in-demand concepts, tools & frameworks.",
         moduleTextData:[
+            {id:uuid(),moduleName:"Module 1:Introduction",listText:"Introduction & Python Programming"},
+            {id:uuid(),moduleName:"Module 2",listText:"Numpy"},
+            {id:uuid(),moduleName:"Module 1",listText:"Introduction & Python Programming"},
+            {id:uuid(),moduleName:"Module 2",listText:"Numpy"},
+            {id:uuid(),moduleName:"Module 1",listText:"Introduction & Python Programming"},
+            {id:uuid(),moduleName:"Module 2",listText:"Numpy"},
+            {id:uuid(),moduleName:"Module 1",listText:"Introduction & Python Programming"},
+            {id:uuid(),moduleName:"Module 2",listText:"Numpy"},
+            {id:uuid(),moduleName:"Module 1",listText:"Introduction & Python Programming"},
+            {id:uuid(),moduleName:"Module 2",listText:"Numpy"},
+            {id:uuid(),moduleName:"Module 1",listText:"Introduction & Python Programming"},
+            {id:uuid(),moduleName:"Module 2",listText:"Numpy"},
+            {id:uuid(),moduleName:"Module 1",listText:"Introduction & Python Programming"},
+            {id:uuid(),moduleName:"Module 2",listText:"Numpy"},
+            {id:uuid(),moduleName:"Module 1",listText:"Introduction & Python Programming"},
+            {id:uuid(),moduleName:"Module 2",listText:"Numpy"},
+            {id:uuid(),moduleName:"Module 1",listText:"Introduction & Python Programming"},
+            {id:uuid(),moduleName:"Module 2",listText:"Numpy"},
             {id:uuid(),moduleName:"Module 1",listText:"Introduction & Python Programming"},
             {id:uuid(),moduleName:"Module 2",listText:"Numpy"},
         ],
@@ -523,8 +542,10 @@ export const javaFullStackSchema = {
         },
         discountAndOffersSection:{
             discountHeadingText:"Discount & Offers",
-            cardText1:"25% Cashback Available",
-            cardText2:"Work Incentives"
+            discountCard:[
+                {id:uuid(),cardText:"25% Cashback Available",cardImage:COURSES_PAGE_IMAGES.cashbackImage},
+                {id:uuid(),cardText:"Work Incentives",cardImage:COURSES_PAGE_IMAGES.workIncentivesImage},
+            ]
         }
     },
     applyNowSection:{

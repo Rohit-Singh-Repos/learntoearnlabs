@@ -24,12 +24,12 @@ export const CareerOptions = React.memo(({ sectionData, mobileDetector }) => {
   } = sectionData;
   return (
     <Div divClass="container mt-5 pt-3">
-      <Heading headingClass="fw-bold">{headingText}</Heading>
+      <SubHeading subheadingClass="fw-bold">{headingText}</SubHeading>
       <Paragraph paragraphClass="align-justify mt-4 mb-4">{paragraphText}</Paragraph>
       <Div divClass="row d-flex justify-content-between ">
         <Div divClass="col-sm-12 col-md-6 col-lg-6">
           <CommonCard cardClass="card rounded-0 h-100">
-            <SubHeading subheadingClass="fw-bold">
+            <SubHeading subheadingClass="fs-17 fw-bold text-center">
               {cardHeadingText1}
             </SubHeading>
             <Paragraph paragraphClass="align-justify">
@@ -48,7 +48,7 @@ export const CareerOptions = React.memo(({ sectionData, mobileDetector }) => {
         </Div>
         <Div divClass={mobileDetector ? "col-sm-12 col-md-6 col-lg-6 mt-3" : "col-sm-12 col-md-6 col-lg-6"}>
           <CommonCard cardClass="card rounded-0 h-100">
-            <SubHeading subheadingClass="fw-bold">
+            <SubHeading subheadingClass="fs-17 fw-bold text-center">
               {cardHeadingText2}
             </SubHeading>
             <Paragraph paragraphClass="align-justify">

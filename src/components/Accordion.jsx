@@ -1,39 +1,61 @@
-import React from "react";
+import React, { useState, useCallback } from "react";
+import { Div, Button, Heading, Paragraph } from ".";
 
 export const Accordion = React.memo(({ accordionData }) => {
+  const [accordion, setAccordion] = useState("");
+  const [accordionId, setAccordionId] = useState(0);
+
+  const openAccordion = useCallback(
+    (accordionKey) => {
+      if (accordion === "") {
+        setAccordion("show");
+        setAccordionId(accordionKey);
+      } else {
+        setAccordion("");
+        setAccordionId(0);
+      }
+    },
+    [accordion, accordionId]
+  );
+
   return (
-    <div className="accordion accordion-flush" id="accordionFlushExample">
-      <div className="accordion-item">
-        {accordionData && accordionData.length !== 0 ? (
-          accordionData.map((item) => (
-            <React.Fragment key={item.id}>
-              <h2 className="accordion-header">
-                <button
-                  className="accordion-button collapsed border"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseOne"
-                  aria-expanded="false"
-                  aria-controls="flush-collapseOne"
-                >
-                  {item.moduleName}
-                </button>
-              </h2>
-              <div
-                id="flush-collapseOne"
-                className="accordion-collapse collapse"
-                data-bs-parent="#accordionFlushExample"
+    <Div divClass="accordion" id="accordionExample">
+      {accordionData && accordionData.length !== 0 ? (
+        accordionData.map((item) => (
+          <Div divClass="accordion-item" key={item.id}>
+            <Heading headingClass="accordion-header">
+              <Button
+                buttonClass={
+                  accordion === "show" && accordionId === item.id
+                    ? "accordion-button collapsed"
+                    : "accordion-button"
+                }
+                buttonHandler={() => openAccordion(item.id)}
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
               >
-                <div className="accordion-body">
-                {item.listText}
-                </div>
-              </div>
-            </React.Fragment>
-          ))
-        ) : (
-          <></>
-        )}
-      </div>
-    </div>
+                {item.moduleName}
+              </Button>
+            </Heading>
+            <Div
+              id="collapseOne"
+              divClass={
+                accordion === "show" && accordionId === item.id
+                  ? `accordion-collapse show mt-3`
+                  : `accordion-collapse collapse`
+              }
+              data-bs-parent="#accordionExample"
+            >
+              <Div divClass="accordion-body">{item.listText}</Div>
+            </Div>
+          </Div>
+        ))
+      ) : (
+        <></>
+      )}
+    </Div>
   );
 });

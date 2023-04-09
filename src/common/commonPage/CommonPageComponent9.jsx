@@ -24,9 +24,9 @@ export const ApplyNow = React.memo(({ sectionData, inputSchemas }) => {
   const { textInput, selectInputOptions } = inputSchemas;
 
   return (
-    <Div divClass="container mt-5">
+    <Div divClass="container mt-5 pt-3">
       <Div divClass="row d-flex justify-content-between">
-        <Heading headingClass="fw-bold">{headingText}</Heading>
+        <Heading headingClass="fw-bold mb-4">{headingText}</Heading>
         <Div divClass="col-sm-12 col-md-6 col-lg-6">
           <CommonCard cardClass="card rounded-0">
             <Paragraph paragraphClass="align-justify">
@@ -57,7 +57,7 @@ export const ApplyNow = React.memo(({ sectionData, inputSchemas }) => {
         </Div>
 
         <Div divClass="col-sm-12 col-md-6 col-lg-6">
-          <CommonCard cardClass="row card rounded-0">
+          <CommonCard cardClass="row card rounded-0 h-100">
             <SubHeading>{subheadingText}</SubHeading>
             {paragrphTextData && paragrphTextData.length !== 0 ? (
               paragrphTextData.map((item) => (

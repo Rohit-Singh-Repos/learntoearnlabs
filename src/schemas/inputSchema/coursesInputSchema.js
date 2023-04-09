@@ -7,10 +7,10 @@ export const coursesInputSchemas = {
         {id:uuid(),textInputName:"mobile",textInputType:"text",textInputPlaceholder:"Mobile Number..."},
     ],
     selectInputOptions:[
-        {id:uuid(),optionText:"Working Professionals",optionValue:"Working Professionals"},
         {id:uuid(),optionText:"Graduates",optionValue:"Graduates"},
         {id:uuid(),optionText:"Post Graduates",optionValue:"Post Graduates"},
         {id:uuid(),optionText:"Students",optionValue:"Students"},
+        {id:uuid(),optionText:"Working Professionals",optionValue:"Working Professionals"},
         {id:uuid(),optionText:"Business Owner",optionValue:"Business Owner"},
         {id:uuid(),optionText:"Others",optionValue:"Others"},
     ]

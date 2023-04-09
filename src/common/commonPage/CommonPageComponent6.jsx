@@ -2,7 +2,7 @@ import React from "react";
 import {
   Div,
   Paragraph,
-  Heading,
+  SubHeading,
 } from "components";
 
 export const WhoCanJoin = React.memo(({ sectionData }) => {
@@ -14,12 +14,12 @@ export const WhoCanJoin = React.memo(({ sectionData }) => {
     } = {},
   } = sectionData;
   return (
-    <Div divClass="container mt-5">
+    <Div divClass="container mt-5 pt-3">
       <Div divClass="row">
         <Div divClass="col-sm-12 col-md-12 col-lg-12">
-            <Heading headingClass="fw-bold">{headingText}</Heading>
-            <Paragraph paragraphClass="align-justify">{paragraphText1}</Paragraph>
-            <Paragraph paragraphClass="align-justify">{paragraphText2}</Paragraph>
+            <SubHeading subheadingClass="fw-bold">{headingText}</SubHeading>
+            <Paragraph paragraphClass="align-justify mt-4">{paragraphText1}</Paragraph>
+            <Paragraph paragraphClass="align-justify mt-4">{paragraphText2}</Paragraph>
         </Div>
       </Div>  
     </Div>
