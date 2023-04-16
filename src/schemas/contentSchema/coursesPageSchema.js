@@ -848,7 +848,7 @@ export const trainTheTrainerSchema = {
 
 export const htmlCssJSScheme = {
     landingPageSection:{
-        headingText:"Cloud Computing & Devops Training Program",
+        headingText:"Front-End Design (HTML, CSS & JavaScript)",
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
         cardData:[
@@ -948,7 +948,7 @@ export const htmlCssJSScheme = {
 
 export const javaSchema = {
     landingPageSection:{
-        headingText:"Cloud Computing & Devops Training Program",
+        headingText:"Become an Expert in Java Programming",
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
         cardData:[
@@ -1048,7 +1048,7 @@ export const javaSchema = {
 
 export const pythonSchema = {
     landingPageSection:{
-        headingText:"Cloud Computing & Devops Training Program",
+        headingText:"Become an Expert in Python Programming",
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
         cardData:[
@@ -1148,7 +1148,7 @@ export const pythonSchema = {
 
 export const linuxSchema = {
     landingPageSection:{
-        headingText:"Cloud Computing & Devops Training Program",
+        headingText:"Become an Expert with Linux and AWS",
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
         cardData:[
@@ -1248,7 +1248,7 @@ export const linuxSchema = {
 
 export const mySQLSchema = {
     landingPageSection:{
-        headingText:"Cloud Computing & Devops Training Program",
+        headingText:"Become an Expert MySQL DBA",
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
         cardData:[
@@ -1759,7 +1759,7 @@ export const dsSchema = {
 
 export const socialMediaSchema = {
     landingPageSection:{
-        headingText:"Cloud Computing & Devops Training Program",
+        headingText:"Become an expert Social Media Marketer",
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
         cardData:[
@@ -1859,7 +1859,7 @@ export const socialMediaSchema = {
 
 export const googleAdsSchema = {
     landingPageSection:{
-        headingText:"Cloud Computing & Devops Training Program",
+        headingText:"Become an expert in Google Ads",
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
         cardData:[
@@ -1959,7 +1959,7 @@ export const googleAdsSchema = {
 
 export const wordpressSchema = {
     landingPageSection:{
-        headingText:"Cloud Computing & Devops Training Program",
+        headingText:"Become an expert in WordPress & Blogging",
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
         cardData:[
@@ -2059,7 +2059,7 @@ export const wordpressSchema = {
 
 export const seoSchema = {
     landingPageSection:{
-        headingText:"Cloud Computing & Devops Training Program",
+        headingText:"Become a certified SEO Expert",
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
         cardData:[
@@ -2159,7 +2159,7 @@ export const seoSchema = {
 
 export const contentMarketingSchema = {
     landingPageSection:{
-        headingText:"Cloud Computing & Devops Training Program",
+        headingText:"Become an expert in Content Marketing",
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
         cardData:[
@@ -2259,7 +2259,7 @@ export const contentMarketingSchema = {
 
 export const affiliateMarketingSchema = {
     landingPageSection:{
-        headingText:"Cloud Computing & Devops Training Program",
+        headingText:"Become an expert in Affiliate Marketing",
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
         cardData:[

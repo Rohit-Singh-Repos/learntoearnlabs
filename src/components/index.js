@@ -9,3 +9,4 @@ export { SliderComponent } from "components/Slider";
 export { LinkComponent } from "components/Link";
 export { Accordion } from "components/Accordion";
 export { TextInput, SelectInput } from "components/FormInput";
+export { Map } from "components/Map";
