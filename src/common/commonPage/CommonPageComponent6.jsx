@@ -39,8 +39,8 @@ export const WhoCanJoin = React.memo(({ sectionData }) => {
                   <LinkComponent pathName={item.pathName}>
                     <CommonCard cardClass="card d-flex align-items-center rounded-0 h-100">
                       <Image
-                        width={index === 0 ? 190 : index === 1 ? 210 : 400}
-                        height={index === 0 ? 190 : index === 1 ? 210 : 400}
+                        width={index !== 2 ? 200 : 350}
+                        height={index !== 2 ? 200 : 350}
                         imagePath={item.cardImagePath}
                         imageClass="img-fluid"
                         imageAltText=""
