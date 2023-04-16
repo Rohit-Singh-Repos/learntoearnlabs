@@ -14,6 +14,9 @@ const DevopsPage = lazy(() => import('pages/courses/devops/Devops').then(module 
 const TrainTheTrainerProgram = lazy(() => import('pages/courses/trainTheTrainer/TrainTheTrainer').then(module => ({ default: module.TrainTheTrainerProgram })));
 const DesignThinking = lazy(() => import('pages/courses/designThinking/DesignThinking').then(module => ({ default: module.DesignThinking })));
 const ProgramingFundamentals = lazy(() => import('pages/courses/programmingFundamentals/ProgramingFundamentals').then(module => ({ default: module.ProgramingFundamentals })));
+const CProgrammingPage = lazy(() => import('pages/courses/programmingFundamentals/cProgramming').then(module => ({ default: module.CProgrammingPage })));
+const CPPProgrammingPage = lazy(() => import('pages/courses/programmingFundamentals/cppProgramming').then(module => ({ default: module.CPPProgrammingPage })));
+const DSAProgrammingPages = lazy(() => import('pages/courses/programmingFundamentals/dataStructuresProgramming').then(module => ({ default: module.DSAProgrammingPages })));
 const JavaCourse = lazy(() => import('pages/courses/java/Java').then(module => ({ default: module.JavaCourse })));
 const PythonCourse = lazy(() => import('pages/courses/python/Python').then(module => ({ default: module.PythonCourse })));
 const MySQLDatabase = lazy(() => import('pages/courses/mySQLDatabase/MySQLDatabase').then(module => ({ default: module.MySQLDatabase })));
@@ -52,9 +55,9 @@ export const Layout = React.memo(() => {
           <Route path="/mysql-database-course" element={<MySQLDatabase/>}/>
           <Route path="/linux-and-aws-course" element={<LinuxAndAWS/>}/>
           <Route path="/html-css-javascript-course" element={<HtmlCssJsCourse/>}/>
-          <Route path="/c-programming-course" element={<DevopsPage/>}/>
-          <Route path="/cpp-programming-course" element={<DevopsPage/>}/>
-          <Route path="/data-structure-and-algorithm-course" element={<DevopsPage/>}/>
+          <Route path="/c-programming-course" element={<CProgrammingPage/>}/>
+          <Route path="/cpp-programming-course" element={<CPPProgrammingPage/>}/>
+          <Route path="/data-structure-and-algorithm-course" element={<DSAProgrammingPages/>}/>
           <Route path="/power-bi-course" element={<DevopsPage/>}/>
           <Route path="/mentorship-program" element={<DevopsPage/>}/>
           <Route path="/wordpress-and-blogging-course" element={<WordpressAndBlogging/>}/>

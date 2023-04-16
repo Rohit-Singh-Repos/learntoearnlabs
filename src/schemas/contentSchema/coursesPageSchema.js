@@ -1348,7 +1348,8 @@ export const mySQLSchema = {
 
 export const programmingSchema = {
     landingPageSection:{
-        headingText:"Cloud Computing & Devops Training Program",
+        imagePath:COVER_IMAGES.programmingFundamentals,
+        headingText:"Programming Fundamentals (C, C++ and Data Structure)",
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
         cardData:[
@@ -1388,7 +1389,16 @@ export const programmingSchema = {
         headingText:"Who can join",
         paragraphText1:"Any student can join the programming fundamentals training program . The student must have interest in programming with basic computer knowledge.",
         paragraphText2:"Students from any specializations of B.Tech / M.Tech / BCA / MCA / B.Sc. / M.Sc, who are looking to learn programming and enhance their practical skills can join the programming fundamentals training program.",
-        paragraphText3:"Working professionals or job seekers, who are looking to enhance their programming skills can join the programming fundamentals training program."
+        paragraphText3:"Working professionals or job seekers, who are looking to enhance their programming skills can join the programming fundamentals training program.",
+        secondSection:{
+            headingTextData:"Option to choose, separate program",
+            paragraphTextData:"If you want to enhance your programming skills & concepts then you can also choose a specific training program.",
+            cardData:[
+                {id:uuid(),cardText:"C Programming",cardImagePath:COURSES_PAGE_IMAGES.cLanguageImage,pathName:"/c-programming-course"},
+                {id:uuid(),cardText:"C++ Programming",cardImagePath:COURSES_PAGE_IMAGES.cppLanguageImage,pathName:"/cpp-programming-course"},
+                {id:uuid(),cardText:"Data Structure & Algorithms",cardImagePath:COURSES_PAGE_IMAGES.dataStructureImage,pathName:"/data-structure-and-algorithm-course"},
+            ]
+        }
     },
     trainingModeSection:{
         headingText:"Training Mode",

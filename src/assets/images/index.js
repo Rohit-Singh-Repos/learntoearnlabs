@@ -7,6 +7,7 @@ import fullStackEngineerCoverImage from "assets/images/Cover Images/full-stack-d
 import javaFullStackCoverImage from "assets/images/Cover Images/java-full-stack-development-cover.webp";
 import mernStackCoverImage from "assets/images/Cover Images/mern-stack-development-cover.webp";
 import aboutUsImage from "assets/images/Cover Images/about-us-cover.webp";
+import programmingFundamentals from "assets/images/Cover Images/c-programming-cover.webp";
 // import designThinkingCoverImage from "assets/images/Cover Images";
 
 // Homepage Images
@@ -115,6 +116,9 @@ import careerSupportImage4 from "assets/images/Career Support/career_support_ima
 import careerSupportImage5 from "assets/images/Career Support/career_support_image_5.JPG";
 import cashbackImage from "assets/images/Benefits/cashback.webp";
 import workIncentivesImage from "assets/images/Benefits/work-incentives.webp";
+import cLanguageImage from "assets/images/Programming/c-language.webp";
+import cppLanguageImage from "assets/images/Programming/cpp-language.webp";
+import dataStructureImage from "assets/images/Programming/data-structure.webp";
 
 
 export const COVER_IMAGES = {
@@ -125,7 +129,8 @@ export const COVER_IMAGES = {
     fullStackEngineerCoverImage,
     javaFullStackCoverImage,
     mernStackCoverImage,
-    aboutUsImage
+    aboutUsImage,
+    programmingFundamentals
 }
 
 export const HOME_PAGE_IMAGES = {
@@ -235,5 +240,8 @@ export const COURSES_PAGE_IMAGES = {
     careerSupportImage4,
     careerSupportImage5,
     cashbackImage,
-    workIncentivesImage
+    workIncentivesImage,
+    cLanguageImage,
+    cppLanguageImage,
+    dataStructureImage
 }
