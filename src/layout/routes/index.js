@@ -30,6 +30,7 @@ const ContentMarketingCourse = lazy(() => import('pages/courses/contentMarketing
 const AffiliateMarketingCourse = lazy(() => import('pages/courses/affiliateMarketing/AffiliateMarketing').then(module => ({ default: module.AffiliateMarketingCourse })));
 const ContactPage = lazy(() => import('pages/contact/Contact').then(module => ({ default: module.ContactPage })));
 const CashbackComponent = lazy(() => import('pages/cashback/cashback').then(module => ({ default: module.CashbackComponent })));
+const Certificates = lazy(() => import('pages/certificateVerification/CertificateVerification.jsx').then(module => ({ default: module.Certificates })));
 const ErrorPage = lazy(() => import('pages/404/404Page').then(module => ({ default: module.ErrorPage })));
 
 export const Layout = React.memo(() => {
@@ -42,7 +43,7 @@ export const Layout = React.memo(() => {
           <Route path="/about-us" element={<AboutPage/>}/>
           <Route path="/contact-us" element={<ContactPage/>}/>
           <Route path="/cashback" element={<CashbackComponent/>}/>
-          <Route path="/verify-certificate" element={<ContactPage/>}/>
+          <Route path="/verify-certificate" element={<Certificates/>}/>
           {/* <Route path="/practise" element={<ContactPage/>}/>
           <Route path="/full-stack-engineer-course" element={<ContactPage/>}/>
           <Route path="/digital-marketing-course" element={<ContactPage/>}/> */}
