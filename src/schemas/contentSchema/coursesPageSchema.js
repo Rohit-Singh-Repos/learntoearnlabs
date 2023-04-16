@@ -1559,12 +1559,12 @@ export const cProgrammingSchema = {
 
 export const cPlusSchema = {
     landingPageSection:{
-        headingText:"Cloud Computing & Devops Training Program",
+        headingText:"Become an Expert in C++ Programming",
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
         cardData:[
             {id:1,heading:"4",subHeading:"Training Modules",borderShow:true},
-            {id:2,heading:"300+",subHeading:"Programs",borderShow:true},
+            {id:2,heading:"200+",subHeading:"Programs",borderShow:true},
             {id:3,heading:"30/60",subHeading:"Days Duration",borderShow:true},
             {id:4,heading:"5+",subHeading:"Minor Projects",borderShow:false},
         ]
@@ -1659,7 +1659,7 @@ export const cPlusSchema = {
 
 export const dsSchema = {
     landingPageSection:{
-        headingText:"Cloud Computing & Devops Training Program",
+        headingText:"Data Structure & Algorithms",
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
         cardData:[

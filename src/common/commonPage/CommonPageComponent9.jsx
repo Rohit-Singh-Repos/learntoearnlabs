@@ -54,7 +54,6 @@ export const ApplyNow = React.memo(({ sectionData, inputSchemas }) => {
             <Div divClass="d-grid gap-2 col-6 mx-auto mt-4">
                   <Button buttonClass="btn btn-primary rounded-0">{buttonText}</Button>
                 </Div>
-            
           </CommonCard>
         </Div>
 
