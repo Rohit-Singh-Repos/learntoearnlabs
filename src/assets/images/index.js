@@ -8,6 +8,18 @@ import javaFullStackCoverImage from "assets/images/Cover Images/java-full-stack-
 import mernStackCoverImage from "assets/images/Cover Images/mern-stack-development-cover.webp";
 import aboutUsImage from "assets/images/Cover Images/about-us-cover.webp";
 import programmingFundamentals from "assets/images/Cover Images/c-programming-cover.webp";
+import cProgramming from "assets/images/Cover Images/c-programming-cover.webp";
+import javaProgramming from "assets/images/Cover Images/java-programming-cover.webp";
+import pythonProgramming from "assets/images/Cover Images/python-programming-cover.webp";
+import mySQLProgramming from "assets/images/Cover Images/mysql-database-cover.webp";
+import linuxAndAWS from "assets/images/Cover Images/linux-and-aws-course.webp";
+import wordpressAndBlogging from "assets/images/Cover Images/wordpress-and-blogging-cover.webp";
+import googleAds from "assets/images/Cover Images/google-ads-cover.webp";
+import socialMediaMarketing from "assets/images/Cover Images/social-media-marketing-cover.webp";
+import searchEngineOptimizationn from "assets/images/Cover Images/search-engine-optimization.webp";
+import contentMarketing from "assets/images/Cover Images/content-marketing-cover.webp";
+import affiliateMarketing from "assets/images/Cover Images/affiliate-marketing-cover.webp";
+
 // import designThinkingCoverImage from "assets/images/Cover Images";
 
 // Homepage Images
@@ -130,7 +142,18 @@ export const COVER_IMAGES = {
     javaFullStackCoverImage,
     mernStackCoverImage,
     aboutUsImage,
-    programmingFundamentals
+    programmingFundamentals,
+    cProgramming,
+    javaProgramming,
+    pythonProgramming,
+    mySQLProgramming,
+    linuxAndAWS,
+    wordpressAndBlogging,
+    googleAds,
+    socialMediaMarketing,
+    searchEngineOptimizationn,
+    contentMarketing,
+    affiliateMarketing
 }
 
 export const HOME_PAGE_IMAGES = {

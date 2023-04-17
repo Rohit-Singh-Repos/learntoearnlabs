@@ -849,6 +849,7 @@ export const trainTheTrainerSchema = {
 
 export const htmlCssJSScheme = {
     landingPageSection:{
+        imagePath:COVER_IMAGES.mernStackCoverImage,
         headingText:"Front-End Design (HTML, CSS & JavaScript)",
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
@@ -949,6 +950,7 @@ export const htmlCssJSScheme = {
 
 export const javaSchema = {
     landingPageSection:{
+        imagePath:COVER_IMAGES.javaProgramming,
         headingText:"Become an Expert in Java Programming",
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
@@ -1049,6 +1051,7 @@ export const javaSchema = {
 
 export const pythonSchema = {
     landingPageSection:{
+        imagePath:COVER_IMAGES.pythonProgramming,
         headingText:"Become an Expert in Python Programming",
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
@@ -1149,6 +1152,7 @@ export const pythonSchema = {
 
 export const linuxSchema = {
     landingPageSection:{
+        imagePath:COVER_IMAGES.linuxAndAWS,
         headingText:"Become an Expert with Linux and AWS",
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
@@ -1249,6 +1253,7 @@ export const linuxSchema = {
 
 export const mySQLSchema = {
     landingPageSection:{
+        imagePath:COVER_IMAGES.mySQLProgramming,
         headingText:"Become an Expert MySQL DBA",
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
@@ -1459,7 +1464,7 @@ export const programmingSchema = {
 
 export const cProgrammingSchema = {
     landingPageSection:{
-        // imagePath:,
+        imagePath:COVER_IMAGES.cProgramming,
         headingText:"Become an Expert in C Programming",
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
@@ -1560,6 +1565,7 @@ export const cProgrammingSchema = {
 
 export const cPlusSchema = {
     landingPageSection:{
+        imagePath:COVER_IMAGES.cProgramming,
         headingText:"Become an Expert in C++ Programming",
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
@@ -1660,6 +1666,7 @@ export const cPlusSchema = {
 
 export const dsSchema = {
     landingPageSection:{
+        imagePath:COVER_IMAGES.cProgramming,
         headingText:"Data Structure & Algorithms",
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
@@ -1760,6 +1767,7 @@ export const dsSchema = {
 
 export const socialMediaSchema = {
     landingPageSection:{
+        imagePath:COVER_IMAGES.socialMediaMarketing,
         headingText:"Become an expert Social Media Marketer",
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
@@ -1860,6 +1868,7 @@ export const socialMediaSchema = {
 
 export const googleAdsSchema = {
     landingPageSection:{
+        imagePath:COVER_IMAGES.googleAds,
         headingText:"Become an expert in Google Ads",
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
@@ -1960,6 +1969,7 @@ export const googleAdsSchema = {
 
 export const wordpressSchema = {
     landingPageSection:{
+        imagePath:COVER_IMAGES.wordpressAndBlogging,
         headingText:"Become an expert in WordPress & Blogging",
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
@@ -2060,6 +2070,7 @@ export const wordpressSchema = {
 
 export const seoSchema = {
     landingPageSection:{
+        imagePath:COVER_IMAGES.searchEngineOptimizationn,
         headingText:"Become a certified SEO Expert",
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
@@ -2160,6 +2171,7 @@ export const seoSchema = {
 
 export const contentMarketingSchema = {
     landingPageSection:{
+        imagePath:COVER_IMAGES.contentMarketing,
         headingText:"Become an expert in Content Marketing",
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
@@ -2260,6 +2272,7 @@ export const contentMarketingSchema = {
 
 export const affiliateMarketingSchema = {
     landingPageSection:{
+        imagePath:COVER_IMAGES.affiliateMarketing,
         headingText:"Become an expert in Affiliate Marketing",
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
