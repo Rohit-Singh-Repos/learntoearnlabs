@@ -8,7 +8,7 @@ export const TrainerProgram = React.memo(() => {
       <Div divClass="row mt-3">
         <Div divClass="col-lg-8 col-md-6 col-sm-12 mb-2">
           <SubHeading subheadingClass="fw-bold text-primary">
-            Our Unique
+            Our unique
           </SubHeading>
           <SubHeading subheadingClass="fw-bold">
             Train The Trainer Program
