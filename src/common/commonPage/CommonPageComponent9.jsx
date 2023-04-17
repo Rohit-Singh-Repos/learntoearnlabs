@@ -12,7 +12,7 @@ import {
 } from "components";
 import { FaUserGraduate, AiOutlineGroup, FiMonitor } from "assets/icons"
 
-export const ApplyNow = React.memo(({ sectionData, inputSchemas }) => {
+export const ApplyNow = React.memo(({ sectionData, inputSchemas, mobileDetector }) => {
   const {
     applyNowSection: {
       headingText,
@@ -25,9 +25,9 @@ export const ApplyNow = React.memo(({ sectionData, inputSchemas }) => {
   const { textInput, selectInputOptions } = inputSchemas;
 
   return (
-    <Div divClass="container mt-5 pt-3">
+    <Div divClass="container mt-5">
       <Div divClass="row d-flex justify-content-between">
-        <Heading headingClass="fw-bold mb-5">{headingText}</Heading>
+        <SubHeading subheadingClass="fw-bold mb-5">{headingText}</SubHeading>
         <Div divClass="col-sm-12 col-md-6 col-lg-6">
           <CommonCard cardClass="card rounded-0">
             <Paragraph paragraphClass="align-justify mb-4">
@@ -58,13 +58,13 @@ export const ApplyNow = React.memo(({ sectionData, inputSchemas }) => {
         </Div>
 
         <Div divClass="col-sm-12 col-md-6 col-lg-6">
-          <CommonCard cardClass="row card rounded-0 h-100">
+          <CommonCard cardClass={`row card rounded-0 h-100 ${mobileDetector ? "mt-3" : ""}`}>
             <SubHeading subheadingClass="mb-5 fw-bold">{subheadingText}</SubHeading>
             {paragrphTextData && paragrphTextData.length !== 0 ? (
               paragrphTextData.map((item,index) => (
-                <Div divClass="row d-flex align-items-center mt-4" key={item.id}>
+                <Div divClass={`${mobileDetector ? "" : "row"} d-flex align-items-center mt-4`} key={item.id}>
                   <Div divClass="col-sm-1 col-md-1 col-lg-1 pe-3">{
-                    index === 0 ? <FaUserGraduate className="text-primary" size={50}/> : index === 1 ? <FiMonitor className="text-primary" size={50}/> : <AiOutlineGroup className="text-primary" size={50}/>
+                    index === 0 ? <FaUserGraduate className="text-primary" size={mobileDetector ? 40 : 50}/> : index === 1 ? <FiMonitor className="text-primary" size={mobileDetector ? 40 : 50}/> : <AiOutlineGroup className="text-primary" size={mobileDetector ? 40 : 50}/>
                   }</Div>
                   <Div divClass="col-sm-11 col-md-11 col-lg-11 ps-4">{item.text}</Div>
                 </Div>

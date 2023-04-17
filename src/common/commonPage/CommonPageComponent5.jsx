@@ -20,7 +20,7 @@ export const CloudDevopsTraining = React.memo(
     } = sectionData;
 
     return (
-      <Div divClass="container mt-5 pt-3">
+      <Div divClass="container mt-5">
         <Div divClass="row">
           <Div divClass="col-sm-12 col-md-5 col-lg-5">
             <CommonCard cardClass="bg-primary p-3 h-100 pt-5 ps-5 pe-5 d-flex">

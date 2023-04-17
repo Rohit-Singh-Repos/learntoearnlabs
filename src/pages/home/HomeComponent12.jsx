@@ -32,14 +32,14 @@ export const Placements = React.memo(() => {
         <SubHeading subheadingClass="fw-bold text-center">
           Placements & Tie-ups
         </SubHeading>
-        <Paragraph paragraphClass="align-justify text-center text-15">
+        <Paragraph paragraphClass="align-justify text-center text-15 mt-2">
           Our students are working with renowned companies and are happy with
           their careers. <br />
           We also have tie-ups with 300+ corporate professionals.
         </Paragraph>
       </Div>
-      <Div divClass="row mt-5">
-      <Div divClass="col-lg-12 col-md-12 col-sm-12 mt-5 ">
+      <Div divClass="row">
+      <Div divClass="col-lg-12 col-md-12 col-sm-12 mt-3">
           <SliderComponent 
             sliderData={sliderData}
             verticalAlign={true}

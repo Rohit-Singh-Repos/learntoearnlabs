@@ -13,7 +13,7 @@ export const WhoCanJoin = React.memo(({ sectionData }) => {
     } = {},
   } = sectionData;
   return (
-    <Div divClass="container mt-5 pt-3">
+    <Div divClass="container mt-5">
       <Div divClass="row">
         <Div divClass="col-sm-12 col-md-12 col-lg-12">
           <SubHeading subheadingClass="fw-bold">{headingText}</SubHeading>

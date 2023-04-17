@@ -13,7 +13,7 @@ import {
 } from "components";
 import { MdOutlinePhoneInTalk } from "assets/icons"
 
-export const ProgramDetails = React.memo(({ sectionData, inputSchemas }) => {
+export const ProgramDetails = React.memo(({ sectionData, inputSchemas, mobileDetector }) => {
   const {
     programDetailsSection: {
       headingText,
@@ -26,15 +26,15 @@ export const ProgramDetails = React.memo(({ sectionData, inputSchemas }) => {
   } = sectionData;
   const { textInput, selectInputOptions } = inputSchemas;
   return (
-    <Div divClass="container mt-5 pt-3">
+    <Div divClass="container mt-5">
       <Div divClass="row">
-        <Heading headingClass="fw-bold mb-4">{headingText}</Heading>
+        <SubHeading subheadingClass="fw-bold mb-4">{headingText}</SubHeading>
         <Div divClass="col-sm-12 col-md-6 col-lg-8">
           <Paragraph paragraphClass="align-justify">{paragraphText}</Paragraph>
           <Accordion accordionData={moduleTextData} />
         </Div>
         <Div divClass="col-sm-12 col-md-6 col-lg-4">
-          <CommonCard cardClass="card rounded-0 col-sm-12 col-md-12 col-lg-12 text-center">
+          <CommonCard cardClass={`card rounded-0 col-sm-12 col-md-12 col-lg-12 text-center ${mobileDetector ? "mt-3" : ""}`}>
             <Paragraph paragraphClass="fw-bold fs-25">
               Feel free to call
             </Paragraph>
@@ -70,7 +70,7 @@ export const ProgramDetails = React.memo(({ sectionData, inputSchemas }) => {
           </CommonCard>
         </Div>
         <Div divClass="row col-sm-12 col-md-12 col-lg-12 d-flex justify-content-around mt-5 pt-3">
-          <Heading headingClass="fw-bold">{discountHeadingText}</Heading>
+          <SubHeading subheadingClass="fw-bold">{discountHeadingText}</SubHeading>
           {discountCard && discountCard.length !== 0 ? (
             discountCard.map((item) => (
               <CommonCard

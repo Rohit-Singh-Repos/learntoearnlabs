@@ -8,6 +8,7 @@ import {
   UnorderedList,
   ListItem,
   Button,
+  Span,
 } from "components";
 import { MdLocationPin } from "assets/icons";
 
@@ -26,11 +27,11 @@ export const TrainingMode = React.memo(({ sectionData, mobileDetector }) => {
     } = {},
   } = sectionData;
   return (
-    <Div divClass="container mt-5 pt-3">
+    <Div divClass="container mt-5">
       <SubHeading subheadingClass="fw-bold mb-4">{headingText}</SubHeading>
       <Div divClass="row">
         <Div divClass="col-sm-12 col-md-6 col-lg-6">
-          <CommonCard cardClass="card rounded-0 p-4 h-100">
+          <CommonCard cardClass={`card rounded-0 ${mobileDetector ? "p-2" : "p-4"} h-100`}>
             <SubHeading subheadingClass="fw-bold fs-25 text-center">
               {headingText1}
             </SubHeading>
@@ -58,24 +59,24 @@ export const TrainingMode = React.memo(({ sectionData, mobileDetector }) => {
             </Div>
           </CommonCard>
         </Div>
-        <Div divClass="col-sm-12 col-md-6 col-lg-6">
-          <CommonCard cardClass="card rounded-0 bg-primary text-white p-4 h-100">
+        <Div divClass={`col-sm-12 col-md-6 col-lg-6 ${mobileDetector ? "mt-3" : ""}`}>
+          <CommonCard cardClass={`card rounded-0 bg-primary text-white ${mobileDetector ? "p-1" : "p-4"} h-100`}>
             <Heading headingClass="fw-bold fs-25 text-center">
               {headingText2}
             </Heading>
-            <Div divClass="row">
-              <Div divClass="col-sm-2 col-md-2 col-lg-2 mt-5 pt-3">
-                <MdLocationPin color="#fff" size={80}/>
+            <Div divClass={mobileDetector ? "d-flex" : "row"}>
+              <Div divClass="col-sm-2 col-md-2 col-lg-2 mt-3 pt-3">
+                <MdLocationPin color="#fff" size={mobileDetector ? 50 : 80}/>
               </Div>
               <Div
                 divClass={
                   mobileDetector
-                    ? "col-sm-10 col-md-10 col-lg-10 mt-5 pt-3"
+                    ? "col-sm-10 col-md-10 col-lg-10 mt-3 pt-3"
                     : "col-sm-10 col-md-10 col-lg-10 mt-5 mb-5 pb-5"
                 }
               >
                 <Paragraph paragraphClass="fw-bold">{addressHeading}</Paragraph>
-                <Paragraph>{addressText}</Paragraph>
+                <Paragraph paragraphClass="align-justify">{addressText}</Paragraph>
                 <Paragraph>{phoneText}</Paragraph>
               </Div>
             </Div>

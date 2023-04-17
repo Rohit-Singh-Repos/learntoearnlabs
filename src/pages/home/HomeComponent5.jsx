@@ -20,7 +20,7 @@ export const TrainingPrograms = React.memo(() => {
           Top-Edge Training Programs
         </SubHeading>
       </Div>
-      <Div divClass="row mt-5 pt-2">
+      <Div divClass="row mt-5">
         <Div divClass="col-lg-4 col-md-6 col-sm-12 mb-2">
           <LinkComponent pathName="/java-full-stack-course">
             <CommonCard cardClass="card d-flex align-items-center rounded-0">

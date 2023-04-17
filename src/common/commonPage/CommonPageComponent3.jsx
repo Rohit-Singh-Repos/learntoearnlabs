@@ -11,7 +11,7 @@ export const TrainingRoadMap = React.memo(({ sectionData, mobileDetector }) => {
     } = {},
   } = sectionData;
   return (
-    <Div divClass="container mt-5 pt-3">
+    <Div divClass="container mt-5">
       <Div divClass="row">
         <Div divClass="col-sm-12 col-md-5 col-lg-5">
           <Heading headingClass="text-primary fw-bold">

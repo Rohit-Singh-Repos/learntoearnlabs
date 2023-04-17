@@ -13,7 +13,7 @@ export const YoungTalent = React.memo(() => {
           Our Young Talent & Star
         </SubHeading>
       </Div>
-      <Div divClass="row mt-5">
+      <Div divClass="row mt-2">
         <Div divClass="col-lg-4 col-md-4 col-sm-12 mb-2"></Div>
         <Div divClass="col-lg-4 col-md-4 col-sm-12 mb-2">
           <CommonCard cardClass="card d-flex align-items-center border-0">

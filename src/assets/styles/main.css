@@ -20,7 +20,7 @@ body {
 
 .align-justify {
   text-align: justify;
-  word-spacing: -0.05em;
+  word-spacing: -2px;
 }
 
 .fs-12 {
@@ -106,8 +106,12 @@ body {
 }
 
 .h-100-vh{
-  height: 90vh !important;
+  height: 96vh !important;
 }
+
+/* .h-100-vh-1{
+  height: 96vh !important;
+} */
 
 /* HeroSection Start */
 
@@ -126,9 +130,7 @@ body {
   .button {
     width: 100px;
     height: 40px;
-  }
-
-  
+  } 
 
 }
 

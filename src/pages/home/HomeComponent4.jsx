@@ -7,7 +7,7 @@ export const JoinComponent = React.memo(() => {
       <Div divClass='row'>
         <SubHeading subheadingClass="fw-bold text-primary">Why you should join</SubHeading>
         <SubHeading subheadingClass="fw-bold">Learn2Earn Labs</SubHeading>
-        <Paragraph paragraphClass="align-justify pt-5">We believe that education is a lifelong pursuit, and we are here to support you at every step of the learning journey, dedicatedly.
+        <Paragraph paragraphClass="align-justify pt-2">We believe that education is a lifelong pursuit, and we are here to support you at every step of the learning journey, dedicatedly.
         </Paragraph>
         <Paragraph paragraphClass="align-justify">We are on a mission to help people learn, grow and achieve more in life.
         </Paragraph>

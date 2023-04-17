@@ -11,7 +11,7 @@ export const CloudDevopsCareer = React.memo(({
     } = {} } = sectionData
 
     return (
-      <Div divClass="container mt-5 pt-3">
+      <Div divClass="container">
         <Div divClass="row">
             <SubHeading subheadingClass="fw-bold">{headingText}</SubHeading>
             <Div divClass="col-sm-12 col-md-5 col-lg-5 mt-4">

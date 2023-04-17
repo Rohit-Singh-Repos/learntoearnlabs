@@ -26,8 +26,8 @@ export const StudentReviews = React.memo(() => {
           Student Reviews
         </SubHeading>
       </Div>
-      <Div divClass="row mt-5">
-      <Div divClass="col-lg-12 col-md-12 col-sm-12 mt-5 ">
+      <Div divClass="row">
+      <Div divClass="col-lg-12 col-md-12 col-sm-12 mt-3">
           <SliderComponent 
             sliderData={sliderData}
             contentClass="card h-100"

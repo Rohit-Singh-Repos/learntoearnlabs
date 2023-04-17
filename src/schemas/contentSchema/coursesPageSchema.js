@@ -419,7 +419,8 @@ export const designThinkingSchema = {
 export const javaFullStackSchema = {
     landingPageSection:{
         imagePath:COVER_IMAGES.javaFullStackCoverImage,
-        headingText:`Java Full Stack Training Program`,
+        headingText:`Java Full Stack`,
+        subHeadingText:`Training Program`,
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
         cardData:[

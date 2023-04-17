@@ -6,7 +6,7 @@ import { COVER_IMAGES } from 'assets/images';
 
 export const LandingPage = React.memo(({mobileDetector}) => {
   return (
-    <Div divClass="container mb-5 mt-5">
+    <Div divClass="container mb-5">
       <HeroSection
           cardData={homePageSchema}
           mobileDetector={mobileDetector}

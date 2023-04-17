@@ -38,8 +38,8 @@ export const CommonPageComponent = React.memo(
         <CloudDevopsTraining sectionData={sectionData} mobileDetector={mobile}/>
         <WhoCanJoin sectionData={sectionData} />
         <TrainingMode sectionData={sectionData} mobileDetector={mobile}/>
-        <ProgramDetails sectionData={sectionData} inputSchemas={inputSchemas} />
-        <ApplyNow sectionData={sectionData} inputSchemas={inputSchemas}/>
+        <ProgramDetails sectionData={sectionData} inputSchemas={inputSchemas} mobileDetector={mobile}/>
+        <ApplyNow sectionData={sectionData} inputSchemas={inputSchemas} mobileDetector={mobile}/>
       </>
     );
   }
