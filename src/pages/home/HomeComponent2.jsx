@@ -1,9 +1,9 @@
 import React from "react";
 import { CommonCard, Div, Paragraph, Heading } from "components";
 
-export const ProfessionalJourney = React.memo(() => {
+export const ProfessionalJourney = React.memo(({mobileDetector}) => {
   return (
-    <Div divClass="container mb-5 mt-5 pt-5">
+    <Div divClass={mobileDetector ? "container mb-5 mt-5" : "container mb-5 mt-5"}>
       <Div divClass="row d-flex justify-content-around align-items-center">
         <Div divClass="col-sm-12 col-md-12 col-lg-6">
           <Heading headingClass="text-primary fw-bold">Start Your</Heading>

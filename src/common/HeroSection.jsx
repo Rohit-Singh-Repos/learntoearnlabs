@@ -21,7 +21,7 @@ export const HeroSection = React.memo(
   }) => {
 
     return (
-      <Div divClass="row align-items-center">
+      <Div divClass={mobileDetector ? "row align-items-center" : "row align-items-center h-100-vh"}>
         <Div divClass="col-sm-12 col-md-7 col-lg-6">
           <Image
             width="1200"
@@ -41,9 +41,11 @@ export const HeroSection = React.memo(
             </Paragraph>
           )}
           {primaryButtonText && (
-            <Button buttonClass={`btn btn-primary rounded-0 border-0 mt-3 button ${mobileDetector ? "w-100" : ""}`}>
+            <Div divClass={mobileDetector ? "d-grid gap-2 col-6 mx-auto mb-4" : "w-100"}>
+            <Button buttonClass={mobileDetector ? `btn btn-primary rounded-0 border-0 mt-3` : "btn btn-primary rounded-0 border-0 mt-3 w-25"}>
               {primaryButtonText}
             </Button>
+          </Div>
           )}
           {outlinedButtonText && (
             <Button buttonClass={`btn btn-outline-primary rounded-0 mt-3 ${mobileDetector ? "w-100" : "ms-3"}`}>
@@ -51,7 +53,7 @@ export const HeroSection = React.memo(
             </Button>
           )}
         </Div>
-        <Div divClass="text-bg-primary border-light d-lg-flex mt-5">
+        <Div divClass="text-bg-primary border-light d-lg-flex ">
           {cardData && cardData.length !== 0 ? (
             cardData.map((item) => (
               <LandingPageCard

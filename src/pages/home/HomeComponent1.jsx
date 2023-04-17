@@ -4,11 +4,12 @@ import { HeroSection } from "common";
 import { homePageSchema } from "schemas";
 import { COVER_IMAGES } from 'assets/images';
 
-export const LandingPage = React.memo(() => {
+export const LandingPage = React.memo(({mobileDetector}) => {
   return (
     <Div divClass="container mb-5 mt-5">
       <HeroSection
           cardData={homePageSchema}
+          mobileDetector={mobileDetector}
           paragraphText="When no one understand your talent, then we believe that you have
           the capabilities to do miracles…"
           primaryButtonText="Join Now"

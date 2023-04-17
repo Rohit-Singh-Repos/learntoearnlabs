@@ -1,4 +1,4 @@
-import React,{Suspense,lazy} from 'react'
+import React,{Suspense,lazy, useEffect, useState} from 'react'
 
 const FallbackLoader = lazy(() => import('components/Loaders').then(module => ({ default: module.FallbackLoader })));
 const LandingPage = lazy(() => import('pages/home/HomeComponent1').then(module => ({ default: module.LandingPage })));
@@ -16,10 +16,24 @@ const Placements = lazy(() => import('pages/home/HomeComponent12').then(module =
 const StudentReviews = lazy(() => import('pages/home/HomeComponent13').then(module => ({ default: module.StudentReviews })));
 
 export const HomePage = React.memo(() => {
+  const [mobile, setMobile] = useState(false);
+
+  const handleResize = () => {
+    if (window.innerWidth < 990) {
+      setMobile(true);
+    } else {
+      setMobile(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+  });
+  
   return (
     <Suspense fallback={<FallbackLoader/>}>
-      <LandingPage/>
-      <ProfessionalJourney/>
+      <LandingPage mobileDetector={mobile}/>
+      <ProfessionalJourney mobileDetector={mobile}/>
       <WorkingExperience/>
       <JoinComponent/>
       <TrainingPrograms/>

@@ -19,8 +19,8 @@ export const CertificateInformation = React.memo(({mobileDetector}) => {
               <Span spanClass="text-primary">Certificate </Span>
               <Span>Verified</Span>
             </Heading>
-            <UnorderedList unorderedListClass="list-group mb-3">
-                <ListItem listItemClass="list-group-item d-flex justify-content-between align-items-center">
+            <UnorderedList unorderedListClass="list-group mb-3 ">
+                <ListItem listItemClass="list-group-item d-flex justify-content-between align-items-center rounded-0">
                     Certificate Code
                     <Span spanClass="badge bg-primary rounded-pill">14</Span>
                 </ListItem>
@@ -40,7 +40,7 @@ export const CertificateInformation = React.memo(({mobileDetector}) => {
                     Title
                     <Span spanClass="badge bg-primary rounded-pill">14</Span>
                 </ListItem>
-                <ListItem listItemClass="list-group-item d-flex justify-content-between align-items-center">
+                <ListItem listItemClass="list-group-item d-flex justify-content-between align-items-center rounded-0">
                     Duration
                     <Span spanClass="badge bg-primary rounded-pill">14</Span>
                 </ListItem>

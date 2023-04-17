@@ -3,7 +3,7 @@ import { CommonCard, Div, Paragraph, SubHeading } from "components"
 
 export const JoinComponent = React.memo(() => {
   return (
-    <Div divClass='container mb-5 mt-5 pt-5'>
+    <Div divClass='container mb-5 mt-5'>
       <Div divClass='row'>
         <SubHeading subheadingClass="fw-bold text-primary">Why you should join</SubHeading>
         <SubHeading subheadingClass="fw-bold">Learn2Earn Labs</SubHeading>

@@ -11,7 +11,7 @@ import { HOME_PAGE_IMAGES } from "assets/images";
 
 export const WorkingExperience = React.memo(() => {
   return (
-    <Div divClass="container mb-5 mt-5 pt-5">
+    <Div divClass="container mb-5 mt-5">
       <Div divClass="row">
         <SubHeading subheadingClass="fw-bold text-primary">
           Get working experience & job
