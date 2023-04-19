@@ -22,9 +22,7 @@ export const CareerOptions = React.memo(({ sectionData, mobileDetector }) => {
     } = {},
   } = sectionData;
   return (
-    <>
-      {sectionData?.careerOptionSection && (
-        <Div divClass="container mt-5">
+    <Div divClass="container mt-5">
           <SubHeading subheadingClass="fw-bold">{headingText}</SubHeading>
           <Paragraph paragraphClass="align-justify mt-4 mb-4">
             {paragraphText}
@@ -76,7 +74,5 @@ export const CareerOptions = React.memo(({ sectionData, mobileDetector }) => {
             </Div>
           </Div>
         </Div>
-      )}
-    </>
   );
 });

@@ -2388,39 +2388,63 @@ export const fullStackEngineer = {
     cloudDevopsCareerSection:{
         headingText:"Why, choose full stack as a career ?",
         cardTextData:[
-            {id:uuid(),cardText:"Increase Demand"},
-            {id:uuid(),cardText:"Lot of Opportunities"},
-            {id:uuid(),cardText:"Competitive Salaries & Benefits"},
-            {id:uuid(),cardText:"Latest Technology Trends"},
+            {id:uuid(),cardText:"Full Stack Engineers are in Demand"},
+            {id:uuid(),cardText:"Versatility & Job Security"},
+            {id:uuid(),cardText:"Handsome Salary"},
+            {id:uuid(),cardText:"Promotions & Career Growth"},
         ],
         listItemData:[
-            {id:uuid(),listText:"The demand of cloud computing and DevOps professionals is increasing rapidly because nowadays almost all the companies and startups are moving their infrastructure to the cloud platforms and adopting DevOps practices for the development of their products & services."},
-            {id:uuid(),listText:"It offers a lot of opportunities with career growth & stability. You can work as cloud architect, AWS solutions architect, build & release engineer, DevOps engineer, automation engineer and many more."},
-            {id:uuid(),listText:"The cloud computing and DevOps specialization offers competitive salaries and benefits. The cloud & DevOps professionals are getting above-average salaries and enjoying work benefits like remote job, flexible schedules, etc."},
-            {id:uuid(),listText:"The cloud & DevOps professionals always need to stay up-to-date with the latest tools & technology trends and also need to continuously improve their skills."},
+            {id:uuid(),listText:"The demand for full-stack software professionals has been increased as business organizations continue to expand their online presence. They always look to hire professionals who can work in multiple domains."},
+            {id:uuid(),listText:"The Versatility of Full Stack engineers makes them valuable to businesses and provide them stability in the constantly changing industry."},
+            {id:uuid(),listText:"The full stack software professionals are often paid well due to their variety of skills, experience and high demands."},
+            {id:uuid(),listText:"As they can work in different specializations hence they get promotions frequently and can become team leads, project managers, consultant, CTO’s, or even start their own businesses."},
         ]
     },
     trainingRoadmapSection:{
         headingPrimaryText:"Training Roadmap",
-        headingSecondaryText:"Affiliate Marketing",
-        paragraphText:"With the rise of e-commerce, Affiliate Marketing has become a popular way for social media influencers, bloggers, YouTubers, and other content creators to monetize their platforms. Affiliate Marketing is a cost-effective way for businesses and individuals to reach large audience groups, increase revenue and generate profits. It is a kind of performance-based marketing where affiliates get rewards from businesses for bringing their visitors or customers to their web portals through their own marketing efforts.",
+        headingSecondaryText:"Full Stack Engineer",
+        paragraphText:"In general, the developers who work on web services usually stick with front-end components or back-end logic or development operations and face difficulty. The same problem also occurs with others when they stick with the requirements & processes belonging to different domains. But a full stack professional is someone who handles and manages most of the operations, that's why they are in demand.",
         cardTextData:[
-            {id:uuid(),cardText:"Niche Selection & Advertising Model"},
-            {id:uuid(),cardText:"Amazon Affiliate Associates"},
-            {id:uuid(),cardText:"Strategies For Getting Traffic"},
-            {id:uuid(),cardText:"Affiliate Marketing Website Components"},
-            {id:uuid(),cardText:"Web Analytics & Coupon System"},
-            {id:uuid(),cardText:"Useful Tools & Referral System"},
+            {id:uuid(),cardText:"Front End (HTML, CSS, JavaScript, EcmaScript & ReactJS)"},
+            {id:uuid(),cardText:"Database (MySQL & MongoDB)"},
+            {id:uuid(),cardText:"Deployment (Jenkins, Docker, Ansible & Kubernetes)"},
+            {id:uuid(),cardText:"Back End (Java, Spring & Hibernate)"},
+            {id:uuid(),cardText:"Server & Network (Linux & AWS )"},
+            {id:uuid(),cardText:"Project Management (Agile Model & Jira)"},
         ]
     },
-    
+    careerOptionSection:{
+        headingText:"Career Options",
+        cardHeadingText1:"Middle Level Career Options",
+        cardHeadingText2:"Top Level Career Options",
+        paragraphText:"As a full stack software professional, you have many different specializations so you will have different options to start your career.",
+        cardParagraphText1:"After successfully completion of training, you can apply for various job roles, like",
+        cardParagraphText2:"After two to five years of experience, you can apply for job roles, like",
+        cardListTextData1:[
+            {id:uuid(),listText:"Full Stack Developer"},
+            {id:uuid(),listText:"System Engineer"},
+            {id:uuid(),listText:"SDE – I / II"},
+            {id:uuid(),listText:"Front End Developer"},
+            {id:uuid(),listText:"System Architect"},
+            {id:uuid(),listText:"DevOps Engineer, etc."},
+        ],
+        cardListTextData2:[
+            {id:uuid(),listText:"SDE – III"},
+            {id:uuid(),listText:"Project Consultant"},
+            {id:uuid(),listText:"Team Lead"},
+            {id:uuid(),listText:"Enterprise Architect"},
+            {id:uuid(),listText:"Project Manager"},
+            {id:uuid(),listText:"Project Head"},
+            {id:uuid(),listText:"Chief Technical Officer (CTO)"},
+        ]
+    },
     cloudDevopsTrainingSection:{
-        headingText:"Affiliate Marketing Training Program",
-        paragraphText:"This program is designed to train students with the skills and experience to use Affiliate Marketing for getting the rewards from businesses to reach large audience groups, increase revenue and generate profits.",
+        headingText:"Full Stack Training Program",
+        paragraphText:"TThis program is designed to provide students with the knowledge and hands-on skills needed to succeed in project development field and perform like an expert.",
         buttonText:"Download Syllabus",
         cardData:[
-            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage1,subheadingText:"Practical Based Sessions",paragraphText:"Training program available in four months & six months duration"},
-            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage2,subheadingText:"Dummy Projects",paragraphText:"To build your hands-on expertise & portfolio"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage1,subheadingText:"Practical Based Sessions",paragraphText:"of a year or 600 hours duration"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage2,subheadingText:"Capstone Projects",paragraphText:"To build your hands-on expertise & portfolio"},
             {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage3,subheadingText:"Resume Building Assistance",paragraphText:"To create an attractive resume for you"},
             {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage4,subheadingText:"Interview Preparation",paragraphText:"So you can present yourself in a better way"},
             {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage5,subheadingText:"Mentoring & Job Assistance",paragraphText:"To help you in getting good career or placements"},
@@ -2428,9 +2452,35 @@ export const fullStackEngineer = {
     },
     whoCanJoinSection:{
         headingText:"Who can join",
-        paragraphText1:"Any student can join the Affiliate Marketing training program. The student must have basic computer knowledge and have interest in online earning, product selling & promotions.",
-        paragraphText2:"Working professionals or job seekers, who are looking to learn about sales and promotions can join the Affiliate Marketing training program.",
-        paragraphText3:"Housewives, Homemakers or any person, who wants to learn about sales and promotions to start their online work or freelancing can join the Affiliate Marketing training program."
+        paragraphText1:"Any graduate or post graduate student from B.tech or M.tech (any specialization), BCA or MCA, B.Sc. or M.Sc. (CS / IT) can join the full stack training. The student must secured at-least 60% marks throughout the graduation or post graduation degree for getting the job guarantee promise.",
+        paragraphText2:"Any working professional, belongs to computer science or IT specialization and now looking for salary hike or promotions can also join the full stack training program.",
+        subSectionData:{
+            headingTextData:"Get Real Work Experience",
+            paragraphText1:"Our USP is to give students, deep practical knowledge in a specific domain and help them getting their dream jobs.",
+            paragraphText2:"",
+            listDataText:[
+                {id:uuid(),headingText:"Practice,",normalText:"what you learn"},
+                {id:uuid(),headingText:"Implement,",normalText:"what you practice"},
+                {id:uuid(),headingText:"Present,",normalText:"what you implement"},
+            ]
+        }
+    },
+    programDetailsSection:{
+        headingText:"Program Details",
+        paragraphText:"During training you will go through with programming methodologies, development approaches, case studies, code deployment, design thinking concepts, assignments, and mini projects that will help you to become an expert full stack engineer. You would get a hands-on expertise over the most in-demand technologies, platforms and tools.",
+        moduleTextData:[
+            {id:uuid(),moduleName:"Module 1",listText:"Introduction & Python Programming"},
+            {id:uuid(),moduleName:"Module 2",listText:"Numpy"},
+        ],
+        contactCardData1:{
+            phoneNumber:"+91-9548868337"
+        },
+        contactCardData2:{
+            buttonText:"Submit"
+        },
+    },
+    technologiesAndPlatforms:{
+        headingTextData:"Technologies & Platforms",
     },
     trainingModeSection:{
         headingText:"Training Mode",
@@ -2447,43 +2497,41 @@ export const fullStackEngineer = {
             buttonText1:"Apply Now"
         },
         cardData2:{
-            headingText2:"Affiliate Marketing Training in Agra",
+            headingText2:"Full Stack Training in Agra",
             addressHeading:"Learn2Earn Labs",
             addressText:"F-4, First Floor, Anna Ikon Complex, In Front of Deviram Food Circle, Sikandra-Bodla Road, Sikandra, Agra, Uttar Pradesh – 282007",
             phoneText:"Call: +91-9548868337",
             buttonText2:"Download Syllabus"
         }
     },
-    programDetailsSection:{
-        headingText:"Program Details",
-        paragraphText:"During this Affiliate Marketing training program, you will go through with the below course modules & topics.",
-        moduleTextData:[
-            {id:uuid(),moduleName:"Module 1",listText:"Introduction & Python Programming"},
-            {id:uuid(),moduleName:"Module 2",listText:"Numpy"},
-        ],
-        contactCardData1:{
-            phoneNumber:"+91-9548868337"
+    guidanceSection:{
+        cardPicData:{
+            imagePage:"",
+            imageHeadingText:"Mohit Singh",
+            imageEducationText:"M.Tech, B.Tech (C.S.E)"
         },
-        contactCardData2:{
-            buttonText:"Submit"
-        },
-        discountAndOffersSection:{
-            discountHeadingText:"Discount & Offers",
-            discountCard:[
-                {id:uuid(),cardText:"25% Cashback Available",cardImage:COURSES_PAGE_IMAGES.cashbackImage},
-                {id:uuid(),cardText:"Work Incentives",cardImage:COURSES_PAGE_IMAGES.workIncentivesImage},
-            ]
+        cardInfoData:{
+            paragraphText1:"Mr. Mohit Singh is a professional full-stack trainer, project consultant and startup mentor. He is holding expertise in Java, Application Design, MERN Stack, DevOps, Design Thinking and User Experience Design.",
+            paragraphText2:"He has trained thousands of students & hundreds of employed professionals. He completed his trainings in Google, Gurugram and short term projects in IIT Delhi, IIT BHU & IIT Jodhpur.",
+            paragraphText3:"He is also recognized as Mentor with MEITY Startup Hub, startup India, Punjab Startup, startup Uttarakhand, Mumbai State Innovation Society, Atal Innovation Mission, etc. in the area of education & utility services."
         }
     },
-    applyNowSection:{
-        headingText:"Apply Now",
-        paragraphText:"Please enter the following details to initiate your application for Affiliate Marketing training program offered by Learn2Earn Labs, Agra.",
-        buttonText:"Submit",
-        subheadingText:"Eligibility Criteria",
-        paragrphTextData:[
-            {id:uuid(),text:"Any student/job seeker/working professional can join"},
-            {id:uuid(),text:"Having interest in sales & promotions"},
-            {id:uuid(),text:"Having basic knowledge of computer."},
+    companyPortfolio:{
+       headingTextData:"Our students are working with Top Companies",
+       discountAndOffersSection:{
+        discountHeadingText:"Discount & Offers",
+        discountCard:[
+            {id:uuid(),cardText:"25% Cashback Available",cardImage:COURSES_PAGE_IMAGES.cashbackImage},
+            {id:uuid(),cardText:"Work Incentives",cardImage:COURSES_PAGE_IMAGES.workIncentivesImage},
         ]
     }
+    },
+    jobOrientedPrograms:[
+        {id:uuid(),imagePath:"",courseNameText:"Java Full Stack",courseDurationText:"Duration : 4 months | 6 Months"},
+        {id:uuid(),imagePath:"",courseNameText:"Full Stack Web Development",courseDurationText:"Duration : 4 months | 6 Months"},
+        {id:uuid(),imagePath:"",courseNameText:"Data Science & Machine Learning",courseDurationText:"Duration : 4 months | 6 Months"},
+        {id:uuid(),imagePath:"",courseNameText:"Cloud Computing & DevOps",courseDurationText:"Duration : 4 months | 6 Months"},
+        {id:uuid(),imagePath:"",courseNameText:"Digital Marketing",courseDurationText:"Duration : 6 months | 12 Months"},
+        {id:uuid(),imagePath:"",courseNameText:"Design Thinking & UI/UX",courseDurationText:"Duration : 4 months | 6 Months"},
+    ]
 }

@@ -15,8 +15,18 @@ export const CommonPageComponent = React.memo(
     inputSchemas,
   }) => {
 
-    const [mobile, setMobile] = useState(false);
-
+    const { 
+      landingPageSection,
+      cloudDevopsCareerSection,
+      trainingRoadmapSection,
+      careerOptionSection,
+      cloudDevopsTrainingSection,
+      whoCanJoinSection,
+      trainingModeSection,
+      programDetailsSection,
+      applyNowSection
+     } = sectionData
+    const [mobile, setMobile] = useState(false);    
     const handleResize = () => {
       if (window.innerWidth < 990) {
         setMobile(true);
@@ -31,15 +41,15 @@ export const CommonPageComponent = React.memo(
 
     return (
       <>
-        <LandingPage sectionData={sectionData} mobileDetector={mobile}/>
-        <CloudDevopsCareer sectionData={sectionData} />
-        <TrainingRoadMap sectionData={sectionData} mobileDetector={mobile}/>
-        <CareerOptions sectionData={sectionData} mobileDetector={mobile}/>
-        <CloudDevopsTraining sectionData={sectionData} mobileDetector={mobile}/>
-        <WhoCanJoin sectionData={sectionData} />
-        <TrainingMode sectionData={sectionData} mobileDetector={mobile}/>
-        <ProgramDetails sectionData={sectionData} inputSchemas={inputSchemas} mobileDetector={mobile}/>
-        <ApplyNow sectionData={sectionData} inputSchemas={inputSchemas} mobileDetector={mobile}/>
+        {landingPageSection && <LandingPage sectionData={sectionData} mobileDetector={mobile}/>}
+        {cloudDevopsCareerSection && <CloudDevopsCareer sectionData={sectionData} />}
+        {trainingRoadmapSection && <TrainingRoadMap sectionData={sectionData} mobileDetector={mobile}/>}
+        {careerOptionSection && <CareerOptions sectionData={sectionData} mobileDetector={mobile}/>}
+        {cloudDevopsTrainingSection && <CloudDevopsTraining sectionData={sectionData} mobileDetector={mobile}/>}
+        {whoCanJoinSection && <WhoCanJoin sectionData={sectionData} />}
+        {trainingModeSection && <TrainingMode sectionData={sectionData} mobileDetector={mobile}/>}
+        {programDetailsSection && <ProgramDetails sectionData={sectionData} inputSchemas={inputSchemas} mobileDetector={mobile}/>}
+        {applyNowSection && <ApplyNow sectionData={sectionData} inputSchemas={inputSchemas} mobileDetector={mobile}/>}
       </>
     );
   }

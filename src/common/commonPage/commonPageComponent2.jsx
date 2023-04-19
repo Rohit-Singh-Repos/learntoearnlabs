@@ -10,13 +10,10 @@ import {
 export const CloudDevopsCareer = React.memo(({ sectionData }) => {
   const {
     cloudDevopsCareerSection: { headingText, cardTextData, listItemData } = {},
-    cloudDevopsCareerSection,
   } = sectionData;
 
   return (
-    <>
-      {cloudDevopsCareerSection && (
-        <Div divClass="container">
+    <Div divClass="container">
           <Div divClass="row">
             <SubHeading subheadingClass="fw-bold">{headingText}</SubHeading>
             <Div divClass="col-sm-12 col-md-5 col-lg-5 mt-4">
@@ -48,7 +45,5 @@ export const CloudDevopsCareer = React.memo(({ sectionData }) => {
             </Div>
           </Div>
         </Div>
-      )}
-    </>
   );
 });
