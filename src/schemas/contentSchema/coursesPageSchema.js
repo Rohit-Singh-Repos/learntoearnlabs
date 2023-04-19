@@ -146,10 +146,10 @@ export const dataScienceSchema = {
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
         cardData:[
-            {id:1,heading:"12",subHeading:"Training Modules",borderShow:true},
-            {id:2,heading:"40+",subHeading:"Case Studies",borderShow:true},
-            {id:3,heading:"4/6",subHeading:"Months Duration",borderShow:true},
-            {id:4,heading:"6 LPA",subHeading:"Avg. Salary Package",borderShow:false}
+            {id:uuid(),heading:"12",subHeading:"Training Modules",borderShow:true},
+            {id:uuid(),heading:"40+",subHeading:"Case Studies",borderShow:true},
+            {id:uuid(),heading:"4/6",subHeading:"Months Duration",borderShow:true},
+            {id:uuid(),heading:"6 LPA",subHeading:"Avg. Salary Package",borderShow:false}
         ]
     },
     cloudDevopsCareerSection:{
@@ -284,10 +284,10 @@ export const designThinkingSchema = {
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
         cardData:[
-            {id:1,heading:"50+",subHeading:"Exercises",borderShow:true},
-            {id:2,heading:"10+",subHeading:"Professional Tools",borderShow:true},
-            {id:3,heading:"4/6",subHeading:"Months Duration",borderShow:true},
-            {id:4,heading:"5-6 LPA",subHeading:"Avg. Salary Package",borderShow:false},
+            {id:uuid(),heading:"50+",subHeading:"Exercises",borderShow:true},
+            {id:uuid(),heading:"10+",subHeading:"Professional Tools",borderShow:true},
+            {id:uuid(),heading:"4/6",subHeading:"Months Duration",borderShow:true},
+            {id:uuid(),heading:"5-6 LPA",subHeading:"Avg. Salary Package",borderShow:false},
         ]
     },
     cloudDevopsCareerSection:{
@@ -424,10 +424,10 @@ export const javaFullStackSchema = {
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
         cardData:[
-            {id:1,heading:"8",subHeading:"Training Modules",borderShow:true},
-            {id:2,heading:"5+",subHeading:"Projects",borderShow:true},
-            {id:3,heading:"4/6",subHeading:"Months Duration",borderShow:true},
-            {id:4,heading:"6 LPA",subHeading:"Avg. Salary Package",borderShow:false},
+            {id:uuid(),heading:"8",subHeading:"Training Modules",borderShow:true},
+            {id:uuid(),heading:"5+",subHeading:"Projects",borderShow:true},
+            {id:uuid(),heading:"4/6",subHeading:"Months Duration",borderShow:true},
+            {id:uuid(),heading:"6 LPA",subHeading:"Avg. Salary Package",borderShow:false},
         ]
     },
     cloudDevopsCareerSection:{
@@ -580,10 +580,10 @@ export const mernStackSchema = {
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
         cardData:[
-            {id:1,heading:"8",subHeading:"Training Modules",borderShow:true},
-            {id:2,heading:"5+",subHeading:"Projects",borderShow:true},
-            {id:3,heading:"4/6",subHeading:"Months Duration",borderShow:true},
-            {id:4,heading:"5 LPA",subHeading:"Avg. Salary Package",borderShow:false},
+            {id:uuid(),heading:"8",subHeading:"Training Modules",borderShow:true},
+            {id:uuid(),heading:"5+",subHeading:"Projects",borderShow:true},
+            {id:uuid(),heading:"4/6",subHeading:"Months Duration",borderShow:true},
+            {id:uuid(),heading:"5 LPA",subHeading:"Avg. Salary Package",borderShow:false},
         ]
     },
     cloudDevopsCareerSection:{
@@ -718,10 +718,10 @@ export const trainTheTrainerSchema = {
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
         cardData:[
-            {id:1,heading:"8",subHeading:"Training Modules",borderShow:true},
-            {id:2,heading:"10+",subHeading:"Tools",borderShow:true},
-            {id:3,heading:"2/3",subHeading:"Months Duration",borderShow:true},
-            {id:4,heading:"3-5 LPA",subHeading:"Avg. Salary Package",borderShow:false},
+            {id:uuid(),heading:"8",subHeading:"Training Modules",borderShow:true},
+            {id:uuid(),heading:"10+",subHeading:"Tools",borderShow:true},
+            {id:uuid(),heading:"2/3",subHeading:"Months Duration",borderShow:true},
+            {id:uuid(),heading:"3-5 LPA",subHeading:"Avg. Salary Package",borderShow:false},
         ]
     },
     cloudDevopsCareerSection:{
@@ -854,10 +854,10 @@ export const htmlCssJSScheme = {
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
         cardData:[
-            {id:1,heading:"5",subHeading:"Training Modules",borderShow:true},
-            {id:2,heading:"500+",subHeading:"Programs",borderShow:true},
-            {id:3,heading:"60/90",subHeading:"Days Duration",borderShow:true},
-            {id:4,heading:"10+",subHeading:"Minor Projects",borderShow:false},
+            {id:uuid(),heading:"5",subHeading:"Training Modules",borderShow:true},
+            {id:uuid(),heading:"500+",subHeading:"Programs",borderShow:true},
+            {id:uuid(),heading:"60/90",subHeading:"Days Duration",borderShow:true},
+            {id:uuid(),heading:"10+",subHeading:"Minor Projects",borderShow:false},
         ]
     },
     trainingRoadmapSection:{
@@ -955,10 +955,10 @@ export const javaSchema = {
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
         cardData:[
-            {id:1,heading:"5",subHeading:"Training Modules",borderShow:true},
-            {id:2,heading:"800+",subHeading:"Programs",borderShow:true},
-            {id:3,heading:"30/60/90",subHeading:"Days Duration",borderShow:true},
-            {id:4,heading:"5+",subHeading:"Minor Projects",borderShow:false},
+            {id:uuid(),heading:"5",subHeading:"Training Modules",borderShow:true},
+            {id:uuid(),heading:"800+",subHeading:"Programs",borderShow:true},
+            {id:uuid(),heading:"30/60/90",subHeading:"Days Duration",borderShow:true},
+            {id:uuid(),heading:"5+",subHeading:"Minor Projects",borderShow:false},
         ]
     },
     trainingRoadmapSection:{
@@ -1056,10 +1056,10 @@ export const pythonSchema = {
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
         cardData:[
-            {id:1,heading:"5",subHeading:"Training Modules",borderShow:true},
-            {id:2,heading:"800+",subHeading:"Programs",borderShow:true},
-            {id:3,heading:"30/60/90",subHeading:"Days Duration",borderShow:true},
-            {id:4,heading:"5+",subHeading:"Minor Projects",borderShow:false},
+            {id:uuid(),heading:"5",subHeading:"Training Modules",borderShow:true},
+            {id:uuid(),heading:"800+",subHeading:"Programs",borderShow:true},
+            {id:uuid(),heading:"30/60/90",subHeading:"Days Duration",borderShow:true},
+            {id:uuid(),heading:"5+",subHeading:"Minor Projects",borderShow:false},
         ]
     },
     trainingRoadmapSection:{
@@ -1157,10 +1157,10 @@ export const linuxSchema = {
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
         cardData:[
-            {id:1,heading:"4",subHeading:"Training Modules",borderShow:true},
-            {id:2,heading:"300+",subHeading:"Exercises",borderShow:true},
-            {id:3,heading:"60/90",subHeading:"Days Duration",borderShow:true},
-            {id:4,heading:"5+",subHeading:"Minor Projects",borderShow:false},
+            {id:uuid(),heading:"4",subHeading:"Training Modules",borderShow:true},
+            {id:uuid(),heading:"300+",subHeading:"Exercises",borderShow:true},
+            {id:uuid(),heading:"60/90",subHeading:"Days Duration",borderShow:true},
+            {id:uuid(),heading:"5+",subHeading:"Minor Projects",borderShow:false},
         ]
     },
     trainingRoadmapSection:{
@@ -1258,10 +1258,10 @@ export const mySQLSchema = {
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
         cardData:[
-            {id:1,heading:"7",subHeading:"Training Modules",borderShow:true},
-            {id:2,heading:"200+",subHeading:"Programs",borderShow:true},
-            {id:3,heading:"30/45",subHeading:"Days Duration",borderShow:true},
-            {id:4,heading:"5+",subHeading:"Minor Projects",borderShow:false},
+            {id:uuid(),heading:"7",subHeading:"Training Modules",borderShow:true},
+            {id:uuid(),heading:"200+",subHeading:"Programs",borderShow:true},
+            {id:uuid(),heading:"30/45",subHeading:"Days Duration",borderShow:true},
+            {id:uuid(),heading:"5+",subHeading:"Minor Projects",borderShow:false},
         ]
     },
     trainingRoadmapSection:{
@@ -1359,10 +1359,10 @@ export const programmingSchema = {
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
         cardData:[
-            {id:1,heading:"5",subHeading:"Training Modules",borderShow:true},
-            {id:2,heading:"500+",subHeading:"Programs",borderShow:true},
-            {id:3,heading:"60/90",subHeading:"Days Duration",borderShow:true},
-            {id:4,heading:"10+",subHeading:"Minor Projects",borderShow:false},
+            {id:uuid(),heading:"5",subHeading:"Training Modules",borderShow:true},
+            {id:uuid(),heading:"500+",subHeading:"Programs",borderShow:true},
+            {id:uuid(),heading:"60/90",subHeading:"Days Duration",borderShow:true},
+            {id:uuid(),heading:"10+",subHeading:"Minor Projects",borderShow:false},
         ]
     },
     trainingRoadmapSection:{
@@ -1469,10 +1469,10 @@ export const cProgrammingSchema = {
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
         cardData:[
-            {id:1,heading:"4",subHeading:"Training Modules",borderShow:true},
-            {id:2,heading:"200+",subHeading:"Programs",borderShow:true},
-            {id:3,heading:"30/60",subHeading:"Days Duration",borderShow:true},
-            {id:4,heading:"5+",subHeading:"Minor Projects",borderShow:false},
+            {id:uuid(),heading:"4",subHeading:"Training Modules",borderShow:true},
+            {id:uuid(),heading:"200+",subHeading:"Programs",borderShow:true},
+            {id:uuid(),heading:"30/60",subHeading:"Days Duration",borderShow:true},
+            {id:uuid(),heading:"5+",subHeading:"Minor Projects",borderShow:false},
         ]
     },
     trainingRoadmapSection:{
@@ -1570,10 +1570,10 @@ export const cPlusSchema = {
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
         cardData:[
-            {id:1,heading:"4",subHeading:"Training Modules",borderShow:true},
-            {id:2,heading:"200+",subHeading:"Programs",borderShow:true},
-            {id:3,heading:"30/60",subHeading:"Days Duration",borderShow:true},
-            {id:4,heading:"5+",subHeading:"Minor Projects",borderShow:false},
+            {id:uuid(),heading:"4",subHeading:"Training Modules",borderShow:true},
+            {id:uuid(),heading:"200+",subHeading:"Programs",borderShow:true},
+            {id:uuid(),heading:"30/60",subHeading:"Days Duration",borderShow:true},
+            {id:uuid(),heading:"5+",subHeading:"Minor Projects",borderShow:false},
         ]
     },
     trainingRoadmapSection:{
@@ -1671,10 +1671,10 @@ export const dsSchema = {
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
         cardData:[
-            {id:1,heading:"8",subHeading:"Training Modules",borderShow:true},
-            {id:2,heading:"200+",subHeading:"Programs",borderShow:true},
-            {id:3,heading:"60",subHeading:"Days Duration",borderShow:true},
-            {id:4,heading:"10+",subHeading:"Case Studies",borderShow:false},
+            {id:uuid(),heading:"8",subHeading:"Training Modules",borderShow:true},
+            {id:uuid(),heading:"200+",subHeading:"Programs",borderShow:true},
+            {id:uuid(),heading:"60",subHeading:"Days Duration",borderShow:true},
+            {id:uuid(),heading:"10+",subHeading:"Case Studies",borderShow:false},
         ]
     },
     trainingRoadmapSection:{
@@ -1772,10 +1772,10 @@ export const socialMediaSchema = {
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
         cardData:[
-            {id:1,heading:"7",subHeading:"Training Modules",borderShow:true},
-            {id:2,heading:"10+",subHeading:"Case Studies",borderShow:true},
-            {id:3,heading:"30/60/90",subHeading:"Days Duration",borderShow:true},
-            {id:4,heading:"5+",subHeading:"Minor Projects",borderShow:false},
+            {id:uuid(),heading:"7",subHeading:"Training Modules",borderShow:true},
+            {id:uuid(),heading:"10+",subHeading:"Case Studies",borderShow:true},
+            {id:uuid(),heading:"30/60/90",subHeading:"Days Duration",borderShow:true},
+            {id:uuid(),heading:"5+",subHeading:"Minor Projects",borderShow:false},
         ]
     },
     trainingRoadmapSection:{
@@ -1873,10 +1873,10 @@ export const googleAdsSchema = {
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
         cardData:[
-            {id:1,heading:"10",subHeading:"Training Modules",borderShow:true},
-            {id:2,heading:"10+",subHeading:"Case Studies",borderShow:true},
-            {id:3,heading:"30/60",subHeading:"Days Duration",borderShow:true},
-            {id:4,heading:"5+",subHeading:"Minor Projects",borderShow:false},
+            {id:uuid(),heading:"10",subHeading:"Training Modules",borderShow:true},
+            {id:uuid(),heading:"10+",subHeading:"Case Studies",borderShow:true},
+            {id:uuid(),heading:"30/60",subHeading:"Days Duration",borderShow:true},
+            {id:uuid(),heading:"5+",subHeading:"Minor Projects",borderShow:false},
         ]
     },
     trainingRoadmapSection:{
@@ -1974,10 +1974,10 @@ export const wordpressSchema = {
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
         cardData:[
-            {id:1,heading:"9",subHeading:"Training Modules",borderShow:true},
-            {id:2,heading:"10+",subHeading:"Case Studies",borderShow:true},
-            {id:3,heading:"30/60",subHeading:"Days Duration",borderShow:true},
-            {id:4,heading:"5+",subHeading:"Minor Projects",borderShow:false},
+            {id:uuid(),heading:"9",subHeading:"Training Modules",borderShow:true},
+            {id:uuid(),heading:"10+",subHeading:"Case Studies",borderShow:true},
+            {id:uuid(),heading:"30/60",subHeading:"Days Duration",borderShow:true},
+            {id:uuid(),heading:"5+",subHeading:"Minor Projects",borderShow:false},
         ]
     },
     trainingRoadmapSection:{
@@ -2075,10 +2075,10 @@ export const seoSchema = {
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
         cardData:[
-            {id:1,heading:"5",subHeading:"Training Modules",borderShow:true},
-            {id:2,heading:"10+",subHeading:"Case Studies",borderShow:true},
-            {id:3,heading:"30",subHeading:"Days Duration",borderShow:true},
-            {id:4,heading:"5+",subHeading:"Minor Projects",borderShow:false},
+            {id:uuid(),heading:"5",subHeading:"Training Modules",borderShow:true},
+            {id:uuid(),heading:"10+",subHeading:"Case Studies",borderShow:true},
+            {id:uuid(),heading:"30",subHeading:"Days Duration",borderShow:true},
+            {id:uuid(),heading:"5+",subHeading:"Minor Projects",borderShow:false},
         ]
     },
     trainingRoadmapSection:{
@@ -2176,10 +2176,10 @@ export const contentMarketingSchema = {
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
         cardData:[
-            {id:1,heading:"20+",subHeading:"Topics & Strategies",borderShow:true},
-            {id:2,heading:"10+",subHeading:"Case Studies",borderShow:true},
-            {id:3,heading:"30",subHeading:"Days Duration",borderShow:true},
-            {id:4,heading:"5+",subHeading:"Minor Projects",borderShow:false},
+            {id:uuid(),heading:"20+",subHeading:"Topics & Strategies",borderShow:true},
+            {id:uuid(),heading:"10+",subHeading:"Case Studies",borderShow:true},
+            {id:uuid(),heading:"30",subHeading:"Days Duration",borderShow:true},
+            {id:uuid(),heading:"5+",subHeading:"Minor Projects",borderShow:false},
         ]
     },
     trainingRoadmapSection:{
@@ -2277,10 +2277,127 @@ export const affiliateMarketingSchema = {
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
         cardData:[
-            {id:1,heading:"20+",subHeading:"Topics & Strategies",borderShow:true},
-            {id:2,heading:"10+",subHeading:"Case Studies",borderShow:true},
-            {id:3,heading:"30",subHeading:"Days Duration",borderShow:true},
-            {id:4,heading:"5+",subHeading:"Minor Projects",borderShow:false},
+            {id:uuid(),heading:"20+",subHeading:"Topics & Strategies",borderShow:true},
+            {id:uuid(),heading:"10+",subHeading:"Case Studies",borderShow:true},
+            {id:uuid(),heading:"30",subHeading:"Days Duration",borderShow:true},
+            {id:uuid(),heading:"5+",subHeading:"Minor Projects",borderShow:false},
+        ]
+    },
+    trainingRoadmapSection:{
+        headingPrimaryText:"Training Roadmap",
+        headingSecondaryText:"Affiliate Marketing",
+        paragraphText:"With the rise of e-commerce, Affiliate Marketing has become a popular way for social media influencers, bloggers, YouTubers, and other content creators to monetize their platforms. Affiliate Marketing is a cost-effective way for businesses and individuals to reach large audience groups, increase revenue and generate profits. It is a kind of performance-based marketing where affiliates get rewards from businesses for bringing their visitors or customers to their web portals through their own marketing efforts.",
+        cardTextData:[
+            {id:uuid(),cardText:"Niche Selection & Advertising Model"},
+            {id:uuid(),cardText:"Amazon Affiliate Associates"},
+            {id:uuid(),cardText:"Strategies For Getting Traffic"},
+            {id:uuid(),cardText:"Affiliate Marketing Website Components"},
+            {id:uuid(),cardText:"Web Analytics & Coupon System"},
+            {id:uuid(),cardText:"Useful Tools & Referral System"},
+        ]
+    },
+    
+    cloudDevopsTrainingSection:{
+        headingText:"Affiliate Marketing Training Program",
+        paragraphText:"This program is designed to train students with the skills and experience to use Affiliate Marketing for getting the rewards from businesses to reach large audience groups, increase revenue and generate profits.",
+        buttonText:"Download Syllabus",
+        cardData:[
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage1,subheadingText:"Practical Based Sessions",paragraphText:"Training program available in four months & six months duration"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage2,subheadingText:"Dummy Projects",paragraphText:"To build your hands-on expertise & portfolio"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage3,subheadingText:"Resume Building Assistance",paragraphText:"To create an attractive resume for you"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage4,subheadingText:"Interview Preparation",paragraphText:"So you can present yourself in a better way"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage5,subheadingText:"Mentoring & Job Assistance",paragraphText:"To help you in getting good career or placements"},
+        ]
+    },
+    whoCanJoinSection:{
+        headingText:"Who can join",
+        paragraphText1:"Any student can join the Affiliate Marketing training program. The student must have basic computer knowledge and have interest in online earning, product selling & promotions.",
+        paragraphText2:"Working professionals or job seekers, who are looking to learn about sales and promotions can join the Affiliate Marketing training program.",
+        paragraphText3:"Housewives, Homemakers or any person, who wants to learn about sales and promotions to start their online work or freelancing can join the Affiliate Marketing training program."
+    },
+    trainingModeSection:{
+        headingText:"Training Mode",
+        cardData1:{
+            headingText1:"Online Live Classes are also available",
+            listTextData:[
+                {id:uuid(),listText:"4x more effective way of learning"},
+                {id:uuid(),listText:"Hands-on experience with projects & assignments"},
+                {id:uuid(),listText:"Virtual class with real interaction with trainer"},
+                {id:uuid(),listText:"Monitoring support & troubleshooting issues"},
+                {id:uuid(),listText:"Masterclass from industry experts & leaders"},
+                {id:uuid(),listText:"Live class recordings for revision purpose"},
+            ],
+            buttonText1:"Apply Now"
+        },
+        cardData2:{
+            headingText2:"Affiliate Marketing Training in Agra",
+            addressHeading:"Learn2Earn Labs",
+            addressText:"F-4, First Floor, Anna Ikon Complex, In Front of Deviram Food Circle, Sikandra-Bodla Road, Sikandra, Agra, Uttar Pradesh – 282007",
+            phoneText:"Call: +91-9548868337",
+            buttonText2:"Download Syllabus"
+        }
+    },
+    programDetailsSection:{
+        headingText:"Program Details",
+        paragraphText:"During this Affiliate Marketing training program, you will go through with the below course modules & topics.",
+        moduleTextData:[
+            {id:uuid(),moduleName:"Module 1",listText:"Introduction & Python Programming"},
+            {id:uuid(),moduleName:"Module 2",listText:"Numpy"},
+        ],
+        contactCardData1:{
+            phoneNumber:"+91-9548868337"
+        },
+        contactCardData2:{
+            buttonText:"Submit"
+        },
+        discountAndOffersSection:{
+            discountHeadingText:"Discount & Offers",
+            discountCard:[
+                {id:uuid(),cardText:"25% Cashback Available",cardImage:COURSES_PAGE_IMAGES.cashbackImage},
+                {id:uuid(),cardText:"Work Incentives",cardImage:COURSES_PAGE_IMAGES.workIncentivesImage},
+            ]
+        }
+    },
+    applyNowSection:{
+        headingText:"Apply Now",
+        paragraphText:"Please enter the following details to initiate your application for Affiliate Marketing training program offered by Learn2Earn Labs, Agra.",
+        buttonText:"Submit",
+        subheadingText:"Eligibility Criteria",
+        paragrphTextData:[
+            {id:uuid(),text:"Any student/job seeker/working professional can join"},
+            {id:uuid(),text:"Having interest in sales & promotions"},
+            {id:uuid(),text:"Having basic knowledge of computer."},
+        ]
+    }
+}
+
+export const fullStackEngineer = {
+    landingPageSection:{
+        imagePath:COVER_IMAGES.affiliateMarketing,
+        headingText:"Become a Full Stack Software Engineer",
+        subHeadingText:"With 8+ LPA Guaranteed Package",
+        primaryButtonText:"Apply Now",
+        outlinedButtonText:"Download Syllabus",
+        cardData:[
+            {id:uuid(),heading:"25",subHeading:"Training Modules",borderShow:true},
+            {id:uuid(),heading:"4",subHeading:"Capstone Projects",borderShow:true},
+            {id:uuid(),heading:"600+",subHeading:"Training Hours",borderShow:true},
+            {id:uuid(),heading:"8 LPA+",subHeading:"Avg. Salary Package",borderShow:false},
+        ]
+    },
+    cloudDevopsCareerSection:{
+        headingText:"Why, choose full stack as a career ?",
+        cardTextData:[
+            {id:uuid(),cardText:"Increase Demand"},
+            {id:uuid(),cardText:"Lot of Opportunities"},
+            {id:uuid(),cardText:"Competitive Salaries & Benefits"},
+            {id:uuid(),cardText:"Latest Technology Trends"},
+        ],
+        listItemData:[
+            {id:uuid(),listText:"The demand of cloud computing and DevOps professionals is increasing rapidly because nowadays almost all the companies and startups are moving their infrastructure to the cloud platforms and adopting DevOps practices for the development of their products & services."},
+            {id:uuid(),listText:"It offers a lot of opportunities with career growth & stability. You can work as cloud architect, AWS solutions architect, build & release engineer, DevOps engineer, automation engineer and many more."},
+            {id:uuid(),listText:"The cloud computing and DevOps specialization offers competitive salaries and benefits. The cloud & DevOps professionals are getting above-average salaries and enjoying work benefits like remote job, flexible schedules, etc."},
+            {id:uuid(),listText:"The cloud & DevOps professionals always need to stay up-to-date with the latest tools & technology trends and also need to continuously improve their skills."},
         ]
     },
     trainingRoadmapSection:{
