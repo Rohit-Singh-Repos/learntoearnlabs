@@ -17,7 +17,7 @@ export const DirectorsBlock = React.memo(() => {
             imagePath={ABOUTUS_PAGE_IMAGES.mohitSinghImage}
             imageClass="img-thumbnail img-fluid img-dimensions mb-3"
             imageAltText=""
-            cardClass="card p-4 rounded-0"
+            cardClass="card p-4 rounded-0 bg-silver"
           >
             <Paragraph paragraphClass="align-justify">
               Mr. Mohit Singh is a professional full-stack trainer, project
@@ -43,7 +43,7 @@ export const DirectorsBlock = React.memo(() => {
             imagePath={ABOUTUS_PAGE_IMAGES.shubendraGuptaImage}
             imageClass="img-thumbnail img-fluid img-dimensions mb-3"
             imageAltText=""
-            cardClass="card p-4 rounded-0"
+            cardClass="card p-4 rounded-0 bg-silver"
           >
             <Paragraph paragraphClass="align-justify">
               Dr. Shubhendra Gupta is an experienced digital marketer, Business

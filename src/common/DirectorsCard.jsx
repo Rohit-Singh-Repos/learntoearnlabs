@@ -11,14 +11,17 @@ export const InstituteDirector = React.memo(
     imageAltText,
     cardClass,
     children,
+    fullstack,
   }) => {
     return (
-      <Div divClass="container mt-5">
+      <Div divClass={!fullstack ? "container mt-5" : ""}>
         <Div divClass="row">
           <Div divClass="col-lg-12 col-md-12 col-sm-12">
-            <SubHeading subheadingClass="fw-bold mb-4">
-              Institute Director(s)
-            </SubHeading>
+            {!fullstack ? (
+              <SubHeading subheadingClass="fw-bold mb-4">
+                Institute Director(s)
+              </SubHeading>
+            ) : <></>}
             <CardImage
               directorName={directorName}
               directorQualification={directorQualification}

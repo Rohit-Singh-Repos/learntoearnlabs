@@ -1,5 +1,5 @@
 import { uuid } from "helpers/utils/uuid"
-import { COURSES_PAGE_IMAGES, COVER_IMAGES } from "assets/images"
+import { COURSES_PAGE_IMAGES, COVER_IMAGES, COURSES_LOGO_IMAGES } from "assets/images"
 
 export const cloudDevopsSchema = {
     landingPageSection:{
@@ -2482,6 +2482,25 @@ export const fullStackEngineer = {
     },
     technologiesAndPlatforms:{
         headingTextData:"Technologies & Platforms",
+        sliderData:[
+            {id:uuid(),imagePath:COURSES_LOGO_IMAGES.javaLogo},
+            {id:uuid(),imagePath:COURSES_LOGO_IMAGES.javaEELogo},
+            {id:uuid(),imagePath:COURSES_LOGO_IMAGES.htmlCssJsLogo},
+            {id:uuid(),imagePath:COURSES_LOGO_IMAGES.bootstrapLogo},
+            {id:uuid(),imagePath:COURSES_LOGO_IMAGES.reactLogo},
+            {id:uuid(),imagePath:COURSES_LOGO_IMAGES.springLogo},
+            {id:uuid(),imagePath:COURSES_LOGO_IMAGES.springHibernateLogo},
+            {id:uuid(),imagePath:COURSES_LOGO_IMAGES.mySqlLogo},
+            {id:uuid(),imagePath:COURSES_LOGO_IMAGES.mongoDbLogo},
+            {id:uuid(),imagePath:COURSES_LOGO_IMAGES.githubLogo},
+            {id:uuid(),imagePath:COURSES_LOGO_IMAGES.ubuntuLogo},
+            {id:uuid(),imagePath:COURSES_LOGO_IMAGES.awsLogo},
+            {id:uuid(),imagePath:COURSES_LOGO_IMAGES.jenkinsLogo},
+            {id:uuid(),imagePath:COURSES_LOGO_IMAGES.dockerLogo},
+            {id:uuid(),imagePath:COURSES_LOGO_IMAGES.kubernatesLogo},
+            {id:uuid(),imagePath:COURSES_LOGO_IMAGES.jiraSoftwareLogo},
+            {id:uuid(),imagePath:COURSES_LOGO_IMAGES.figmaLogo},
+        ]
     },
     trainingModeSection:{
         headingText:"Training Mode",
@@ -2506,6 +2525,7 @@ export const fullStackEngineer = {
         }
     },
     guidanceSection:{
+        headingText:"Under Guidance Of",
         cardPicData:{
             imagePage:"",
             imageHeadingText:"Mohit Singh",

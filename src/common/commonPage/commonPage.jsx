@@ -8,6 +8,8 @@ import { WhoCanJoin } from "common/commonPage/CommonPageComponent6";
 import { TrainingMode } from "common/commonPage/CommonPageComponent7";
 import { ProgramDetails } from "common/commonPage/CommonPageComponent8";
 import { ApplyNow } from "common/commonPage/CommonPageComponent9";
+import { TechnologiesAndPlatform } from "common/commonPage/CommonPageComponent10";
+import { GuidanceSection } from "common/commonPage/CommonPageComponent11";
 
 export const CommonPageComponent = React.memo(
   ({
@@ -24,8 +26,11 @@ export const CommonPageComponent = React.memo(
       whoCanJoinSection,
       trainingModeSection,
       programDetailsSection,
+      technologiesAndPlatforms,
       applyNowSection,
-      guidanceSection
+      guidanceSection,
+      companyPortfolio,
+      jobOrientedPrograms
      } = sectionData
     const [mobile, setMobile] = useState(false);    
     const handleResize = () => {
@@ -50,9 +55,9 @@ export const CommonPageComponent = React.memo(
         {whoCanJoinSection && <WhoCanJoin sectionData={sectionData} />}
         {trainingModeSection && <TrainingMode sectionData={sectionData} mobileDetector={mobile}/>}
         {programDetailsSection && <ProgramDetails sectionData={sectionData} inputSchemas={inputSchemas} mobileDetector={mobile}/>}
-        {/* {guidanceSection && } */}
+        {technologiesAndPlatforms && <TechnologiesAndPlatform sectionData={technologiesAndPlatforms}/>}
         {applyNowSection && <ApplyNow sectionData={sectionData} inputSchemas={inputSchemas} mobileDetector={mobile}/>}
-        
+        {guidanceSection && <GuidanceSection sectionData={guidanceSection}/>}
       </>
     );
   }

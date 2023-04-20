@@ -48,14 +48,12 @@ export const SliderComponent = React.memo(
                 cardClass={contentClass}
                 verticalAlign={verticalAlign}
               >
-                
-
                 <Image
                   imageClass={imgClass}
                   imageAltText={item.altText}
                   imagePath={item.imagePath}
-                  width={imgWidth}
-                  height={imgHeight}
+                  width={item.imgWidth}
+                  height={item.imgHeight}
                 />
                 {item.imageName &&
                 item.imageEducation &&

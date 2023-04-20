@@ -109,9 +109,9 @@ body {
   height: 96vh !important;
 }
 
-/* .h-100-vh-1{
-  height: 96vh !important;
-} */
+.bg-silver{
+  background-color: rgb(217, 217, 217) !important;
+}
 
 /* HeroSection Start */
 

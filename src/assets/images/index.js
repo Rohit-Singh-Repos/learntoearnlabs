@@ -133,6 +133,25 @@ import cppLanguageImage from "assets/images/Programming/cpp-language.webp";
 import dataStructureImage from "assets/images/Programming/data-structure.webp";
 import girlWithMacbook from "assets/images/Full Stack Development/girl-with-macbook.jpg";
 
+// Courses Logo
+import javaLogo from "assets/images/Full Stack Development/Logos/java-logo.webp"
+import javaEELogo from "assets/images/Full Stack Development/Logos/java-enterprise-edition-logo.webp"
+import htmlCssJsLogo from "assets/images/Full Stack Development/Logos/html-css-js-logo.webp"
+import bootstrapLogo from "assets/images/Full Stack Development/Logos/bootstrap-logo.webp"
+import reactLogo from "assets/images/Full Stack Development/Logos/react-logo.webp"
+import springLogo from "assets/images/Full Stack Development/Logos/spring-logo.webp"
+import springHibernateLogo from "assets/images/Full Stack Development/Logos/hibernate-logo.webp"
+import mySqlLogo from "assets/images/Full Stack Development/Logos/mysql-logo.webp"
+import mongoDbLogo from "assets/images/Full Stack Development/Logos/mongoDB-logo.webp"
+import githubLogo from "assets/images/Full Stack Development/Logos/github-logo.webp"
+import ubuntuLogo from "assets/images/Full Stack Development/Logos/ubuntu-logo.webp"
+import awsLogo from "assets/images/Full Stack Development/Logos/amazon-web-services-logo.webp"
+import jenkinsLogo from "assets/images/Full Stack Development/Logos/jenkins-logo.webp"
+import dockerLogo from "assets/images/Full Stack Development/Logos/docker-logo.webp"
+import kubernatesLogo from "assets/images/Full Stack Development/Logos/kubernetes.webp"
+import jiraSoftwareLogo from "assets/images/Full Stack Development/Logos/jira-software-logo.webp"
+import figmaLogo from "assets/images/Full Stack Development/Logos/figma-logo.webp"
+
 export const COVER_IMAGES = {
     homePageCoverImage,
     cloudDevopsCoverImage,
@@ -268,4 +287,24 @@ export const COURSES_PAGE_IMAGES = {
     cLanguageImage,
     cppLanguageImage,
     dataStructureImage
+}
+
+export const COURSES_LOGO_IMAGES = {
+    javaLogo,
+    javaEELogo,
+    htmlCssJsLogo,
+    bootstrapLogo,
+    reactLogo,
+    springLogo,
+    springHibernateLogo,
+    mySqlLogo,
+    mongoDbLogo,
+    githubLogo,
+    ubuntuLogo,
+    awsLogo,
+    jenkinsLogo,
+    dockerLogo,
+    kubernatesLogo,
+    jiraSoftwareLogo,
+    figmaLogo
 }
