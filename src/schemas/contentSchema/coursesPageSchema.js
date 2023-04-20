@@ -1396,7 +1396,7 @@ export const programmingSchema = {
         paragraphText1:"Any student can join the programming fundamentals training program . The student must have interest in programming with basic computer knowledge.",
         paragraphText2:"Students from any specializations of B.Tech / M.Tech / BCA / MCA / B.Sc. / M.Sc, who are looking to learn programming and enhance their practical skills can join the programming fundamentals training program.",
         paragraphText3:"Working professionals or job seekers, who are looking to enhance their programming skills can join the programming fundamentals training program.",
-        secondSection:{
+        secondSectionForProgrammingDetails:{
             headingTextData:"Option to choose, separate program",
             paragraphTextData:"If you want to enhance your programming skills & concepts then you can also choose a specific training program.",
             cardData:[
@@ -2373,7 +2373,7 @@ export const affiliateMarketingSchema = {
 
 export const fullStackEngineer = {
     landingPageSection:{
-        imagePath:COVER_IMAGES.affiliateMarketing,
+        imagePath:COVER_IMAGES.fullStackEngineerCoverImage,
         headingText:"Become a Full Stack Software Engineer",
         subHeadingText:"With 8+ LPA Guaranteed Package",
         primaryButtonText:"Apply Now",
@@ -2454,15 +2454,16 @@ export const fullStackEngineer = {
         headingText:"Who can join",
         paragraphText1:"Any graduate or post graduate student from B.tech or M.tech (any specialization), BCA or MCA, B.Sc. or M.Sc. (CS / IT) can join the full stack training. The student must secured at-least 60% marks throughout the graduation or post graduation degree for getting the job guarantee promise.",
         paragraphText2:"Any working professional, belongs to computer science or IT specialization and now looking for salary hike or promotions can also join the full stack training program.",
-        subSectionData:{
-            headingTextData:"Get Real Work Experience",
-            paragraphText1:"Our USP is to give students, deep practical knowledge in a specific domain and help them getting their dream jobs.",
-            paragraphText2:"",
-            listDataText:[
+        secondSectionForFullStack:{
+            headingTextDataForFullStack:"Get Real Work Experience",
+            paragraphText1ForFullStack:"Our USP is to give students, deep practical knowledge in a specific domain and help them getting their dream jobs.",
+            paragraphText2ForFullStack:"",
+            listDataTextForFullStack:[
                 {id:uuid(),headingText:"Practice,",normalText:"what you learn"},
                 {id:uuid(),headingText:"Implement,",normalText:"what you practice"},
                 {id:uuid(),headingText:"Present,",normalText:"what you implement"},
-            ]
+            ],
+            imagePathData:COVER_IMAGES.girlWithMacbook
         }
     },
     programDetailsSection:{

@@ -3,7 +3,7 @@ import {
   Div,
   Paragraph,
 } from "components";
-import { InstituteDirector } from "./../../common/DirectorsCard";
+import { InstituteDirector } from "common";
 import { ABOUTUS_PAGE_IMAGES } from "assets/images";
 
 export const DirectorsBlock = React.memo(() => {

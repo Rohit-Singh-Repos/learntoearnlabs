@@ -24,7 +24,8 @@ export const CommonPageComponent = React.memo(
       whoCanJoinSection,
       trainingModeSection,
       programDetailsSection,
-      applyNowSection
+      applyNowSection,
+      guidanceSection
      } = sectionData
     const [mobile, setMobile] = useState(false);    
     const handleResize = () => {
@@ -49,7 +50,9 @@ export const CommonPageComponent = React.memo(
         {whoCanJoinSection && <WhoCanJoin sectionData={sectionData} />}
         {trainingModeSection && <TrainingMode sectionData={sectionData} mobileDetector={mobile}/>}
         {programDetailsSection && <ProgramDetails sectionData={sectionData} inputSchemas={inputSchemas} mobileDetector={mobile}/>}
+        {/* {guidanceSection && } */}
         {applyNowSection && <ApplyNow sectionData={sectionData} inputSchemas={inputSchemas} mobileDetector={mobile}/>}
+        
       </>
     );
   }

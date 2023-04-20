@@ -21,6 +21,7 @@ export {
   seoSchema,
   contentMarketingSchema,
   affiliateMarketingSchema,
+  fullStackEngineer
 } from "./contentSchema/coursesPageSchema";
 export { coursesInputSchemas } from "./inputSchema/coursesInputSchema";
 export { cashbackInputSchema } from "./inputSchema/cashbackInputSchema";

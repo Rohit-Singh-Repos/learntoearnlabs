@@ -131,7 +131,7 @@ import workIncentivesImage from "assets/images/Benefits/work-incentives.webp";
 import cLanguageImage from "assets/images/Programming/c-language.webp";
 import cppLanguageImage from "assets/images/Programming/cpp-language.webp";
 import dataStructureImage from "assets/images/Programming/data-structure.webp";
-
+import girlWithMacbook from "assets/images/Full Stack Development/girl-with-macbook.jpg";
 
 export const COVER_IMAGES = {
     homePageCoverImage,
@@ -153,7 +153,8 @@ export const COVER_IMAGES = {
     socialMediaMarketing,
     searchEngineOptimizationn,
     contentMarketing,
-    affiliateMarketing
+    affiliateMarketing,
+    girlWithMacbook
 }
 
 export const HOME_PAGE_IMAGES = {

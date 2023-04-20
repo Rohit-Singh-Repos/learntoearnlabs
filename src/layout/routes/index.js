@@ -1,12 +1,20 @@
 import React,{Suspense,lazy} from "react";
 import { Routes, Route } from "react-router-dom";
 
+// Utils
 const ErrorLogger = lazy(() => import('components/ErrorLogger').then(module => ({ default: module.ErrorLogger })));
 const FallbackLoader = lazy(() => import('components/Loaders').then(module => ({ default: module.FallbackLoader })));
+
+// Common
 const Header = lazy(() => import('layout/header').then(module => ({ default: module.Header })));
 const Footer = lazy(() => import('layout/footer').then(module => ({ default: module.Footer })));
+
+// Pages
 const HomePage = lazy(() => import('pages/home/Home').then(module => ({ default: module.HomePage })));
 const AboutPage = lazy(() => import('pages/about/About').then(module => ({ default: module.AboutPage })));
+const ContactPage = lazy(() => import('pages/contact/Contact').then(module => ({ default: module.ContactPage })));
+
+// Courses
 const JavaFullStack = lazy(() => import('pages/courses/javaFullStack/JavaFullStack').then(module => ({ default: module.JavaFullStack })));
 const DataScience = lazy(() => import('pages/courses/dataScience/DataScience').then(module => ({ default: module.DataScience })));
 const FullStackWebDevelopment = lazy(() => import('pages/courses/fullStack/FullStackWebDevlopment').then(module => ({ default: module.FullStackWebDevelopment })));
@@ -28,9 +36,9 @@ const SocialMediaMarketing = lazy(() => import('pages/courses/socialMediaMarketi
 const SearchEngineOptimization = lazy(() => import('pages/courses/searchEngineOptimization/SearchEngineOptimizaton').then(module => ({ default: module.SearchEngineOptimization })));
 const ContentMarketingCourse = lazy(() => import('pages/courses/contentMarketing/ContentMarketing').then(module => ({ default: module.ContentMarketingCourse })));
 const AffiliateMarketingCourse = lazy(() => import('pages/courses/affiliateMarketing/AffiliateMarketing').then(module => ({ default: module.AffiliateMarketingCourse })));
-const ContactPage = lazy(() => import('pages/contact/Contact').then(module => ({ default: module.ContactPage })));
+const FullStackEngineer = lazy(() => import('pages/courses/fullStackEngineer/FullStackEngineer').then(module => ({ default: module.FullStackEngineer })));
 const CashbackComponent = lazy(() => import('pages/cashback/cashback').then(module => ({ default: module.CashbackComponent })));
-const Certificates = lazy(() => import('pages/certificateVerification/CertificateVerification.jsx').then(module => ({ default: module.Certificates })));
+const Certificates = lazy(() => import('pages/certificateVerification/CertificateVerification').then(module => ({ default: module.Certificates })));
 const ErrorPage = lazy(() => import('pages/404/404Page').then(module => ({ default: module.ErrorPage })));
 
 export const Layout = React.memo(() => {
@@ -44,8 +52,8 @@ export const Layout = React.memo(() => {
           <Route path="/contact-us" element={<ContactPage/>}/>
           <Route path="/cashback" element={<CashbackComponent/>}/>
           <Route path="/verify-certificate" element={<Certificates/>}/>
+          <Route path="/full-stack-engineer-course" element={<FullStackEngineer/>}/>
           {/* <Route path="/practise" element={<ContactPage/>}/>
-          <Route path="/full-stack-engineer-course" element={<ContactPage/>}/>
           <Route path="/digital-marketing-course" element={<ContactPage/>}/> */}
           <Route path="/java-full-stack-course" element={<JavaFullStack/>}/>
           <Route path="/data-science-and-machine-learning-course" element={<DataScience/>}/>
