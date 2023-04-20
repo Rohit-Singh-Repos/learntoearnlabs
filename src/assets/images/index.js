@@ -152,6 +152,18 @@ import kubernatesLogo from "assets/images/Full Stack Development/Logos/kubernete
 import jiraSoftwareLogo from "assets/images/Full Stack Development/Logos/jira-software-logo.webp"
 import figmaLogo from "assets/images/Full Stack Development/Logos/figma-logo.webp"
 
+// Companies Logo
+import nttDataLogo from "assets/images/Home/Companies Logo/ntt-data-company-logo.webp" 
+import commvaultLogo from "assets/images/Home/Companies Logo/commvault-company-logo.webp" 
+import accentureLogoo from "assets/images/Home/Companies Logo/accenture-logo.webp" 
+import globalLogicLogo from "assets/images/Home/Companies Logo/global-logic-logo.webp" 
+import congnizantLogo from "assets/images/Home/Companies Logo/cognizant-logo.webp" 
+import morganStanleyLogo from "assets/images/Home/Companies Logo/morgan-stanley-logo.webp" 
+import tcsLogo from "assets/images/Home/Companies Logo/tata-consultancy-services-logo.webp" 
+import publicisSapientLogo from "assets/images/Home/Companies Logo/public-is-sapient-logo.webp" 
+import nagarroLogo from "assets/images/Home/Companies Logo/nagarro-logo.webp" 
+import mobileProgrammingLogo from "assets/images/Home/Companies Logo/mobile-programming-logo.webp" 
+
 export const COVER_IMAGES = {
     homePageCoverImage,
     cloudDevopsCoverImage,
@@ -307,4 +319,17 @@ export const COURSES_LOGO_IMAGES = {
     kubernatesLogo,
     jiraSoftwareLogo,
     figmaLogo
+}
+
+export const COMPANY_LOGO_IMAGES = {
+    nttDataLogo,
+    commvaultLogo,
+    accentureLogoo,
+    globalLogicLogo,
+    congnizantLogo,
+    morganStanleyLogo,
+    tcsLogo,
+    publicisSapientLogo,
+    nagarroLogo,
+    mobileProgrammingLogo
 }

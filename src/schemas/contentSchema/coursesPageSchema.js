@@ -1,5 +1,5 @@
 import { uuid } from "helpers/utils/uuid"
-import { COURSES_PAGE_IMAGES, COVER_IMAGES, COURSES_LOGO_IMAGES } from "assets/images"
+import { COURSES_PAGE_IMAGES, COVER_IMAGES, COURSES_LOGO_IMAGES, ABOUTUS_PAGE_IMAGES, COMPANY_LOGO_IMAGES } from "assets/images"
 
 export const cloudDevopsSchema = {
     landingPageSection:{
@@ -2527,7 +2527,7 @@ export const fullStackEngineer = {
     guidanceSection:{
         headingText:"Under Guidance Of",
         cardPicData:{
-            imagePage:"",
+            imagePath:ABOUTUS_PAGE_IMAGES.mohitSinghImage,
             imageHeadingText:"Mohit Singh",
             imageEducationText:"M.Tech, B.Tech (C.S.E)"
         },
@@ -2539,20 +2539,45 @@ export const fullStackEngineer = {
     },
     companyPortfolio:{
        headingTextData:"Our students are working with Top Companies",
+        sliderData:[
+            {id:uuid(),imagePath:COMPANY_LOGO_IMAGES.nttDataLogo},
+            {id:uuid(),imagePath:COMPANY_LOGO_IMAGES.commvaultLogo},
+            {id:uuid(),imagePath:COMPANY_LOGO_IMAGES.accentureLogoo},
+            {id:uuid(),imagePath:COMPANY_LOGO_IMAGES.globalLogicLogo},
+            {id:uuid(),imagePath:COMPANY_LOGO_IMAGES.congnizantLogo},
+            {id:uuid(),imagePath:COMPANY_LOGO_IMAGES.morganStanleyLogo},
+            {id:uuid(),imagePath:COMPANY_LOGO_IMAGES.tcsLogo},
+            {id:uuid(),imagePath:COMPANY_LOGO_IMAGES.publicisSapientLogo},
+            {id:uuid(),imagePath:COMPANY_LOGO_IMAGES.mobileProgrammingLogo}
+       ],
        discountAndOffersSection:{
-        discountHeadingText:"Discount & Offers",
-        discountCard:[
+       discountHeadingText:"Discount & Offers",
+       discountCard:[
             {id:uuid(),cardText:"25% Cashback Available",cardImage:COURSES_PAGE_IMAGES.cashbackImage},
             {id:uuid(),cardText:"Work Incentives",cardImage:COURSES_PAGE_IMAGES.workIncentivesImage},
-        ]
-    }
+       ]
+     }
     },
-    jobOrientedPrograms:[
-        {id:uuid(),imagePath:"",courseNameText:"Java Full Stack",courseDurationText:"Duration : 4 months | 6 Months"},
-        {id:uuid(),imagePath:"",courseNameText:"Full Stack Web Development",courseDurationText:"Duration : 4 months | 6 Months"},
-        {id:uuid(),imagePath:"",courseNameText:"Data Science & Machine Learning",courseDurationText:"Duration : 4 months | 6 Months"},
-        {id:uuid(),imagePath:"",courseNameText:"Cloud Computing & DevOps",courseDurationText:"Duration : 4 months | 6 Months"},
-        {id:uuid(),imagePath:"",courseNameText:"Digital Marketing",courseDurationText:"Duration : 6 months | 12 Months"},
-        {id:uuid(),imagePath:"",courseNameText:"Design Thinking & UI/UX",courseDurationText:"Duration : 4 months | 6 Months"},
-    ]
+    applyNowSection:{
+        headingText:"Apply Now",
+        paragraphText:"Please enter the following details to initiate your application for Cloud Computing & DevOps training program offered by Learn2Earn Labs, Agra.",
+        buttonText:"Submit",
+        subheadingText:"Eligibility Criteria",
+        paragrphTextData:[
+            {id:uuid(),text:"A bachelor’s / master’s degree in Engg / Computers."},
+            {id:uuid(),text:"Knowledge of operating system & shell script (preferred)."},
+            {id:uuid(),text:"Having basic programming & development knowledge."},
+        ]
+    },
+    jobOrientedPrograms:{
+        cardData:[
+            {id:uuid(),imagePath:"",courseNameText:"Java Full Stack",courseDurationText:"Duration : 4 months | 6 Months"},
+            {id:uuid(),imagePath:"",courseNameText:"Full Stack Web Development",courseDurationText:"Duration : 4 months | 6 Months"},
+            {id:uuid(),imagePath:"",courseNameText:"Data Science & Machine Learning",courseDurationText:"Duration : 4 months | 6 Months"},
+            {id:uuid(),imagePath:"",courseNameText:"Cloud Computing & DevOps",courseDurationText:"Duration : 4 months | 6 Months"},
+            {id:uuid(),imagePath:"",courseNameText:"Digital Marketing",courseDurationText:"Duration : 6 months | 12 Months"},
+            {id:uuid(),imagePath:"",courseNameText:"Design Thinking & UI/UX",courseDurationText:"Duration : 4 months | 6 Months"},
+        ]
+    },
+
 }
