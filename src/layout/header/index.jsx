@@ -52,25 +52,29 @@ export const Header = React.memo(() => {
                   {item.navItemPath ? (
                     <NavLink to={item.navItemPath}>{item.navItemName}</NavLink>
                   ) : (
-                    <ListItem listItemClass="nav-item dropdown ">
+                    <Div divClass="nav-item dropdown">
                       <Span
                         spanClass="nav-link dropdown-toggle fw-bold text-dark show"
                         role="button"
                         data-bs-toggle="dropdown"
                         aria-expanded="false"
+                        onClick={() => {
+                          setNavbar2(!navbar2);
+                          setNavbarId(item.id)
+                        }}
                       >
                         {item.navItemName}
                       </Span>
-                      <UnorderedList unorderedListClass={item.navItemName === "Training" ? "dropdown-menu navbar-dropdown show rounded-0  dropdown-center" : "dropdown-menu navbar-dropdown show rounded-0  dropdown-center"}>
+                      <UnorderedList unorderedListClass={navbar2 && navbarId === item.id ? `dropdown-menu navbar-dropdown show rounded-0  dropdown-center` : `dropdown-menu navbar-dropdown rounded-0 dropdown-center`}>
                         {
                           item?.navsubItems && item?.navsubItems.length !== 0 ? item?.navsubItems.map((item2) => (
-                            <ListItem listItemClass="dropdown-item" role="button">
+                            <ListItem key={item2.id} listItemClass="dropdown-item" role="button">
                               {item2.navItemName}
                             </ListItem>
                           )) : <></>
                         }
                       </UnorderedList>
-                    </ListItem>
+                    </Div>
                   )}
                 </ListItem>
               ))
