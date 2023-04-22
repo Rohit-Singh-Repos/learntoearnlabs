@@ -110,7 +110,7 @@ body {
 }
 
 .bg-silver{
-  background-color: rgb(217, 217, 217) !important;
+  background-color: rgb(242, 242, 242) !important;
 }
 
 /* HeroSection Start */
@@ -141,6 +141,10 @@ body {
 @media screen and (max-width: 992px) {
   .align-justify-sm {
     text-align: justify;
+  }
+
+  .mts-0{
+    margin-top: -150px !important;
   }
 
   /* WorkingExperience CSS */

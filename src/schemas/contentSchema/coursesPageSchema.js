@@ -1,5 +1,5 @@
 import { uuid } from "helpers/utils/uuid"
-import { COURSES_PAGE_IMAGES, COVER_IMAGES, COURSES_LOGO_IMAGES, ABOUTUS_PAGE_IMAGES, COMPANY_LOGO_IMAGES } from "assets/images"
+import { COURSES_PAGE_IMAGES, COVER_IMAGES, COURSES_LOGO_IMAGES, ABOUTUS_PAGE_IMAGES, COMPANY_LOGO_IMAGES, JOB_ORIENTED_IMAGES } from "assets/images"
 
 export const cloudDevopsSchema = {
     landingPageSection:{
@@ -2570,8 +2570,9 @@ export const fullStackEngineer = {
         ]
     },
     jobOrientedPrograms:{
+        headingText:"Other Job Oriented Training Programs",
         cardData:[
-            {id:uuid(),imagePath:"",courseNameText:"Java Full Stack",courseDurationText:"Duration : 4 months | 6 Months"},
+            {id:uuid(),imagePath:JOB_ORIENTED_IMAGES.javaFullStackImage,courseNameText:"Java Full Stack",courseDurationText:"Duration : 4 months | 6 Months"},
             {id:uuid(),imagePath:"",courseNameText:"Full Stack Web Development",courseDurationText:"Duration : 4 months | 6 Months"},
             {id:uuid(),imagePath:"",courseNameText:"Data Science & Machine Learning",courseDurationText:"Duration : 4 months | 6 Months"},
             {id:uuid(),imagePath:"",courseNameText:"Cloud Computing & DevOps",courseDurationText:"Duration : 4 months | 6 Months"},
@@ -2579,5 +2580,4 @@ export const fullStackEngineer = {
             {id:uuid(),imagePath:"",courseNameText:"Design Thinking & UI/UX",courseDurationText:"Duration : 4 months | 6 Months"},
         ]
     },
-
 }

@@ -1,3 +1,4 @@
+export { navbarSchema } from "./navbarSchema/navbarSchema";
 export { homePageSchema } from "./contentSchema/homePageScheme";
 export {
   cloudDevopsSchema,

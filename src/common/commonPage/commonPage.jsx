@@ -11,6 +11,7 @@ import { ApplyNow } from "common/commonPage/CommonPageComponent9";
 import { TechnologiesAndPlatform } from "common/commonPage/CommonPageComponent10";
 import { GuidanceSection } from "common/commonPage/CommonPageComponent11";
 import { CompanyPortfolio } from "common/commonPage/CommonPageComponent12";
+import { JobOrientedPrograms } from "common/commonPage/CommonPageComponent13";
 
 export const CommonPageComponent = React.memo(
   ({
@@ -60,6 +61,7 @@ export const CommonPageComponent = React.memo(
         {applyNowSection && <ApplyNow sectionData={sectionData} inputSchemas={inputSchemas} mobileDetector={mobile}/>}
         {guidanceSection && <GuidanceSection sectionData={guidanceSection}/>}
         {companyPortfolio && <CompanyPortfolio sectionData={companyPortfolio}/>}
+        {jobOrientedPrograms && <JobOrientedPrograms sectionData={jobOrientedPrograms}/>}
       </>
     );
   }

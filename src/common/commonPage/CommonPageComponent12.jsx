@@ -44,6 +44,6 @@ export const CompanyPortfolio = React.memo(({
           )}
         </Div>
         </Div>
-      </Div>
+        </Div>
     )
 })

@@ -2,6 +2,7 @@ import React from "react";
 import { SliderComponent } from "components/Slider";
 import { Div, SubHeading } from "components";
 import { ABOUTUS_PAGE_IMAGES } from "assets/images";
+import { uuid } from "helpers/utils/uuid";
 
 export const PictureGallery = React.memo(() => {
   const { 
@@ -37,36 +38,36 @@ export const PictureGallery = React.memo(() => {
     galleryImage30
    } = ABOUTUS_PAGE_IMAGES
   const sliderData = [
-    {id:1,imagePath:galleryImage1,altText:""},
-    {id:2,imagePath:galleryImage2,altText:""},
-    {id:3,imagePath:galleryImage3,altText:""},
-    {id:3,imagePath:galleryImage4,altText:""},
-    {id:4,imagePath:galleryImage5,altText:""},
-    {id:5,imagePath:galleryImage6,altText:"",},
-    {id:5,imagePath:galleryImage7,altText:"",},
-    {id:5,imagePath:galleryImage8,altText:"",},
-    {id:5,imagePath:galleryImage9,altText:"",},
-    {id:5,imagePath:galleryImage10,altText:"",},
-    {id:5,imagePath:galleryImage11,altText:"",},
-    {id:5,imagePath:galleryImage12,altText:"",},
-    {id:5,imagePath:galleryImage13,altText:"",},
-    {id:5,imagePath:galleryImage14,altText:"",},
-    {id:5,imagePath:galleryImage15,altText:"",},
-    {id:5,imagePath:galleryImage16,altText:"",},
-    {id:5,imagePath:galleryImage17,altText:"",},
-    {id:5,imagePath:galleryImage18,altText:"",},
-    {id:5,imagePath:galleryImage19,altText:"",},
-    {id:5,imagePath:galleryImage20,altText:"",},
-    {id:5,imagePath:galleryImage21,altText:"",},
-    {id:5,imagePath:galleryImage22,altText:"",},
-    {id:5,imagePath:galleryImage23,altText:"",},
-    {id:5,imagePath:galleryImage24,altText:"",},
-    {id:5,imagePath:galleryImage25,altText:"",},
-    {id:5,imagePath:galleryImage26,altText:"",},
-    {id:5,imagePath:galleryImage27,altText:"",},
-    {id:5,imagePath:galleryImage28,altText:"",},
-    {id:5,imagePath:galleryImage29,altText:"",},
-    {id:5,imagePath:galleryImage30,altText:"",},
+    {id:uuid(),imagePath:galleryImage1,altText:""},
+    {id:uuid(),imagePath:galleryImage2,altText:""},
+    {id:uuid(),imagePath:galleryImage3,altText:""},
+    {id:uuid(),imagePath:galleryImage4,altText:""},
+    {id:uuid(),imagePath:galleryImage5,altText:""},
+    {id:uuid(),imagePath:galleryImage6,altText:"",},
+    {id:uuid(),imagePath:galleryImage7,altText:"",},
+    {id:uuid(),imagePath:galleryImage8,altText:"",},
+    {id:uuid(),imagePath:galleryImage9,altText:"",},
+    {id:uuid(),imagePath:galleryImage10,altText:"",},
+    {id:uuid(),imagePath:galleryImage11,altText:"",},
+    {id:uuid(),imagePath:galleryImage12,altText:"",},
+    {id:uuid(),imagePath:galleryImage13,altText:"",},
+    {id:uuid(),imagePath:galleryImage14,altText:"",},
+    {id:uuid(),imagePath:galleryImage15,altText:"",},
+    {id:uuid(),imagePath:galleryImage16,altText:"",},
+    {id:uuid(),imagePath:galleryImage17,altText:"",},
+    {id:uuid(),imagePath:galleryImage18,altText:"",},
+    {id:uuid(),imagePath:galleryImage19,altText:"",},
+    {id:uuid(),imagePath:galleryImage20,altText:"",},
+    {id:uuid(),imagePath:galleryImage21,altText:"",},
+    {id:uuid(),imagePath:galleryImage22,altText:"",},
+    {id:uuid(),imagePath:galleryImage23,altText:"",},
+    {id:uuid(),imagePath:galleryImage24,altText:"",},
+    {id:uuid(),imagePath:galleryImage25,altText:"",},
+    {id:uuid(),imagePath:galleryImage26,altText:"",},
+    {id:uuid(),imagePath:galleryImage27,altText:"",},
+    {id:uuid(),imagePath:galleryImage28,altText:"",},
+    {id:uuid(),imagePath:galleryImage29,altText:"",},
+    {id:uuid(),imagePath:galleryImage30,altText:"",},
   ]
   return (
     <Div divClass="container mt-5">

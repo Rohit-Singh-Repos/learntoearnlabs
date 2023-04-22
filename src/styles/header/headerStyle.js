@@ -19,7 +19,7 @@ export const NavBrandLink = styled(Link)`
   font-weight: bold;
   align-items: center;
   text-decoration: none;
-  padding: 0 2rem;
+  padding: 0 1rem;
   height: 100%;
   cursor: pointer;
   &:hover {
@@ -38,6 +38,9 @@ export const NavLink = styled(Link)`
   cursor: pointer;
   &.active {
     color: #fff;
+  }
+  @media screen and (max-width: 768px) {
+    margin-bottom: 15px;
   }
 `;
   

@@ -164,6 +164,8 @@ import publicisSapientLogo from "assets/images/Home/Companies Logo/public-is-sap
 import nagarroLogo from "assets/images/Home/Companies Logo/nagarro-logo.webp" 
 import mobileProgrammingLogo from "assets/images/Home/Companies Logo/mobile-programming-logo.webp" 
 
+// Job Oriented Images
+
 export const COVER_IMAGES = {
     homePageCoverImage,
     cloudDevopsCoverImage,
@@ -332,4 +334,9 @@ export const COMPANY_LOGO_IMAGES = {
     publicisSapientLogo,
     nagarroLogo,
     mobileProgrammingLogo
+}
+
+export const JOB_ORIENTED_IMAGES = {
+    javaFullStackImage,
+    mernStackDevelopmentImage
 }
