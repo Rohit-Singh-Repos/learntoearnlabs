@@ -55,17 +55,16 @@ export const Header = React.memo(() => {
                     <ListItem listItemClass="nav-item dropdown ">
                       <Span
                         spanClass="nav-link dropdown-toggle fw-bold text-dark show"
-                        href="#"
                         role="button"
                         data-bs-toggle="dropdown"
                         aria-expanded="false"
                       >
                         {item.navItemName}
                       </Span>
-                      <UnorderedList unorderedListClass="dropdown-menu show rounded-0  dropdown-center" >
+                      <UnorderedList unorderedListClass={item.navItemName === "Training" ? "dropdown-menu navbar-dropdown show rounded-0  dropdown-center" : "dropdown-menu navbar-dropdown show rounded-0  dropdown-center"}>
                         {
                           item?.navsubItems && item?.navsubItems.length !== 0 ? item?.navsubItems.map((item2) => (
-                            <ListItem listItemClass="dropdown-item">
+                            <ListItem listItemClass="dropdown-item" role="button">
                               {item2.navItemName}
                             </ListItem>
                           )) : <></>
