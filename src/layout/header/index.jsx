@@ -60,19 +60,74 @@ export const Header = React.memo(() => {
                         aria-expanded="false"
                         onClick={() => {
                           setNavbar2(!navbar2);
-                          setNavbarId(item.id)
+                          setNavbarId(item.id);
                         }}
+                        // onMouseLeave={() => {
+                        //   setNavbar2(false);
+                        //   setNavbarId(null);
+                        // }}
                       >
                         {item.navItemName}
                       </Span>
-                      <UnorderedList unorderedListClass={navbar2 && navbarId === item.id ? `dropdown-menu navbar-dropdown show rounded-0  dropdown-center` : `dropdown-menu navbar-dropdown rounded-0 dropdown-center`}>
-                        {
-                          item?.navsubItems && item?.navsubItems.length !== 0 ? item?.navsubItems.map((item2) => (
-                            <ListItem key={item2.id} listItemClass="dropdown-item" role="button">
-                              {item2.navItemName}
-                            </ListItem>
-                          )) : <></>
+                      <UnorderedList
+                        unorderedListClass={
+                          navbar2 && navbarId === item.id
+                            ? `dropdown-menu navbar-dropdown show rounded-0  dropdown-center`
+                            : `dropdown-menu navbar-dropdown rounded-0 dropdown-center`
                         }
+                      >
+                        {item?.navsubItems && item?.navsubItems.length !== 0 ? (
+                          item?.navsubItems.map((item2) => (
+                            <ListItem
+                              key={item2.id}
+                              listItemClass="dropdown-item"
+                              role="button"
+                            >
+                              <Div divClass="nav-item dropdown">
+                                <Span
+                                  spanClass="nav-link dropdown-toggle fw-bold text-dark show"
+                                  role="button"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                  onMouseEnter={() => {
+                                    setNavbar3(!navbar3);
+                                    setNavbarId2(item2.id);
+                                  }}
+                                  onMouseLeave={() => {
+                                    setNavbar3(false);
+                                    setNavbarId2(null);
+                                  }}
+                                >
+                                  {item2.navItemName}
+                                </Span>
+                                <UnorderedList
+                                  unorderedListClass={
+                                    navbar3 && navbarId2 === item2.id
+                                      ? `dropdown-menu navbar-dropdown show rounded-0  dropdown-center`
+                                      : `dropdown-menu navbar-dropdown rounded-0 dropdown-center`
+                                  }
+                                >
+                                  {item2?.navsubItems &&
+                                  item2?.navsubItems.length !== 0 ? (
+                                    item2?.navsubItems.map((item3) => (
+                                      <ListItem
+                                        key={item3.id}
+                                        listItemClass="dropdown-item"
+                                        role="button"
+                                      >
+                                        {item3.navItemName}
+                                      </ListItem>
+                                    ))
+                                  ) : (
+                                    <></>
+                                  )}
+                                </UnorderedList>
+                              </Div>
+                            </ListItem>
+                          ))
+                        ) : (
+                          <></>
+                        )}
                       </UnorderedList>
                     </Div>
                   )}
@@ -230,9 +285,7 @@ export const Header = React.memo(() => {
 
   return (
     <nav className="navbar navbar-expand-lg bg-primary">
-      {
-        mobile ? mobileNavMenu() : desktopNavMenu()
-      }
+      {mobile ? mobileNavMenu() : desktopNavMenu()}
     </nav>
   );
 });
