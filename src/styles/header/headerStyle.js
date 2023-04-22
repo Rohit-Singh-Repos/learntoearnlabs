@@ -40,7 +40,7 @@ export const NavLink = styled(Link)`
     color: #fff;
   }
   @media screen and (max-width: 768px) {
-    margin-bottom: 15px;
+    margin-bottom: 25px;
   }
 `;
   

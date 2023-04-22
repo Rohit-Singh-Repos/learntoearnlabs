@@ -78,8 +78,8 @@ export const Layout = React.memo(() => {
           <Route path="/search-engine-optimization-course" element={<SearchEngineOptimization/>}/>
           <Route path="/content-marketing-course" element={<ContentMarketingCourse/>}/>
           <Route path="/affiliate-marketing-course" element={<AffiliateMarketingCourse/>}/>
-          <Route path="/claim-cashback" element={<DevopsPage/>}/>
-          <Route path="/verify-certificate" element={<DevopsPage/>}/>
+          <Route path="/claim-cashback" element={<CashbackComponent/>}/>
+          <Route path="/verify-certificate" element={<Certificates/>}/>
           <Route path="*" element={<ErrorPage/>}/>
         </Routes>
         <Footer />

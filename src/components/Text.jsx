@@ -12,9 +12,9 @@ export const SubHeading = React.memo(({children,subheadingClass}) => {
   )
 })
 
-export const Paragraph = React.memo(({children,paragraphClass}) => {
+export const Paragraph = React.memo(({children,paragraphClass,...props}) => {
     return (
-      <p className={paragraphClass}>{children}</p>
+      <p className={paragraphClass} {...props}>{children}</p>
     )
 })
 

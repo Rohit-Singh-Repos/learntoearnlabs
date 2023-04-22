@@ -16,3 +16,4 @@ Questionaire
 => quiz
 => server images
 => optimize images using reactjs
+=> Eliminate Multiple UseEffect
