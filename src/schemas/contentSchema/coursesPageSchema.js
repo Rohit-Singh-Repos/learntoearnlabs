@@ -2572,6 +2572,217 @@ export const fullStackEngineer = {
     jobOrientedPrograms:{
         headingText:"Other Job Oriented Training Programs",
         cardData:[
+            {id:uuid(),imagePath:JOB_ORIENTED_IMAGES.javaFullStackImage,courseNameText:"Java Full Stack",courseDurationText:"Duration : 4 months | 6 Months",pathName:"/java-full-stack-course"},
+            {id:uuid(),imagePath:JOB_ORIENTED_IMAGES.mernStackDevelopmentImage,courseNameText:"Full Stack Web Development",courseDurationText:"Duration : 4 months | 6 Months",pathName:"/full-stack-web-development-course"},
+            {id:uuid(),imagePath:JOB_ORIENTED_IMAGES.dataScienceImage,courseNameText:"Data Science & Machine Learning",courseDurationText:"Duration : 4 months | 6 Months",pathName:"/data-science-and-machine-learning-course"},
+            {id:uuid(),imagePath:JOB_ORIENTED_IMAGES.cloudComputingAndDevopsImage,courseNameText:"Cloud Computing & DevOps",courseDurationText:"Duration : 4 months | 6 Months",pathName:"/cloud-computing-and-devops-course"},
+            {id:uuid(),imagePath:JOB_ORIENTED_IMAGES.digitalMarketingImage2,courseNameText:"Digital Marketing",courseDurationText:"Duration : 6 months | 12 Months",pathName:"/social-media-marketing-course"},
+            {id:uuid(),imagePath:JOB_ORIENTED_IMAGES.uiuxCourseImage,courseNameText:"Design Thinking & UI/UX",courseDurationText:"Duration : 4 months | 6 Months",pathName:"/design-thinking-and-ui-ux-course"},
+        ]
+    },
+}
+
+export const digitalMarketing = {
+    landingPageSection:{
+        imagePath:COVER_IMAGES.fullStackEngineerCoverImage,
+        headingText:"Become a Full Stack Software Engineer",
+        subHeadingText:"With 8+ LPA Guaranteed Package",
+        primaryButtonText:"Apply Now",
+        outlinedButtonText:"Download Syllabus",
+        cardData:[
+            {id:uuid(),heading:"25",subHeading:"Training Modules",borderShow:true},
+            {id:uuid(),heading:"4",subHeading:"Capstone Projects",borderShow:true},
+            {id:uuid(),heading:"600+",subHeading:"Training Hours",borderShow:true},
+            {id:uuid(),heading:"8 LPA+",subHeading:"Avg. Salary Package",borderShow:false},
+        ]
+    },
+    cloudDevopsCareerSection:{
+        headingText:"Why, choose full stack as a career ?",
+        cardTextData:[
+            {id:uuid(),cardText:"Full Stack Engineers are in Demand"},
+            {id:uuid(),cardText:"Versatility & Job Security"},
+            {id:uuid(),cardText:"Handsome Salary"},
+            {id:uuid(),cardText:"Promotions & Career Growth"},
+        ],
+        listItemData:[
+            {id:uuid(),listText:"The demand for full-stack software professionals has been increased as business organizations continue to expand their online presence. They always look to hire professionals who can work in multiple domains."},
+            {id:uuid(),listText:"The Versatility of Full Stack engineers makes them valuable to businesses and provide them stability in the constantly changing industry."},
+            {id:uuid(),listText:"The full stack software professionals are often paid well due to their variety of skills, experience and high demands."},
+            {id:uuid(),listText:"As they can work in different specializations hence they get promotions frequently and can become team leads, project managers, consultant, CTO’s, or even start their own businesses."},
+        ]
+    },
+    trainingRoadmapSection:{
+        headingPrimaryText:"Training Roadmap",
+        headingSecondaryText:"Full Stack Engineer",
+        paragraphText:"In general, the developers who work on web services usually stick with front-end components or back-end logic or development operations and face difficulty. The same problem also occurs with others when they stick with the requirements & processes belonging to different domains. But a full stack professional is someone who handles and manages most of the operations, that's why they are in demand.",
+        cardTextData:[
+            {id:uuid(),cardText:"Front End (HTML, CSS, JavaScript, EcmaScript & ReactJS)"},
+            {id:uuid(),cardText:"Database (MySQL & MongoDB)"},
+            {id:uuid(),cardText:"Deployment (Jenkins, Docker, Ansible & Kubernetes)"},
+            {id:uuid(),cardText:"Back End (Java, Spring & Hibernate)"},
+            {id:uuid(),cardText:"Server & Network (Linux & AWS )"},
+            {id:uuid(),cardText:"Project Management (Agile Model & Jira)"},
+        ]
+    },
+    careerOptionSection:{
+        headingText:"Career Options",
+        cardHeadingText1:"Middle Level Career Options",
+        cardHeadingText2:"Top Level Career Options",
+        paragraphText:"As a full stack software professional, you have many different specializations so you will have different options to start your career.",
+        cardParagraphText1:"After successfully completion of training, you can apply for various job roles, like",
+        cardParagraphText2:"After two to five years of experience, you can apply for job roles, like",
+        cardListTextData1:[
+            {id:uuid(),listText:"Full Stack Developer"},
+            {id:uuid(),listText:"System Engineer"},
+            {id:uuid(),listText:"SDE – I / II"},
+            {id:uuid(),listText:"Front End Developer"},
+            {id:uuid(),listText:"System Architect"},
+            {id:uuid(),listText:"DevOps Engineer, etc."},
+        ],
+        cardListTextData2:[
+            {id:uuid(),listText:"SDE – III"},
+            {id:uuid(),listText:"Project Consultant"},
+            {id:uuid(),listText:"Team Lead"},
+            {id:uuid(),listText:"Enterprise Architect"},
+            {id:uuid(),listText:"Project Manager"},
+            {id:uuid(),listText:"Project Head"},
+            {id:uuid(),listText:"Chief Technical Officer (CTO)"},
+        ]
+    },
+    cloudDevopsTrainingSection:{
+        headingText:"Full Stack Training Program",
+        paragraphText:"TThis program is designed to provide students with the knowledge and hands-on skills needed to succeed in project development field and perform like an expert.",
+        buttonText:"Download Syllabus",
+        cardData:[
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage1,subheadingText:"Practical Based Sessions",paragraphText:"of a year or 600 hours duration"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage2,subheadingText:"Capstone Projects",paragraphText:"To build your hands-on expertise & portfolio"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage3,subheadingText:"Resume Building Assistance",paragraphText:"To create an attractive resume for you"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage4,subheadingText:"Interview Preparation",paragraphText:"So you can present yourself in a better way"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage5,subheadingText:"Mentoring & Job Assistance",paragraphText:"To help you in getting good career or placements"},
+        ]
+    },
+    whoCanJoinSection:{
+        headingText:"Who can join",
+        paragraphText1:"Any graduate or post graduate student from B.tech or M.tech (any specialization), BCA or MCA, B.Sc. or M.Sc. (CS / IT) can join the full stack training. The student must secured at-least 60% marks throughout the graduation or post graduation degree for getting the job guarantee promise.",
+        paragraphText2:"Any working professional, belongs to computer science or IT specialization and now looking for salary hike or promotions can also join the full stack training program.",
+        secondSectionForFullStack:{
+            headingTextDataForFullStack:"Get Real Work Experience",
+            paragraphText1ForFullStack:"Our USP is to give students, deep practical knowledge in a specific domain and help them getting their dream jobs.",
+            paragraphText2ForFullStack:"",
+            listDataTextForFullStack:[
+                {id:uuid(),headingText:"Practice,",normalText:"what you learn"},
+                {id:uuid(),headingText:"Implement,",normalText:"what you practice"},
+                {id:uuid(),headingText:"Present,",normalText:"what you implement"},
+            ],
+            imagePathData:COVER_IMAGES.girlWithMacbook
+        }
+    },
+    programDetailsSection:{
+        headingText:"Program Details",
+        paragraphText:"During training you will go through with programming methodologies, development approaches, case studies, code deployment, design thinking concepts, assignments, and mini projects that will help you to become an expert full stack engineer. You would get a hands-on expertise over the most in-demand technologies, platforms and tools.",
+        moduleTextData:[
+            {id:uuid(),moduleName:"Module 1",listText:"Introduction & Python Programming"},
+            {id:uuid(),moduleName:"Module 2",listText:"Numpy"},
+        ],
+        contactCardData1:{
+            phoneNumber:"+91-9548868337"
+        },
+        contactCardData2:{
+            buttonText:"Submit"
+        },
+    },
+    technologiesAndPlatforms:{
+        headingTextData:"Technologies & Platforms",
+        sliderData:[
+            {id:uuid(),imagePath:COURSES_LOGO_IMAGES.javaLogo},
+            {id:uuid(),imagePath:COURSES_LOGO_IMAGES.javaEELogo},
+            {id:uuid(),imagePath:COURSES_LOGO_IMAGES.htmlCssJsLogo},
+            {id:uuid(),imagePath:COURSES_LOGO_IMAGES.bootstrapLogo},
+            {id:uuid(),imagePath:COURSES_LOGO_IMAGES.reactLogo},
+            {id:uuid(),imagePath:COURSES_LOGO_IMAGES.springLogo},
+            {id:uuid(),imagePath:COURSES_LOGO_IMAGES.springHibernateLogo},
+            {id:uuid(),imagePath:COURSES_LOGO_IMAGES.mySqlLogo},
+            {id:uuid(),imagePath:COURSES_LOGO_IMAGES.mongoDbLogo},
+            {id:uuid(),imagePath:COURSES_LOGO_IMAGES.githubLogo},
+            {id:uuid(),imagePath:COURSES_LOGO_IMAGES.ubuntuLogo},
+            {id:uuid(),imagePath:COURSES_LOGO_IMAGES.awsLogo},
+            {id:uuid(),imagePath:COURSES_LOGO_IMAGES.jenkinsLogo},
+            {id:uuid(),imagePath:COURSES_LOGO_IMAGES.dockerLogo},
+            {id:uuid(),imagePath:COURSES_LOGO_IMAGES.kubernatesLogo},
+            {id:uuid(),imagePath:COURSES_LOGO_IMAGES.jiraSoftwareLogo},
+            {id:uuid(),imagePath:COURSES_LOGO_IMAGES.figmaLogo},
+        ]
+    },
+    trainingModeSection:{
+        headingText:"Training Mode",
+        cardData1:{
+            headingText1:"Online Live Classes are also available",
+            listTextData:[
+                {id:uuid(),listText:"4x more effective way of learning"},
+                {id:uuid(),listText:"Hands-on experience with projects & assignments"},
+                {id:uuid(),listText:"Virtual class with real interaction with trainer"},
+                {id:uuid(),listText:"Monitoring support & troubleshooting issues"},
+                {id:uuid(),listText:"Masterclass from industry experts & leaders"},
+                {id:uuid(),listText:"Live class recordings for revision purpose"},
+            ],
+            buttonText1:"Apply Now"
+        },
+        cardData2:{
+            headingText2:"Full Stack Training in Agra",
+            addressHeading:"Learn2Earn Labs",
+            addressText:"F-4, First Floor, Anna Ikon Complex, In Front of Deviram Food Circle, Sikandra-Bodla Road, Sikandra, Agra, Uttar Pradesh – 282007",
+            phoneText:"Call: +91-9548868337",
+            buttonText2:"Download Syllabus"
+        }
+    },
+    guidanceSection:{
+        headingText:"Under Guidance Of",
+        cardPicData:{
+            imagePath:ABOUTUS_PAGE_IMAGES.mohitSinghImage,
+            imageHeadingText:"Mohit Singh",
+            imageEducationText:"M.Tech, B.Tech (C.S.E)"
+        },
+        cardInfoData:{
+            paragraphText1:"Mr. Mohit Singh is a professional full-stack trainer, project consultant and startup mentor. He is holding expertise in Java, Application Design, MERN Stack, DevOps, Design Thinking and User Experience Design.",
+            paragraphText2:"He has trained thousands of students & hundreds of employed professionals. He completed his trainings in Google, Gurugram and short term projects in IIT Delhi, IIT BHU & IIT Jodhpur.",
+            paragraphText3:"He is also recognized as Mentor with MEITY Startup Hub, startup India, Punjab Startup, startup Uttarakhand, Mumbai State Innovation Society, Atal Innovation Mission, etc. in the area of education & utility services."
+        }
+    },
+    companyPortfolio:{
+       headingTextData:"Our students are working with Top Companies",
+        sliderData:[
+            {id:uuid(),imagePath:COMPANY_LOGO_IMAGES.nttDataLogo},
+            {id:uuid(),imagePath:COMPANY_LOGO_IMAGES.commvaultLogo},
+            {id:uuid(),imagePath:COMPANY_LOGO_IMAGES.accentureLogoo},
+            {id:uuid(),imagePath:COMPANY_LOGO_IMAGES.globalLogicLogo},
+            {id:uuid(),imagePath:COMPANY_LOGO_IMAGES.congnizantLogo},
+            {id:uuid(),imagePath:COMPANY_LOGO_IMAGES.morganStanleyLogo},
+            {id:uuid(),imagePath:COMPANY_LOGO_IMAGES.tcsLogo},
+            {id:uuid(),imagePath:COMPANY_LOGO_IMAGES.publicisSapientLogo},
+            {id:uuid(),imagePath:COMPANY_LOGO_IMAGES.mobileProgrammingLogo}
+       ],
+       discountAndOffersSection:{
+       discountHeadingText:"Discount & Offers",
+       discountCard:[
+            {id:uuid(),cardText:"25% Cashback Available",cardImage:COURSES_PAGE_IMAGES.cashbackImage},
+            {id:uuid(),cardText:"Work Incentives",cardImage:COURSES_PAGE_IMAGES.workIncentivesImage},
+       ]
+     }
+    },
+    applyNowSection:{
+        headingText:"Apply Now",
+        paragraphText:"Please enter the following details to initiate your application for Cloud Computing & DevOps training program offered by Learn2Earn Labs, Agra.",
+        buttonText:"Submit",
+        subheadingText:"Eligibility Criteria",
+        paragrphTextData:[
+            {id:uuid(),text:"A bachelor’s / master’s degree in Engg / Computers."},
+            {id:uuid(),text:"Knowledge of operating system & shell script (preferred)."},
+            {id:uuid(),text:"Having basic programming & development knowledge."},
+        ]
+    },
+    jobOrientedPrograms:{
+        headingText:"Other Job Oriented Training Programs",
+        cardData:[
             {id:uuid(),imagePath:JOB_ORIENTED_IMAGES.javaFullStackImage,courseNameText:"Java Full Stack",courseDurationText:"Duration : 4 months | 6 Months"},
             {id:uuid(),imagePath:"",courseNameText:"Full Stack Web Development",courseDurationText:"Duration : 4 months | 6 Months"},
             {id:uuid(),imagePath:"",courseNameText:"Data Science & Machine Learning",courseDurationText:"Duration : 4 months | 6 Months"},

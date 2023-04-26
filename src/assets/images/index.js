@@ -165,6 +165,10 @@ import nagarroLogo from "assets/images/Home/Companies Logo/nagarro-logo.webp"
 import mobileProgrammingLogo from "assets/images/Home/Companies Logo/mobile-programming-logo.webp" 
 
 // Job Oriented Images
+import dataScienceImage from "assets/images/Home/data-science-course.webp";
+import cloudComputingAndDevopsImage from "assets/images/Home/cloud-computing-and-devops-course.webp";
+import digitalMarketingImage2 from "assets/images/Home/social-media-marketing-course.webp";
+import uiuxCourseImage from "assets/images/Home/design-thinking-and-ui-ux-course.webp";
 
 export const COVER_IMAGES = {
     homePageCoverImage,
@@ -338,5 +342,9 @@ export const COMPANY_LOGO_IMAGES = {
 
 export const JOB_ORIENTED_IMAGES = {
     javaFullStackImage,
-    mernStackDevelopmentImage
+    mernStackDevelopmentImage,
+    dataScienceImage,
+    cloudComputingAndDevopsImage,
+    digitalMarketingImage2,
+    uiuxCourseImage
 }

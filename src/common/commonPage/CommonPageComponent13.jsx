@@ -18,7 +18,7 @@ export const JobOrientedPrograms = React.memo(({ sectionData }) => {
         {cardData && cardData.length !== 0 ? (
           cardData.map((item) => (
             <Div key={item.id} divClass="col-sm-12 col-md-6 col-lg-4 mt-4 ">
-              <LinkComponent>
+              <LinkComponent pathName={item.pathName}>
                 <CommonCard cardClass="card rounded-0" verticalAlign={true}>
                   <Image
                     imagePath={item.imagePath}
