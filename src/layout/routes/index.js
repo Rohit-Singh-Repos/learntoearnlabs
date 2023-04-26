@@ -37,6 +37,7 @@ const SearchEngineOptimization = lazy(() => import('pages/courses/searchEngineOp
 const ContentMarketingCourse = lazy(() => import('pages/courses/contentMarketing/ContentMarketing').then(module => ({ default: module.ContentMarketingCourse })));
 const AffiliateMarketingCourse = lazy(() => import('pages/courses/affiliateMarketing/AffiliateMarketing').then(module => ({ default: module.AffiliateMarketingCourse })));
 const FullStackEngineer = lazy(() => import('pages/courses/fullStackEngineer/FullStackEngineer').then(module => ({ default: module.FullStackEngineer })));
+const DigitalMarketing = lazy(() => import('pages/courses/digitalMarketing/DigitalMarketing').then(module => ({ default: module.DigitalMarketing })));
 const CashbackComponent = lazy(() => import('pages/cashback/cashback').then(module => ({ default: module.CashbackComponent })));
 const Certificates = lazy(() => import('pages/certificateVerification/CertificateVerification').then(module => ({ default: module.Certificates })));
 const ErrorPage = lazy(() => import('pages/404/404Page').then(module => ({ default: module.ErrorPage })));
@@ -53,6 +54,7 @@ export const Layout = React.memo(() => {
           <Route path="/cashback" element={<CashbackComponent/>}/>
           <Route path="/verify-certificate" element={<Certificates/>}/>
           <Route path="/full-stack-engineer-course" element={<FullStackEngineer/>}/>
+          <Route path="/digital-marketing-course" element={<DigitalMarketing/>}/>
           {/* <Route path="/practise" element={<ContactPage/>}/>
           <Route path="/digital-marketing-course" element={<ContactPage/>}/> */}
           <Route path="/java-full-stack-course" element={<JavaFullStack/>}/>

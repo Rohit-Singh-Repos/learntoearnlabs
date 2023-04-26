@@ -2584,78 +2584,82 @@ export const fullStackEngineer = {
 
 export const digitalMarketing = {
     landingPageSection:{
-        imagePath:COVER_IMAGES.fullStackEngineerCoverImage,
-        headingText:"Become a Full Stack Software Engineer",
-        subHeadingText:"With 8+ LPA Guaranteed Package",
+        imagePath:COVER_IMAGES.digitalMarketingCoverImage,
+        headingText:"Become a Professional Digital Marketer",
+        paragraphText:"With Job Gurantee",
         primaryButtonText:"Apply Now",
         outlinedButtonText:"Download Syllabus",
         cardData:[
-            {id:uuid(),heading:"25",subHeading:"Training Modules",borderShow:true},
-            {id:uuid(),heading:"4",subHeading:"Capstone Projects",borderShow:true},
-            {id:uuid(),heading:"600+",subHeading:"Training Hours",borderShow:true},
-            {id:uuid(),heading:"8 LPA+",subHeading:"Avg. Salary Package",borderShow:false},
+            {id:uuid(),heading:"15+",subHeading:"Training Modules",borderShow:true},
+            {id:uuid(),heading:"50+",subHeading:"Professional Tools",borderShow:true},
+            {id:uuid(),heading:"100+",subHeading:"Case Studies",borderShow:true},
+            {id:uuid(),heading:"3-5 LPA",subHeading:"Avg. Salary Package",borderShow:false},
         ]
     },
     cloudDevopsCareerSection:{
-        headingText:"Why, choose full stack as a career ?",
+        headingText:"Why, you should join Digital Marketing ?",
         cardTextData:[
-            {id:uuid(),cardText:"Full Stack Engineers are in Demand"},
-            {id:uuid(),cardText:"Versatility & Job Security"},
-            {id:uuid(),cardText:"Handsome Salary"},
-            {id:uuid(),cardText:"Promotions & Career Growth"},
+            {id:uuid(),cardText:"Digital Marketing is in Demand"},
+            {id:uuid(),cardText:"Offering Good Salary Packages"},
+            {id:uuid(),cardText:"Lost of Freelancing Work"},
+            {id:uuid(),cardText:"Digital is the Future"},
         ],
         listItemData:[
-            {id:uuid(),listText:"The demand for full-stack software professionals has been increased as business organizations continue to expand their online presence. They always look to hire professionals who can work in multiple domains."},
-            {id:uuid(),listText:"The Versatility of Full Stack engineers makes them valuable to businesses and provide them stability in the constantly changing industry."},
-            {id:uuid(),listText:"The full stack software professionals are often paid well due to their variety of skills, experience and high demands."},
-            {id:uuid(),listText:"As they can work in different specializations hence they get promotions frequently and can become team leads, project managers, consultant, CTO’s, or even start their own businesses."},
+            {id:uuid(),listText:"Every business needs a digital marketer to promote their product or service digitally. Every organization need to promote their products or service or content by attractive posts, images, videos, campaigns & websites."},
+            {id:uuid(),listText:"People are living digital life they interact with each other via social media or internet so digital marketing is in demand."},
+            {id:uuid(),listText:"With digital marketing, you can work with any company to market their product or service or to manage their content over website or mobile app."},
+            {id:uuid(),listText:"You can design the content, work with the advertiser, you can design websites, develop ecommerce websites, you can start your earning by working online, you can work as a freelancer or open your own advertising agency and many more."},
         ]
     },
     trainingRoadmapSection:{
         headingPrimaryText:"Training Roadmap",
-        headingSecondaryText:"Full Stack Engineer",
-        paragraphText:"In general, the developers who work on web services usually stick with front-end components or back-end logic or development operations and face difficulty. The same problem also occurs with others when they stick with the requirements & processes belonging to different domains. But a full stack professional is someone who handles and manages most of the operations, that's why they are in demand.",
+        headingSecondaryText:"Digital Marketing",
+        paragraphText:"Nowadays, businesses are leveraging digital platforms or channels to reach  their target audience and the demand of online marketing is increasing hence the scope of digital marketing is continuously growing. Digital Marketers can work with various industries like advertising, e-commerce, digital media, healthcare, education , travelling and many more.",
         cardTextData:[
-            {id:uuid(),cardText:"Front End (HTML, CSS, JavaScript, EcmaScript & ReactJS)"},
-            {id:uuid(),cardText:"Database (MySQL & MongoDB)"},
-            {id:uuid(),cardText:"Deployment (Jenkins, Docker, Ansible & Kubernetes)"},
-            {id:uuid(),cardText:"Back End (Java, Spring & Hibernate)"},
-            {id:uuid(),cardText:"Server & Network (Linux & AWS )"},
-            {id:uuid(),cardText:"Project Management (Agile Model & Jira)"},
+            {id:uuid(),cardText:"Search Engine Optimization"},
+            {id:uuid(),cardText:"WordPress & Blogging"},
+            {id:uuid(),cardText:"Social Media Marketing"},
+            {id:uuid(),cardText:"Google Ads & Analytics"},
+            {id:uuid(),cardText:"Email & Mobile Marketing"},
+            {id:uuid(),cardText:"Digital Display Advertising"},
         ]
     },
     careerOptionSection:{
         headingText:"Career Options",
-        cardHeadingText1:"Middle Level Career Options",
-        cardHeadingText2:"Top Level Career Options",
-        paragraphText:"As a full stack software professional, you have many different specializations so you will have different options to start your career.",
+        cardHeadingText1:"Job Roles",
+        cardHeadingText2:"Career Interest",
+        paragraphText:"As a digital marketing professional, you will have a diverse range of job opportunities to work for businesses or someone else or for your own and get success in your career.",
         cardParagraphText1:"After successfully completion of training, you can apply for various job roles, like",
-        cardParagraphText2:"After two to five years of experience, you can apply for job roles, like",
+        cardParagraphText2:"After having practical knowledge in digital marketing you can also have other options, like",
         cardListTextData1:[
-            {id:uuid(),listText:"Full Stack Developer"},
-            {id:uuid(),listText:"System Engineer"},
-            {id:uuid(),listText:"SDE – I / II"},
-            {id:uuid(),listText:"Front End Developer"},
-            {id:uuid(),listText:"System Architect"},
-            {id:uuid(),listText:"DevOps Engineer, etc."},
+            {id:uuid(),listText:"Social Media Marketer"},
+            {id:uuid(),listText:"Campaign Designer"},
+            {id:uuid(),listText:"SEO Consultant"},
+            {id:uuid(),listText:"Business Development Executive"},
+            {id:uuid(),listText:"Ads Manager"},
+            {id:uuid(),listText:"Website Designer"},
+            {id:uuid(),listText:"Digital Marketer, etc."},
         ],
         cardListTextData2:[
-            {id:uuid(),listText:"SDE – III"},
-            {id:uuid(),listText:"Project Consultant"},
-            {id:uuid(),listText:"Team Lead"},
-            {id:uuid(),listText:"Enterprise Architect"},
-            {id:uuid(),listText:"Project Manager"},
-            {id:uuid(),listText:"Project Head"},
-            {id:uuid(),listText:"Chief Technical Officer (CTO)"},
+            {id:uuid(),listText:"Freelancing"},
+            {id:uuid(),listText:"Marketing Agency"},
+            {id:uuid(),listText:"Content Designing"},
+            {id:uuid(),listText:"Media & Advertising"},
+            {id:uuid(),listText:"Influence Marketing"},
+            {id:uuid(),listText:"Digital Marketing Consultant"},
+            {id:uuid(),listText:"Business"},
         ]
     },
+    availableProgramsSection:{
+
+    },
     cloudDevopsTrainingSection:{
-        headingText:"Full Stack Training Program",
-        paragraphText:"TThis program is designed to provide students with the knowledge and hands-on skills needed to succeed in project development field and perform like an expert.",
+        headingText:"Digital Marketing Training Program",
+        paragraphText:"Learn2Earn Labs offers an extended support to the candidates, train accordingly and help them to get their dream job in renowned companies after completing graduation or postgraduation.",
         buttonText:"Download Syllabus",
         cardData:[
-            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage1,subheadingText:"Practical Based Sessions",paragraphText:"of a year or 600 hours duration"},
-            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage2,subheadingText:"Capstone Projects",paragraphText:"To build your hands-on expertise & portfolio"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage1,subheadingText:"Practical Based Sessions",paragraphText:"of 3 months or 6 Months Duration"},
+            {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage2,subheadingText:"Live Project Work",paragraphText:"To build your hands-on expertise"},
             {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage3,subheadingText:"Resume Building Assistance",paragraphText:"To create an attractive resume for you"},
             {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage4,subheadingText:"Interview Preparation",paragraphText:"So you can present yourself in a better way"},
             {id:uuid(),imagePath:COURSES_PAGE_IMAGES.careerSupportImage5,subheadingText:"Mentoring & Job Assistance",paragraphText:"To help you in getting good career or placements"},
@@ -2663,23 +2667,14 @@ export const digitalMarketing = {
     },
     whoCanJoinSection:{
         headingText:"Who can join",
-        paragraphText1:"Any graduate or post graduate student from B.tech or M.tech (any specialization), BCA or MCA, B.Sc. or M.Sc. (CS / IT) can join the full stack training. The student must secured at-least 60% marks throughout the graduation or post graduation degree for getting the job guarantee promise.",
-        paragraphText2:"Any working professional, belongs to computer science or IT specialization and now looking for salary hike or promotions can also join the full stack training program.",
-        secondSectionForFullStack:{
-            headingTextDataForFullStack:"Get Real Work Experience",
-            paragraphText1ForFullStack:"Our USP is to give students, deep practical knowledge in a specific domain and help them getting their dream jobs.",
-            paragraphText2ForFullStack:"",
-            listDataTextForFullStack:[
-                {id:uuid(),headingText:"Practice,",normalText:"what you learn"},
-                {id:uuid(),headingText:"Implement,",normalText:"what you practice"},
-                {id:uuid(),headingText:"Present,",normalText:"what you implement"},
-            ],
-            imagePathData:COVER_IMAGES.girlWithMacbook
-        }
+        paragraphText1:"Any graduate or post graduate student from any specialization can join the digital marketing training program . The student must have basic knowledge of computer and internet tools.",
+        paragraphText2:"Any working professional who is looking for job switch and now looking for salary hike or promotions can also join the digital marketing training program.",
+        paragraphText3:"Any house-wife, girl or home makers looking for part time earning can also join the digital marketing training program, if they have basic knowledge of computer and internet tools.",
+        paragraphText4:"Any Business owner or shop keeper, who wants to promote their products and services online can also join the digital marketing training program."
     },
     programDetailsSection:{
         headingText:"Program Details",
-        paragraphText:"During training you will go through with programming methodologies, development approaches, case studies, code deployment, design thinking concepts, assignments, and mini projects that will help you to become an expert full stack engineer. You would get a hands-on expertise over the most in-demand technologies, platforms and tools.",
+        paragraphText:"During training you will work on multiple case studies, human psychology, design thinking concepts, content design, assignments, and mini projects that will help you to become a confident digital marketer. You would get a hands-on expertise over the most in-demand skills, techniques and tools.",
         moduleTextData:[
             {id:uuid(),moduleName:"Module 1",listText:"Introduction & Python Programming"},
             {id:uuid(),moduleName:"Module 2",listText:"Numpy"},
@@ -2692,7 +2687,7 @@ export const digitalMarketing = {
         },
     },
     technologiesAndPlatforms:{
-        headingTextData:"Technologies & Platforms",
+        headingTextData:"50+ Popular Tools Covered",
         sliderData:[
             {id:uuid(),imagePath:COURSES_LOGO_IMAGES.javaLogo},
             {id:uuid(),imagePath:COURSES_LOGO_IMAGES.javaEELogo},
@@ -2728,7 +2723,7 @@ export const digitalMarketing = {
             buttonText1:"Apply Now"
         },
         cardData2:{
-            headingText2:"Full Stack Training in Agra",
+            headingText2:"Digital Marketing Training in Agra",
             addressHeading:"Learn2Earn Labs",
             addressText:"F-4, First Floor, Anna Ikon Complex, In Front of Deviram Food Circle, Sikandra-Bodla Road, Sikandra, Agra, Uttar Pradesh – 282007",
             phoneText:"Call: +91-9548868337",
@@ -2738,14 +2733,14 @@ export const digitalMarketing = {
     guidanceSection:{
         headingText:"Under Guidance Of",
         cardPicData:{
-            imagePath:ABOUTUS_PAGE_IMAGES.mohitSinghImage,
-            imageHeadingText:"Mohit Singh",
-            imageEducationText:"M.Tech, B.Tech (C.S.E)"
+            imagePath:ABOUTUS_PAGE_IMAGES.shubendraGuptaImage,
+            imageHeadingText:"Dr. Shubhendra Gupta",
+            imageEducationText:"Ph.D., B.Ed, M.Sc (Physics)"
         },
         cardInfoData:{
-            paragraphText1:"Mr. Mohit Singh is a professional full-stack trainer, project consultant and startup mentor. He is holding expertise in Java, Application Design, MERN Stack, DevOps, Design Thinking and User Experience Design.",
-            paragraphText2:"He has trained thousands of students & hundreds of employed professionals. He completed his trainings in Google, Gurugram and short term projects in IIT Delhi, IIT BHU & IIT Jodhpur.",
-            paragraphText3:"He is also recognized as Mentor with MEITY Startup Hub, startup India, Punjab Startup, startup Uttarakhand, Mumbai State Innovation Society, Atal Innovation Mission, etc. in the area of education & utility services."
+            paragraphText1:"Dr. Shubhendra Gupta is an experienced digital marketer, Business Consultant and startup mentor with a demonstrated history of working in the information technology and services industry.",
+            paragraphText2:"He use to train students & working professionals for getting better job opportunities and train business owners in generating profits or leads. His areas of interest are Digital Marketing, Business Development, Data Analysis, Strategic Planning, Market Research & Reality, User Testing, Website design, etc.",
+            paragraphText3:"He is also recognized as Mentor with MEITY Startup Hub & Punjab Startup in the area of education & business consultation."
         }
     },
     companyPortfolio:{
@@ -2783,12 +2778,12 @@ export const digitalMarketing = {
     jobOrientedPrograms:{
         headingText:"Other Job Oriented Training Programs",
         cardData:[
-            {id:uuid(),imagePath:JOB_ORIENTED_IMAGES.javaFullStackImage,courseNameText:"Java Full Stack",courseDurationText:"Duration : 4 months | 6 Months"},
-            {id:uuid(),imagePath:"",courseNameText:"Full Stack Web Development",courseDurationText:"Duration : 4 months | 6 Months"},
-            {id:uuid(),imagePath:"",courseNameText:"Data Science & Machine Learning",courseDurationText:"Duration : 4 months | 6 Months"},
-            {id:uuid(),imagePath:"",courseNameText:"Cloud Computing & DevOps",courseDurationText:"Duration : 4 months | 6 Months"},
-            {id:uuid(),imagePath:"",courseNameText:"Digital Marketing",courseDurationText:"Duration : 6 months | 12 Months"},
-            {id:uuid(),imagePath:"",courseNameText:"Design Thinking & UI/UX",courseDurationText:"Duration : 4 months | 6 Months"},
+            {id:uuid(),imagePath:JOB_ORIENTED_IMAGES.javaFullStackImage,courseNameText:"Java Full Stack",courseDurationText:"Duration : 4 months | 6 Months",pathName:"/java-full-stack-course"},
+            {id:uuid(),imagePath:JOB_ORIENTED_IMAGES.mernStackDevelopmentImage,courseNameText:"Full Stack Web Development",courseDurationText:"Duration : 4 months | 6 Months",pathName:"/full-stack-web-development-course"},
+            {id:uuid(),imagePath:JOB_ORIENTED_IMAGES.dataScienceImage,courseNameText:"Data Science & Machine Learning",courseDurationText:"Duration : 4 months | 6 Months",pathName:"/data-science-and-machine-learning-course"},
+            {id:uuid(),imagePath:JOB_ORIENTED_IMAGES.cloudComputingAndDevopsImage,courseNameText:"Cloud Computing & DevOps",courseDurationText:"Duration : 4 months | 6 Months",pathName:"/cloud-computing-and-devops-course"},
+            {id:uuid(),imagePath:JOB_ORIENTED_IMAGES.digitalMarketingImage2,courseNameText:"Digital Marketing",courseDurationText:"Duration : 6 months | 12 Months",pathName:"/social-media-marketing-course"},
+            {id:uuid(),imagePath:JOB_ORIENTED_IMAGES.uiuxCourseImage,courseNameText:"Design Thinking & UI/UX",courseDurationText:"Duration : 4 months | 6 Months",pathName:"/design-thinking-and-ui-ux-course"},
         ]
     },
 }

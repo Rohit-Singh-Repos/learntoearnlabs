@@ -22,7 +22,8 @@ export {
   seoSchema,
   contentMarketingSchema,
   affiliateMarketingSchema,
-  fullStackEngineer
+  fullStackEngineer,
+  digitalMarketing
 } from "./contentSchema/coursesPageSchema";
 export { coursesInputSchemas } from "./inputSchema/coursesInputSchema";
 export { cashbackInputSchema } from "./inputSchema/cashbackInputSchema";
