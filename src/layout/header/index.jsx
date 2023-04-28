@@ -8,6 +8,7 @@ import {
   ListItem,
   Span,
   Paragraph,
+  LinkComponent,
 } from "components";
 import { navbarSchema } from "schemas";
 import {
@@ -62,10 +63,6 @@ export const Header = React.memo(() => {
                           setNavbar2(!navbar2);
                           setNavbarId(item.id);
                         }}
-                        // onMouseLeave={() => {
-                        //   setNavbar2(false);
-                        //   setNavbarId(null);
-                        // }}
                       >
                         {item.navItemName}
                       </Span>
@@ -85,20 +82,26 @@ export const Header = React.memo(() => {
                             >
                               <Div divClass="nav-item dropdown">
                                 <Span
-                                  spanClass="nav-link dropdown-toggle fw-bold text-dark show"
+                                  spanClass={`nav-link ${
+                                    item.navItemName !== "Contact"
+                                      ? "dropdown-toggle"
+                                      : ""
+                                  } fw-bold text-dark show`}
                                   role="button"
                                   data-bs-toggle="dropdown"
                                   aria-expanded="false"
-                                  onMouseEnter={() => {
-                                    setNavbar3(!navbar3);
-                                    setNavbarId2(item2.id);
-                                  }}
-                                  onMouseLeave={() => {
-                                    setNavbar3(false);
-                                    setNavbarId2(null);
-                                  }}
+                                  onClick={
+                                    item.navItemName !== "Contact"
+                                      ? () => {
+                                          setNavbar3(!navbar3);
+                                          setNavbarId2(item2.id);
+                                        }
+                                      : () => {}
+                                  }
                                 >
-                                  {item2.navItemName}
+                                  <LinkComponent pathName={item2.navItemPath}>
+                                    {item2.navItemName}
+                                  </LinkComponent>
                                 </Span>
                                 <UnorderedList
                                   unorderedListClass={
@@ -115,7 +118,11 @@ export const Header = React.memo(() => {
                                         listItemClass="dropdown-item"
                                         role="button"
                                       >
-                                        {item3.navItemName}
+                                        <LinkComponent
+                                          pathName={item3.navItemPath}
+                                        >
+                                          {item3.navItemName}
+                                        </LinkComponent>
                                       </ListItem>
                                     ))
                                   ) : (
