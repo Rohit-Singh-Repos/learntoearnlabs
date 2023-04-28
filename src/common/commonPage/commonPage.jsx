@@ -12,6 +12,7 @@ import { TechnologiesAndPlatform } from "common/commonPage/CommonPageComponent10
 import { GuidanceSection } from "common/commonPage/CommonPageComponent11";
 import { CompanyPortfolio } from "common/commonPage/CommonPageComponent12";
 import { JobOrientedPrograms } from "common/commonPage/CommonPageComponent13";
+import { AvailablePrograms } from "./CommonPageComponent14";
 
 export const CommonPageComponent = React.memo(
   ({
@@ -24,6 +25,7 @@ export const CommonPageComponent = React.memo(
       cloudDevopsCareerSection,
       trainingRoadmapSection,
       careerOptionSection,
+      availableProgramsSection,
       cloudDevopsTrainingSection,
       whoCanJoinSection,
       trainingModeSection,
@@ -53,13 +55,14 @@ export const CommonPageComponent = React.memo(
         {cloudDevopsCareerSection && <CloudDevopsCareer sectionData={sectionData} />}
         {trainingRoadmapSection && <TrainingRoadMap sectionData={sectionData} mobileDetector={mobile}/>}
         {careerOptionSection && <CareerOptions sectionData={sectionData} mobileDetector={mobile}/>}
+        {availableProgramsSection && <AvailablePrograms sectionData={availableProgramsSection}/>}
         {cloudDevopsTrainingSection && <CloudDevopsTraining sectionData={sectionData} mobileDetector={mobile}/>}
         {whoCanJoinSection && <WhoCanJoin sectionData={sectionData} />}
         {trainingModeSection && <TrainingMode sectionData={sectionData} mobileDetector={mobile}/>}
         {programDetailsSection && <ProgramDetails sectionData={sectionData} inputSchemas={inputSchemas} mobileDetector={mobile}/>}
+        {guidanceSection && <GuidanceSection sectionData={guidanceSection}/>}
         {technologiesAndPlatforms && <TechnologiesAndPlatform sectionData={technologiesAndPlatforms}/>}
         {applyNowSection && <ApplyNow sectionData={sectionData} inputSchemas={inputSchemas} mobileDetector={mobile}/>}
-        {guidanceSection && <GuidanceSection sectionData={guidanceSection}/>}
         {companyPortfolio && <CompanyPortfolio sectionData={companyPortfolio}/>}
         {jobOrientedPrograms && <JobOrientedPrograms sectionData={jobOrientedPrograms}/>}
       </>

@@ -151,6 +151,9 @@ import dockerLogo from "assets/images/Full Stack Development/Logos/docker-logo.w
 import kubernatesLogo from "assets/images/Full Stack Development/Logos/kubernetes.webp"
 import jiraSoftwareLogo from "assets/images/Full Stack Development/Logos/jira-software-logo.webp"
 import figmaLogo from "assets/images/Full Stack Development/Logos/figma-logo.webp"
+import oneYearMarketing from "assets/images/digitalmarketing/one-year-digital-marketing-course-card.webp"
+import threeMonthsMarketing from "assets/images/digitalmarketing/three-month-digital-marketing-course-card.webp"
+import sixMonthsMarketing from "assets/images/digitalmarketing/six-month-digital-marketing-course-card.webp"
 
 // Companies Logo
 import nttDataLogo from "assets/images/Home/Companies Logo/ntt-data-company-logo.webp" 
@@ -169,6 +172,20 @@ import dataScienceImage from "assets/images/Home/data-science-course.webp";
 import cloudComputingAndDevopsImage from "assets/images/Home/cloud-computing-and-devops-course.webp";
 import digitalMarketingImage2 from "assets/images/Home/social-media-marketing-course.webp";
 import uiuxCourseImage from "assets/images/Home/design-thinking-and-ui-ux-course.webp";
+
+// Tools Logo 
+import googleAdsLogo from "assets/images/tools/tool_image_1.JPG";
+import googleAnalyticsLogo from "assets/images/tools/tool_image_2.JPG";
+import googleConsoleLogo from "assets/images/tools/tool_image_3.JPG";
+import facebookLogo from "assets/images/tools/tool_image_4.JPG";
+import mozLogo from "assets/images/tools/tool_image_5.JPG";
+import semrushLogo from "assets/images/tools/tool_image_6.JPG";
+import screenFrog from "assets/images/tools/tool_image_7.JPG";
+import ahrefLogo from "assets/images/tools/tool_image_8.JPG";
+import canvaLogo from "assets/images/tools/tool_image_9.JPG";
+import mailChimpLogo from "assets/images/tools/tool_image_10.JPG";
+import uberSuggest from "assets/images/tools/tool_image_11.JPG";
+import wordpressLogo from "assets/images/tools/tool_image_12.JPG";
 
 export const COVER_IMAGES = {
     homePageCoverImage,
@@ -324,7 +341,25 @@ export const COURSES_LOGO_IMAGES = {
     dockerLogo,
     kubernatesLogo,
     jiraSoftwareLogo,
-    figmaLogo
+    figmaLogo,
+    oneYearMarketing,
+    threeMonthsMarketing,
+    sixMonthsMarketing
+}
+
+export const TOOLS_LOGO_IMAGES = {
+    googleAdsLogo,
+    googleAnalyticsLogo,
+    googleConsoleLogo,
+    facebookLogo,
+    mozLogo,
+    semrushLogo,
+    screenFrog,
+    ahrefLogo,
+    canvaLogo,
+    mailChimpLogo,
+    uberSuggest,
+    wordpressLogo
 }
 
 export const COMPANY_LOGO_IMAGES = {
