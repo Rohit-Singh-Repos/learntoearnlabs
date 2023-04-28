@@ -61,6 +61,7 @@ export const Header = React.memo(() => {
                         aria-expanded="false"
                         onClick={() => {
                           setNavbar2(!navbar2);
+                          setNavbar3(false)
                           setNavbarId(item.id);
                         }}
                       >
