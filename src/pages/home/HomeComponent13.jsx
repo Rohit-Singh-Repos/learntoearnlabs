@@ -21,7 +21,7 @@ export const StudentReviews = React.memo(() => {
   ]
   return (
     <Div divClass="container mt-5">
-      <Div divClass="row">
+      {/* <Div divClass="row">
         <SubHeading subheadingClass="fw-bold text-center">
           Student Reviews
         </SubHeading>
@@ -36,7 +36,7 @@ export const StudentReviews = React.memo(() => {
             imgWidth={300}
           />
         </Div>
-      </Div>
+      </Div> */}
     </Div>
   );
 });

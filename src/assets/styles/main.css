@@ -108,6 +108,9 @@ body {
 .bg-6 {
   background-color: #b40426;
 }
+.bg-7{
+  background-color: #051424;
+}
 
 .h-20{
   height: 30% !important;
@@ -123,6 +126,18 @@ body {
 
 .bg-silver{
   background-color: rgb(242, 242, 242) !important;
+}
+
+.divider-vertical{
+  width: 1px;
+  height: 100%;
+  background-color: #fff;
+}
+
+.divider-horizontal{
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
 }
 
 /* HeroSection Start */
