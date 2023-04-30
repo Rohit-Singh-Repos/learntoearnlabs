@@ -21,7 +21,7 @@ export const footerSchemaData = {
             {id:uuid(),text:"Linux & AWS",pathName:"/linux-and-aws-course"},
             {id:uuid(),text:"Design Thinking & UI/UX",pathName:"/design-thinking-and-ui-ux-course"},
             {id:uuid(),text:"HTML, CSS & JS",pathName:"/html-css-javascript-course"},
-            // {id:uuid(),text:"Power Bi Training",pathName:"/power-bi-course"},
+            {id:uuid(),text:"Power Bi Training",pathName:"/power-bi-course"},
             {id:uuid(),text:"MySQL Database",pathName:"/mysql-database-course"},
             {id:uuid(),text:"Train The Trainer Program",pathName:"/train-the-trainer-program"},
             {id:uuid(),text:"Programming Fundamentals",pathName:"/programming-fundamentals-course"}

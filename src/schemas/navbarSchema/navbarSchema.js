@@ -33,8 +33,8 @@ export const navbarSchema = [
         ]},
         {id:uuid(),navItemName:"Miscellaneous",navsubItems:[
             {id:uuid(),navItemName:"Train The Trainer",navItemPath:"/train-the-trainer-program"},
-            {id:uuid(),navItemName:"Power BI",navItemPath:"/"},
-            {id:uuid(),navItemName:"Mentorship Program",navItemPath:"/"},
+            {id:uuid(),navItemName:"Power BI",navItemPath:"/power-bi-course"},
+            {id:uuid(),navItemName:"Mentorship Program",navItemPath:"/mentorship-program"},
         ]},
     ]},
     {id:uuid(),navItemName:"Contact",navsubItems:[
