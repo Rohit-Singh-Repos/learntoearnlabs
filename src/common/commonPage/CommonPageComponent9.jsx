@@ -62,7 +62,7 @@ export const ApplyNow = React.memo(({ sectionData, inputSchemas, mobileDetector 
             <SubHeading subheadingClass="mb-5 fw-bold">{subheadingText}</SubHeading>
             {paragrphTextData && paragrphTextData.length !== 0 ? (
               paragrphTextData.map((item,index) => (
-                <Div divClass={`${mobileDetector ? "" : "row"} d-flex align-items-center mt-4`} key={item.id}>
+                <Div key={item.id} divClass={`${mobileDetector ? "" : "row"} d-flex align-items-center mt-4`} >
                   <Div divClass="col-sm-1 col-md-1 col-lg-1 pe-3">{
                     index === 0 ? <FaUserGraduate className="text-primary" size={mobileDetector ? 40 : 50}/> : index === 1 ? <FiMonitor className="text-primary" size={mobileDetector ? 40 : 50}/> : <AiOutlineGroup className="text-primary" size={mobileDetector ? 40 : 50}/>
                   }</Div>

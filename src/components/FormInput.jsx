@@ -11,7 +11,7 @@ export const SelectInput = React.memo(({selectInputData, selectInputName,selectI
     <select name={selectInputName} className={selectInputClass}>
       {
         selectInputData && selectInputData.length !== 0 ? selectInputData.map((item) => (
-          <option value={item.optionValue}>{item.optionText}</option>
+          <option value={item.optionValue} key={item.id}>{item.optionText}</option>
         )) : <></>
       }
     </select>

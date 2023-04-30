@@ -37,6 +37,7 @@ export const CashbackComponent = React.memo(() => {
           {textInput && textInput.length !== 0 ? (
             textInput.map((item) => (
               <TextInput
+                key={item.id}
                 textInputClass="form-control mb-3 rounded-0"
                 textInputType={item.textInputType}
                 textInputPlaceholder={item.textInputPlaceholder}
