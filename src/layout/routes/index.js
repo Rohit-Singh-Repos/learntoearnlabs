@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 // Utils
 const ErrorLogger = lazy(() => import('components/ErrorLogger').then(module => ({ default: module.ErrorLogger })));
 const FallbackLoader = lazy(() => import('components/Loaders').then(module => ({ default: module.FallbackLoader })));
+const ErrorPage = lazy(() => import('pages/404/404Page').then(module => ({ default: module.ErrorPage })));
 
 // Common
 const Header = lazy(() => import('layout/header').then(module => ({ default: module.Header })));
@@ -38,9 +39,11 @@ const ContentMarketingCourse = lazy(() => import('pages/courses/contentMarketing
 const AffiliateMarketingCourse = lazy(() => import('pages/courses/affiliateMarketing/AffiliateMarketing').then(module => ({ default: module.AffiliateMarketingCourse })));
 const FullStackEngineer = lazy(() => import('pages/courses/fullStackEngineer/FullStackEngineer').then(module => ({ default: module.FullStackEngineer })));
 const DigitalMarketing = lazy(() => import('pages/courses/digitalMarketing/DigitalMarketing').then(module => ({ default: module.DigitalMarketing })));
+const PowerBITraining = lazy(() => import('pages/courses/powerBI/powerBI').then(module => ({ default: module.PowerBITraining })));
+const MentorshipTraining = lazy(() => import('pages/courses/mentorship/mentorship').then(module => ({ default: module.MentorshipTraining })));
 const CashbackComponent = lazy(() => import('pages/cashback/cashback').then(module => ({ default: module.CashbackComponent })));
 const Certificates = lazy(() => import('pages/certificateVerification/CertificateVerification').then(module => ({ default: module.Certificates })));
-const ErrorPage = lazy(() => import('pages/404/404Page').then(module => ({ default: module.ErrorPage })));
+
 
 export const Layout = React.memo(() => {
   return (
@@ -48,15 +51,14 @@ export const Layout = React.memo(() => {
       <Suspense fallback={<FallbackLoader/>}>
         <Header />
         <Routes>
-          <Route path="/" element={<HomePage/>}/>
+          <Route path="/" index element={<HomePage/>}/>
+          <Route path="/login" element={<AboutPage/>}/>
           <Route path="/about-us" element={<AboutPage/>}/>
           <Route path="/contact-us" element={<ContactPage/>}/>
           <Route path="/cashback" element={<CashbackComponent/>}/>
           <Route path="/verify-certificate" element={<Certificates/>}/>
           <Route path="/full-stack-engineer-course" element={<FullStackEngineer/>}/>
           <Route path="/digital-marketing-course" element={<DigitalMarketing/>}/>
-          {/* <Route path="/practise" element={<ContactPage/>}/>
-          <Route path="/digital-marketing-course" element={<ContactPage/>}/> */}
           <Route path="/java-full-stack-course" element={<JavaFullStack/>}/>
           <Route path="/data-science-and-machine-learning-course" element={<DataScience/>}/>
           <Route path="/full-stack-web-development-course" element={<FullStackWebDevelopment/>}/>
@@ -72,8 +74,8 @@ export const Layout = React.memo(() => {
           <Route path="/c-programming-course" element={<CProgrammingPage/>}/>
           <Route path="/cpp-programming-course" element={<CPPProgrammingPage/>}/>
           <Route path="/data-structure-and-algorithm-course" element={<DSAProgrammingPages/>}/>
-          <Route path="/power-bi-course" element={<DevopsPage/>}/>
-          <Route path="/mentorship-program" element={<DevopsPage/>}/>
+          <Route path="/power-bi-course" element={<PowerBITraining/>}/>
+          <Route path="/mentorship-program" element={<MentorshipTraining/>}/>
           <Route path="/wordpress-and-blogging-course" element={<WordpressAndBlogging/>}/>
           <Route path="/google-ads-course" element={<GoogldAdsCourse/>}/>
           <Route path="/social-media-marketing-course" element={<SocialMediaMarketing/>}/>
