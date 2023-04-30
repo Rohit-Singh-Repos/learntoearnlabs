@@ -25,7 +25,7 @@ export const JobOrientedPrograms = React.memo(({ sectionData }) => {
                     imageClass="img-fluid"
                     width={150}
                     height={100}
-                    imageAltText
+                    imageAltText=""
                   /> <br />
                   <Paragraph paragraphClass="text-center">
                     {item.courseNameText} <br />

@@ -1,30 +1,31 @@
 import React from "react";
-import { Div, Paragraph, SliderComponent, SubHeading, Image } from "components";
+import { Div, Paragraph, SliderComponent, SubHeading } from "components";
 import { HOME_PAGE_IMAGES } from "assets/images";
+import { uuid } from "helpers/utils/uuid";
 
 export const Placements = React.memo(() => {
   const sliderData = [
-    {id:1,imagePath:HOME_PAGE_IMAGES.accentureLogo,altText:""},
-    {id:2,imagePath:HOME_PAGE_IMAGES.amazonImage,altText:""},
-    {id:3,imagePath:HOME_PAGE_IMAGES.byjuImage,altText:""},
-    {id:4,imagePath:HOME_PAGE_IMAGES.congnizantImage,altText:""},
-    {id:5,imagePath:HOME_PAGE_IMAGES.commvaultImage,altText:""},
-    {id:6,imagePath:HOME_PAGE_IMAGES.credImage,altText:""},
-    {id:7,imagePath:HOME_PAGE_IMAGES.globalLogicImage,altText:""},
-    {id:8,imagePath:HOME_PAGE_IMAGES.googleImage,altText:""},
-    {id:9,imagePath:HOME_PAGE_IMAGES.hotstarImage,altText:""},
-    {id:10,imagePath:HOME_PAGE_IMAGES.mobileProgrammingImage,altText:""},
-    {id:11,imagePath:HOME_PAGE_IMAGES.morganStanley,altText:""},
-    {id:12,imagePath:HOME_PAGE_IMAGES.nagarrowImage,altText:""},
-    {id:13,imagePath:HOME_PAGE_IMAGES.nttDataImage,altText:""},
-    {id:14,imagePath:HOME_PAGE_IMAGES.oyoImage,altText:""},
-    {id:15,imagePath:HOME_PAGE_IMAGES.paytmImage,altText:""},
-    {id:16,imagePath:HOME_PAGE_IMAGES.publicSapientImage,altText:""},
-    {id:17,imagePath:HOME_PAGE_IMAGES.tataConsultancyImage,altText:""},
-    {id:18,imagePath:HOME_PAGE_IMAGES.uberImage,altText:""},
-    {id:19,imagePath:HOME_PAGE_IMAGES.urbanCompanyImage,altText:""},
-    {id:20,imagePath:HOME_PAGE_IMAGES.vedantuImage,altText:""},
-    {id:20,imagePath:HOME_PAGE_IMAGES.zomatoImage,altText:""}
+    {id:uuid(),imagePath:HOME_PAGE_IMAGES.accentureLogo,altText:""},
+    {id:uuid(),imagePath:HOME_PAGE_IMAGES.amazonImage,altText:""},
+    {id:uuid(),imagePath:HOME_PAGE_IMAGES.byjuImage,altText:""},
+    {id:uuid(),imagePath:HOME_PAGE_IMAGES.congnizantImage,altText:""},
+    {id:uuid(),imagePath:HOME_PAGE_IMAGES.commvaultImage,altText:""},
+    {id:uuid(),imagePath:HOME_PAGE_IMAGES.credImage,altText:""},
+    {id:uuid(),imagePath:HOME_PAGE_IMAGES.globalLogicImage,altText:""},
+    {id:uuid(),imagePath:HOME_PAGE_IMAGES.googleImage,altText:""},
+    {id:uuid(),imagePath:HOME_PAGE_IMAGES.hotstarImage,altText:""},
+    {id:uuid(),imagePath:HOME_PAGE_IMAGES.mobileProgrammingImage,altText:""},
+    {id:uuid(),imagePath:HOME_PAGE_IMAGES.morganStanley,altText:""},
+    {id:uuid(),imagePath:HOME_PAGE_IMAGES.nagarrowImage,altText:""},
+    {id:uuid(),imagePath:HOME_PAGE_IMAGES.nttDataImage,altText:""},
+    {id:uuid(),imagePath:HOME_PAGE_IMAGES.oyoImage,altText:""},
+    {id:uuid(),imagePath:HOME_PAGE_IMAGES.paytmImage,altText:""},
+    {id:uuid(),imagePath:HOME_PAGE_IMAGES.publicSapientImage,altText:""},
+    {id:uuid(),imagePath:HOME_PAGE_IMAGES.tataConsultancyImage,altText:""},
+    {id:uuid(),imagePath:HOME_PAGE_IMAGES.uberImage,altText:""},
+    {id:uuid(),imagePath:HOME_PAGE_IMAGES.urbanCompanyImage,altText:""},
+    {id:uuid(),imagePath:HOME_PAGE_IMAGES.vedantuImage,altText:""},
+    {id:uuid(),imagePath:HOME_PAGE_IMAGES.zomatoImage,altText:""}
   ]
   return (
     <Div divClass="container mb-5 mt-5">
