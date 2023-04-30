@@ -4343,7 +4343,7 @@ export const fullStackEngineer = {
   applyNowSection: {
     headingText: "Apply Now",
     paragraphText:
-      "Please enter the following details to initiate your application for Cloud Computing & DevOps training program offered by Learn2Earn Labs, Agra.",
+      "Please enter the following details to initiate your application for Full Stack Engineer training program offered by Learn2Earn Labs, Agra.",
     buttonText: "Submit",
     subheadingText: "Eligibility Criteria",
     paragrphTextData: [
@@ -4703,7 +4703,7 @@ export const digitalMarketing = {
   applyNowSection: {
     headingText: "Apply Now",
     paragraphText:
-      "Please enter the following details to initiate your application for Cloud Computing & DevOps training program offered by Learn2Earn Labs, Agra.",
+      "Please enter the following details to initiate your application for Digital Marketing training program offered by Learn2Earn Labs, Agra.",
     buttonText: "Submit",
     subheadingText: "Eligibility Criteria",
     paragrphTextData: [
@@ -4763,6 +4763,357 @@ export const digitalMarketing = {
         courseDurationText: "Duration : 4 months | 6 Months",
         pathName: "/design-thinking-and-ui-ux-course",
       },
+    ],
+  },
+};
+
+export const powerBI = {
+  landingPageSection: {
+    imagePath: COVER_IMAGES.digitalMarketingCoverImage,
+    headingText: "Business Intelligence with Power BI",
+    primaryButtonText: "Apply Now",
+    outlinedButtonText: "Download Syllabus",
+    cardData: [
+      {
+        id: uuid(),
+        heading: "16",
+        subHeading: "Training Modules",
+        borderShow: true,
+      },
+      {
+        id: uuid(),
+        heading: "200+",
+        subHeading: "Exercises",
+        borderShow: true,
+      },
+      {
+        id: uuid(),
+        heading: "30",
+        subHeading: "Days Duration",
+        borderShow: true,
+      },
+      {
+        id: uuid(),
+        heading: "5+",
+        subHeading: "Minor Projects",
+        borderShow: false,
+      },
+    ],
+  },
+  trainingRoadmapSection: {
+    headingPrimaryText: "Training Roadmap",
+    headingSecondaryText: "Power BI",
+    paragraphText:
+      "Nowadays, Power Bi is used in helping businesses and managers to make data-driven decisions by providing insights into their data and analyzing reports. With Power Bi, people create interactive reports, dashboards, visualizations, etc. which they share with others to facilitate business collaboration and better decision-making. Power Bi can be easily integrated with Microsoft tools like Excel, Teams, SharePoint, etc. which further expands its scope.",
+    cardTextData: [
+      { id: uuid(), cardText: "Power Query & M Language" },
+      { id: uuid(), cardText: "Data Analysis Expression" },
+      { id: uuid(), cardText: "Text & Logical Functions" },
+      { id: uuid(), cardText: "Math & Statistical Functions" },
+      { id: uuid(), cardText: "User Interface, Grouping & Binning" },
+      { id: uuid(), cardText: "Power BI Services & Visualizations" },
+    ],
+  },
+  cloudDevopsTrainingSection: {
+    headingText: "Power BI Training Program",
+    paragraphText:
+      "This program is designed to train students with the skills and experience to help businesses and managers to make data-driven decisions by providing insights into their data and analyzing reports using Power Bi.",
+    buttonText: "Download Syllabus",
+    cardData: [
+      {
+        id: uuid(),
+        imagePath: COURSES_PAGE_IMAGES.careerSupportImage1,
+        subheadingText: "Practical Based Sessions",
+        paragraphText: "Training program available in four months & six months duration",
+      },
+      {
+        id: uuid(),
+        imagePath: COURSES_PAGE_IMAGES.careerSupportImage2,
+        subheadingText: "Dummy Projects",
+        paragraphText: "To build your hands-on expertise & portfolio",
+      },
+      {
+        id: uuid(),
+        imagePath: COURSES_PAGE_IMAGES.careerSupportImage3,
+        subheadingText: "Portfolio Building Assistance",
+        paragraphText: "To create an attractive portfolio for you",
+      },
+      {
+        id: uuid(),
+        imagePath: COURSES_PAGE_IMAGES.careerSupportImage4,
+        subheadingText: "Interview Preparation",
+        paragraphText: "So you can present yourself in a better way",
+      },
+      {
+        id: uuid(),
+        imagePath: COURSES_PAGE_IMAGES.careerSupportImage5,
+        subheadingText: "Mentoring & Job Assistance",
+        paragraphText: "To help you in getting good career or placements",
+      },
+    ],
+  },
+  whoCanJoinSection: {
+    headingText: "Who can join",
+    paragraphText1:
+      "Any graduate student can join the Power Bi training program. The student must have basic computer knowledge and have interest in business intelligence, consultation and mentoring.",
+    paragraphText2:
+      "Working professionals or job seekers, who are looking to learn about business intelligence, consultation and mentoring can join the Power Bi training program."
+  },
+  programDetailsSection: {
+    headingText: "Program Details",
+    paragraphText:
+      "During the Power Bi training program, you will go through with the below course modules & topics.",
+    moduleTextData: [
+      {
+        id: uuid(),
+        moduleName: "Module 1",
+        listText: "Introduction & Python Programming",
+      },
+      { id: uuid(), moduleName: "Module 2", listText: "Numpy" },
+    ],
+    contactCardData1: {
+      phoneNumber: "+91-9548868337",
+    },
+    contactCardData2: {
+      buttonText: "Submit",
+    },
+  },
+  trainingModeSection: {
+    headingText: "Training Mode",
+    cardData1: {
+      headingText1: "Online Live Classes are also available",
+      listTextData: [
+        { id: uuid(), listText: "4x more effective way of learning" },
+        {
+          id: uuid(),
+          listText: "Hands-on experience with projects & assignments",
+        },
+        {
+          id: uuid(),
+          listText: "Virtual class with real interaction with trainer",
+        },
+        { id: uuid(), listText: "Monitoring support & troubleshooting issues" },
+        { id: uuid(), listText: "Masterclass from industry experts & leaders" },
+        { id: uuid(), listText: "Live class recordings for revision purpose" },
+      ],
+      buttonText1: "Apply Now",
+    },
+    cardData2: {
+      headingText2: "Power BI Training in Agra",
+      addressHeading: "Learn2Earn Labs",
+      addressText:
+        "F-4, First Floor, Anna Ikon Complex, In Front of Deviram Food Circle, Sikandra-Bodla Road, Sikandra, Agra, Uttar Pradesh – 282007",
+      phoneText: "Call: +91-9548868337",
+      buttonText2: "Download Syllabus",
+    },
+  },
+  applyNowSection: {
+    headingText: "Apply Now",
+    paragraphText:
+      "Please enter the following details to initiate your application for Power BI training program offered by Learn2Earn Labs, Agra.",
+    buttonText: "Submit",
+    subheadingText: "Eligibility Criteria",
+    paragrphTextData: [
+      {
+        id: uuid(),
+        text: "A bachelor’s / master’s degree in Engg / Computers.",
+      },
+      {
+        id: uuid(),
+        text: "Knowledge of operating system & shell script (preferred).",
+      },
+      { id: uuid(), text: "Having basic programming & development knowledge." },
+    ],
+  },
+};
+
+export const mentorship = {
+  landingPageSection: {
+    imagePath: COVER_IMAGES.digitalMarketingCoverImage,
+    headingText: "Get Higher Salary & Promotion With Our Mentorship",
+    primaryButtonText: "Apply Now",
+    outlinedButtonText: "Download Syllabus",
+    cardData: [
+      {
+        id: uuid(),
+        heading: "20+",
+        subHeading: "Specializations",
+        borderShow: true,
+      },
+      {
+        id: uuid(),
+        heading: "4/6",
+        subHeading: "Training Certificates",
+        borderShow: true,
+      },
+      {
+        id: uuid(),
+        heading: "6/12",
+        subHeading: "Months Duration",
+        borderShow: true,
+      },
+      {
+        id: uuid(),
+        heading: "5+",
+        subHeading: "Capstone Projects",
+        borderShow: false,
+      },
+    ],
+  },
+  cloudDevopsCareerSection: {
+    headingText: "Why, you should join our mentorship program ?",
+    cardTextData: [
+      { id: uuid(), cardText: "Project Knowledge" },
+      { id: uuid(), cardText: "Working Experience" },
+      { id: uuid(), cardText: "Freelancing Projects" },
+      { id: uuid(), cardText: "Professional Development" },
+    ],
+    listItemData: [
+      {
+        id: uuid(),
+        listText:
+          "Working on projects helps you to develop important skills like time management, problem-solving, teamwork, leadership, presentations, etc. which are highly valued by corporate professionals or companies.",
+      },
+      {
+        id: uuid(),
+        listText:
+          "If you have some work experience then you can easily get a good job and a decent package as per your choice, because companies always offer high salaries and pleasant perks to experienced candidates.",
+      },
+      {
+        id: uuid(),
+        listText:
+          "You can start your professional journey by project outsourcing or freelancing during your studies & we will help you get these projects to enhance your expertise and start your earning on the basis of your contribution.",
+      },
+      {
+        id: uuid(),
+        listText:
+          "For having a good career and stability, you need to know about all the aspects of the professional journey of a successful & highly motivated candidate and train yourself accordingly so it would be hard to compete with you.",
+      },
+    ],
+  },
+  trainingRoadmapSection: {
+    headingPrimaryText: "Mentorship Roadmap",
+    headingSecondaryText: "With Learn2Earn Labs",
+    paragraphText:
+      "Learn2Earn Labs offers a mentorship program for students and working professionals and help them in getting higher salary packages. During the mentorship, we provide a perfect learning & development path which includes video tutorials & learning references, valid training certificates, professional development training, interview preparation, job recommendations, working experience, etc. so the candidates get a good job with a higher salary. Under this mentorship program, we also provide freelancing project leads and support to the candidates on the basis of their contribution.",
+    cardTextData: [
+      { id: uuid(), cardText: "Video Tutorial & Learning References" },
+      { id: uuid(), cardText: "Valid Training Certificates" },
+      { id: uuid(), cardText: "Professional Development" },
+      { id: uuid(), cardText: "Interview Preparation" },
+      { id: uuid(), cardText: "Freelancing Projects" },
+      { id: uuid(), cardText: "Working Experience" },
+    ],
+  },
+  cloudDevopsTrainingSection: {
+    headingText: "Mentorship Program By Learn2Earn Labs",
+    paragraphText:
+      "This program is designed to guide students in respect of their good career and getting a higher salary package by offering them a perfect learning path, career guidance, valid certification, working experience, and many more.",
+    buttonText: "Download Syllabus",
+    cardData: [
+      {
+        id: uuid(),
+        imagePath: COURSES_PAGE_IMAGES.careerSupportImage1,
+        subheadingText: "Practical Based Sessions",
+        paragraphText: "Training program available in four months & six months duration",
+      },
+      {
+        id: uuid(),
+        imagePath: COURSES_PAGE_IMAGES.careerSupportImage2,
+        subheadingText: "Dummy Projects",
+        paragraphText: "To build your hands-on expertise & portfolio",
+      },
+      {
+        id: uuid(),
+        imagePath: COURSES_PAGE_IMAGES.careerSupportImage3,
+        subheadingText: "Portfolio Building Assistance",
+        paragraphText: "To create an attractive portfolio for you",
+      },
+      {
+        id: uuid(),
+        imagePath: COURSES_PAGE_IMAGES.careerSupportImage4,
+        subheadingText: "Interview Preparation",
+        paragraphText: "So you can present yourself in a better way",
+      },
+      {
+        id: uuid(),
+        imagePath: COURSES_PAGE_IMAGES.careerSupportImage5,
+        subheadingText: "Mentoring & Job Assistance",
+        paragraphText: "To help you in getting good career or placements",
+      },
+    ],
+  },
+  whoCanJoinSection: {
+    headingText: "Who can join",
+    paragraphText1:
+      "Any graduate student can join the Power Bi training program. The student must have basic computer knowledge and have interest in business intelligence, consultation and mentoring.",
+    paragraphText2:
+      "Working professionals or job seekers, who are looking to learn about business intelligence, consultation and mentoring can join the Power Bi training program."
+  },
+  programDetailsSection: {
+    headingText: "Program Details",
+    paragraphText:
+      "During the Mentorship training program, you will go through with the below course modules & topics.",
+    moduleTextData: [
+      {
+        id: uuid(),
+        moduleName: "Module 1",
+        listText: "Introduction & Python Programming",
+      },
+      { id: uuid(), moduleName: "Module 2", listText: "Numpy" },
+    ],
+    contactCardData1: {
+      phoneNumber: "+91-9548868337",
+    },
+    contactCardData2: {
+      buttonText: "Submit",
+    },
+  },
+  trainingModeSection: {
+    headingText: "Training Mode",
+    cardData1: {
+      headingText1: "Online Live Classes are also available",
+      listTextData: [
+        { id: uuid(), listText: "4x more effective way of learning" },
+        {
+          id: uuid(),
+          listText: "Hands-on experience with projects & assignments",
+        },
+        {
+          id: uuid(),
+          listText: "Virtual class with real interaction with trainer",
+        },
+        { id: uuid(), listText: "Monitoring support & troubleshooting issues" },
+        { id: uuid(), listText: "Masterclass from industry experts & leaders" },
+        { id: uuid(), listText: "Live class recordings for revision purpose" },
+      ],
+      buttonText1: "Apply Now",
+    },
+    cardData2: {
+      headingText2: "Mentorship Training in Agra",
+      addressHeading: "Learn2Earn Labs",
+      addressText:
+        "F-4, First Floor, Anna Ikon Complex, In Front of Deviram Food Circle, Sikandra-Bodla Road, Sikandra, Agra, Uttar Pradesh – 282007",
+      phoneText: "Call: +91-9548868337",
+      buttonText2: "Download Syllabus",
+    },
+  },
+  applyNowSection: {
+    headingText: "Apply Now",
+    paragraphText:
+      "Please enter the following details to initiate your application for Mentorship training program offered by Learn2Earn Labs, Agra.",
+    buttonText: "Submit",
+    subheadingText: "Eligibility Criteria",
+    paragrphTextData: [
+      {
+        id: uuid(),
+        text: "A bachelor’s / master’s degree in Engg / Computers.",
+      },
+      {
+        id: uuid(),
+        text: "Knowledge of operating system & shell script (preferred).",
+      },
+      { id: uuid(), text: "Having basic programming & development knowledge." },
     ],
   },
 };
