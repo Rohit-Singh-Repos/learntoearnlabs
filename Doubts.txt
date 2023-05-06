@@ -17,3 +17,15 @@ Questionaire
 => server images
 => optimize images using reactjs
 => Eliminate Multiple UseEffect
+
+====================================================================================================================================================================================================================
+
+=> Navbar
+=> DBConnection
+=> Download Syllabus
+=> Why Choose Section alignment
+=> Join Now / Apply now button 
+=> Footer State 
+=> Cover Page Heading
+=> Slider Card Alignment / Card Height
+=> Course Schema

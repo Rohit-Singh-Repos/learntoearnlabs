@@ -107,8 +107,8 @@ export const Header = React.memo(() => {
                                 <UnorderedList
                                   unorderedListClass={
                                     navbar3 && navbarId2 === item2.id
-                                      ? `dropdown-menu navbar-dropdown show rounded-0  dropdown-center`
-                                      : `dropdown-menu navbar-dropdown rounded-0 dropdown-center`
+                                      ? `dropdown-menu subnavbar-dropdown show rounded-0  dropdown-center`
+                                      : `dropdown-menu subnavbar-dropdown rounded-0 dropdown-center`
                                   }
                                 >
                                   {item2?.navsubItems &&

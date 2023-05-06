@@ -11,6 +11,11 @@ body {
   right: 10px;
 }
 
+.subnavbar-dropdown{
+  right: 250px;
+  top: 5px;
+}
+
 .remove-shadow{
   box-shadow: none !important;
 }
