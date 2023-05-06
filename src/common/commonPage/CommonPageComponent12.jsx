@@ -21,6 +21,7 @@ export const CompanyPortfolio = React.memo(({
             <SubHeading subheadingClass="fw-bold">{headingTextData}</SubHeading>
             <SliderComponent 
               sliderData={sliderData}
+              // verticalAlign={true}
               contentClass="h-100 mt-4 d-flex justify-content-center align-items-center"
               imgClass="img-fluid h-100"
               imgWidth={180}

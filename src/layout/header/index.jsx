@@ -297,7 +297,7 @@ export const Header = React.memo(() => {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg bg-primary">
+    <nav className="navbar navbar-expand-lg bg-primary ps-3 pe-3">
       {mobile ? mobileNavMenu() : desktopNavMenu()}
     </nav>
   );
