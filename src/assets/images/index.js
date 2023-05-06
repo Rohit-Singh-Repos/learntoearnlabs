@@ -19,6 +19,9 @@ import socialMediaMarketing from "assets/images/Cover Images/social-media-market
 import searchEngineOptimizationn from "assets/images/Cover Images/search-engine-optimization.webp";
 import contentMarketing from "assets/images/Cover Images/content-marketing-cover.webp";
 import affiliateMarketing from "assets/images/Cover Images/affiliate-marketing-cover.webp";
+import mentorshipImage from "assets/images/Cover Images/mentorship-program-cover.webp"
+import trainTheTrainer from "assets/images/Cover Images/train-the-trainer-cover.webp"
+import powerBI from "assets/images/Cover Images/power-business-intelligence-cover.webp"
 
 // import designThinkingCoverImage from "assets/images/Cover Images";
 
@@ -208,7 +211,10 @@ export const COVER_IMAGES = {
     searchEngineOptimizationn,
     contentMarketing,
     affiliateMarketing,
-    girlWithMacbook
+    girlWithMacbook,
+    mentorshipImage,
+    trainTheTrainer,
+    powerBI
 }
 
 export const HOME_PAGE_IMAGES = {

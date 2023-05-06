@@ -1102,7 +1102,7 @@ export const mernStackSchema = {
 
 export const trainTheTrainerSchema = {
   landingPageSection: {
-    imagePath: COVER_IMAGES.digitalMarketingCoverImage,
+    imagePath: COVER_IMAGES.trainTheTrainer,
     headingText: "Join our",
     subHeadingText:"Train The Trainer Program",
     paragraphText:"To become a digital trainer",
@@ -4643,7 +4643,7 @@ export const digitalMarketing = {
 
 export const powerBI = {
   landingPageSection: {
-    imagePath: COVER_IMAGES.digitalMarketingCoverImage,
+    imagePath: COVER_IMAGES.powerBI,
     headingText: "Join our",
     subHeadingText:"Power Bi Training Program",
     paragraphText:"With Job Assistance",
@@ -4805,7 +4805,7 @@ export const powerBI = {
 
 export const mentorship = {
   landingPageSection: {
-    imagePath: COVER_IMAGES.digitalMarketingCoverImage,
+    imagePath: COVER_IMAGES.mentorshipImage,
     headingText: "Get Higher Salary",
     subHeadingText:"Promotions and Career Stability",
     paragraphText:"With our mentorship program",

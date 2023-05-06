@@ -28,6 +28,6 @@ Questionaire
 => Footer State 
 => Cover Page Heading -- Done
 => Slider Card Alignment / Card Height -- Partially Done
-=> Course Schema
+=> Course Schema -- Partially Done (2 pending)
 => Apply Now Form -- Partialy Done (Regular Expression Pending)
 => Homepage Image
