@@ -49,7 +49,7 @@ export const Accordion = React.memo(({ accordionData }) => {
               }
               data-bs-parent="#accordionExample"
             >
-              <Div divClass="accordion-body">{item.listText}</Div>
+              <Div divClass="accordion-body align-justify">{item.listText}</Div>
             </Div>
           </Div>
         ))
