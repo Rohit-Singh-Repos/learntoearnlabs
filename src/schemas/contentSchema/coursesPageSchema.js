@@ -4286,7 +4286,7 @@ export const fullStackEngineer = {
         imagePath: JOB_ORIENTED_IMAGES.digitalMarketingImage2,
         courseNameText: "Digital Marketing",
         courseDurationText: "Duration : 6 months | 12 Months",
-        pathName: "/social-media-marketing-course",
+        pathName: "/digital-marketing-course",
       },
       {
         id: uuid(),
@@ -4484,20 +4484,22 @@ export const digitalMarketing = {
     },
   },
   technologiesAndPlatforms: {
-    headingTextData: "50+ Popular Tools Covered",
+    headingTextData: "80+ Popular Tools Covered",
     sliderData: [
       { id: uuid(), imagePath: TOOLS_LOGO_IMAGES.googleAdsLogo },
       { id: uuid(), imagePath: TOOLS_LOGO_IMAGES.googleAnalyticsLogo },
       { id: uuid(), imagePath: TOOLS_LOGO_IMAGES.googleConsoleLogo },
       { id: uuid(), imagePath: TOOLS_LOGO_IMAGES.facebookLogo },
-      { id: uuid(), imagePath: TOOLS_LOGO_IMAGES.mozLogo },
+      { id: uuid(), imagePath: TOOLS_LOGO_IMAGES.camtasia },
       { id: uuid(), imagePath: TOOLS_LOGO_IMAGES.semrushLogo },
       { id: uuid(), imagePath: TOOLS_LOGO_IMAGES.screenFrog },
-      { id: uuid(), imagePath: TOOLS_LOGO_IMAGES.ahrefLogo },
+      { id: uuid(), imagePath: TOOLS_LOGO_IMAGES.hootSuit },
       { id: uuid(), imagePath: TOOLS_LOGO_IMAGES.canvaLogo },
       { id: uuid(), imagePath: TOOLS_LOGO_IMAGES.mailChimpLogo },
       { id: uuid(), imagePath: TOOLS_LOGO_IMAGES.uberSuggest },
-      { id: uuid(), imagePath: TOOLS_LOGO_IMAGES.wordpressLogo }
+      { id: uuid(), imagePath: TOOLS_LOGO_IMAGES.wordpressLogo },
+      { id: uuid(), imagePath: TOOLS_LOGO_IMAGES.hubSpot },
+      { id: uuid(), imagePath: TOOLS_LOGO_IMAGES.googleTagManager }
     ],
   },
   trainingModeSection: {
@@ -4545,35 +4547,35 @@ export const digitalMarketing = {
         "He is also recognized as Mentor with MEITY Startup Hub & Punjab Startup in the area of education & business consultation.",
     },
   },
-  companyPortfolio: {
-    headingTextData: "Our students are working with Top Companies",
-    sliderData: [
-      { id: uuid(), imagePath: COMPANY_LOGO_IMAGES.nttDataLogo },
-      { id: uuid(), imagePath: COMPANY_LOGO_IMAGES.commvaultLogo },
-      { id: uuid(), imagePath: COMPANY_LOGO_IMAGES.accentureLogoo },
-      { id: uuid(), imagePath: COMPANY_LOGO_IMAGES.globalLogicLogo },
-      { id: uuid(), imagePath: COMPANY_LOGO_IMAGES.congnizantLogo },
-      { id: uuid(), imagePath: COMPANY_LOGO_IMAGES.morganStanleyLogo },
-      { id: uuid(), imagePath: COMPANY_LOGO_IMAGES.tcsLogo },
-      { id: uuid(), imagePath: COMPANY_LOGO_IMAGES.publicisSapientLogo },
-      { id: uuid(), imagePath: COMPANY_LOGO_IMAGES.mobileProgrammingLogo },
-    ],
-    discountAndOffersSection: {
-      discountHeadingText: "Discount & Offers",
-      discountCard: [
-        {
-          id: uuid(),
-          cardText: "25% Cashback Available",
-          cardImage: COURSES_PAGE_IMAGES.cashbackImage,
-        },
-        {
-          id: uuid(),
-          cardText: "Work Incentives",
-          cardImage: COURSES_PAGE_IMAGES.workIncentivesImage,
-        },
-      ],
-    },
-  },
+  // companyPortfolio: {
+  //   headingTextData: "Our students are working with Top Companies",
+  //   sliderData: [
+  //     { id: uuid(), imagePath: COMPANY_LOGO_IMAGES.nttDataLogo },
+  //     { id: uuid(), imagePath: COMPANY_LOGO_IMAGES.commvaultLogo },
+  //     { id: uuid(), imagePath: COMPANY_LOGO_IMAGES.accentureLogoo },
+  //     { id: uuid(), imagePath: COMPANY_LOGO_IMAGES.globalLogicLogo },
+  //     { id: uuid(), imagePath: COMPANY_LOGO_IMAGES.congnizantLogo },
+  //     { id: uuid(), imagePath: COMPANY_LOGO_IMAGES.morganStanleyLogo },
+  //     { id: uuid(), imagePath: COMPANY_LOGO_IMAGES.tcsLogo },
+  //     { id: uuid(), imagePath: COMPANY_LOGO_IMAGES.publicisSapientLogo },
+  //     { id: uuid(), imagePath: COMPANY_LOGO_IMAGES.mobileProgrammingLogo },
+  //   ],
+  //   discountAndOffersSection: {
+  //     discountHeadingText: "Discount & Offers",
+  //     discountCard: [
+  //       {
+  //         id: uuid(),
+  //         cardText: "25% Cashback Available",
+  //         cardImage: COURSES_PAGE_IMAGES.cashbackImage,
+  //       },
+  //       {
+  //         id: uuid(),
+  //         cardText: "Work Incentives",
+  //         cardImage: COURSES_PAGE_IMAGES.workIncentivesImage,
+  //       },
+  //     ],
+  //   },
+  // },
   applyNowSection: {
     headingText: "Apply Now",
     paragraphText:
@@ -4625,10 +4627,10 @@ export const digitalMarketing = {
       },
       {
         id: uuid(),
-        imagePath: JOB_ORIENTED_IMAGES.digitalMarketingImage2,
-        courseNameText: "Digital Marketing",
-        courseDurationText: "Duration : 6 months | 12 Months",
-        pathName: "/social-media-marketing-course",
+        imagePath: JOB_ORIENTED_IMAGES.fullStackEngineerCoverImage,
+        courseNameText: "Full Stack Software Engineer",
+        courseDurationText: "Duration : 12 Months",
+        pathName: "/full-stack-engineer-course",
       },
       {
         id: uuid(),

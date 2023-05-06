@@ -181,14 +181,16 @@ import googleAdsLogo from "assets/images/tools/google-ads-logo.webp";
 import googleAnalyticsLogo from "assets/images/tools/google-analytics-logo.webp";
 import googleConsoleLogo from "assets/images/tools/google-search-console-logo.webp";
 import facebookLogo from "assets/images/tools/facebook-business-manager-tool.webp";
-import mozLogo from "assets/images/tools/tool_image_5.JPG";
+import camtasia from "assets/images/tools/camtasia-logo.webp";
 import semrushLogo from "assets/images/tools/semrush-logo.webp";
 import screenFrog from "assets/images/tools/screaming-frog-seo-audit-tool-logo.webp";
-import ahrefLogo from "assets/images/tools/tool_image_8.JPG";
+import hootSuit from "assets/images/tools/hootsuite-logo.webp";
 import canvaLogo from "assets/images/tools/canva-logo.webp";
 import mailChimpLogo from "assets/images/tools/mailchimp-email-marketing-tool-logo.webp";
 import uberSuggest from "assets/images/tools/ubersuggest-keyword-research-tool.webp";
 import wordpressLogo from "assets/images/tools/wordpress-logo.webp";
+import hubSpot from "assets/images/tools/hubspot-logo.webp";
+import googleTagManager from "assets/images/tools/google-tag-manager-logo.webp";
 
 export const COVER_IMAGES = {
     homePageCoverImage,
@@ -358,14 +360,16 @@ export const TOOLS_LOGO_IMAGES = {
     googleAnalyticsLogo,
     googleConsoleLogo,
     facebookLogo,
-    mozLogo,
+    camtasia,
     semrushLogo,
     screenFrog,
-    ahrefLogo,
+    hootSuit,
     canvaLogo,
     mailChimpLogo,
     uberSuggest,
-    wordpressLogo
+    wordpressLogo,
+    hubSpot,
+    googleTagManager
 }
 
 export const COMPANY_LOGO_IMAGES = {
@@ -387,5 +391,6 @@ export const JOB_ORIENTED_IMAGES = {
     dataScienceImage,
     cloudComputingAndDevopsImage,
     digitalMarketingImage2,
-    uiuxCourseImage
+    uiuxCourseImage,
+    fullStackEngineerCoverImage
 }
