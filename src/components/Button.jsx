@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { ModalComponent } from "./Popups";
+import { Div } from "./Div";
+import { TextInput } from "./FormInput";
 
 export const Button = React.memo(
   ({ buttonClass, children, buttonHandler, ...props }) => {
@@ -9,19 +11,19 @@ export const Button = React.memo(
       <>
         {showModal && (
           <ModalComponent modalHandler={setShowModal} emailData={email}>
-            <div className="mb-3">
+            <Div divClass="mb-3">
               <label htmlFor="exampleFormControlInput1" className="form-label">
                 Email address
               </label>
-              <input
-                type="email"
-                className="form-control"
+              <TextInput
+                textInputType="email"
+                textInputClass="form-control rounded-0"
+                textInputPlaceholder="Enter Email ..."
+                textInputValue={email}
+                textInputHandler={(e) => setEmail(e.target.value)}
                 id="exampleFormControlInput1"
-                placeholder="name@example.com"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
               />
-            </div>
+            </Div>
           </ModalComponent>
         )}
         <button

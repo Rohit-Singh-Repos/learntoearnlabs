@@ -11,6 +11,7 @@ import {
   Image,
 } from "components";
 import { MdOutlinePhoneInTalk } from "assets/icons";
+import axios from "axios";
 
 export const ProgramDetails = React.memo(
   ({ sectionData, inputSchemas, mobileDetector, courseDetector }) => {
@@ -42,6 +43,25 @@ export const ProgramDetails = React.memo(
       },
       [courseData]
     );
+    const submitQuery = async () => {
+      try {
+        const response = await axios(
+          `${process.env.REACT_APP_API_BASE_URL}/api/queries/`,
+          {
+            method: "POST",
+            data: JSON.stringify({
+              name: courseData.studentName,
+              email: courseData.studentEmail,
+              number: courseData.studentMobile,
+              courseName: courseDetector, // Newly added field kindly add into the DB
+              profession: courseData.professional,
+            }),
+          }
+        );
+      } catch (error) {
+        alert(error);
+      }
+    };
     return (
       <Div divClass="container mt-5">
         <Div divClass="row">
@@ -100,7 +120,10 @@ export const ProgramDetails = React.memo(
                 onChange={handleInputData}
               />
               <Div divClass="d-grid mt-5">
-                <Button buttonClass="btn btn-primary rounded-0">
+                <Button
+                  buttonClass="btn btn-primary rounded-0"
+                  buttonHandler={submitQuery}
+                >
                   {buttonText}
                 </Button>
               </Div>

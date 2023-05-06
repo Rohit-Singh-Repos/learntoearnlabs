@@ -11,14 +11,12 @@ const modalContainer = document.getElementById("popup")
 const ModalUI = React.memo(({modalHandler,children,emailData}) => {
   
   const downloadSyllabus = async() => {
-    console.log("responseData")
     try {
       let response = await axios(`${process.env.REACT_APP_API_BASE_URL}/api/syllabuses`,{
         method:"POST",
         data:JSON.stringify(emailData)
       })
       modalHandler(false)
-      console.log("responseData1",response,emailData)
     } catch (error) {
       alert(error)
     }
@@ -44,7 +42,7 @@ const ModalUI = React.memo(({modalHandler,children,emailData}) => {
           <Div divClass="modal-footer">
             <Button
               type="button"
-              buttonClass="btn btn-primary"
+              buttonClass="btn btn-primary rounded-0"
               data-bs-dismiss="modal"
               buttonHandler={downloadSyllabus}
             >
