@@ -177,18 +177,18 @@ import digitalMarketingImage2 from "assets/images/Home/social-media-marketing-co
 import uiuxCourseImage from "assets/images/Home/design-thinking-and-ui-ux-course.webp";
 
 // Tools Logo 
-import googleAdsLogo from "assets/images/tools/tool_image_1.JPG";
-import googleAnalyticsLogo from "assets/images/tools/tool_image_2.JPG";
-import googleConsoleLogo from "assets/images/tools/tool_image_3.JPG";
-import facebookLogo from "assets/images/tools/tool_image_4.JPG";
+import googleAdsLogo from "assets/images/tools/google-ads-logo.webp";
+import googleAnalyticsLogo from "assets/images/tools/google-analytics-logo.webp";
+import googleConsoleLogo from "assets/images/tools/google-search-console-logo.webp";
+import facebookLogo from "assets/images/tools/facebook-business-manager-tool.webp";
 import mozLogo from "assets/images/tools/tool_image_5.JPG";
-import semrushLogo from "assets/images/tools/tool_image_6.JPG";
-import screenFrog from "assets/images/tools/tool_image_7.JPG";
+import semrushLogo from "assets/images/tools/semrush-logo.webp";
+import screenFrog from "assets/images/tools/screaming-frog-seo-audit-tool-logo.webp";
 import ahrefLogo from "assets/images/tools/tool_image_8.JPG";
-import canvaLogo from "assets/images/tools/tool_image_9.JPG";
-import mailChimpLogo from "assets/images/tools/tool_image_10.JPG";
-import uberSuggest from "assets/images/tools/tool_image_11.JPG";
-import wordpressLogo from "assets/images/tools/tool_image_12.JPG";
+import canvaLogo from "assets/images/tools/canva-logo.webp";
+import mailChimpLogo from "assets/images/tools/mailchimp-email-marketing-tool-logo.webp";
+import uberSuggest from "assets/images/tools/ubersuggest-keyword-research-tool.webp";
+import wordpressLogo from "assets/images/tools/wordpress-logo.webp";
 
 export const COVER_IMAGES = {
     homePageCoverImage,
