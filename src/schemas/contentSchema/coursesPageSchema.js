@@ -40,32 +40,14 @@ export const cloudDevopsSchema = {
   cloudDevopsCareerSection: {
     headingText: "Why, choose Cloud & Devops as a career ?",
     cardTextData: [
-      { id: uuid(), cardText: "Increase Demand" },
-      { id: uuid(), cardText: "Lot of Opportunities" },
-      { id: uuid(), cardText: "Competitive Salaries & Benefits" },
-      { id: uuid(), cardText: "Latest Technology Trends" },
-    ],
-    listItemData: [
-      {
-        id: uuid(),
-        listText:
-          "The demand of cloud computing and DevOps professionals is increasing rapidly because nowadays almost all the companies and startups are moving their infrastructure to the cloud platforms and adopting DevOps practices for the development of their products & services.",
-      },
-      {
-        id: uuid(),
-        listText:
-          "It offers a lot of opportunities with career growth & stability. You can work as cloud architect, AWS solutions architect, build & release engineer, DevOps engineer, automation engineer and many more.",
-      },
-      {
-        id: uuid(),
-        listText:
-          "The cloud computing and DevOps specialization offers competitive salaries and benefits. The cloud & DevOps professionals are getting above-average salaries and enjoying work benefits like remote job, flexible schedules, etc.",
-      },
-      {
-        id: uuid(),
-        listText:
-          "The cloud & DevOps professionals always need to stay up-to-date with the latest tools & technology trends and also need to continuously improve their skills.",
-      },
+      { id: uuid(), cardText: "Increase Demand",listText:
+      "The demand of cloud computing and DevOps professionals is increasing rapidly because nowadays almost all the companies and startups are moving their infrastructure to the cloud platforms and adopting DevOps practices for the development of their products & services." },
+      { id: uuid(), cardText: "Lot of Opportunities",listText:
+      "It offers a lot of opportunities with career growth & stability. You can work as cloud architect, AWS solutions architect, build & release engineer, DevOps engineer, automation engineer and many more.", },
+      { id: uuid(), cardText: "Competitive Salaries & Benefits",listText:
+      "The cloud computing and DevOps specialization offers competitive salaries and benefits. The cloud & DevOps professionals are getting above-average salaries and enjoying work benefits like remote job, flexible schedules, etc." },
+      { id: uuid(), cardText: "Latest Technology Trends",listText:
+      "The cloud & DevOps professionals always need to stay up-to-date with the latest tools & technology trends and also need to continuously improve their skills." },
     ],
   },
   trainingRoadmapSection: {
@@ -274,32 +256,14 @@ export const dataScienceSchema = {
   cloudDevopsCareerSection: {
     headingText: "Why, choose Data Science & ML as a career ?",
     cardTextData: [
-      { id: uuid(), cardText: "Global Demand" },
-      { id: uuid(), cardText: "Diverse Career Options" },
-      { id: uuid(), cardText: "Competitive Salaries" },
-      { id: uuid(), cardText: "Technology Advancements" },
-    ],
-    listItemData: [
-      {
-        id: uuid(),
-        listText:
-          "Data science and machine learning are the rapidly growing fields, and there is a huge demand for highly skilled professionals who can process large datasets, extract insights & value from data for better decision making.",
-      },
-      {
-        id: uuid(),
-        listText:
-          "Choosing data science or machine learning as a career, offers a diverse range of job opportunities, so you can work as a data analyst, data engineer, business consultant, machine learning engineer, etc.",
-      },
-      {
-        id: uuid(),
-        listText:
-          "With expertise in data science and machine learning you would always be high valued and can command competitive salaries with career stabilities.",
-      },
-      {
-        id: uuid(),
-        listText:
-          "In the data science and machine learning specialization you always deals with new tools and technologies. This makes it a dynamic and exciting field to work in. The roles are quite challenging and intellectually stimulating that requires problem-solving skills and creativity.",
-      },
+      { id: uuid(), cardText: "Global Demand",listText:
+      "Data science and machine learning are the rapidly growing fields, and there is a huge demand for highly skilled professionals who can process large datasets, extract insights & value from data for better decision making." },
+      { id: uuid(), cardText: "Diverse Career Options",listText:
+      "Choosing data science or machine learning as a career, offers a diverse range of job opportunities, so you can work as a data analyst, data engineer, business consultant, machine learning engineer, etc." },
+      { id: uuid(), cardText: "Competitive Salaries",listText:
+      "With expertise in data science and machine learning you would always be high valued and can command competitive salaries with career stabilities." },
+      { id: uuid(), cardText: "Technology Advancements",listText:
+      "In the data science and machine learning specialization you always deals with new tools and technologies. This makes it a dynamic and exciting field to work in. The roles are quite challenging and intellectually stimulating that requires problem-solving skills and creativity." },
     ],
   },
   trainingRoadmapSection: {
@@ -503,32 +467,14 @@ export const designThinkingSchema = {
   cloudDevopsCareerSection: {
     headingText: "Why, You Should Join Design Thinking & UI/UX ?",
     cardTextData: [
-      { id: uuid(), cardText: "High Demand" },
-      { id: uuid(), cardText: "Creative & Innovative" },
-      { id: uuid(), cardText: "Diverse Opportunities" },
-      { id: uuid(), cardText: "Good Salary" },
-    ],
-    listItemData: [
-      {
-        id: uuid(),
-        listText:
-          "Nowadays, many organizations are working on providing an excellent user experience to their users/customers, due to the reason the demand for design thinking & UI/UX professionals is increasing significantly.",
-      },
-      {
-        id: uuid(),
-        listText:
-          "Design Thinking and UI/UX professionals always deal with high levels of creativity, engaging solutions, and innovation. This offers a pleasing and rewarding career path to those who enjoy their creative & innovative journey.",
-      },
-      {
-        id: uuid(),
-        listText:
-          "Design Thinking and UI/UX professionals always have a wide range of working sectors they never get limited to any specific industry which shows that the professionals always have a diverse range of career opportunities.",
-      },
-      {
-        id: uuid(),
-        listText:
-          "As the demand for expert designers is increasing so the average salary is also increasing and making it a lucrative career path.",
-      },
+      { id: uuid(), cardText: "High Demand",listText:
+      "Nowadays, many organizations are working on providing an excellent user experience to their users/customers, due to the reason the demand for design thinking & UI/UX professionals is increasing significantly." },
+      { id: uuid(), cardText: "Creative & Innovative",listText:
+      "Design Thinking and UI/UX professionals always deal with high levels of creativity, engaging solutions, and innovation. This offers a pleasing and rewarding career path to those who enjoy their creative & innovative journey." },
+      { id: uuid(), cardText: "Diverse Opportunities",listText:
+      "Design Thinking and UI/UX professionals always have a wide range of working sectors they never get limited to any specific industry which shows that the professionals always have a diverse range of career opportunities." },
+      { id: uuid(), cardText: "Good Salary",listText:
+      "As the demand for expert designers is increasing so the average salary is also increasing and making it a lucrative career path." },
     ],
   },
   trainingRoadmapSection: {
@@ -729,32 +675,14 @@ export const javaFullStackSchema = {
   cloudDevopsCareerSection: {
     headingText: "Why, choose Java Full Stack as a career ?",
     cardTextData: [
-      { id: uuid(), cardText: "Universal Demand" },
-      { id: uuid(), cardText: "Versatility" },
-      { id: uuid(), cardText: "Large Community" },
-      { id: uuid(), cardText: "Future Proof" },
-    ],
-    listItemData: [
-      {
-        id: uuid(),
-        listText:
-          "Java is the top and widely used programming language used to develop highly secured and reliable applications. The demand of java professionals are always high which leads to more job opportunities and high salaries.",
-      },
-      {
-        id: uuid(),
-        listText:
-          "Java is a versatile language because it is used in back-end development, API’s & micro services development, handling business logics and can be integrated with a variety of databases and development frameworks.",
-      },
-      {
-        id: uuid(),
-        listText:
-          "There is a large community of java developers around the globe and a great wealth of resources available online, including documentation, blogs, tutorials and forums which are beneficial for learning and professional development of individuals.",
-      },
-      {
-        id: uuid(),
-        listText:
-          "Since its birth, java is still a widely used language which proves that it is a stable and future proof technology so it is best suit for those who want to build a long term career in a specific domain.",
-      },
+      { id: uuid(), cardText: "Universal Demand",listText:
+      "Java is the top and widely used programming language used to develop highly secured and reliable applications. The demand of java professionals are always high which leads to more job opportunities and high salaries." },
+      { id: uuid(), cardText: "Versatility",listText:
+      "Java is a versatile language because it is used in back-end development, API’s & micro services development, handling business logics and can be integrated with a variety of databases and development frameworks." },
+      { id: uuid(), cardText: "Large Community",listText:
+      "There is a large community of java developers around the globe and a great wealth of resources available online, including documentation, blogs, tutorials and forums which are beneficial for learning and professional development of individuals." },
+      { id: uuid(), cardText: "Future Proof",listText:
+      "Since its birth, java is still a widely used language which proves that it is a stable and future proof technology so it is best suit for those who want to build a long term career in a specific domain." },
     ],
   },
   trainingRoadmapSection: {
@@ -1009,32 +937,14 @@ export const mernStackSchema = {
   cloudDevopsCareerSection: {
     headingText: "Why, choose full stack web development as a career ?",
     cardTextData: [
-      { id: uuid(), cardText: "Universal Demand" },
-      { id: uuid(), cardText: "Opportunities for Innovation" },
-      { id: uuid(), cardText: "Versatility" },
-      { id: uuid(), cardText: "Career Growth" },
-    ],
-    listItemData: [
-      {
-        id: uuid(),
-        listText:
-          "Nowadays, the popularity of web based applications and services is rapidly increasing so the demand for skilled full stack web developers is on the rise. Every organization looking to work with these developers who can develop and manage their web applications and services.",
-      },
-      {
-        id: uuid(),
-        listText:
-          "It offers a lot of opportunities to work on a variety of projects, from developing an attractive UI, adding the functionalities to enhancing the existing ones. Hence the professionals gets the opportunity for creativity or innovation in solving problems.",
-      },
-      {
-        id: uuid(),
-        listText:
-          "The full stack web developers are proficient in all the phases of web developer from front-end, API’s, web services to back-end. They have the ability to work on a wide range of web based projects.",
-      },
-      {
-        id: uuid(),
-        listText:
-          "After having some working experience and expertise, the full stack web developers can progress into senior, leadership or managerial roles. These job roles makes them highly valued in the industry.",
-      },
+      { id: uuid(), cardText: "Universal Demand",listText:
+      "Nowadays, the popularity of web based applications and services is rapidly increasing so the demand for skilled full stack web developers is on the rise. Every organization looking to work with these developers who can develop and manage their web applications and services." },
+      { id: uuid(), cardText: "Opportunities for Innovation",listText:
+      "It offers a lot of opportunities to work on a variety of projects, from developing an attractive UI, adding the functionalities to enhancing the existing ones. Hence the professionals gets the opportunity for creativity or innovation in solving problems." },
+      { id: uuid(), cardText: "Versatility",listText:
+      "The full stack web developers are proficient in all the phases of web developer from front-end, API’s, web services to back-end. They have the ability to work on a wide range of web based projects." },
+      { id: uuid(), cardText: "Career Growth",listText:
+      "After having some working experience and expertise, the full stack web developers can progress into senior, leadership or managerial roles. These job roles makes them highly valued in the industry." },
     ],
   },
   trainingRoadmapSection: {
@@ -1232,32 +1142,14 @@ export const trainTheTrainerSchema = {
   cloudDevopsCareerSection: {
     headingText: "Why, choose Digital Training as a career ?",
     cardTextData: [
-      { id: uuid(), cardText: "Increasing Demand" },
-      { id: uuid(), cardText: "Lot of Opportunities" },
-      { id: uuid(), cardText: "Competitive Salaries" },
-      { id: uuid(), cardText: "Latest Technology Trends" },
-    ],
-    listItemData: [
-      {
-        id: uuid(),
-        listText:
-          "Nowadays the demand of digital training professionals is rapidly increasing in India and it is expected to continue in the next coming years. Many Ed-Tech startups or companies are looking for the digital training professionals.",
-      },
-      {
-        id: uuid(),
-        listText:
-          "It offers a lot of opportunities including online course development, learning experience designer, curriculum developer and many more. You can also work as subject matter expert, which is very popular in the present time.",
-      },
-      {
-        id: uuid(),
-        listText:
-          "Due to the high demand of digital training professionals who have expertise in various domain and tools, ed-tech companies are offering huge benefits like work from home, flexibility & comfort along with the competitive salaries in the market.",
-      },
-      {
-        id: uuid(),
-        listText:
-          "You need to be updated with the lates technologies and trends, if you want to work like an expert. Many technologies & tools are available which makes your work easy and ensures the quality.",
-      },
+      { id: uuid(), cardText: "Increasing Demand",listText:
+      "Nowadays the demand of digital training professionals is rapidly increasing in India and it is expected to continue in the next coming years. Many Ed-Tech startups or companies are looking for the digital training professionals." },
+      { id: uuid(), cardText: "Lot of Opportunities",listText:
+      "It offers a lot of opportunities including online course development, learning experience designer, curriculum developer and many more. You can also work as subject matter expert, which is very popular in the present time." },
+      { id: uuid(), cardText: "Competitive Salaries",listText:
+      "Due to the high demand of digital training professionals who have expertise in various domain and tools, ed-tech companies are offering huge benefits like work from home, flexibility & comfort along with the competitive salaries in the market." },
+      { id: uuid(), cardText: "Latest Technology Trends",listText:
+      "You need to be updated with the lates technologies and trends, if you want to work like an expert. Many technologies & tools are available which makes your work easy and ensures the quality." },
     ],
   },
   trainingRoadmapSection: {
@@ -4084,32 +3976,14 @@ export const fullStackEngineer = {
   cloudDevopsCareerSection: {
     headingText: "Why, choose full stack as a career ?",
     cardTextData: [
-      { id: uuid(), cardText: "Full Stack Engineers are in Demand" },
-      { id: uuid(), cardText: "Versatility & Job Security" },
-      { id: uuid(), cardText: "Handsome Salary" },
-      { id: uuid(), cardText: "Promotions & Career Growth" },
-    ],
-    listItemData: [
-      {
-        id: uuid(),
-        listText:
-          "The demand for full-stack software professionals has been increased as business organizations continue to expand their online presence. They always look to hire professionals who can work in multiple domains.",
-      },
-      {
-        id: uuid(),
-        listText:
-          "The Versatility of Full Stack engineers makes them valuable to businesses and provide them stability in the constantly changing industry.",
-      },
-      {
-        id: uuid(),
-        listText:
-          "The full stack software professionals are often paid well due to their variety of skills, experience and high demands.",
-      },
-      {
-        id: uuid(),
-        listText:
-          "As they can work in different specializations hence they get promotions frequently and can become team leads, project managers, consultant, CTO’s, or even start their own businesses.",
-      },
+      { id: uuid(), cardText: "Full Stack Engineers are in Demand",listText:
+      "The demand for full-stack software professionals has been increased as business organizations continue to expand their online presence. They always look to hire professionals who can work in multiple domains." },
+      { id: uuid(), cardText: "Versatility & Job Security",listText:
+      "The Versatility of Full Stack engineers makes them valuable to businesses and provide them stability in the constantly changing industry." },
+      { id: uuid(), cardText: "Handsome Salary",listText:
+      "The full stack software professionals are often paid well due to their variety of skills, experience and high demands." },
+      { id: uuid(), cardText: "Promotions & Career Growth",listText:
+      "As they can work in different specializations hence they get promotions frequently and can become team leads, project managers, consultant, CTO’s, or even start their own businesses.", },
     ],
   },
   trainingRoadmapSection: {
@@ -4444,32 +4318,14 @@ export const digitalMarketing = {
   cloudDevopsCareerSection: {
     headingText: "Why, you should join Digital Marketing ?",
     cardTextData: [
-      { id: uuid(), cardText: "Digital Marketing is in Demand" },
-      { id: uuid(), cardText: "Offering Good Salary Packages" },
-      { id: uuid(), cardText: "Lost of Freelancing Work" },
-      { id: uuid(), cardText: "Digital is the Future" },
-    ],
-    listItemData: [
-      {
-        id: uuid(),
-        listText:
-          "Every business needs a digital marketer to promote their product or service digitally. Every organization need to promote their products or service or content by attractive posts, images, videos, campaigns & websites.",
-      },
-      {
-        id: uuid(),
-        listText:
-          "People are living digital life they interact with each other via social media or internet so digital marketing is in demand.",
-      },
-      {
-        id: uuid(),
-        listText:
-          "With digital marketing, you can work with any company to market their product or service or to manage their content over website or mobile app.",
-      },
-      {
-        id: uuid(),
-        listText:
-          "You can design the content, work with the advertiser, you can design websites, develop ecommerce websites, you can start your earning by working online, you can work as a freelancer or open your own advertising agency and many more.",
-      },
+      { id: uuid(), cardText: "Digital Marketing is in Demand",listText:
+      "Every business needs a digital marketer to promote their product or service digitally. Every organization need to promote their products or service or content by attractive posts, images, videos, campaigns & websites." },
+      { id: uuid(), cardText: "Offering Good Salary Packages",listText:
+      "People are living digital life they interact with each other via social media or internet so digital marketing is in demand." },
+      { id: uuid(), cardText: "Lost of Freelancing Work",listText:
+      "With digital marketing, you can work with any company to market their product or service or to manage their content over website or mobile app." },
+      { id: uuid(), cardText: "Digital is the Future",listText:
+      "You can design the content, work with the advertiser, you can design websites, develop ecommerce websites, you can start your earning by working online, you can work as a freelancer or open your own advertising agency and many more."},
     ],
   },
   trainingRoadmapSection: {
@@ -4963,32 +4819,14 @@ export const mentorship = {
   cloudDevopsCareerSection: {
     headingText: "Why, you should join our mentorship program ?",
     cardTextData: [
-      { id: uuid(), cardText: "Project Knowledge" },
-      { id: uuid(), cardText: "Working Experience" },
-      { id: uuid(), cardText: "Freelancing Projects" },
-      { id: uuid(), cardText: "Professional Development" },
-    ],
-    listItemData: [
-      {
-        id: uuid(),
-        listText:
-          "Working on projects helps you to develop important skills like time management, problem-solving, teamwork, leadership, presentations, etc. which are highly valued by corporate professionals or companies.",
-      },
-      {
-        id: uuid(),
-        listText:
-          "If you have some work experience then you can easily get a good job and a decent package as per your choice, because companies always offer high salaries and pleasant perks to experienced candidates.",
-      },
-      {
-        id: uuid(),
-        listText:
-          "You can start your professional journey by project outsourcing or freelancing during your studies & we will help you get these projects to enhance your expertise and start your earning on the basis of your contribution.",
-      },
-      {
-        id: uuid(),
-        listText:
-          "For having a good career and stability, you need to know about all the aspects of the professional journey of a successful & highly motivated candidate and train yourself accordingly so it would be hard to compete with you.",
-      },
+      { id: uuid(), cardText: "Project Knowledge",listText:
+      "Working on projects helps you to develop important skills like time management, problem-solving, teamwork, leadership, presentations, etc. which are highly valued by corporate professionals or companies." },
+      { id: uuid(), cardText: "Working Experience",listText:
+      "If you have some work experience then you can easily get a good job and a decent package as per your choice, because companies always offer high salaries and pleasant perks to experienced candidates." },
+      { id: uuid(), cardText: "Freelancing Projects",listText:
+      "You can start your professional journey by project outsourcing or freelancing during your studies & we will help you get these projects to enhance your expertise and start your earning on the basis of your contribution." },
+      { id: uuid(), cardText: "Professional Development",listText:
+      "For having a good career and stability, you need to know about all the aspects of the professional journey of a successful & highly motivated candidate and train yourself accordingly so it would be hard to compete with you." },
     ],
   },
   trainingRoadmapSection: {
