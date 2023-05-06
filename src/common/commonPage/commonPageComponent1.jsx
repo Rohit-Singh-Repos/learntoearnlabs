@@ -7,6 +7,7 @@ export const LandingPage = React.memo(({sectionData,mobileDetector}) => {
       imagePath,
       headingText,
       subHeadingText,
+      paragraphText,
       cardData,
       primaryButtonText,
       outlinedButtonText
@@ -16,6 +17,7 @@ export const LandingPage = React.memo(({sectionData,mobileDetector}) => {
       <Div divClass="container">
         <HeroSection
           mobileDetector={mobileDetector}
+          paragraphText={paragraphText}
           imagePath={imagePath}
           cardData={cardData}
           headingText={headingText}

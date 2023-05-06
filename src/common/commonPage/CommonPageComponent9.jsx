@@ -25,7 +25,7 @@ export const ApplyNow = React.memo(({ sectionData, inputSchemas, mobileDetector 
   const { textInput, selectInputOptions } = inputSchemas;
 
   return (
-    <Div divClass="container mt-5">
+    <Div divClass="container mt-5" id="applyNow">
       <Div divClass="row d-flex justify-content-between">
         <SubHeading subheadingClass="fw-bold mb-5">{headingText}</SubHeading>
         <Div divClass="col-sm-12 col-md-6 col-lg-6">

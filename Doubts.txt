@@ -21,11 +21,12 @@ Questionaire
 ====================================================================================================================================================================================================================
 
 => Navbar
-=> DBConnection
-=> Download Syllabus
-=> Why Choose Section alignment
-=> Join Now / Apply now button 
+=> DBConnection -- Done (Server Problem)
+=> Download Syllabus -- Done (Server Problem)
+=> Why Choose Section alignment -- Done
+=> Join Now / Apply now button -- Done
 => Footer State 
 => Cover Page Heading
 => Slider Card Alignment / Card Height
 => Course Schema
+=> Apply Now Form

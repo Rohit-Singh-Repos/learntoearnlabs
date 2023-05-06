@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useCallback } from "react";
 import {
   Div,
   Image,
@@ -9,6 +9,8 @@ import {
   Span,
   Break
 } from "components";
+import { useLocation } from "react-router-dom";
+
 
 export const HeroSection = React.memo(
   ({
@@ -22,6 +24,197 @@ export const HeroSection = React.memo(
     imagePath,
     mobileDetector
   }) => {
+    
+    const { pathname } = useLocation()
+    const renderCoverPageHeading = useCallback(() => {
+      if(pathname === "/full-stack-engineer-course"){
+        const headingData = headingText.split(/ (?=Full)/g);
+        return(
+          <Heading headingClass="text-primary fw-bold fs-30">
+              <Span spanClass="fw-bold text-dark">{headingData[0]}</Span><Break/>
+              <Span>{headingData[1]}</Span><Break/>
+              <Span spanClass="fs-20 text-dark">{subHeadingText}</Span>
+          </Heading>
+        )
+      }else if(pathname === "/digital-marketing-course"){
+        const headingData = headingText.split(/ (?=Professional)/g);
+        return(
+          <Heading headingClass="text-primary fw-bold fs-30">
+              <Span spanClass="fw-bold text-dark">{headingData[0]}</Span><Break/>
+              <Span>{headingData[1]}</Span><Break/>
+              <Span spanClass="fs-20 text-dark">{paragraphText}</Span>
+          </Heading>
+        )
+      }else if(pathname === "/java-full-stack-course"){
+        return(
+          <Heading headingClass="text-primary fw-bold fs-30">
+              <Span spanClass="fw-bold text-dark">{headingText}</Span><Break/>
+              <Span spanClass="fw-bold text-primary">{subHeadingText}</Span><Break/>
+              <Span spanClass="fs-20 text-dark">{paragraphText}</Span>
+          </Heading>
+        )
+      }else if(pathname === "/data-science-and-machine-learning-course"){
+        return(
+          <Heading headingClass="text-primary fw-bold fs-30">
+              <Span spanClass="fw-bold text-dark">{headingText}</Span><Break/>
+              <Span spanClass="fw-bold text-primary">{subHeadingText}</Span><Break/>
+              <Span spanClass="fs-20 text-dark">{paragraphText}</Span>
+          </Heading>
+        )
+      }else if(pathname === "/full-stack-web-development-course"){
+        return(
+          <Heading headingClass="text-primary fw-bold fs-30">
+              <Span spanClass="fw-bold text-dark">{headingText}</Span><Break/>
+              <Span spanClass="fw-bold text-primary">{subHeadingText}</Span><Break/>
+              <Span spanClass="fs-20 text-dark">{paragraphText}</Span>
+          </Heading>
+        )
+      }else if(pathname === "/cloud-computing-and-devops-course"){
+        return(
+          <Heading headingClass="text-primary fw-bold fs-30">
+              <Span spanClass="fw-bold text-dark">{headingText}</Span><Break/>
+              <Span spanClass="fw-bold text-primary">{subHeadingText}</Span><Break/>
+              <Span spanClass="fs-20 text-dark">{paragraphText}</Span>
+          </Heading>
+        )
+      }else if(pathname === "/train-the-trainer-program"){
+        return(
+          <Heading headingClass="text-primary fw-bold fs-30">
+              <Span spanClass="fw-bold text-dark">{headingText}</Span><Break/>
+              <Span spanClass="fw-bold text-primary">{subHeadingText}</Span><Break/>
+              <Span spanClass="fs-20 text-dark">{paragraphText}</Span>
+          </Heading>
+        )
+      }else if(pathname === "/design-thinking-and-ui-ux-course"){
+        return(
+          <Heading headingClass="text-primary fw-bold fs-30">
+              <Span spanClass="fw-bold text-dark">{headingText}</Span><Break/>
+              <Span spanClass="fw-bold text-primary">{subHeadingText}</Span><Break/>
+              <Span spanClass="fs-20 text-dark">{paragraphText}</Span>
+          </Heading>
+        )
+      }else if(pathname === "/programming-fundamentals-course"){
+        return(
+          <Heading headingClass="text-primary fw-bold fs-30">
+              <Span spanClass="fw-bold text-dark">{headingText}</Span><Break/>
+              <Span spanClass="fw-bold text-primary">{subHeadingText}</Span><Break/>
+              <Span spanClass="fs-20 text-dark">{paragraphText}</Span>
+          </Heading>
+        )
+      }else if(pathname === "/java-programming-course"){
+        return(
+          <Heading headingClass="text-primary fw-bold fs-30">
+              <Span spanClass="fw-bold text-dark">{headingText}</Span><Break/>
+              <Span spanClass="fw-bold text-primary">{subHeadingText}</Span><Break/>
+              <Span spanClass="fs-20 text-dark">{paragraphText}</Span>
+          </Heading>
+        )
+      }else if(pathname === "/python-programming-course"){
+        return(
+          <Heading headingClass="text-primary fw-bold fs-30">
+              <Span spanClass="fw-bold text-dark">{headingText}</Span><Break/>
+              <Span spanClass="fw-bold text-primary">{subHeadingText}</Span><Break/>
+              <Span spanClass="fs-20 text-dark">{paragraphText}</Span>
+          </Heading>
+        )
+      }else if(pathname === "/mysql-database-course"){
+        return(
+          <Heading headingClass="text-primary fw-bold fs-30">
+              <Span spanClass="fw-bold text-dark">{headingText}</Span><Break/>
+              <Span spanClass="fw-bold text-primary">{subHeadingText}</Span><Break/>
+              <Span spanClass="fs-20 text-dark">{paragraphText}</Span>
+          </Heading>
+        )
+      }else if(pathname === "/linux-and-aws-course"){
+        return(
+          <Heading headingClass="text-primary fw-bold fs-30">
+              <Span spanClass="fw-bold text-dark">{headingText}</Span><Break/>
+              <Span spanClass="fw-bold text-primary">{subHeadingText}</Span><Break/>
+              <Span spanClass="fs-20 text-dark">{paragraphText}</Span>
+          </Heading>
+        )
+      }else if(pathname === "/html-css-javascript-course"){
+        return(
+          <Heading headingClass="text-primary fw-bold fs-30">
+              <Span spanClass="fw-bold text-dark">{headingText}</Span><Break/>
+              <Span spanClass="fw-bold text-primary">{subHeadingText}</Span><Break/>
+              <Span spanClass="fs-20 text-dark">{paragraphText}</Span>
+          </Heading>
+        )
+      }else if(pathname === "/c-programming-course"){
+        return "C Programming"
+      }else if(pathname === "/cpp-programming-course"){
+        return "C++ Programming"
+      }else if(pathname === "/data-structure-and-algorithm-course"){
+        return "Data Structure"
+      }else if(pathname === "/power-bi-course"){
+        return(
+          <Heading headingClass="text-primary fw-bold fs-30">
+              <Span spanClass="fw-bold text-dark">{headingText}</Span><Break/>
+              <Span spanClass="fw-bold text-primary">{subHeadingText}</Span><Break/>
+              <Span spanClass="fs-20 text-dark">{paragraphText}</Span>
+          </Heading>
+        )
+      }else if(pathname === "/mentorship-program"){
+        return(
+          <Heading headingClass="text-primary fw-bold fs-30">
+              <Span spanClass="fw-bold text-dark">{headingText}</Span><Break/>
+              <Span spanClass="fw-bold text-primary">{subHeadingText}</Span><Break/>
+              <Span spanClass="fs-20 text-dark">{paragraphText}</Span>
+          </Heading>
+        )
+      }else if(pathname === "/wordpress-and-blogging-course"){
+        return(
+          <Heading headingClass="text-primary fw-bold fs-30">
+              <Span spanClass="fw-bold text-dark">{headingText}</Span><Break/>
+              <Span spanClass="fw-bold text-primary">{subHeadingText}</Span><Break/>
+              <Span spanClass="fs-20 text-dark">{paragraphText}</Span>
+          </Heading>
+        )
+      }else if(pathname === "/google-ads-course"){
+        return(
+          <Heading headingClass="text-primary fw-bold fs-30">
+              <Span spanClass="fw-bold text-dark">{headingText}</Span><Break/>
+              <Span spanClass="fw-bold text-primary">{subHeadingText}</Span><Break/>
+              <Span spanClass="fs-20 text-dark">{paragraphText}</Span>
+          </Heading>
+        )
+      }else if(pathname === "/social-media-marketing-course"){
+        return(
+          <Heading headingClass="text-primary fw-bold fs-30">
+              <Span spanClass="fw-bold text-dark">{headingText}</Span><Break/>
+              <Span spanClass="fw-bold text-primary">{subHeadingText}</Span><Break/>
+              <Span spanClass="fs-20 text-dark">{paragraphText}</Span>
+          </Heading>
+        )
+      }else if(pathname === "/search-engine-optimization-course"){
+        return(
+          <Heading headingClass="text-primary fw-bold fs-30">
+              <Span spanClass="fw-bold text-dark">{headingText}</Span><Break/>
+              <Span spanClass="fw-bold text-primary">{subHeadingText}</Span><Break/>
+              <Span spanClass="fs-20 text-dark">{paragraphText}</Span>
+          </Heading>
+        )
+      }else if(pathname === "/content-marketing-course"){
+        return(
+          <Heading headingClass="text-primary fw-bold fs-30">
+              <Span spanClass="fw-bold text-dark">{headingText}</Span><Break/>
+              <Span spanClass="fw-bold text-primary">{subHeadingText}</Span><Break/>
+              <Span spanClass="fs-20 text-dark">{paragraphText}</Span>
+          </Heading>
+        )
+      }else if(pathname === "/affiliate-marketing-course"){
+        return(
+          <Heading headingClass="text-primary fw-bold fs-30">
+              <Span spanClass="fw-bold text-dark">{headingText}</Span><Break/>
+              <Span spanClass="fw-bold text-primary">{subHeadingText}</Span><Break/>
+              <Span spanClass="fs-20 text-dark">{paragraphText}</Span>
+          </Heading>
+        )
+      }else{
+        return "No Data"
+      }
+    },[pathname])
 
     return (
       <Div divClass={mobileDetector ? "row align-items-center" : "row align-items-center h-100-vh"}>
@@ -35,17 +228,12 @@ export const HeroSection = React.memo(
           />
         </Div>
         <Div divClass="col-sm-12 col-md-5 col-lg-6">
-          {headingText && (
-            <Heading headingClass="text-primary fw-bold fs-30">
-              <Span>{headingText}</Span><Break/>
-              <Span>{subHeadingText}</Span>
-            </Heading>
-          )}
-          {paragraphText && (
+          {headingText && renderCoverPageHeading()}
+          {/* {paragraphText && (
             <Paragraph paragraphClass="fs-30 align-justify">
               {paragraphText}
             </Paragraph>
-          )}
+          )} */}
           {primaryButtonText && (
             <Div divClass={mobileDetector ? "d-grid gap-2 col-6 mx-auto mb-4" : "w-100"}>
             <Button buttonClass={mobileDetector ? `btn btn-primary rounded-0 border-0 mt-3` : "btn btn-primary rounded-0 border-0 mt-3 w-25"}>

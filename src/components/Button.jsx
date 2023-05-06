@@ -6,7 +6,11 @@ import { TextInput } from "./FormInput";
 export const Button = React.memo(
   ({ buttonClass, children, buttonHandler, ...props }) => {
     const [showModal, setShowModal] = useState(false);
-    const [email, setEmail] = useState("")
+    const [email, setEmail] = useState("");
+    const scrollToDown = () => {
+      const targetElement = document.getElementById("applyNow")
+      targetElement?.scrollIntoView({behavior: 'smooth'})
+    }
     return (
       <>
         {showModal && (
@@ -31,6 +35,8 @@ export const Button = React.memo(
           onClick={
             children === "Download Syllabus"
               ? () => setShowModal(true)
+              : children === "Apply Now" 
+              ? () => scrollToDown()
               : buttonHandler
           }
           {...props}

@@ -12,7 +12,9 @@ import {
 export const cloudDevopsSchema = {
   landingPageSection: {
     imagePath: COVER_IMAGES.cloudDevopsCoverImage,
-    headingText: "Cloud Computing & Devops Training Program",
+    headingText: "Become a",
+    subHeadingText:"Cloud and DevOps Engineer",
+    paragraphText:"With Job Assistance",
     primaryButtonText: "Apply Now",
     outlinedButtonText: "Download Syllabus",
     cardData: [
@@ -223,7 +225,9 @@ export const cloudDevopsSchema = {
 export const dataScienceSchema = {
   landingPageSection: {
     imagePath: COVER_IMAGES.dataScienceCoverImage,
-    headingText: "Data Science and Machine Learning",
+    headingText: "Become an expert in",
+    subHeadingText: `Data Science and Machine Learning`,
+    paragraphText:"With Job Assistance",
     primaryButtonText: "Apply Now",
     outlinedButtonText: "Download Syllabus",
     cardData: [
@@ -439,7 +443,9 @@ export const dataScienceSchema = {
 export const designThinkingSchema = {
   landingPageSection: {
     imagePath: COVER_IMAGES.digitalMarketingCoverImage,
-    headingText: "Design Thinking & UI/UX Training Program",
+    headingText: "Become an expert in",
+    subHeadingText:"Design Thinking & UI/UX",
+    paragraphText:"With Job Assistance",
     primaryButtonText: "Apply Now",
     outlinedButtonText: "Download Syllabus",
     cardData: [
@@ -646,8 +652,9 @@ export const designThinkingSchema = {
 export const javaFullStackSchema = {
   landingPageSection: {
     imagePath: COVER_IMAGES.javaFullStackCoverImage,
-    headingText: `Java Full Stack`,
-    subHeadingText: `Training Program`,
+    headingText: `Become a`,
+    subHeadingText: `Java Full Stack Developer`,
+    paragraphText:"With Job Assistance",
     primaryButtonText: "Apply Now",
     outlinedButtonText: "Download Syllabus",
     cardData: [
@@ -909,7 +916,9 @@ export const javaFullStackSchema = {
 export const mernStackSchema = {
   landingPageSection: {
     imagePath: COVER_IMAGES.mernStackCoverImage,
-    headingText: "Full Stack Web Development with MERN",
+    headingText: "Become a",
+    subHeadingText:"Full Stack Web Developer",
+    paragraphText:"With Job Assistance",
     primaryButtonText: "Apply Now",
     outlinedButtonText: "Download Syllabus",
     cardData: [
@@ -1114,7 +1123,9 @@ export const mernStackSchema = {
 export const trainTheTrainerSchema = {
   landingPageSection: {
     imagePath: COVER_IMAGES.digitalMarketingCoverImage,
-    headingText: "Train The Trainer Program (Become a digital trainer)",
+    headingText: "Join our",
+    subHeadingText:"Train The Trainer Program",
+    paragraphText:"To become a digital trainer",
     primaryButtonText: "Apply Now",
     outlinedButtonText: "Download Syllabus",
     cardData: [
@@ -1317,7 +1328,9 @@ export const trainTheTrainerSchema = {
 export const htmlCssJSScheme = {
   landingPageSection: {
     imagePath: COVER_IMAGES.mernStackCoverImage,
-    headingText: "Front-End Design (HTML, CSS & JavaScript)",
+    headingText: "Improve your",
+    subHeadingText:"Frontend Development Skills",
+    paragraphText:"With HTML,CSS and JavaScript",
     primaryButtonText: "Apply Now",
     outlinedButtonText: "Download Syllabus",
     cardData: [
@@ -1488,7 +1501,9 @@ export const htmlCssJSScheme = {
 export const javaSchema = {
   landingPageSection: {
     imagePath: COVER_IMAGES.javaProgramming,
-    headingText: "Become an Expert in Java Programming",
+    headingText: "Become a",
+    subHeadingText:"Skilled Java Programmer",
+    paragraphText:"With Project Experience",
     primaryButtonText: "Apply Now",
     outlinedButtonText: "Download Syllabus",
     cardData: [
@@ -1659,7 +1674,9 @@ export const javaSchema = {
 export const pythonSchema = {
   landingPageSection: {
     imagePath: COVER_IMAGES.pythonProgramming,
-    headingText: "Become an Expert in Python Programming",
+    headingText: "Become a",
+    subHeadingText:"Skilled Python Programmer",
+    paragraphText:"With Project Experience",
     primaryButtonText: "Apply Now",
     outlinedButtonText: "Download Syllabus",
     cardData: [
@@ -1830,7 +1847,9 @@ export const pythonSchema = {
 export const linuxSchema = {
   landingPageSection: {
     imagePath: COVER_IMAGES.linuxAndAWS,
-    headingText: "Become an Expert with Linux and AWS",
+    headingText: "Become an expert in",
+    subHeadingText:"Linux and Amazon Web Services",
+    paragraphText:"With Project Experience",
     primaryButtonText: "Apply Now",
     outlinedButtonText: "Download Syllabus",
     cardData: [
@@ -2006,7 +2025,9 @@ export const linuxSchema = {
 export const mySQLSchema = {
   landingPageSection: {
     imagePath: COVER_IMAGES.mySQLProgramming,
-    headingText: "Become an Expert MySQL DBA",
+    headingText: "Become an expert",
+    subHeadingText:"MySQL Database Administrator",
+    paragraphText:"With Project Experience",
     primaryButtonText: "Apply Now",
     outlinedButtonText: "Download Syllabus",
     cardData: [
@@ -2177,7 +2198,9 @@ export const mySQLSchema = {
 export const programmingSchema = {
   landingPageSection: {
     imagePath: COVER_IMAGES.programmingFundamentals,
-    headingText: "Programming Fundamentals (C, C++ and Data Structure)",
+    headingText: "Programming Fundamentals",
+    subHeadingText:"(C, C++ and Data Structure)",
+    paragraphText:"Improve your programming skills",
     primaryButtonText: "Apply Now",
     outlinedButtonText: "Download Syllabus",
     cardData: [
@@ -2886,7 +2909,9 @@ export const dsSchema = {
 export const socialMediaSchema = {
   landingPageSection: {
     imagePath: COVER_IMAGES.socialMediaMarketing,
-    headingText: "Become an expert Social Media Marketer",
+    headingText:"Become a professional",
+    subHeadingText:"Social Media Marketer",
+    paragraphText:"With Live Projects",
     primaryButtonText: "Apply Now",
     outlinedButtonText: "Download Syllabus",
     cardData: [
@@ -3062,7 +3087,9 @@ export const socialMediaSchema = {
 export const googleAdsSchema = {
   landingPageSection: {
     imagePath: COVER_IMAGES.googleAds,
-    headingText: "Become an expert in Google Ads",
+    headingText:"Become an expert in",
+    subHeadingText:"Google Ads",
+    paragraphText:"With Live Projects",
     primaryButtonText: "Apply Now",
     outlinedButtonText: "Download Syllabus",
     cardData: [
@@ -3238,7 +3265,9 @@ export const googleAdsSchema = {
 export const wordpressSchema = {
   landingPageSection: {
     imagePath: COVER_IMAGES.wordpressAndBlogging,
-    headingText: "Become an expert in WordPress & Blogging",
+    headingText:"Learn to create",
+    subHeadingText:"Websites & Professional Blogs",
+    paragraphText:"With WordPress",
     primaryButtonText: "Apply Now",
     outlinedButtonText: "Download Syllabus",
     cardData: [
@@ -3414,7 +3443,9 @@ export const wordpressSchema = {
 export const seoSchema = {
   landingPageSection: {
     imagePath: COVER_IMAGES.searchEngineOptimizationn,
-    headingText: "Become a certified SEO Expert",
+    headingText:"Become an expert in",
+    subHeadingText:"Search Engine Optimization",
+    paragraphText:"With Live Projects",
     primaryButtonText: "Apply Now",
     outlinedButtonText: "Download Syllabus",
     cardData: [
@@ -3590,7 +3621,9 @@ export const seoSchema = {
 export const contentMarketingSchema = {
   landingPageSection: {
     imagePath: COVER_IMAGES.contentMarketing,
-    headingText: "Become an expert in Content Marketing",
+    headingText:"Become an expert in",
+    subHeadingText:"Content Marketing",
+    paragraphText:"With Live Projects",
     primaryButtonText: "Apply Now",
     outlinedButtonText: "Download Syllabus",
     cardData: [
@@ -3766,7 +3799,9 @@ export const contentMarketingSchema = {
 export const affiliateMarketingSchema = {
   landingPageSection: {
     imagePath: COVER_IMAGES.affiliateMarketing,
-    headingText: "Become an expert in Affiliate Marketing",
+    headingText:"Become an expert in",
+    subHeadingText:"Affiliate Marketing",
+    paragraphText:"With Live Projects",
     primaryButtonText: "Apply Now",
     outlinedButtonText: "Download Syllabus",
     cardData: [
@@ -4626,7 +4661,9 @@ export const digitalMarketing = {
 export const powerBI = {
   landingPageSection: {
     imagePath: COVER_IMAGES.digitalMarketingCoverImage,
-    headingText: "Business Intelligence with Power BI",
+    headingText: "Join our",
+    subHeadingText:"Power Bi Training Program",
+    paragraphText:"With Job Assistance",
     primaryButtonText: "Apply Now",
     outlinedButtonText: "Download Syllabus",
     cardData: [
@@ -4786,7 +4823,9 @@ export const powerBI = {
 export const mentorship = {
   landingPageSection: {
     imagePath: COVER_IMAGES.digitalMarketingCoverImage,
-    headingText: "Get Higher Salary & Promotion With Our Mentorship",
+    headingText: "Get Higher Salary",
+    subHeadingText:"Promotions and Career Stability",
+    paragraphText:"With our mentorship program",
     primaryButtonText: "Apply Now",
     outlinedButtonText: "Download Syllabus",
     cardData: [

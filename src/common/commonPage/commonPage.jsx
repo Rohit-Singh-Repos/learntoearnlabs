@@ -107,6 +107,8 @@ export const CommonPageComponent = React.memo(
       }
     },[pathname])
 
+    
+
     return (
       <>
         {landingPageSection && <LandingPage sectionData={sectionData} mobileDetector={mobile}/>}
