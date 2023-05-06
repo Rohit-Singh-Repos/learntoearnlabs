@@ -233,7 +233,7 @@ export const HeroSection = React.memo(
       }else{
         return ""
       }
-    },[pathname])
+    },[pathname,headingText,paragraphText,subHeadingText])
 
     return (
       <Div divClass={mobileDetector ? "row align-items-center" : "row align-items-center h-100-vh"}>
