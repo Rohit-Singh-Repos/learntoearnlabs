@@ -1,7 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper";
-import { Image, CommonCard, Span, Paragraph } from "components";
+import { Image, CommonCard, Paragraph } from "components";
 import "swiper/css";
 
 export const SliderComponent = React.memo(

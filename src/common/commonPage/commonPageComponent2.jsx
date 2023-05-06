@@ -2,14 +2,13 @@ import React from "react";
 import {
   Div,
   CommonCard,
-  UnorderedList,
   ListItem,
   SubHeading,
 } from "components";
 
 export const CloudDevopsCareer = React.memo(({ sectionData, mobileDetector }) => {
   const {
-    cloudDevopsCareerSection: { headingText, cardTextData, listItemData } = {},
+    cloudDevopsCareerSection: { headingText, cardTextData } = {},
   } = sectionData;
 
   return (

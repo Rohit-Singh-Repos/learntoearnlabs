@@ -2,8 +2,6 @@ import React,{useState, useCallback} from "react";
 import {
   Div,
   Paragraph,
-  Heading,
-  Accordion,
   CommonCard,
   SubHeading,
   TextInput,

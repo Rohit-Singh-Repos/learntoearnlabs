@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Div, Paragraph, SubHeading, Span } from "components";
+import { Div, Paragraph, SubHeading } from "components";
 
 export const JobAssistance = React.memo(() => {
   const [handleRow, setHandleRow] = useState("row");

@@ -8,7 +8,6 @@ import {
   ListItem,
   Span,
   Paragraph,
-  LinkComponent,
 } from "components";
 import { navbarSchema } from "schemas";
 import {

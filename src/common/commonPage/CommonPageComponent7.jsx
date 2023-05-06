@@ -8,7 +8,6 @@ import {
   UnorderedList,
   ListItem,
   Button,
-  Span,
 } from "components";
 import { MdLocationPin } from "assets/icons";
 

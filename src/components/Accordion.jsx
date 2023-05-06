@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from "react";
-import { Div, Button, Heading, Paragraph } from ".";
+import { Div, Button, Heading } from ".";
 
 export const Accordion = React.memo(({ accordionData }) => {
   const [accordion, setAccordion] = useState("");
@@ -15,7 +15,7 @@ export const Accordion = React.memo(({ accordionData }) => {
         setAccordionId(0);
       }
     },
-    [accordion, accordionId]
+    [accordion]
   );
 
   return (

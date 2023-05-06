@@ -6,7 +6,6 @@ import {
   LinkComponent,
   Image,
   Paragraph,
-  Span,
 } from "components";
 
 export const JobOrientedPrograms = React.memo(({ sectionData }) => {
