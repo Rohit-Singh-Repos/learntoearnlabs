@@ -16,6 +16,16 @@ body {
   top: 5px;
 }
 
+.modal-bg{
+  background-color:rgba(13, 110, 253,0.3) !important;
+  display: block !important;
+  border-radius: 0px !important;
+}
+
+.navbar-item:focus{
+  background-color: transparent;
+}
+
 .remove-shadow{
   box-shadow: none !important;
 }

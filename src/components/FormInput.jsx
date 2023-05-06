@@ -7,7 +7,8 @@ export const TextInput = React.memo(
     textInputName,
     textInputClass,
     textInputValue,
-    textInputHandler
+    textInputHandler,
+    ...props
   }) => {
     return (
       <input
@@ -17,6 +18,7 @@ export const TextInput = React.memo(
         placeholder={textInputPlaceholder}
         name={textInputName}
         onChange={textInputHandler}
+        {...props}
       />
     );
   }

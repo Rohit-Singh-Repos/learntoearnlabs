@@ -6,9 +6,9 @@ export const OrderedList = React.memo(({children,orderedListClass}) => {
     )
 })
 
-export const UnorderedList = React.memo(({children,unorderedListClass}) => {
+export const UnorderedList = React.memo(({children,unorderedListClass,...props}) => {
     return (
-      <ul className={unorderedListClass}>{children}</ul>
+      <ul className={unorderedListClass} {...props}>{children}</ul>
     )
 })
 

@@ -43,6 +43,20 @@ export const NavLink = styled(Link)`
     margin-bottom: 25px;
   }
 `;
+
+export const NavLink2 = styled(Link)`
+  color: #000;
+  display: flex;
+  align-items: flex-start;
+  text-decoration: none;
+  padding: 5px 10px;
+  height: 100%;
+  cursor: pointer;
+  &.active {
+    background-color: #E9ECEF;
+    color: #000;
+  }
+`;
   
 export const Bars = styled(FaBars)`
   display: none;

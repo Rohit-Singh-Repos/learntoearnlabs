@@ -1,43 +1,62 @@
 import React from 'react'
 import ReactDOM from "react-dom";
+import { Div } from './Div';
+import { Button } from './Button';
+import { SubHeading } from './Text';
+import axios from 'axios';
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 const modalContainer = document.getElementById("popup")
 
-const ModalUI = React.memo(({modalHandler}) => {
+const ModalUI = React.memo(({modalHandler,children,emailData}) => {
+  
+  const downloadSyllabus = async() => {
+    console.log("responseData")
+    try {
+      let response = await axios(`${process.env.REACT_APP_API_BASE_URL}/api/syllabuses`,{
+        method:"POST",
+        data:JSON.stringify(emailData)
+      })
+      modalHandler(false)
+      console.log("responseData1",response,emailData)
+    } catch (error) {
+      alert(error)
+    }
+  }
+
   return (
-    <div className="modal" style={{display:"block"}}>
-      <div className="modal-dialog">
-        <div className="modal-content">
-          <div className="modal-header">
-            <h5 className="modal-title">Modal title</h5>
-            <button
+    <Div divClass="modal modal-bg rounded-0">
+      <Div divClass="modal-dialog modal-dialog-centered ">
+        <Div divClass="modal-content rounded-0">
+          <Div divClass="modal-header">
+            <SubHeading subheadingClass="modal-title">Enter your email to continue</SubHeading>
+            <Button
               type="button"
-              className="btn-close"
+              buttonClass="btn-close"
               data-bs-dismiss="modal"
               aria-label="Close"
-              onClick={() => modalHandler(false)}
+              buttonHandler={() => modalHandler(false)}
             />
-          </div>
-          <div className="modal-body">
-            <p>Modal body text goes here.</p>
-          </div>
-          <div className="modal-footer">
-            <button
+          </Div>
+          <Div divClass="modal-body">
+            {children}
+          </Div>
+          <Div divClass="modal-footer">
+            <Button
               type="button"
-              className="btn btn-secondary"
+              buttonClass="btn btn-primary"
               data-bs-dismiss="modal"
-              onClick={() => modalHandler(false)}
+              buttonHandler={downloadSyllabus}
             >
-              Close
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
+              Download
+            </Button>
+          </Div>
+        </Div>
+      </Div>
+    </Div>
   );
 })
 
-export const ModalComponent = React.memo(({modalHandler}) => {
-  return ReactDOM.createPortal(<ModalUI modalHandler={modalHandler}/>,modalContainer)
+export const ModalComponent = React.memo(({modalHandler,children,emailData}) => {
+  return ReactDOM.createPortal(<ModalUI modalHandler={modalHandler} emailData={emailData}>{children}</ModalUI>,modalContainer)
 })

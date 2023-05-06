@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { NavLink, NavBrand, NavBrandLink } from "styles/header/headerStyle";
+import { NavLink, NavBrand, NavBrandLink, NavLink2 } from "styles/header/headerStyle";
 import {
   Heading,
   Button,
@@ -100,13 +100,13 @@ export const Header = React.memo(() => {
                                       : () => {}
                                   }
                                 >
-                                  <LinkComponent pathName={item2.navItemPath}>
+                                  <Span>
                                     {item2.navItemName}
-                                  </LinkComponent>
+                                  </Span>
                                 </Span>
                                 <UnorderedList
                                   unorderedListClass={
-                                    navbar3 && navbarId2 === item2.id
+                                    navbarId2 === item2.id
                                       ? `dropdown-menu subnavbar-dropdown show rounded-0  dropdown-center`
                                       : `dropdown-menu subnavbar-dropdown rounded-0 dropdown-center`
                                   }
@@ -119,11 +119,16 @@ export const Header = React.memo(() => {
                                         listItemClass="dropdown-item"
                                         role="button"
                                       >
-                                        <LinkComponent
-                                          pathName={item3.navItemPath}
+                                        <NavLink2
+                                          to={item3.navItemPath}
+                                          onClick={() => {
+                                            setNavbar2(false);
+                                            setNavbar3(false)
+                                            setNavbarId2(null)
+                                          }}
                                         >
                                           {item3.navItemName}
-                                        </LinkComponent>
+                                        </NavLink2>
                                       </ListItem>
                                     ))
                                   ) : (
