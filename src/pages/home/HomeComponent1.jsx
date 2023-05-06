@@ -10,8 +10,7 @@ export const LandingPage = React.memo(({mobileDetector}) => {
       <HeroSection
           cardData={homePageSchema}
           mobileDetector={mobileDetector}
-          paragraphText="When no one understand your talent, then we believe that you have
-          the capabilities to do miracles…"
+          paragraphText2="One of the best training institutes offering job gurantee or job assistance based training programs ..."
           primaryButtonText="Join Now"
           coverImage={COVER_IMAGES.homePageCoverImage}
         />

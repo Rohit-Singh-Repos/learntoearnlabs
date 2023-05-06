@@ -172,13 +172,16 @@ export const cloudDevopsSchema = {
     headingText: "Program Details",
     paragraphText:
       "During training you will go through with with cloud infrastructure components such as virtual machines, storage, and networking, and will deploy & manage applications on cloud platforms. The candidates will learn how to work with different cloud computing and DevOps tools, such as AWS, version control or git, Jenkins, Docker, Ansible & Kubernetes, and understand how to integrate these tools into their workflow.",
-    moduleTextData: [
-      {
-        id: uuid(),
-        moduleName: "Module 1",
-        listText: "Introduction & Python Programming",
-      },
-      { id: uuid(), moduleName: "Module 2", listText: "Numpy" },
+      moduleTextData:[
+        {id:uuid(),moduleName:"Module 1 : Linux",listText:"Introduction to Linux, Linux Distributions & Shell, Virtual Machine & Installation, vim editor, Linux Commands, Directory Structure, File System, User Management, Group Management, Password Properties, Managing Permissions, ACL, Managing Processes, Managing Partitions, Managing Softwares, Links & Tar, Logs, Logical Volume Manager, Scheduling Tasks, Kernel, Http Configuration, Firewall Configuration, Password Resetting, Shell Scripting."},
+        {id:uuid(),moduleName:"Module 2 : Cloud Computing & AWS",listText:"Introduction to AWS & Cloud Computing, IAM, Roles, Policies and Access Management, Billing Dashboard & Free Tier Services, EC2 Fundamentals, Instance creation, SSH, AMI Types & Security Key Pairs, S3 Buckets & objects, storage classes, Load Balancing, access lists & policies, security & encryption, cross region replication, s3 versioning control, AWS snowball, CloudFront, AWS Databases, Dynamo DB, Redshift, Aurora, RDS Instance, RDS Encryption & Security, RDS Backups, ElastiCache, CloudWatch & Cloud Trail, Virtual Private Cloud (VPC), NAT Gateway, Network ACL, VPN & VPC, VPC Endpoints, Route 53, AWS Lambda & API Gateway."},
+        {id:uuid(),moduleName:"Module 3 : Agile & DevOps",listText:"Introduction to Software Development, Development Models (Waterfall, Iterative, Spiral, RAD, Agile, etc.), Agile Development Model, Introduction to DevOps, DevOps Life Cycle & DevOps Tools."},
+        {id:uuid(),moduleName:"Module 4 : Git & GitHub",listText:"Introduction to Version Control & Git, Command Line Interface, GitHub & Repositories, staging, cloning, push operation, branching, merging, forking & pull requests."},
+        {id:uuid(),moduleName:"Module 5 : Jenkins",listText:"Introduction to Continuous Integration & Jenkins, Jenkins Installation, Dashboard Overview, Job Creation, Search Panel, Jenkins Configuration, Jenkins Plugin, Role Base Access, Git Integration, Trigger Build, Build Periodically, Poll SCM, Environment Variables, Parameterized Jobs, Code Coverage, Timeout & TimeStamp, Job Management, User Management, Jenkins Logs Custom Workspace, Upstream / Downstream Jobs, Pipelining, Continuous Deployment, Continuous Delivery, Parallel Jobs, Master Slave, Input Parameters, Post Actions, Slack Notifications."},
+        {id:uuid(),moduleName:"Module 6 : Ansible",listText:"Introduction to YAML & Ansible, inventory, playbook, modules, variables, control flow (conditions & loop), Roles, Asynchronous Actions, Polling, Strategies, Error, Ansible Vault, LookUps, Custom Module."},
+        {id:uuid(),moduleName:"Module 7 : Docker",listText:"Introduction to Container, Container Vs Virtual Machine, Introduction to Docker, Installation & Environment, Commands, Objects, Registry, DockerHub, Docker Compose, Docker Swarm, Architecture, Files, Images, Storage & Volumes, Drivers, Networks, Monitoring."},
+        {id:uuid(),moduleName:"Module 8 : Kubernetes",listText:"Introduction to Kubernetes, Architecture Overview, Pod & Kubectl, Pod’s Container, Cluster IP, Node Port, Replication Controller, Deployment in Kubernetes, Kubernetes Rollout, Resource Request & Resource Limits, Namespace, Service DNS, Resource Quota, Limit Range, Config Map, Kubernetes Secret, taint & toleration, Scheduling & Volume Overview."},
+        {id:uuid(),moduleName:"Module 9 : Project Work & Exercises",listText:"Project work and practical exercises are essential components of AWS and DevOps training as they provide hands-on experience and real-world scenarios that cannot be replicated through theoretical learning alone. By applying concepts and techniques learned in the classroom to actual projects and exercises, students gain a deeper understanding of how to design, implement, and manage cloud-based infrastructures and DevOps practices effectively."},
     ],
     contactCardData1: {
       phoneNumber: "+91-9548868337",
@@ -393,13 +396,23 @@ export const dataScienceSchema = {
     headingText: "Program Details",
     paragraphText:
       "During training you will go through with programming methodologies, data models, logics & transitions, various python libraries, code implementation, mathematical equations, assignments, and mini projects that will help you to become an expert data science and machine learning professional. You would get a hands-on expertise over the most in-demand concepts, libraries and tools.",
-    moduleTextData: [
-      {
-        id: uuid(),
-        moduleName: "Module 1",
-        listText: "Introduction & Python Programming",
-      },
-      { id: uuid(), moduleName: "Module 2", listText: "Numpy" },
+      moduleTextData:[
+        {id:uuid(),moduleName:"Module 1 : Introduction to Data Science & Python Programming",listText:"Data Science : Evolution of Data Science, Application of Data Science, Data Science Development Methodology, Case Study.Python : Introduction & Environment setup, Python Fundamentals, tokens, keywords, literals, identifiers, operators, variables, taking input from user, exception handling, data types (number, string, list, tuple, set, dictionary), control flow, conditional statements (if, elif, else), iterative statements or loops (while, for), nested loops, loop control statements, functions, return statement, range in functions, variable scopes, type of arguments, lambda functions, filter & map functions, packages, import statement, dir function, important modules in python (sys, os, math, datetime, random, etc.), file handling in python (opening, closing, reading, writing, renaming & removing), classes & objects, variable scope & global keyword, case studies."},
+        {id:uuid(),moduleName:"Module 2 : NumPy",listText:"Introduction to NumPy, installing NumPy, N-Dimensional array, array creation routines (array of ones & zeros, from existing data, using numerical ranges, etc.), Arithmetic Operators, Single Dimensional Arrays, Multi-Dimensional Arrays, matrix product, NumPy functions (universal functions, aggregate functions, & logic functions), Indexing of NumPy arrays, fancy indexing, slicing of NumPy arrays, Iterating in a NumPy array, array manipulation, changing array shape, transpose like operations, joining arrays (concatenate, stack, column_stack, hstack & vstack) , splitting arrays (split, hsplit & vsplit), file handling in NumPy (loading and saving data in binary  file, loading and saving  data in text file), merging NumPy arrays, NumPy case study – creating NumPy array, indexing & slicing, statistical calculation using NumPy, mathematical operation using NumPy, sorting a NumPy array."},
+        {id:uuid(),moduleName:"Module 3 : Pandas",listText:"Introduction to pandas, functionality of pandas, significance of pandas, installing pandas, pandas data structure, pandas series, pandas dataframe, imporing data or reading data from CSV file, Excel file & JSON file, exporting data or writing data to CSV file & Excel file, Essential functionality of series & dataframe, selecting columns, selecting rows, adding columns, removing columns, removing rows, updating cells, filtering a dataframe (using a single value, & using a list), concatenate rows & columns, append rows, & merge data, join operation (left, right, outer, inner), data cleaning, handling missing data using pandas, inspecting and removing duplicates, replacing values, groups & aggregation, grouping data using pandas, case studies."},
+        {id:uuid(),moduleName:"Module 4 : Data Visualization using MatPlotLib & Seaborn",listText:"Introduction to Data Visualization, Libraries and tools for data visualization, Introduction to Matplotlib library, types of plots & charts (line plot, bar chart, horizontal bar chart, stacked bar chart,  grouped bar chart, histogram, etc.), introduction to Seaborn library, benefits of Seaborn library, types of plots & charts (line plot, bar plot, scatter plot, histogram, box plot, pie chart, heat map, etc.), plotting different types of plots & charts, customizing visualizations using Matplotlib (style, labels & ticks, colors, linestyle, markers, & legend), saving plots, subplots, grid, case studies."},
+        {id:uuid(),moduleName:"Module 5 : Web Scrapping",listText:"Introduction to Web Scrapping, use cases, need of web scrapping in data science, web scrapping process flow, popular tools for web scrapping, requests, Introduction to Beautiful soup library, installing beautiful soup, creating soup, types of objects, inspecting a web page, web scrapping demonstration using beautiful soup."},
+        {id:uuid(),moduleName:"Module 6 : Statistical Analysis",listText:"Introduction to Data types, categorical data, numerical data, data I/O. Introduction to statistics, statistical analysis divisions, population & sample. Introduction to measures of central tendency (mean, median & mode), calculate measure of central tendency using python. Introduction to measures of Dispersion (range, interquartile range, variance, & standard deviation), skewness & kurtosis, calculate measures of dispersion using python. Introduction to measures of position (percentiles, quartiles, & standard scores), calculate measures of position using python. Introduction to Exploratory Data Analysis (EDA), significance of EDA, data analysis techniques, EDA classification, Basics of Univariate Non-Graphical EDA, existence of outliers, detecting and removing of outliers, measures of shape, data visualization using statistical graphs – Pie charts, , Bar graphs,  Histograms,  Line  graphs,  Box plots,  Dot plots,  Basics of Multivariate EDA, analyzing multivariate Non-Graphical EDA, perform cross tabulation on data, covariance & correlation, association, causation, correlation matrix, Analyzing multivariate graphical EDA, visualize data using scatter plot, visualize data using heat maps."},
+        {id:uuid(),moduleName:"Module 7 : Probability Theory",listText:"Introduction to Probability, Need for probability theory, common concepts of probability, probability demonstration using python, union & intersection of events, classify joint and disjoint events, dependency of events, calculating probability of events, conditional probability. Introduction of Bayes’ theorem, need for Bayes’ theorem, calculating probability through Bayes’ theorem, application of Bayes’ theorem in data science, introduction to expected values, need for calculating expected values, problem demonstration. Introduction to Probability Distributions (PD), effect of standard deviation on distribution, standardization, Z-score, Skewness & kurtosis in Distribution graph, problem demonstration, types of probability distributions, t-distribution, degree of freedom (mean), problem demonstration. Introduction to sampling distribution, need for sampling distribution, case studies, standard error, standard error of mean, problem demonstration, central limit theorem, case study and exercises. Introduction to Inferential statistics, forms of statistical inference, Estimation, Bias of an Estimator, point estimation and interval estimation, Mean Square Error (MSE), Bias & variance using Bull’s Eye diagram, confidence interval, Margin of Error, confidence interval estimation, problem demonstration. Introduction to Hypothesis, statistical hypothesis, hypothesis testing, decision errors in hypothesis testing, decision rules, introduction to statistical test, P-value & critical value, calculating P-value from Z-scores, thumb rule in hypothesis testing, case study, One tailed test, two tailed test, z-test, hypothesis test for single population mean (T-Test), independent two sample T-Test, performing T-Test, problem demonstration, basics of Chi-square test, types of chi-square test, problem demonstration, Examine National Health & Nutrition Examination Survey (NHANES) data – case study."},
+        {id:uuid(),moduleName:"Module 8 : Natural Language Processing",listText:"Introduction to Natural Language Processing, Use cases of NLP, need of processing textual data, Application of NLP, install natural Language Tool Kit (NLTK), download NLTK packages, NLTK exercises, Introduction to text preprocessing & tokenization, types of tokenizers (bigrams, trigrams & ngrams), creating tokens using NLTK, Part of Speech (POS) tagging, steps of POS tagging, stop words, removing stop words using NLTK, problem demonstration. Introduction to stemming, stemming using NLK, Porter & Lancaster stemmer, NonEnglish stemmer, introduction to Lemmatization,  Lemmatization using NLTK, problem demonstration. Introduction to  Named  Entity  Recognition (NER), NER using NLTK, Word Sense Disambiguation (WSD),  WSD using NLTK, problem demonstration. Introduction to  Feature  Extraction,  Bag-of-Words model,   case  study   &  exercises,  Term Frequency – Inverse Document Frequency (TF-IDF), implement TF-IDF using Python, problem demonstration. Introduction to Sentiment Analysis, TextBlob for sentiment analysis, steps to perform sentiment analysis, sentiment analysis of twitter data using NLP, problem demonstration."},
+        {id:uuid(),moduleName:"Module 9 : Supervised Machine Learning",listText:"Introduction to Machine Learning, AI vs Machine Learning vs Deep Learning, machine learning applications, types of machine learning, Reward or Penalty (RL), Data preprocessing, data preprocessing techniques, imputing missing values, handling categorical values, scaling the data, StandardScaler, MinMaxScaler, RobustScaler, Normalization, feature selection, problem demonstration. Introduction to data splitting, training data, testing data, supervised learning, types of supervised learning, regression & its types, Linear regression & its types, problem demonstration, r-square, variance inflation factor (VIF), problem demonstration. Introduction to gradient descent, error minimization, regularization and its types, ridge regression, lasso regression, elastic net regression, regression case study, introduction to classification algorithm,  problem demonstration. Introduction to logistic regression, logistic regression : functions, odds, activation function, cost function, update function, problem demonstration. Introduction to decision tree, decision tree terminology, CART algorithm, problem demonstration, introduction to impurity, gini impurity, building decision tree, selecting best feature to split, information gain, ID3 algorithm, entropy, problem demonstration. Introduction to Random Forest, Ensemble methods : Bagging & Boosting, Creating random forest, introduction to performance measurements, SMOTE, precision, recall & FI score, problem demonstration. Introduction to Naïve Bayes, conditional probability & Bayes theorem,  Naïve bayes calculation, naïve bayes in Scikit module, gaussian naïve bayes, Bernoulli naïve bayes, multinominal naïve bayes, problem demonstration. Introduction to K Nearest Neighbor, KNN working, distance metric, minkowski distance, significance of K in KNN algorithm, problem demonstration. Introduction to Support Vector Machine, SVM terminologies, calculating hyperplane, soft margin classifier, nonlinear SVM, Kernel Trick, SVM Kernels, Gaussian RBF, Polynomial kernel, problem demonstration."},
+        {id:uuid(),moduleName:"Module 10 : Unsupervised Machine Learning",listText:"Introduction to Dimensionality, Curse of Dimensionality, Dimensionality Reduction, Techniques of Dimensionality Reduction, Introduction to Principal Component Analysis (PCA), Dimensionality Reduction with PCA, Working with Dimensional Data, Problem Demonstration. Introduction to Linear Discriminant Analysis (LDA), Working of LDA, LDA & PDA comparison, other techniques for dimensionality reduction, missing value ratio, low variance filter, random forest, high correlation filter, Problem Demonstration. Introduction to Unsupervised Learning, Process Flow & Example, Clustering, types of clustering (exclusive, overlapping & hierarchical), K-Means Clustering Algorithm, Elbow Method, Applying K-Means Algorithm on 2D plots,  Problem Demonstration. Introduction to Fuzzy C-Means Clustering, Problem Demonstration,  DBSCAN (Density Based Spatial Clustering of Application with Noise) clustering algorithm, Problem Demonstration. Introduction to Association Rule Mining, Parameters (Support, Confidence, Lift), Generating Association Rules, Apriori Algorithm, Market Based Analysis, Problem Demonstration. Introduction to Recommendation System, Cosine-Based Similarity, Coverage, Common types of Recommender System, User Based Collaborative Filtering (UBCF), Content Based Filtering (CBF), User Driven Content and Service, Recommending similar movie to the user. Introduction to Time Series Analysis, Time Series Components (Trend, Seasonality, Cyclical Patterns,  & Irregularity), Forms of Data (Stationary Data & Nonstationary Data), methods to check for stationary of data, Augmented Dicky-Fuller (ADF) Test, converting nonstationary data to stationary data, AutoCorrelation Function (ACF) and Partial AutoCorrelation Function (PACF), Auto Regression Model, Moving Average Model, Autoregressive Moving Average (ARMA) Model, ARIMA Model, Problem Demonstration & Case Studies."},
+        {id:uuid(),moduleName:"Module 11 : Model Evaluation & Optimization",listText:"Introduction to Model Selection, Resampling Techniques for Model Selection, Resampling Measures, K-Fold Cross Validation, Introduction to Model Evaluation, Problem Demonstration. Model Evaluation Metrics for Regression, Model Evaluation Metrices for Classification, Test Statistics, Confusion Matrix, Calculating Confusion Matrix, Problem Demonstration. Introduction to ROC Curve, Understanding the operation of ROC, Plotting ROC Curve, AUC Curve Operation, Problem Demonstration, Introduction to Precision and Recall, F1 Score, Problem Demonstration. Introduction to Hyperparameter Tuning, Types of Hyperparameter Optimization, Manual Search, Grid Search, Random Search, perform Grid Search, Problem Demonstration. Introduction to Ensemble Learning, Ensemble Learning Methods (Bagging, Boosting & Stacking), Bagging stages, Bagging Workflow, Problem Demonstration, Bagging Vs Boosting, Boosting Algorithms, Adaptive Boosting (AdaBoost), Gradient Boosting, Extreme Gradient Boosting (XGBoost), Problem Demonstration. Introduction to Model Optimization, Elements of Optimization, Linear Programming Basics, Linear Programming Applications, Problem Demonstration, formulating Optimization Problem, Stochastic Gradient Descent (SGD), Accelerated Gradient Methods, Second-Order Methods, Problem demonstration & Case Studies."},
+        {id:uuid(),moduleName:"Module 12 : Deep Learning using Tensorflow",listText:"Introduction to deep learning, use cases, structure & functionality of human brain, functionality of a machine, Neural Network, Artificial Neural Network, biological vs artificial neuron. Introduction to Perceptron, Activation Function, sigmoid function, Tanh function, Rectified Liner Unit (ReLu) function, Softmax function, Multilayer Perceptron (MLP), Neural Network Evaluation, Improving Neural Network Performance, Gradient Descent to Cost Function. Introduction to Backpropagation, Learning Rate, Neural Network Learning, Exercises. Introduction to TensorFlow, basic components, building & running a graph, Eager Execution, Introduction to Keras, TensorFlow installation, building a neural network in TensorFlow, problem demonstration, Image classification using TensorFlow. Introduction to Convolutional Neural Network (CNN), Limitations of Multilayer Perceptron, CNN vs MLP, Working of Convolutional Layer, ReLu, Pooling Layer, Fully Connected Layer, Image Recognition, Rules of Image Recognition Process, Image classification using CNN, Libraries Required for Prediction, building a CNN model, Problem Demonstration. Introduction to Recurrent Neural Network (RNN), Issues with Feed Forward Network, Architecture of RNN (One to One, Many to One, One to Many, & Many to Many), Problem Demonstration, Training RNN, Long Short-Term Memory (LSTM) networks, Issues with RNN, LSTM Structure (Forget gate, Input gate, & Output gate), Problem Demonstration. Introduction to Reinforcement Learning (RL) , use cases and challenges, RL Process, Reward Hypothesis, RL Agent Components (Environment, Agent and Information State), RL Agent Taxonomy Types, Value Based RL, Policy Based RL, & Model Based RL. Case Studies & Exercises."},
+        {id:uuid(),moduleName:"Module 13 : Data Visualization using Tableau",listText:"Introduction to Tableau, Tableau Products, VizQL language, Data Connections, Connect to data from file, server or database, Creating Bar Charts, Line Charts & Pie Charts. Introduction to Data Grouping (group by header, group by data window, visual grouping, group hierarchies, etc.), Filtering (filtering by headers, filtering by filter cards, filtering by general tab, filtering by wildcard tab, filtering by condition tab, filtering by top tab, etc.), Problem Demonstration. Introduction to Hierarchies, creating a hierarchy, built-in hierarchies, understanding data granularity, data granularity using marks card, Sorting using toolbar, sorting using pill, sorting using marks card, sorting by legends, Problem Demonstration. Introduction to Data Blending, data blending with Tableau, Problem Demonstration, basics of Joins & Union, Inner Join, Left Outer Join, Right Outer Join, Full Outer Join, Cross Join, Joins vs Blending, Problem Demonstration. Introduction to Calculations in Tableau, types of calculations, ways to create a calculated field, Problem Demonstration, Built-In Functions (Number Function, String Function, Date Function, Logical Function, Aggregate Function, Problem Demonstration. Introduction to Table Calculations, Quick Table Calculation, Tableau Parameters, User Input Analysis, What-If Analysis, Level of Detail Calculations (LOD), LOD Parameters, Fixed LOD Expression, Include LOD Expression, Exclude LOD Expression, LOD use cases and Problem Demonstration. Introduction to Trend Lines and Reference Lines, Creating a Trend Line, Visual Grouping, p-value, R-Squared, Editing Trend Lines, Type of Trend Lines, Linear Trend, Logarithmic Trend, Exponential Trend, Polynomial Trend, Problem Demonstration. Introduction to Forecasting, Forecasting Length, Forecasting Source Data, Forecast Model, Summary Box, Problem Demonstration. Introduction to Mapping, Classification of Maps, Filled Map, Symbol Map, Density Map, Connect to a Spatial File, Interpretation of Spatial Data, Map Views from a Spatial File, Aggregate & Disaggregate Map Views, Working with Additional Data, Map Views for Analysis, Joining Spatial Files, Problem Demonstration. Introduction to Web Mapping Services (WMS), Connect to a WMS Server, WMS Background Map, Problem Demonstration, Compare Chart Items, Static Composition, Correlation, Time Comparison, Distribution, Location, KPI’s. Introduction to Dashboards in Tableau, Dashboard Approaches, Dashboard Interface, Dashboard Objects, Manipulating Objects, Web Page Object, Image Object, Building Dashboard, Problem Demonstration. Introduction to Dashboard Layouts, Containers, Tiled, Floating, Positioning & Sizing, Filtering, Dashboard Formatting, Problem Demonstration, Interactive Dashboards, Types of Actions, Filter Actions, Highlight Actions, URL Actions, Designing Dashboard for Tablets, Designing Dashboards for Mobile Phones, Problem Demonstration. Introduction to Story Points, Creating Story Point, Data Visualization Best Practices, Case Studies and Problem Demonstration."},
+        {id:uuid(),moduleName:"Module 14 : Project Work & Exercises",listText:"This Data science and machine learning training program includes a range of project work and exercises to help students apply their learning to real-world problems and build portfolio.  The projects and exercises are designed to give students hands-on experience with data analysis, modeling, and communication, and to build their problem-solving skills."},
+       
+        
     ],
     contactCardData1: {
       phoneNumber: "+91-9548868337",
@@ -605,13 +618,16 @@ export const designThinkingSchema = {
     headingText: "Program Details",
     paragraphText:
       "During training you will go through with various concepts & principles of design thinking, various case studies and exercise from finding a problem to designing a user centric prototype or mock-ups. For UI/UX design, you will learn, practice and get hand-on experience with designing tools MS-PowerPoint and Figma.",
-    moduleTextData: [
-      {
-        id: uuid(),
-        moduleName: "Module 1",
-        listText: "Introduction & Python Programming",
-      },
-      { id: uuid(), moduleName: "Module 2", listText: "Numpy" },
+      moduleTextData:[
+        {id:uuid(),moduleName:"Module 1 : Introduction to Design Thinking",listText:"Introduction to Design Thinking, Importance of Design Thinking, how design thinking works, Design Process, characteristics of Design, application of Design Thinking, Designer vs Non-Designer Thinking, Design thinking vs problem solving approaches, human-centered approach."},
+        {id:uuid(),moduleName:"Module 2 : Empathy",listText:"Introduction to Empathy, Why to Empathize, Understand the Market, User, Technology and Perceived Constraints, Technique to Empathize, User Research, Interviews, Surveys, Observations, Shadowing, User Personas, User Needs & goals, Creating User Personas, Empathy Mapping, Cultural Sensitivity, Conducting User Research, User Engagement Technique, Empathic Communication, Synthesize the findings from user research."},
+        {id:uuid(),moduleName:"Module 3 : Define & Ideate",listText:"Design Principles (aesthetic, functional and ethical), Input & Start Point of Deisgn, gathering input from stakeholders, concept of design space, Explore and Generate Ideas, physical workspaces and digital collaboration tools, Idea Generation, Brainstorming, Mind Mapping, SCAMPER, Evaluating Ideas, Problem Identification and Definition, Problem Statements, Reframing, Problem Solving Techniques, Root Cause Analysis, FishBone Diagrams, Decision Tress  &  Risk Analysis to make effective decisions, Identify & Prioritize Constraints, discovering new opportunities & ideas."},
+        {id:uuid(),moduleName:"Module 4 : UX /UI Factors Influencing User Experience",listText:"User-Centered Design Process,  Conceptualization & Ideation, User’s Mental Model, Products Designed on User’s Mental Model, Confused Mental Models, Products Designed on Confused Mental Model, UCD Process, Persona Mapping, Story Boarding, Scenario Map, Empathy Mapping. Methods of UX research – Qualitative / Quantitative, Data Gathering Methods & Sources, Expert Review, Interviews, Surveys & Email Questionnaire, Observation – Eye Tracking, Clickstream Analysis, Focus Group, User Groups, Market Segments, Competitor Analysis, User Stories, Task Flow, Information Architecture."},
+        {id:uuid(),moduleName:"Module 5 : User Interface & Visual Design",listText:"Cognitive Studies for Better User Experience, Gestalt Principles, Applying gestalt principles to UI/UX, Gestalt Principles in Web Design, Gestalt Principles in Mobile App Design, Examples of Gestalt Principles in Action, Microcopy, Visual Design, Color Theory, Tools for Designing with Color, Typography, How Typography Determines Readability, Combining Fonts, User Interface Elements, Using Graphics & Illustrations to Finalize Designs, Informational Components, Containers, UI Controls / Patterns, Input Controls, Navigational Components, Accessibility in Design, Types of Disabilities."},
+        {id:uuid(),moduleName:"Module 6 : UI Prototyping & Styling",listText:"Introduction to Prototyping & Wireframing, sketching techniques, creating reusable design components, Fidelity of a Prototype - Low / Medium / High, Paper Prototyping, Digital Prototype, HTML Prototype, Sketching Techniques, Grid & Layout Systems, Interaction Design, tools & techniques for interactive prototyping, Organization Schemes, Information Design, Navigation, Flat vs Deep Hierarchies, Associative Navigation, creating & presenting a comprehensive prototype."},
+        {id:uuid(),moduleName:"Module 7 : UX Research & Testing",listText:"Introduction to Heuristic Evaluation, Assessing Prototypes, Writing Good Heuristic Evaluations, Visibility of System Status, User Control and Freedom, Engagement Levels, Error Tolerance, Aesthetic & Minimalist Design, Planning & Conducting Usability Test, Surveys and E-mail Surveys, Survey Tools, A/B Testing, UX Laws, Design Validation & Tradeoffs, Heatmaps with Tools like Hotjar User Testing."},
+        {id:uuid(),moduleName:"Module 8 : Figma",listText:"Introduction to Figma, Figma Design File, Shapes, Selection, Typography, Design Tree, First Design, Colors, Drawing Tools, Margin, Padding, AutoLayout, Formatting Principles, Figma Constraints, Website Design, Styles and Components, Component Variants, Layout Grids & Design, Responsive Design, Material Design, Tailwind UI, Designing Mobile Apps, Iconography, Boolean Groups, Figma Token, Animations."},
+        {id:uuid(),moduleName:"Module 9 : Projects & Exercises",listText:"At the end of training, you need to go through with some design projects and exercises to increase your productivity and to build your experience."},
     ],
     contactCardData1: {
       phoneNumber: "+91-9548868337",
@@ -812,67 +828,21 @@ export const javaFullStackSchema = {
     headingText: "Program Details",
     paragraphText:
       "During training you will go through with programming methodologies, oops concepts, java approaches, String handling, exception handling, multithreading, web technologies, database connectivity, API Design, popular java frameworks and mini projects that will help you to become an expert java full stack professional. You would get a hands-on expertise over the most in-demand concepts, tools & frameworks.",
-    moduleTextData: [
-      {
-        id: uuid(),
-        moduleName: "Module 1:Introduction",
-        listText: "Introduction & Python Programming",
-      },
-      { id: uuid(), moduleName: "Module 2", listText: "Numpy" },
-      {
-        id: uuid(),
-        moduleName: "Module 1",
-        listText: "Introduction & Python Programming",
-      },
-      { id: uuid(), moduleName: "Module 2", listText: "Numpy" },
-      {
-        id: uuid(),
-        moduleName: "Module 1",
-        listText: "Introduction & Python Programming",
-      },
-      { id: uuid(), moduleName: "Module 2", listText: "Numpy" },
-      {
-        id: uuid(),
-        moduleName: "Module 1",
-        listText: "Introduction & Python Programming",
-      },
-      { id: uuid(), moduleName: "Module 2", listText: "Numpy" },
-      {
-        id: uuid(),
-        moduleName: "Module 1",
-        listText: "Introduction & Python Programming",
-      },
-      { id: uuid(), moduleName: "Module 2", listText: "Numpy" },
-      {
-        id: uuid(),
-        moduleName: "Module 1",
-        listText: "Introduction & Python Programming",
-      },
-      { id: uuid(), moduleName: "Module 2", listText: "Numpy" },
-      {
-        id: uuid(),
-        moduleName: "Module 1",
-        listText: "Introduction & Python Programming",
-      },
-      { id: uuid(), moduleName: "Module 2", listText: "Numpy" },
-      {
-        id: uuid(),
-        moduleName: "Module 1",
-        listText: "Introduction & Python Programming",
-      },
-      { id: uuid(), moduleName: "Module 2", listText: "Numpy" },
-      {
-        id: uuid(),
-        moduleName: "Module 1",
-        listText: "Introduction & Python Programming",
-      },
-      { id: uuid(), moduleName: "Module 2", listText: "Numpy" },
-      {
-        id: uuid(),
-        moduleName: "Module 1",
-        listText: "Introduction & Python Programming",
-      },
-      { id: uuid(), moduleName: "Module 2", listText: "Numpy" },
+      moduleTextData:[
+        {id:uuid(),moduleName:"Module 1 : Software Development & Object Oriented Programming",listText:"Introduction to Software Development, Software Development Life Cycle, Software Development Models, DFD, ER Diagram, Unified Modelling Language, Software Types, Programming Languages & Types, Object Oriented Programming."},
+        {id:uuid(),moduleName:"Module 2 : Java Core Programming",listText:"Introduction to Object Oriented Programming & Java, methods, variables, constructor & blocks, control flow (if-else, switch, while loop, do while loop, for loop, return, break, continue, etc.), OOPS concepts (Inheritance, Polymorphism, Encapsulation & abstraction), Inner classes (regular, method local, static, & anonymous), Inner interfaces, Wrapper classes, String Handling, Exception Handling, Multithreading, File Handling, Input-Output. Introduction to GUI, component, container, AWT, Java Foundation Classes (swing), Layout Managers, Event Handling, Event Listeners and Handlers, Adapter Classes, Lambda Expression, Serialization, Regular Expression."},
+        {id:uuid(),moduleName:"Module 3 : Collection Framework,  Generics & Concurrency",listText:"Introduction to Collection Framework, Arrays vs Collections, Key Interfaces, List, Set, SortedSet, NavigableSet, Queue, Map, SortedMap, NavigableMap, ArrayList and Vector, Stack, LinkedList, Iterator, ListIterator, HashSet, LinkedHashSet, SortedSet, TreeSet, Concurrent Collections. Introduction to Enumeration, Enum examples & use cases, Introduction to Generics, Time Safety, Type Casting, Generic Methods. Introduction to Concurrency & Thread Enhancement, Thread Group, java.util.concurrent packages, thread synchronization mechanism & java locks, java thread pools, java thread local, execution mechanism & case studies."},
+        {id:uuid(),moduleName:"Module 4 : MySQL Database & Java Database Connectivity",listText:"Introduction to Database & MySQL, MySQL Installation, MySQL Structure, Schema (Create, Drop & User Database), Table Operations, Create, Drop, Alter, Rename, Update, Add, Column Insert, Update, Delete, Select, Where, AND, OR, NOT, In, Between, Limit, Order By, Offset, Count, Sum, Avg, Min, Max, Nested Queries, Clause, Search Pattern, Foreign Key & Joins. Introduction to JDBC, JDBC drivers, Required Interfaces, Execute methods, CRUD operations, Aggregate functions, Transaction Management, PreparedStatement, stored procedures, callable statement, batch updates, date values, BLOB & CLOB, connection pooling, transaction management & savepoints, MetaData, ResultSet types, RowSets and RowID"},
+        {id:uuid(),moduleName:"Module 5 : Hypertext Markup Language (HTML)",listText:"Introduction to HTML5, Environmental setup of HTML5, HTML tags, elements and attributes, Syntax of HTML, Custom Attributes, Line Breaks, Spacing & Comments, HTML head tag, Setting Website Icon & Title, Background Images & Colors, Block & Inline Level Elements, Text Formatting Tags, Heading & Quotes, Images, Linking Web Pages, Creating Lists, Play Audio & Video, Embedding External Content, Creating Tables, Forms & Inputs, Semantic Elements, Using Emoji, Entities & Symbols in Website."},
+        {id:uuid(),moduleName:"Module 6 : Cascading Style Sheets (CSS)",listText:"Introduction to CSS3, CSS3 Environmental Setup with HTML5, Linking CSS3 with HTML5, Priority of CSS3 Stylesheets, Comments in CSS3 Properties & Selectors in CSS3, CSS IMPORTANT Rule, Priority of CSS Stylesheets according to Selectors, Text Colors & Transparency in CSS3, CSS Dimensions & Units, Shorthand Properties Backgrounds, Gradients Properties, Text Styling, Text Fonts, Google Fonts & Icons. CSS3 Box Model (Border, Margin, Padding, Shadowing, Redefining box-width, outlines etc.) Floats, Clear & Overflow, CSS3 Display Property, CSS Element Visibility, Position & Layering, Transitions & Animations, Creating Column Layouts, CSS Counters, Creating Tables Using CSS, Transforming CSS Elements, Clipping, Shaping, Masking & Filters."},
+        {id:uuid(),moduleName:"Module 7 : JavaScript",listText:"Introductions to JavaScript, Variables, let & const keyword, string handling, operators, control flow (if-else, switch, while loop, do while loop, for loop, break, continue, etc.), Array operations, objects & functions, scopes, methods (forEach, sort, find, some, fill, splice, map, filter, reduce, call, apply, bind, etc.). Object cloning, keyword (this, new, class, extends & super) , arrow functions, function declarations & expressions, getter & setter methods, static methods, closures, Document Object Model, DOM Manipulation using JavaScript, attributes, Lists, JavaScript Events, callbacks, promise, Introduction of AJAX & ES6."},
+        {id:uuid(),moduleName:"Module 8 : Servlet & Java Server Pages",listText:"Introduction to Servlet, Application types, web application directory structure, servlet execution, important methods, servlet communications, CRUD Operations, RequestDispatcher, Servlet Filters, Session Tracking, URL Rewriting, cookies, hidden form fields, Servlet Listeners & Events, Annotations in Servlet. Introduction to JSP, Servlet vs JSP, Model Architecture, Scripting Elements (Scriptlets, Expression, Declarations, Comments), JSP Implicit Object, JSP Directives (page, include, taglib), JSP scopes (Page, Request, Session, Application), JSP Actions (standard, custom), Exception handling, JSTL (Core tags, SQL tags, xml tags, function tags, etc"},
+        {id:uuid(),moduleName:"Module 9 : MongoDB Database",listText:"Introduction to MongoDB, MongoDB Terminology, MongoDB client-server connection, MongoDB Installation, CRUD (create, read, update, delete) operations. Data Modelling overview & approaches, data modelling in MongoDB, Types of Data Models, Flat Schema, Star Schema, Hierarchical Schema, Relational Schema, Object Relational Schema, Introduction to MongoDB Architecture, Distributed database, MongoDB instance, Introduction to MongoDB Compass, MongoDB Compass Dashboard, code implementation, Cursors, Query Optimization, Distributed queries."},
+        {id:uuid(),moduleName:"Module 10 : Spring",listText:"Introduction to Spring, Dependency Injection, Data Integration, IOC Container, Maven Project for Spring & Dependencies, Spring Configuration, Injecting Collections, Injecting Reference Type & Constructor, Spring Bean, Life Cycle Methods, Annotations, Spring Bean Scope, Spring Expression Language. Introduction to Spring JDBC, Database Setup, CRUD Operations, Row Mapper, Introduction to Spring ORM, CRUD Operations using Spring ORM, Introduction to Spring MVC, MVC Design Pattern, Tomcat Configuration, JSP Expression Language, JSTL, Handling Forms, Redirecting in Spring MVC, Error Handling, Exception Handling, Spring MVC Interceptor, Aspect Oriented Programming (AOP)."},
+        {id:uuid(),moduleName:"Module 11 : Spring Boot",listText:"Introduction to Spring Boot, Auto Configuration, Spring Initializr, Spring Tool Suite, JSP view, Introduction to JPA, Repository, DB Configuration, CRUD Operations, Custom Finder Methods, JPQL and Native Queries. Introduction to API & Web Services, Understand REST API, Spring Boot Dev Tools, Creating REST API (get functionality, PostMapping, DeleteMapping, PutMapping, ResponseEntity), Server Side Form Validation, Spring Security, Role Based Authorization, Login Functionality, Configuration and Customization, Introduction to JWT, JWT Authentication, Unit Testing of Spring Boot Projects."},
+        {id:uuid(),moduleName:"Module 12 : Hibernate",listText:"Introduction to Hibernate & ORM Tool, Maven Project for Hibernate & Dependencies, Hibernate Configuration, Annotations, Saving data and images, Object Fetching (get & load method), embedding objects, Hibernate Mapping (one to one, one to many & many to many), Lazy & Eager Loading, Hibernate Object States, Introduction to HQL (Hibernate Query Language), Native SQL Queries, Cascading, Cashing, Hibernate Criteria API, Hibernate Integration with Spring MVC."},
+        {id:uuid(),moduleName:"Module 13 : Version Control, Git & GitHub",listText:"Introduction to Version Control & Git, Command Line Interface, GitHub & Repositories, initialization, status, add, staging, commit, diff, checkout, cloning, push operation, branching, fetching & merging, forking & pull requests."},
+        {id:uuid(),moduleName:"Module 14 : Capstone Projects",listText:"Utility based major projects to increase your productivity and to build your experience. E-Commerce Web Project, LMS Project, Informative Blog"},
     ],
     contactCardData1: {
       phoneNumber: "+91-9548868337",
@@ -1076,13 +1046,23 @@ export const mernStackSchema = {
     headingText: "Program Details",
     paragraphText:
       "The objective of full stack web development training is to equip candidates with the skills and knowledge to become expert in developing complete web applications or services, mastering front-end & back-end development along with the database connectivity and management. The students will go through with some dummy & live projects to gain hands-on experience and improve their problem solving skills.",
-    moduleTextData: [
-      {
-        id: uuid(),
-        moduleName: "Module 1",
-        listText: "Introduction & Python Programming",
-      },
-      { id: uuid(), moduleName: "Module 2", listText: "Numpy" },
+      moduleTextData:[
+        {id:uuid(),moduleName:"Module 1: Introduction to Web Development",listText:"Introduction to Web Application, basics on web application, web application VS websites, building block of web app development, frontend & backend development, APIs, web services, microservices, market trends and career scope."},
+        {id:uuid(),moduleName:"Module 2 : Hyper Text Markup Language (HTML)",listText:"Introduction to HTML5, Environmental setup of HTML5, HTML tags, elements and attributes, Syntax of HTML, Custom Attributes, Line Breaks, Spacing & Comments, HTML head tag, Setting Website Icon & Title, Background Images & Colors, Block & Inline Level Elements, Text Formatting Tags, Heading & Quotes, Images, Linking Web Pages, Creating Lists, Play Audio & Video, Embedding External Content, Creating Tables, Forms & Inputs, Semantic Elements, Using Emoji, Entities & Symbols in Website."},
+        {id:uuid(),moduleName:"Module 3 : Cascading Style Sheets (CSS)",listText:"Introduction to CSS3, CSS3 Environmental Setup with HTML5, Linking CSS3 with HTML5, Priority of CSS3 Stylesheets, Comments in CSS3 Properties & Selectors in CSS3, CSS IMPORTANT Rule, Priority of CSS Stylesheets according to Selectors, Text Colors & Transparency in CSS3, CSS Dimensions & Units, Shorthand Properties Backgrounds, Gradients Properties, Text Styling, Text Fonts, Google Fonts & Icons. CSS3 Box Model (Border, Margin, Padding, Shadowing, Redefining box-width, outlines etc.) Floats, Clear & Overflow, CSS3 Display Property, CSS Element Visibility, Position & Layering, Transitions & Animations, Creating Column Layouts, CSS Counters, Creating Tables Using CSS, Transforming CSS Elements, Clipping, Shaping, Masking & Filters, Modular CSS, CSS3 Miscellaneous (Vendor & Autoprefixing, Initial, Inherit & Auto, Misc. Properties, Misc. Pseudo Elements, Misc. Pseudo Classes etc.)"},
+        {id:uuid(),moduleName:"Module 4 : Bootstrap",listText:"Introduction to Bootstrap, Web Design – Wireframing, Navigation Bar, Grid Layout System, Bootstrap Containers, Bootstrap Buttons, Font Awesome, Styling, Bootstrap Carousel, Cards, Media Query Break Points, Combining Selectors, Selector Priority."},
+        {id:uuid(),moduleName:"Module 5 : JavaScript",listText:"Introductions to JavaScript, Variables, let & const keyword, string handling, operators, control flow (if-else, switch, while loop, do while loop, for loop, break, continue, etc.), Array operations, objects & functions, scopes, methods (forEach, sort, find, some, fill, splice, map, filter, reduce, call, apply, bind, etc.). Object cloning, keyword (this, new, class, extends & super) , arrow functions, function declarations & expressions, getter & setter methods, static methods, closures, Document Object Model, DOM Manipulation using JavaScript, attributes, Lists, JavaScript Events, callbacks, promise, Introduction of AJAX."},
+        {id:uuid(),moduleName:"Module 6 : Node JS Framework",listText:"Introduction to Back End Development, skills required for backend, Introduction to Node JS, V8 engine, Problems before Node JS, Node JS installation, REPL, CLI, Client Server Architecture, Server Deployment in Node JS, Source Code, Single Threaded Model, Event Loop, PayPal Problems & Solution. Basics of NPM, NPM installation, Modules (Core Modules, User Defined Modules, & Third Party Modules), OS Module, Path Module, FS Module (Sync & Async), Packages in Node JS, package.json, package-lock.json, Http Module, Handling Routes, Event Loop Code Examples,  URL Module, Verbs in HTTP, Headers in Node JS, Status Codes, API in NodeJS, Working with Nodemon, User inputs, file system, Asynchronous Data Handling, Async Patterns (Blocking code, Setup Promises, Refractor to Async, Node’s native option, Events Emitter, Streams."},
+        {id:uuid(),moduleName:"Module 7 : Express JS Framework",listText:"Introduction to Express JS, creating a server using express, HTTP Request/Response Cycle, starter project installs, Http (basics, headers, request object, html file, examples), API VS SSR, Params, Query String, express routing, express router, Middleware setup, Middleware functions, get & post method, web server, Introduction to Nginx, Nginx Architecture, Introduction to CORS, Properties of Domain & URL, Cross-Origin Requests, MVC Architecture, Install Postman, Working with Postman"},
+        {id:uuid(),moduleName:"Module 8 : Database Management",listText:"Introduction to Database, Need of Database, RDBMS, NoSQL DBMS, NoSQL Database Categories."},
+        {id:uuid(),moduleName:"Module 9 : MySQL Database",listText:"Introduction to Database & MySQL, MySQL Installation, MySQL Structure, Schema (Create, Drop & User Database), Table Operations, Create, Drop, Alter, Rename, Update, Add, Column Insert, Update, Delete, Select, Where, AND, OR, NOT, In, Between, Limit, Order By, Offset, Count, Sum, Avg, Min, Max, Nested Queries, Clause, Search Pattern, Foreign Key & Joins."},
+        {id:uuid(),moduleName:"Module 10 : MongoDB Database",listText:"Introduction to MongoDB, MongoDB Terminology, MongoDB client-server connection, MongoDB Installation, CRUD (create, read, update, delete) operations, Data Modelling overview & approaches, data modelling in MongoDB, Types of Data Models, Flat Schema, Star Schema, Hierarchical Schema, Relational Schema, Object Relational Schema, Introduction to MongoDB Architecture, Distributed database, MongoDB instance, Connecting MongoDB & NodeJS (local instance & cloud instance), Introduction to MongoDB Compass, MongoDB Compass Dashboard, code implementation, Cursors, Query Optimization, Distributed queries."},
+        {id:uuid(),moduleName:"Module 11 : Mongoose",listText:"Introduction to Mongoose, Object Mapping via Mongoose, creating models, exporting model, MVC Architecture, Consuming models, creating locations controller, creating parameterized API."},
+        {id:uuid(),moduleName:"Module 12 : ECMAScript (ES6 or Modern JavaScript)",listText:"Introduction to ECMAScript, ES6 variables, let, var, const, arrow function, template literal, default parameter, spread operators, rest operators, rest params, class in JavaScript, class methods, object shorthand, map data type, set data type, map filter reduce, array destructuring, object destructuring, getter & setter methods."},
+        {id:uuid(),moduleName:"Module 13 : React JS Library",listText:"Introduction to ReactJS, features of ReactJS, Single page & Multipage Application, web app architecture patterns, MVC Architecture. Introduction to React Architecture, client side architecture, advantages & disadvantages of React, reasons to use React, DOM Manipulation, Virtual DOM, npm libraries & package.json for React, folder structure in React, creating first React app, React Element, React Function, React Components, class component, functional component, constructors within the components, defining multiple components, introduction to Props, ways of writing Props, class based Props, function based Props, Introduction to States, setState method, React Component life cycle, Mounting, Updating, unmounting, React Bootstrap Typeahead, passing values between the components, React Events,Conditional, Rendering, React Form, adding and handling React Forms, Form Submission, multiple input fields, validating form input, JSX overview, JSX use cases, API Overview, types of APIs, Rest API, navigation using links, 404 page, implementing styles using NavLink, URL parameter overview, URL parameter configuration, Styling : Inline Styling, stylesheet, JavaScript classes limitations, React Hooks overview, useState() hook, useEffect() hook, useContext() hook, useRef() hook, useReducer() hook, useMemo() hook, useCallback() hook, useLayoutEffect() hook, useDebugValue() hook, custom hooks in React."},
+        {id:uuid(),moduleName:"Module 14 : Version Control, Git & GitHub",listText:"Introduction to Version Control & Git, Command Line Interface, GitHub & Repositories, initialization, status, add, staging, commit, diff, checkout, cloning, push operation, branching, fetching & merging, forking & pull requests."},
+        {id:uuid(),moduleName:"Module 15 : Miscellaneous ",listText:"MERN App – Connecting API with React, Deploying MERN app on live cloud server or AWS, server side rendering with EJS, JWT Authentication, Streams, Sockets & Events, NodeJS with MySQL, API’s (POST, PUT & DELETE)  with MySQL."},
+        {id:uuid(),moduleName:"Module 16 : Capstone Projects",listText:"Utility based major projects to increase your productivity and to build your experience. E-Commerce Web Portal, Informative Blog or Portfolio."},
     ],
     contactCardData1: {
       phoneNumber: "+91-9548868337",
@@ -1281,13 +1261,15 @@ export const trainTheTrainerSchema = {
     headingText: "Program Details",
     paragraphText:
       "The training program is designed to equip teachers, educators and academicians with the necessary skills and knowledge to design and develop high quality, engaging and effective e-content using a set of software tools and deliver it to the students through YouTube and online live classes.",
-    moduleTextData: [
-      {
-        id: uuid(),
-        moduleName: "Module 1",
-        listText: "Introduction & Python Programming",
-      },
-      { id: uuid(), moduleName: "Module 2", listText: "Numpy" },
+      moduleTextData:[
+        {id:uuid(),moduleName:"Module 1: Digital Training & E-Content Development",listText:"Introduction to digital training & E-content, Overview of e-content development and its role in education, Understanding the benefits of e-content for teaching and learning, Understanding the benefits of using e-content in the classroom, Types of e-content, such as videos, interactive presentations, and multimedia, Overview of the tools and technologies used for e-content development, Techniques for planning and designing e-content, Understanding the principles of instructional design, Best practices for creating effective e-content"},
+        {id:uuid(),moduleName:"Module 2 : Google Workspace",listText:"Introduction to Google Workspace : Overview of the required Google Workspace tools and their functionalities, Understanding the benefits of using Google Suite in the classroom, Creating a Google account and accessing Google Workspace. Google Drive and Docs : Understanding the key features and functionalities of Google Drive and Docs, Techniques for organizing and sharing files and documents on Google Drive, Tips for creating and formatting documents using Google Docs. Google Sheets : Understanding the key features and functionalities of Google Sheets, Techniques for organizing and managing data using Google Sheets, Tips for creating and formatting spreadsheets using Google Sheets. Google Slides : Understanding the key features and functionalities of Google Slides, Techniques for creating and formatting presentations using Google Slides, Tips for adding multimedia and interactivity to Google Slides presentations. Google Forms : Understanding the key features and functionalities of Google Forms, Techniques for creating and administering surveys and quizzes using Google Forms, Tips for analyzing and interpreting data collected through Google Forms. Google Classroom : Understanding the key features and functionalities of Google Classroom, Techniques for creating and managing classes using Google Classroom, Tips for assigning and grading assignments using Google Classroom"},
+        {id:uuid(),moduleName:"Module 3 : PowerPoint",listText:"Introduction to PowerPoint : Overview of PowerPoint and its role in education, Understanding the benefits of using PowerPoint in the classroom, Creating a new PowerPoint presentation and choosing a template. Designing Effective Slides : Principles of effective slide design, Techniques for creating visually appealing and engaging slides, Tips for using text, images, and multimedia in PowerPoint. Formatting and Editing Slides : Techniques for formatting text and objects in PowerPoint, Understanding slide transitions and animations, Tips for editing and modifying slides in PowerPoint. Creating Interactive and Multimedia Content : Techniques for adding multimedia elements to PowerPoint slides, Creating hyperlinks and action buttons, Incorporating interactive elements such as quizzes and games. Presenting with PowerPoint : Tips for preparing and rehearsing a PowerPoint presentation, Understanding the importance of audience engagement, Strategies for using PowerPoint effectively during a presentation. Advanced PowerPoint Techniques : Advanced formatting techniques, Creating custom animations & slide shows, Using PowerPoint as a video creation tool."},
+        {id:uuid(),moduleName:"Module 4 : Camtasia",listText:"Introduction to Camtasia : Overview of Camtasia and its role in education, Understanding the benefits of using Camtasia, Installing and setting up Camtasia. Recording and Editing Screen Captures : Techniques for recording and editing screen captures using Camtasia, Tips for improving the quality of screen captures, Understanding basic video editing techniques. Creating and Editing Audio Narration : Techniques for creating and editing audio narration using Camtasia, Tips for improving the quality of audio narration, Understanding the importance of audio quality in educational videos. Adding Multimedia Elements : Techniques for adding multimedia elements such as images, text, and video clips to educational videos, Tips for using animations and transitions to enhance educational videos, Understanding copyright and fair use of multimedia elements in educational videos. Creating Interactive Elements : Techniques for creating interactive elements such as quizzes and hotspots in educational videos, Tips for creating interactive elements that enhance student engagement and learning, Understanding the importance of feedback in interactive elements. Publishing and Sharing Educational Videos : Techniques for publishing and sharing educational videos using Camtasia, Understanding different video file formats and their compatibility with different devices and platforms, Strategies for sharing videos."},
+        {id:uuid(),moduleName:"Module 5 : YouTube",listText:"Introduction to YouTube : Overview of YouTube and its role in education, Understanding the benefits of using YouTube in the classroom, Creating a YouTube channel and setting up a profile. Creating and Uploading Videos : Techniques for creating and uploading videos to YouTube, Understanding basic video editing techniques, Tips for improving the quality of videos uploaded to YouTube. Understanding Copyright and Fair Use : Understanding copyright law and fair use in the context of YouTube videos, Techniques for finding and using creative commons licensed content in YouTube videos, Strategies for avoiding copyright infringement on YouTube. Optimizing Videos for Search and Discovery : Techniques for optimizing YouTube videos for search and discovery, Understanding YouTube search algorithm and video ranking factors, Strategies for promoting videos and building a subscriber base. Creating Playlists and Annotations : Techniques for creating playlists and annotations on YouTube, Understanding the benefits of playlists and annotations in organizing and promoting videos, Strategies for using playlists and annotations to enhance student learning and engagement"},
+        {id:uuid(),moduleName:"Module 6 : ChatGPT",listText:"Determine the Purpose and Scope of the Content, choose a Platform or Tool to Use with ChatGPT, Input Your Prompts and Parameters, Train and Fine-Tune ChatGPT, Generate Content and Refine, Review and Edit, Publish and Promote."},
+        {id:uuid(),moduleName:"Module 7 : Best Practices for E-Content Development and Delivery",listText:"Understanding the principles of effective e-content development and delivery, Techniques for evaluating and improving e-content, Strategies for managing and organizing e-content for effective delivery. Best practices for integrating e-content into the curriculum and classroom instructions."},
+        {id:uuid(),moduleName:"Module 8 : Evaluation and Assessment of E-Content Development and Delivery",listText:"Understanding the importance of evaluation and assessment in e-content development and delivery, Techniques for assessing the effectiveness of e-content, Strategies for using assessment data to improve e-content and delivery. Best practices for continuous improvement of e-content development and delivery."},
     ],
     contactCardData1: {
       phoneNumber: "+91-9548868337",
@@ -1451,13 +1433,12 @@ export const htmlCssJSScheme = {
     headingText: "Program Details",
     paragraphText:
       "During the HTML, CSS & JavaScript training program, you will go through with the below course modules & topics.",
-    moduleTextData: [
-      {
-        id: uuid(),
-        moduleName: "Module 1",
-        listText: "Introduction & Python Programming",
-      },
-      { id: uuid(), moduleName: "Module 2", listText: "Numpy" },
+      moduleTextData:[
+        {id:uuid(),moduleName:"Module 1 : HTML (Hypertext Markup Language)",listText:"Introduction to HTML5, Environmental setup of HTML5, HTML tags, elements and attributes, Syntax of HTML, Custom Attributes, Line Breaks, Spacing & Comments, HTML head tag, Setting Website Icon & Title, Background Images & Colors, Block & Inline Level Elements, Text Formatting Tags, Heading & Quotes, Images, Linking Web Pages, Creating Lists, Play Audio & Video, Embedding External Content, Creating Tables, Forms & Inputs, Semantic Elements, Using Emoji, Entities & Symbols in Website."},
+        {id:uuid(),moduleName:"Module 2 : CSS (Cascading Style Sheets)",listText:"Introduction to CSS3, CSS3 Environmental Setup with HTML5, Linking CSS3 with HTML5, Priority of CSS3 Stylesheets, Comments in CSS3 Properties & Selectors in CSS3, CSS IMPORTANT Rule, Priority of CSS Stylesheets according to Selectors, Text Colors & Transparency in CSS3, CSS Dimensions & Units, Shorthand Properties Backgrounds, Gradients Properties, Text Styling, Text Fonts, Google Fonts & Icons. CSS3 Box Model (Border, Margin, Padding, Shadowing, Redefining box-width, outlines etc.) Floats, Clear & Overflow, CSS3 Display Property, CSS Element Visibility, Position & Layering, Transitions & Animations, Creating Column Layouts, CSS Counters, Creating Tables Using CSS, Transforming CSS Elements, Clipping, Shaping, Masking & Filters, Modular CSS, CSS3 Miscellaneous (Vendor & Autoprefixing, Initial, Inherit & Auto, Misc. Properties, Misc. Pseudo Elements, Misc. Pseudo Classes etc.)"},
+        {id:uuid(),moduleName:"Module 3 : JavaScript",listText:"Introductions to JavaScript, Variables, let & const keyword, string handling, operators, control flow (if-else, switch, while loop, do while loop, for loop, break, continue, etc.), Array operations, objects & functions, scopes, methods (forEach, sort, find, some, fill, splice, map, filter, reduce, call, apply, bind, etc.). Object cloning, keyword (this, new, class, extends & super) , arrow functions, function declarations & expressions, getter & setter methods, static methods, closures, Document Object Model, DOM Manipulation using JavaScript, attributes, Lists, JavaScript Events, callbacks, promise, Introduction of AJAX."},
+        {id:uuid(),moduleName:"Module 4 : Assignments & Interview Preparation",listText:"This module is available for those who enroll in 90 days training program of HTML, CSS & JavaScript. The candidate will go through various assignments, and case studies to get hands-on experience. The candidate will also get trained in respect of cracking the viva and interviews."},
+        {id:uuid(),moduleName:"Module 5 : Minor Project Work",listText:"After the completion of all the 90 days module of this HTML, CSS & JavaScript training program, some projects would be assigned to you to improve your practical knowledge and project experiences. Projects : School/College Website Design, E-Commerce Website Design, Social Media Website Design, etc."},
     ],
     contactCardData1: {
       phoneNumber: "+91-9548868337",
@@ -1624,13 +1605,12 @@ export const javaSchema = {
     headingText: "Program Details",
     paragraphText:
       "During the java programming training program, you will go through with the below course modules & topics.",
-    moduleTextData: [
-      {
-        id: uuid(),
-        moduleName: "Module 1",
-        listText: "Introduction & Python Programming",
-      },
-      { id: uuid(), moduleName: "Module 2", listText: "Numpy" },
+      moduleTextData:[
+        {id:uuid(),moduleName:"Course 1 : Java Core Programming (30 Days)",listText:"Introduction to Object Oriented Programming & Java, methods, variables, constructor & blocks, control flow (if-else, switch, while loop, do while loop, for loop, return, break, continue, etc.), OOPS concepts (Inheritance, Polymorphism, Encapsulation & abstraction), Inner classes (regular, method local, static, & anonymous), Inner interfaces, Wrapper classes, String Handling, Exception Handling, Multithreading, File Handling, Input/Output."},
+        {id:uuid(),moduleName:"Module 2 : GUI, Event Handling and Java Database Connectivity (30 Days)",listText:"Introduction to GUI, component, container, AWT, Java Foundation Classes (swing), Layout Managers, Event Handling, Event Listeners and Handlers, Adapter Classes, Lambda Expression. Introduction to Database & MySQL, MySQL Installation, MySQL Structure, Schema (Create, Drop & User Database), Table Operations (Create, Drop, Alter, Rename, Update, Add, Column Insert, Update, Delete, Select, etc), Conditions (Where, AND, OR, NOT, etc), Introduction to JDBC, JDBC drivers, Required Interfaces, Execute methods, CRUD operations, Aggregate functions, Transaction Management, PreparedStatement, stored procedures, callable statement, batch updates, date values, BLOB & CLOB."},
+        {id:uuid(),moduleName:"Module 3 : Collection, Generics and Java Web Programming (30 Days)",listText:"Introduction to Collection Framework, Arrays vs Collections, Key Interfaces, List, Set, SortedSet, NavigableSet, Queue, Map, SortedMap, NavigableMap, ArrayList and Vector, Stack, LinkedList, Iterator, ListIterator, HashSet, LinkedHashSet, SortedSet, TreeSet, HashMap, LinkedHashMap, Introduction to Generics, Time Safety, Type Casting, Generic Methods. Introduction to Web Technologies (HTML, CSS & JavaScript) & Servlet, Application types, web application directory structure, servlet execution, important methods, CRUD Operations, RequestDispatcher, Servlet Filters, Session Tracking, URL Rewriting, cookies, hidden form fields, Servlet Listeners & Events, Annotations in Servlet. Introduction to JSP, Servlet vs JSP, Model Architecture, Scripting Elements (Scriptlets, Expression, Declarations, Comments), JSP Implicit Object, JSP Directives (page, include, taglib), JSP scopes (Page, Request, Session, Application), JSP Actions (standard, custom)."},
+        {id:uuid(),moduleName:"Module 4 : Assignments & Interview Preparation",listText:"This module is available for those who enroll in 90 days training program of Java programming. The candidate will go through various assignments, and case studies to get hands-on experience. The candidate will also get trained in respect of cracking the viva and interviews."},
+        {id:uuid(),moduleName:"Module 5 : Minor Project Work",listText:"After the completion of all the 90 days module of this java programming training program, some projects would be assigned to you to improve your practical knowledge and project experiences. Projects Like : E-Commerce Web Project, Hospital System Web Project, Informative Blog, etc."},
     ],
     contactCardData1: {
       phoneNumber: "+91-9548868337",
@@ -1797,13 +1777,12 @@ export const pythonSchema = {
     headingText: "Program Details",
     paragraphText:
       "During the Python programming training program, you will go through with the below course modules & topics.",
-    moduleTextData: [
-      {
-        id: uuid(),
-        moduleName: "Module 1",
-        listText: "Introduction & Python Programming",
-      },
-      { id: uuid(), moduleName: "Module 2", listText: "Numpy" },
+      moduleTextData:[
+        {id:uuid(),moduleName:"Module 1 : Python Core Programming (30 Days)",listText:"Introduction & Environment setup, Python Fundamentals, tokens, keywords, literals, identifiers, operators, variables, taking input from user, exception handling, data types (number, string, list, tuple, set, dictionary), control flow, conditional statements (if, elif, else), iterative statements or loops (while, for), nested loops, loop control statements, functions, return statement, range in functions, variable scopes, type of arguments, lambda functions, filter & map functions, packages, import statement, dir function, important modules in python (sys, os, math, datetime, random, etc.), file handling in python (opening, closing, reading, writing, renaming & removing), classes & objects, variable scope & global keyword, case studies."},
+        {id:uuid(),moduleName:"Module 2 : NumPy & Pandas Library (30 Days)",listText:"Introduction to NumPy, installing NumPy, N-Dimensional array, array creation, Arithmetic Operators, matrix product, NumPy functions, Indexing of NumPy arrays, fancy indexing, slicing of NumPy arrays, Iterating in a NumPy array, array manipulation, splitting arrays, file handling in NumPy, merging NumPy arrays, sorting a NumPy array. Introduction to pandas, installing pandas, pandas series, pandas dataframe, imporing data or reading data from CSV file, Excel file & JSON file, exporting data or writing data to CSV file & Excel file, Essential functionality of series & dataframe, filtering a dataframe, concatenate rows & columns, append rows, & merge data, data cleaning, handling missing data using pandas, inspecting and removing duplicates, replacing values, groups & aggregation, grouping data using pandas."},
+        {id:uuid(),moduleName:"Module 3 : Data Visualization & Web Scrapping (30 Days)",listText:"Introduction to Data Visualization, Libraries and tools for data visualization, Introduction to Matplotlib library, types of plots, introduction to Seaborn library, benefits of Seaborn library, types of plots & charts, plotting different types of plots & charts, customizing visualizations using, saving plots, subplots, grid, case studies. Introduction to Web Scrapping, use cases, web scrapping process flow, popular tools for web scrapping, requests, Introduction to Beautiful soup library, installing beautiful soup, creating soup, types of objects, inspecting a web page, web scrapping demonstration using beautiful soup."},
+        {id:uuid(),moduleName:"Module 4 : Assignments & Interview Preparation",listText:"This module is available for those who enroll in 90 days training program of python programming. The candidate will go through various assignments, and case studies to get hands-on experience. The candidate will also get trained in respect of cracking the viva and interviews."},
+        {id:uuid(),moduleName:"Module 5 : Minor Project Work",listText:"After the completion of all the 90 days module of this python programming training program, some projects would be assigned to you to improve your practical knowledge and project experiences."},
     ],
     contactCardData1: {
       phoneNumber: "+91-9548868337",
@@ -1975,13 +1954,11 @@ export const linuxSchema = {
     headingText: "Program Details",
     paragraphText:
       "During the Linux & AWS training program, you will go through with the below course modules & topics.",
-    moduleTextData: [
-      {
-        id: uuid(),
-        moduleName: "Module 1",
-        listText: "Introduction & Python Programming",
-      },
-      { id: uuid(), moduleName: "Module 2", listText: "Numpy" },
+      moduleTextData:[
+        {id:uuid(),moduleName:"Module 1 : Linux and Shell Scripting",listText:"Introduction to Linux, Linux Distributions & Shell, Virtual Machine & Installation, vim editor, Linux Commands, Directory Structure, File System, User Management, Group Management, Password Properties, Managing Permissions, ACL, Managing Processes, Managing Partitions, Managing Softwares, Links & Tar, Logs, Logical Volume Manager, Scheduling Tasks, Kernel, Http Configuration, Firewall Configuration, Password Resetting, Shell Scripting."},
+        {id:uuid(),moduleName:"Module 2 : Amazon Web Services",listText:"Introduction to AWS & Cloud Computing, IAM, Roles, Policies and Access Management, Billing Dashboard & Free Tier Services, EC2 Fundamentals, Instance creation, SSH, AMI Types & Security Key Pairs, S3 Buckets & objects, storage classes, Load Balancing, access lists & policies, security & encryption, cross region replication, s3 versioning control, AWS snowball, CloudFront, AWS Databases, Dynamo DB, Redshift, Aurora, RDS Instance, RDS Encryption & Security, RDS Backups, ElastiCache, CloudWatch & Cloud Trail, Virtual Private Cloud (VPC), NAT Gateway, Network ACL, VPN & VPC, VPC Endpoints, Route 53, AWS Lambda & API Gateway."},
+        {id:uuid(),moduleName:"Module 3 : Assignments & Interview Preparation",listText:"This module is available for those who enroll in 90 days training program of Linux & AWS. The candidate will go through various assignments, and case studies to get hands-on experience. The candidate will also get trained in respect of cracking the viva and interviews."},
+        {id:uuid(),moduleName:"Module 4 : Minor Project Work",listText:"This module is available for those who enroll in 90 days training program of Linux & AWS. The candidate will get the benefits of project guidance & project work during the training."},
     ],
     contactCardData1: {
       phoneNumber: "+91-9548868337",
@@ -2148,13 +2125,14 @@ export const mySQLSchema = {
     headingText: "Program Details",
     paragraphText:
       "During the MySQL Database training program, you will go through with the below course modules & topics.",
-    moduleTextData: [
-      {
-        id: uuid(),
-        moduleName: "Module 1",
-        listText: "Introduction & Python Programming",
-      },
-      { id: uuid(), moduleName: "Module 2", listText: "Numpy" },
+      moduleTextData:[
+        {id:uuid(),moduleName:"Module 1 :  Introduction",listText:"Introduction to Databases, database importance, Introduction to MySQL, Installing MySQL on different platforms, Basic MySQL commands."},
+        {id:uuid(),moduleName:"Module 2 : Performing Operations",listText:"Understanding data types and constraints, Creating tables using SQL commands, Inserting, updating and deleting data from tables, Altering tables to modify structure, Retrieving Data from Tables, Understanding SQL SELECT statements, Filtering data with WHERE clause, Sorting data with ORDER BY clause, Joining tables using JOIN clause."},
+        {id:uuid(),moduleName:"Module 3 : Data Analysis with Functions and Aggregates",listText:"Understanding SQL functions and their types, Using functions to perform calculations on data, Using aggregate functions to summarize data, Grouping data."},
+        {id:uuid(),moduleName:"Module 4 : Advanced MySQL",listText:"Subqueries and their types, Correlated subqueries, Self-joins and cross-joins, UNION operator, Indexing and Optimization, Understanding indexes & their types, Creating indexes to improve query performance, Optimizing MySQL queries, analyzing queries."},
+        {id:uuid(),moduleName:"Module 5 : Stored Procedures and Triggers",listText:"Introduction to stored procedures, Creating stored procedures, Passing parameters to stored procedures, Introduction to triggers and their types, MySQL Administration, MySQL configuration files and settings, Securing MySQL server, User management and permissions, Backing up and restoring MySQL databases."},
+        {id:uuid(),moduleName:"Module 6 : Assignments & Interview Preparation",listText:"The candidate will go through various assignments, & case studies to get hands-on experience. The candidate will also get trained in respect of cracking the viva and interviews."},
+        {id:uuid(),moduleName:"Module 7 : Mini Projects",listText:"The candidate will get the benefits of project guidance & project work during the training."},
     ],
     contactCardData1: {
       phoneNumber: "+91-9548868337",
@@ -2346,13 +2324,13 @@ export const programmingSchema = {
     headingText: "Program Details",
     paragraphText:
       "During the complete programming fundamentals training program, you will go through with the below course modules & topics.",
-    moduleTextData: [
-      {
-        id: uuid(),
-        moduleName: "Module 1",
-        listText: "Introduction & Python Programming",
-      },
-      { id: uuid(), moduleName: "Module 2", listText: "Numpy" },
+      moduleTextData:[
+        {id:uuid(),moduleName:"Module 1 : C-Basics (30 Hours/Days)",listText:"Introduction to C Language, Simple C Program, Program execution phases, Backslash character constants, Character set, Constants, Number systems, Format specifiers, Identifiers, Keywords, Variables, Data Types, Arithmetic operators, Increment and decrement operators, Relational operators, Logical operators, bitwise operators, assignment operators, conditional operator, size of operator, comma operator, Type casting operator, data types, input output library functions, control statements (if-else, switch-case, for, while, do-while, nested loop, jump control statements, break, continue, goto, exit, return), functions, return statement, recursion, library functions, local and global variables, storage classes, Pointers, Pointer to Pointer, Pointer Arithmetic, De-reference & increment pointer, pointer to function, Array, types of Arrays, accessing array elements, Pointer to array, Array & functions, Malloc, calloc, realloc, free, core dump, memory leak."},
+        {id:uuid(),moduleName:"Module 2 : C-Advance (30 Hours/Days)",listText:"Introduction to String, gets() & puts() functions, String handling functions, Structure, accessing structure members, size of structures, reading and displaying structure variables, array to structure, nested structures, self-referential structures, structure and functions, Union, enum keyword, typedef keyword, introduction to file handling, buffer and streams, working with text files and binary files, file operations using std library and system calls, file management I/O functions, random access files."},
+        {id:uuid(),moduleName:"Module 3 : C++ Core Programming (30 Hours/Days)",listText:"Introduction to C++, First C++ Program, How C++ differs from C, Variables Declaration, Function overloading, Optional Parameters, Reference Variables, Operator overloading, Basics of Console Input and Output, Constant Pointers, Dynamic Memory Allocation, Operators - arithmetic, assignment, logical, bitwise, Conditions like if / else / switch, Arrays / multi-dimensional arrays, Loops - for / while / do-while, Functions, overloading functions, passing variables to functions, Structures, References, Pointers, C++ programs & Practices."},
+        {id:uuid(),moduleName:"Module 4 : C++ Advance Programming (30 Hours/Days)",listText:"Overview of OOPs Principles, Introduction to classes & objects, Creation & destruction of objects, Data Members, Member Functions, this Pointer, Constructor & Destructor, Static class member, Friend class and functions, Namespace, Introduction to inheritance and benefits, Access Specifier, Base and Derived class Constructors, Types of Inheritance, Down casting and up casting, Function overriding, Virtual functions, Destructor overriding, Polymorphism, Pure virtual functions, Virtual Base Class, C++ Class Hierarchy, File Stream, Text File Handling, Binary File Handling, Error handling during file operations, Overloading << and >> operators, Introduction to Exception, Benefits of Exception handling, Try and catch block, Throw statement, Pre-defined exceptions in C++, Writing custom Exception class, Stack Unwinding, C++ Templates, Function Templates, Class Templates."},
+        {id:uuid(),moduleName:"Module 5 : Data Structure & Algorithms (60 Hours/Days)",listText:"Introduction :What is an algorithm, Data Structure and Types, Asymptotic Notations, Master Theorem, Divide and Conquer Algorithm. Data Structure : Stack, Queue, Types of Queues, Circular Queue, Priority Queue, Deque, Linked List, Linked List Operations, Types of Linked List, Hash Table, Heap Data Structure, Fibonacci Heap, Decrease Key and Delete node from Fibonacci Heap. Tree Based Data Structure : Tree Data Structure, Tree Traversal, Binary Tree, Full Binary Tree, Perfect Binary Tree, Complete Binary Tree, Balanced Binary Tree, Binary Search Tree, AVL Tree, B Tree, Insertion into B-tree, Deletion from B-tree, B+ Tree, Insertion on a B+ Tree, Deletion from a B+ Tree, Red Black Tree, Insertion in Red Black Tree, Deletion from Red Black Tree. Graph Based DSA : Graph Data Structure, Spanning Tree, Strongly Connected Components, Adjacency Matrix, Adjacency List, DFS Algorithm, Breadth-first Search, Bellman Ford's Algorithm. Sorting & Searching Algorithms : Bubble Sort, Selection Sort, Insertion Sort, Merge Sort, Quick Sort, Counting Sort, Radix Sort, Bucket Sort, Heap Sort, Shell Sort, Linear Search, Binary Search. Greedy Algorithms : Greedy Algorithm, Ford-Fulkerson Algorithm, Dijkstra's Algorithm, Kruskal's Algorithm, Prim's Algorithm, Huffman Code. Dynamic Programming : Dynamic Programming, Floyd Warshall Algorithm, Longest Common Subsequence"},
+        {id:uuid(),moduleName:"Module 6 : Project Work",listText:"After the completion of all the modules during this programming fundamentals training program, some projects would be assigned to you to improve your practical knowledge and project experiences."},
     ],
     contactCardData1: {
       phoneNumber: "+91-9548868337",
@@ -2396,7 +2374,9 @@ export const programmingSchema = {
 export const cProgrammingSchema = {
   landingPageSection: {
     imagePath: COVER_IMAGES.cProgramming,
-    headingText: "Become an Expert in C Programming",
+    headingText: "Become an",
+    subHeadingText:"Expert in C Programming",
+    paragraphText:"Improve your programming skills",
     primaryButtonText: "Apply Now",
     outlinedButtonText: "Download Syllabus",
     cardData: [
@@ -2517,13 +2497,11 @@ export const cProgrammingSchema = {
     headingText: "Program Details",
     paragraphText:
       "During this C Programning training program, you will go through with the below course modules & topics.",
-    moduleTextData: [
-      {
-        id: uuid(),
-        moduleName: "Module 1",
-        listText: "Introduction & Python Programming",
-      },
-      { id: uuid(), moduleName: "Module 2", listText: "Numpy" },
+      moduleTextData:[
+        {id:uuid(),moduleName:"Module 1 : Basic (30 Hours/Days)",listText:"Introduction to C Language, Simple C Program, Program execution phases, Backslash character constants, Character set, Constants, Number systems, Format specifiers, Identifiers, Keywords, Variables, Data Types, Arithmetic operators, Increment and decrement operators, Relational operators, Logical operators, bitwise operators, assignment operators, conditional operator, size of operator, comma operator, Type casting operator, data types, input output library functions, control statements (if-else, switch-case, for, while, do-while, nested loop, jump control statements, break, continue, goto, exit, return), functions, return statement, recursion, library functions, local and global variables, storage classes, Pointers, Pointer to Pointer, Pointer Arithmetic, De-reference & increment pointer, pointer to function, Array, types of Arrays, accessing array elements, Pointer to array, Array & functions, Malloc, calloc, realloc, free, core dump, memory leak."},
+        {id:uuid(),moduleName:"Module 2 : Advance (30 Hours/Days)",listText:"Introduction to String, gets() & puts() functions, String handling functions, Structure, accessing structure members, size of structures, reading and displaying structure variables, array to structure, nested structures, self-referential structures, structure and functions, Union, enum keyword, typedef keyword, introduction to file handling, buffer and streams, working with text files and binary files, file operations using std library and system calls, file management I/O functions, random access files."},
+        {id:uuid(),moduleName:"Module 3 : Assignments & Interview Preparation",listText:"This module is available for those who enroll in 60 days training program of C programming. The candidate will go through various assignments, and case studies to get hands-on experience. The candidate will also get trained in respect of cracking the viva and interviews."},
+        {id:uuid(),moduleName:"Module 4 : Minor Project Work",listText:"This module is available for those who enroll in 60 days training program of C Programming. The candidate will get the benefits of project guidance & project work during the training."},
     ],
     contactCardData1: {
       phoneNumber: "+91-9548868337",
@@ -2567,7 +2545,9 @@ export const cProgrammingSchema = {
 export const cPlusSchema = {
   landingPageSection: {
     imagePath: COVER_IMAGES.cProgramming,
-    headingText: "Become an Expert in C++ Programming",
+    headingText: "Become an",
+    subHeadingText:"Expert in C++ Programming",
+    paragraphText:"Improve your programming skills",
     primaryButtonText: "Apply Now",
     outlinedButtonText: "Download Syllabus",
     cardData: [
@@ -2688,13 +2668,11 @@ export const cPlusSchema = {
     headingText: "Program Details",
     paragraphText:
       "During this C++ Programming training program, you will go through with the below course modules & topics.",
-    moduleTextData: [
-      {
-        id: uuid(),
-        moduleName: "Module 1",
-        listText: "Introduction & Python Programming",
-      },
-      { id: uuid(), moduleName: "Module 2", listText: "Numpy" },
+      moduleTextData:[
+        {id:uuid(),moduleName:"Module 1 : C++ Core Programming (30 Hours/Days)",listText:"Introduction to C++, First C++ Program, How C++ differs from C, Variables Declaration, Function overloading, Optional Parameters, Reference Variables, Operator overloading, Basics of Console Input and Output, Constant Pointers, Dynamic Memory Allocation, Operators - arithmetic, assignment, logical, bitwise, Conditions like if / else / switch, Arrays / multi-dimensional arrays, Loops - for / while / do-while, Functions, overloading functions, passing variables to functions, Structures, References, Pointers, C++ programs & Practices."},
+        {id:uuid(),moduleName:"Module 2 : C++ Advance Programming (30 Hours/Days)",listText:"Overview of OOPs Principles, Introduction to classes & objects, Creation & destruction of objects, Data Members, Member Functions, this Pointer, Constructor & Destructor, Static class member, Friend class and functions, Namespace. Introduction to inheritance and benefits, Access Specifier, Base and Derived class Constructors, Types of Inheritance, Down casting and up casting, Function overriding, Virtual functions, Destructor overriding, Polymorphism, Pure virtual functions, Virtual Base Class, C++ Class Hierarchy, File Stream, Text File Handling, Binary File Handling, Error handling during file operations, Overloading << and >> operators, Introduction to Exception, Benefits of Exception handling, Try and catch block, Throw statement, Pre-defined exceptions in C++, Writing custom Exception class, Stack Unwinding, C++ Templates, Function Templates, Class Templates."},
+        {id:uuid(),moduleName:"Module 3 : Assignments & Interview Preparation",listText:"This module is available for those who enroll in 60 days training program of C++ programming. The candidate will go through various assignments, and case studies to get hands-on experience. The candidate will also get trained in respect of cracking the viva and interviews."},
+        {id:uuid(),moduleName:"Module 4 : Minor Project Work",listText:"This module is available for those who enroll in 60 days training program of C++ Programming. The candidate will get the benefits of project guidance & project work during the training."},
     ],
     contactCardData1: {
       phoneNumber: "+91-9548868337",
@@ -2738,7 +2716,9 @@ export const cPlusSchema = {
 export const dsSchema = {
   landingPageSection: {
     imagePath: COVER_IMAGES.cProgramming,
-    headingText: "Data Structure & Algorithms",
+    headingText: "Become an",
+    subHeadingText:"Expert in Data Structures and Algorithms",
+    paragraphText:"Improve your programming skills",
     primaryButtonText: "Apply Now",
     outlinedButtonText: "Download Syllabus",
     cardData: [
@@ -2859,13 +2839,15 @@ export const dsSchema = {
     headingText: "Program Details",
     paragraphText:
       "During this Data Structure training program, you will go through with the below course modules & topics.",
-    moduleTextData: [
-      {
-        id: uuid(),
-        moduleName: "Module 1",
-        listText: "Introduction & Python Programming",
-      },
-      { id: uuid(), moduleName: "Module 2", listText: "Numpy" },
+      moduleTextData:[
+        {id:uuid(),moduleName:"Module 1 : Introduction",listText:"What is an algorithm, Data Structure and Types, Asymptotic Notations, Master Theorem, Divide and Conquer Algorithm."},
+        {id:uuid(),moduleName:"Module 2 : Exploring Data Structure",listText:"Stack, Queue, Types of Queues, Circular Queue, Priority Queue, Deque, Linked List, Linked List Operations, Types of Linked List, Hash Table, Heap Data Structure, Fibonacci Heap, Decrease Key and Delete node from Fibonacci Heap"},
+        {id:uuid(),moduleName:"Module 3 : Tree Based Data Structure",listText:"Tree Data Structure, Tree Traversal, Binary Tree, Full Binary Tree, Perfect Binary Tree, Complete Binary Tree, Balanced Binary Tree, Binary Search Tree, AVL Tree, B Tree, Insertion into B-tree, Deletion from B-tree, B+ Tree, Insertion on a B+ Tree, Deletion from a B+ Tree, Red Black Tree, Insertion in Red Black Tree, Deletion from Red Black Tree"},
+        {id:uuid(),moduleName:"Module 4 : Graph Based Data Structure",listText:"Graph Data Structure, Spanning Tree, Strongly Connected Components, Adjacency Matrix, Adjacency List, DFS Algorithm, Breadth-first Search, Bellman Ford's Algorithm"},
+        {id:uuid(),moduleName:"Module 5 : Sorting & Searching Algorithms",listText:"Bubble Sort, Selection Sort, Insertion Sort, Merge Sort, Quick Sort, Counting Sort, Radix Sort, Bucket Sort, Heap Sort, Shell Sort, Linear Search, Binary Search"},
+        {id:uuid(),moduleName:"Module 6 : Greedy Algorithms",listText:"Greedy Algorithm, Ford-Fulkerson Algorithm, Dijkstra's Algorithm, Kruskal's Algorithm, Prim's Algorithm, Huffman Code"},
+        {id:uuid(),moduleName:"Module 7 : Dynamic Programming",listText:"Dynamic Programming, Floyd Warshall Algorithm, Longest Common Subsequence"},
+        {id:uuid(),moduleName:"Module 8 : Assignments & Interview Preparation",listText:"The candidate will get trained in respect of cracking the viva and interviews."},
     ],
     contactCardData1: {
       phoneNumber: "+91-9548868337",
@@ -3037,13 +3019,15 @@ export const socialMediaSchema = {
     headingText: "Program Details",
     paragraphText:
       "During the Social Media Marketing training program, you will go through with the below course modules & topics.",
-    moduleTextData: [
-      {
-        id: uuid(),
-        moduleName: "Module 1",
-        listText: "Introduction & Python Programming",
-      },
-      { id: uuid(), moduleName: "Module 2", listText: "Numpy" },
+      moduleTextData:[
+        {id:uuid(),moduleName:"Module 1 : Introduction",listText:"Overview, Social Media Optimization, Sales Funnel, AIDA Model for Advertising, Key Concepts, Strategies and Planning, Trends in Social Media, Importance of SMM for Offsite SEO."},
+        {id:uuid(),moduleName:"Module 2 : Facebook Marketing",listText:"Overview, Organic Reach Vs Paid Reach, Profile Creation and Optimization, Page Creation, Group Creation, Facebook Market Place And Catalogues, Engagement Increment Techniques, Facebook Business Suite Management, Scheduling And Post Calendar, Integration With Instagram, Facebook Business Manager, Business Account Setup, Business Account Settings, Events Manager, Facebook Pixel Integration, Event Setup Tool, Objectives Of Facebook Marketing, Image Ads, Video Ads, Carousel Ads, Instant Experience Ads, Collection Ads, Audiences Setup, Custom And Remarketing Audience, Commerce Manager, Creative Hub, Facebook Insights, Analytics, Laws And Ethics."},
+        {id:uuid(),moduleName:"Module 3 : Instagram Marketing",listText:"Profile Creation and Optimization, Specifications, Tools, Hashtag Research, Boost a Post, Reels, IGTV, Video and Image Specifications, Bio Optimization, Insights and Analysis."},
+        {id:uuid(),moduleName:"Module 4 : LinkedIn Marketing",listText:"Account Setup and Profile Creation, Features, Business Page Creation, Groups, Schools and various Courses, LinkedIn Advertising, Sponsored Content, LinkedIn Insight Tag installation, Importance in B2B Industry, Analytics, Job Searching and Posting, Paid vs Free Plan."},
+        {id:uuid(),moduleName:"Module 5 : Twitter Marketing",listText:"Account Setup and Profile Optimization, Tweets Ideas, Trends and Explore Option, Niche Selection, Networking and Engagement, Twitter Ads, Goal Selection, Audience Targeting, Budget Allocation, Importance in B2B Industry, App campaign."},
+        {id:uuid(),moduleName:"Module 6 : YouTube Marketing",listText:"Channel Setup and Optimization, YouTube SEO, Keywords, Titles and Headlines, Description, Research, Topic Selection for Video Making, Creation and Editing of Videos, Various Tools for Video Editing, Thumbnail Designs, Call to Action, Engagement and Subscription, Passive Income Through YouTube, Video Ad Creation through Google Ads, Types of Video Ads, YouTube Studio, Analytics, Copyright and Strike, Laws and Ethics."},
+        {id:uuid(),moduleName:"Module 7 : Minor Project Work",listText:"Available for those who enrolled in 60 days or 90 days training program of Social Media Marketing. During this, the candidate will work on some minor projects under the supervision of respected trainer."},
+      
     ],
     contactCardData1: {
       phoneNumber: "+91-9548868337",
@@ -3215,13 +3199,17 @@ export const googleAdsSchema = {
     headingText: "Program Details",
     paragraphText:
       "During the Google Ads training program, you will go through with the below course modules & topics.",
-    moduleTextData: [
-      {
-        id: uuid(),
-        moduleName: "Module 1",
-        listText: "Introduction & Python Programming",
-      },
-      { id: uuid(), moduleName: "Module 2", listText: "Numpy" },
+      moduleTextData:[
+        {id:uuid(),moduleName:"Module 1 : Introduction",listText:"Google Ads Auction, Relevancy & Quality Score, Types of Ad Campaigns, Selection of Goal, Structure of Google Ads, Dashboard Overview, Basic and Professional account Google Search Network, Google Display Network."},
+        {id:uuid(),moduleName:"Module 2 : Targeting & Keywords",listText:"Network Targeting Option, Location Targeting Option, Language Targeting Option, Audience Targeting Option, Ad types, Keywords, Keyword Match Type, Negative Keyword Match Type, Theme of Ad groups Keyword Research, Keyword Planner Tool."},
+        {id:uuid(),moduleName:"Module 3 : Budget and Bidding Options",listText:"Daily and Monthly Budget, Shared Budget, Allotment of Budget, ROI (return on investment), Bidding Strategies, CPC (cost per click), CPA (cost per acquisition/action), CPV (cost per view), ROAS (return on average spent), Cost per Conversion Value, Cost per install, CPM (cost per thousand impressions), ECPC (enhanced cost per click), vCPM (viewable cost per thousand impression), Target Impression Share, First Page Bid Estimate Option, Bidding Adjustment, Bid Strategy Statuses, Measurement of viewability, True view active technology."},
+        {id:uuid(),moduleName:"Module 4 : Ad Creation",listText:"Search ad Campaign, Sales ad Campaign, Leads ad Campaign, Website traffic ad Campaign, Product and brand Consideration ad Campaign, Product and Brand Consideration ad Campaign, App ad Campaign, Smart ad Campaign, Performance max ad Campaign, No Goal/Objective Selection."},
+        {id:uuid(),moduleName:"Module 5 : Ad Types & Ad Extensions",listText:"Search Ads, Display Ads, Gmail Ads, Video ads and its types (YouTube Ads), Performance max ads, Discovery ads, Ad Extensions Uses & Advantage, Callout extensions, Structured snippets, Call extensions Lead form extensions, Location extensions, Affiliate location extensions, Price extensions, App extensions, Promotion extensions."},
+        {id:uuid(),moduleName:"Module 6 : Conversion and Analytics",listText:"Campaign URL Option, Conversion Setup, Google Tag manager, Tag Setup, Google Analytics, Cross Reporting, Difference between Conversion and Acquisition."},
+        {id:uuid(),moduleName:"Module 7 : Remarketing and Retargeting",listText:"Audience creation, Custom Audience, YouTube Audience, Website Visitors, Remarketing Audience, AIDA Model."},
+        {id:uuid(),moduleName:"Module 8 : Forecasting and Planning",listText:"Performance Planner Tool, Reach Planner Tool, Ad Preview and Diagnosis, App Advertising Hub, Campaign Budget Simulator."},
+        {id:uuid(),moduleName:"Module 9 : Miscellaneous Things",listText:"Ad Scheduling & Ad Rotation, Content Exclusions In Video Ads, Automated Rule Setup, Google Ads Script, Drafts & Experiments, Setting Up Ad Variations, Copy & Paste Campaigns, Keyword Insertion In Search Ads, Countdown in Text Ads, If Function In Text Ads, Change History, Creation Of Custom Columns, Fixing Of Disapproved Ads, SKTA (Single Keyword Targeted Ads), Duplicate Keywords, Landing Pages, Acquisition & Conversion, GCLID (Google Click Identifier), Google Ads Editor, Google Merchant Centre."},
+        {id:uuid(),moduleName:"Module 10 : Minor Project Work",listText:"Available for those who enrolled in 60 days training program of Google Ads. During this, the candidate will work on some minor projects under the supervision of respected trainer."},
     ],
     contactCardData1: {
       phoneNumber: "+91-9548868337",
@@ -3393,13 +3381,16 @@ export const wordpressSchema = {
     headingText: "Program Details",
     paragraphText:
       "During the WordPress & Blogging training program, you will go through with the below course modules & topics.",
-    moduleTextData: [
-      {
-        id: uuid(),
-        moduleName: "Module 1",
-        listText: "Introduction & Python Programming",
-      },
-      { id: uuid(), moduleName: "Module 2", listText: "Numpy" },
+      moduleTextData:[
+        {id:uuid(),moduleName:"Module 1 : Introduction",listText:"Introduction to WordPress, Content management system, Open-source CMS vs. proprietary / closed source CMS, Local By Flywheel (Local Sites Content files Storage System)"},
+        {id:uuid(),moduleName:"Module 2 : Domain & Hosting",listText:"Recommended domain name registrars, buying a domain name, Recommended web hosting providers, right hosting plan of your needs, web hosting account, Hosting types, benefits of paid hosting, disadvantage of free hosting."},
+        {id:uuid(),moduleName:"Module 3 : WordPress Environmental SetUp",listText:"WordPress installation, Logging into WordPress, Themes, Modern Web Design trends, choosing a reliable WordPress theme, installing a theme, Installing a child theme, WordPress Settings, General, Writing, Reading, Discussion, Media, Permalinks, Managing users, Plugins installation, Setting up TinyMCE Advanced plugin."},
+        {id:uuid(),moduleName:"Module 4 : Website Planning & Architecture",listText:"Planning your website architecture, Creating webpages, Creating subpages, Setting up your main navigation menu, Adding content with the Visual Editor and Text Editor, Adding images to your page, Creating hyperlinks, Publishing your page, Creating posts, Setting up a blog, Creating a contact form, Embedding a contact form, Landing Page Creation, Enabling full width page, Creating a landing page with Elementor Page Builder, How to craft magnetic landing pages, Customizing Website , How to upload a logo, Customizing the sidebar, Customizing the footer."},
+        {id:uuid(),moduleName:"Module 5 : SEO & E-Commerce",listText:"Installing WordPress SEO, On-page SEO ranking factors, Maintaining your site speed and loading time, Integrating E-Commerce into Your WordPress Site, Installing Woo-commerce, Creating a product, Checkout and payment gateways"},
+        {id:uuid(),moduleName:"Module 6 : Blogging",listText:"Blogging world, Content marketing benefits, need of blogs, Advantage of blogging for businesses, Getting going with your Blog, Objectives, Expectations, Monetization, Great Content Sources and tools, Blogging Calendar, Social media optimization, Niche selection, Practical values, AIDA Model."},
+        {id:uuid(),moduleName:"Module 7 : Writing Your Blog",listText:"Title and Headline writing, Anatomy of Blogs, Irresistible introduction writing, Hook text, Alt texts, Images, Keyword importance, consistency and frequency, feedback and comment importance, Call to action, Newsletter and signups."},
+        {id:uuid(),moduleName:"Module 8 : SEO & Promotion",listText:"Basics of on page and off page SEO, Blog Optimisation, Keyword importance, Keyword Density, long-tail Keyword usage, Competition analysis, Backlink creation, Do-follow vs No-Follow backlinks, Google search engine working, Once you have started your blog, it’s time to start letting people know about it. Smart ways to promote your blog and build your readership. We will also be looking at the benefits of blogging elsewhere. Optimise your blog to get high rankings in search engines, how to promote your blog in social media, forums, content sharing websites and industry websites. Email marketing of your blog."},
+        {id:uuid(),moduleName:"Module 9 : Minor Project Work",listText:"Available for those who enrolled in 60 days training program of WordPress & Blogging. During this, the candidate will work on some minor projects under the supervision of respected trainer."},
     ],
     contactCardData1: {
       phoneNumber: "+91-9548868337",
@@ -3571,13 +3562,13 @@ export const seoSchema = {
     headingText: "Program Details",
     paragraphText:
       "During the SEO Certification training program, you will go through with the below course modules & topics.",
-    moduleTextData: [
-      {
-        id: uuid(),
-        moduleName: "Module 1",
-        listText: "Introduction & Python Programming",
-      },
-      { id: uuid(), moduleName: "Module 2", listText: "Numpy" },
+      moduleTextData:[
+        {id:uuid(),moduleName:"Module 1 : SEO Basics & Background",listText:"Understanding domain/website & how they work, Types of websites & their importance, Basics of world wide web (www) / Internet, What is Internet Marketing/ Digital Marketing, Types of Internet Marketing & their importance, Introduction to Search Engines & their importance, Economical & Social Impact of Major Search Engines, Working of search engines, Search Engines Algorithms & Architecture, Introduction to Google Search Engine, Understanding Search Engine Result Pages (SERPs), Google Search Algorithm & its Capabilities/Functions, Page Rank Technology & it’s impact in Ranking Calculation, Introduction to Google Algorithm Updates."},
+        {id:uuid(),moduleName:"Module 2 : Keyword Research, Analysis & Clustering",listText:"Introduction to Keyword Research, Types of Keywords and their impact on SERPs, how to find successful keywords to meet project targets, How to Use Free & Premium Keyword Research Tools, 3 Powerful techniques of Keyword Research, Filter, Cluster & Finalize keywords for the project, Leveraging long tail & Geo intent keywords."},
+        {id:uuid(),moduleName:"Module 3 : On-Page / On-Site SEO",listText:"SEO friendly website design & development, SEO friendly site structure & siloing, Understanding HTML needed for SEO, how to ensure usable, crawlable & indexable site structure, what you should know about On-site optimization, Importance of On-page SEO & it’s weightage in Google Ranking, Keywords in Domain Name Vs Branding."},
+        {id:uuid(),moduleName:"Module 4 : On-Page SEO Activities",listText:"Title Tag optimization, Meta description tag optimization, Filename optimization, SEO friendly URL structure, Canonical Tags optimization, Website speed optimization with the help of development team, Robots.txt optimization, Sitemap.xml optimization, Integrating keywords throughout webpage, Keyword density management, Using keywords in Heading tags, Image tag optimization (Alt), Rich media optimization (video), Using keywords in Content, Content duplicate check and fix, Content optimization – How to find high quality content, Understanding quality content, engaging content, value added content &, converting content., Optimizing internal links, Outgoing links optimization., 301 URL redirection, 404 error page optimization, Header & Footer optimization, Website auditing tools, On-Page SEO best practices."},
+        {id:uuid(),moduleName:"Module 5 : Off-Page / Off-Site SEO",listText:"Introduction to Off-Page SEO, Importance of Off-Page SEO & it’s weightage in Search Rankings, Introduction to Link building, Effect of Backlinks on search engine rankings, Strategy to develop high quality backlinks, Types of backlinks, Google penalties and build future compatible links, Nofollow Vs Dofollow links, Installing Google Analytics, Installing Google webmaster tools, Types of Linking methods – Do’s & Don’ts, Analysing overall backlink profile, Natural backlink profile and its importance, White Hat, Grey Hat & Black Hat links – Do’s and Don’ts, free tools for backlinks building, Tools for backlink building (Ubersuggest, Semrush, Backlinko etc.), High quality backlinks, Free links Vs Paid links, How to do guest blog posting for quality backlinks, Using third party blogs for links and traffic, Google maps & local business listings, Social Bookmarking, Press release backlinks optimization, Videos creation and link building, Pdf creation and link building, RSS feed creation, submission and optimization, Blog creation and targeting for desired keyword ranking, Best practices for Off page SEO."},
+        {id:uuid(),moduleName:"Module 6 : Projects & Practices",listText:"Initial Website Analysis & Competitor Analysis : Complete Website Analysis (On-Page & Off-Page), Fix Critical Issues, Cleanup Spam backlinks - Link Profile Cleanup. SEO Project - Requirements & Targets : Discuss and Finalize Client business targets, Based on Client’s business targets, prepare SEO project requirements, Based on Target, finalize client’s products/services/primary keywords, Tracking & Reporting : Tracking target keyword ranking on Google, Introduction to Google Analytics, Generating various types of reports, Report website visitors, geo, traffic sources, time spent, bounce rate and more."},
     ],
     contactCardData1: {
       phoneNumber: "+91-9548868337",
@@ -3749,13 +3740,9 @@ export const contentMarketingSchema = {
     headingText: "Program Details",
     paragraphText:
       "During the Content Marketing training program, you will go through with the below course modules & topics.",
-    moduleTextData: [
-      {
-        id: uuid(),
-        moduleName: "Module 1",
-        listText: "Introduction & Python Programming",
-      },
-      { id: uuid(), moduleName: "Module 2", listText: "Numpy" },
+      moduleTextData:[
+        {id:uuid(),moduleName:"Module 1 : Content Marketing",listText:"Overview, Storytelling, Need of Content for Businesses, Tools and Platform for Content Creation, Content Design, Characteristics and Advantages, AIDA Model, Strategies for Content Development, Content Marketing Channels, Writing Messages and Creating Content, Getting Your Message Into the Media, Content Strategy & Challenges, Types of Content: Lists, Interviews, Case Studies, Collection of Links, Infographics, News, Stories Etc., Niche Oriented Content, Paid Content, Engaging Content Writing, Outsourcing Content, Tools, Blog Marketing, Social Media Marketing Channels, Image Marketing, Video Marketing, Article and Press Release Marketing, Email Marketing, Event Marketing, B2B Marketing."},
+        {id:uuid(),moduleName:"Module 2 : Minor Project",listText:"During this, the candidate will work on some minor projects under the supervision of respected trainer."},
     ],
     contactCardData1: {
       phoneNumber: "+91-9548868337",
@@ -3927,13 +3914,9 @@ export const affiliateMarketingSchema = {
     headingText: "Program Details",
     paragraphText:
       "During this Affiliate Marketing training program, you will go through with the below course modules & topics.",
-    moduleTextData: [
-      {
-        id: uuid(),
-        moduleName: "Module 1",
-        listText: "Introduction & Python Programming",
-      },
-      { id: uuid(), moduleName: "Module 2", listText: "Numpy" },
+      moduleTextData:[
+        {id:uuid(),moduleName:"Module 1 : Affiliate Marketing",listText:"Overview, Benefits, Networks, Techniques, Niche Selection, Advertising Model, Amazon Associates, Flipkart Affiliate Program, Other Affiliate Program: Vcommision, Click Bank, Etc., Strategies for Getting Traffic, On Page SEO Factors, Components of Affiliate Marketing Website, Common Mistakes, Best practices, Web Analytics, Coupon System, Case Study by Using Tool, Referral System, Social Media Network and Affiliate Marketing."},
+        {id:uuid(),moduleName:"Module 2 :Minor Project Work",listText:"During this, the candidate will work on some minor projects under the supervision of respected trainer."},
     ],
     contactCardData1: {
       phoneNumber: "+91-9548868337",

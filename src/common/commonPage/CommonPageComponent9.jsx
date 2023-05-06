@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState, useCallback} from "react";
 import {
   Div,
   Paragraph,
@@ -11,8 +11,9 @@ import {
   Button,
 } from "components";
 import { FaUserGraduate, AiOutlineGroup, FiMonitor } from "assets/icons"
+import axios from "axios";
 
-export const ApplyNow = React.memo(({ sectionData, inputSchemas, mobileDetector }) => {
+export const ApplyNow = React.memo(({ sectionData, inputSchemas, mobileDetector, courseDetector }) => {
   const {
     applyNowSection: {
       headingText,
@@ -23,6 +24,42 @@ export const ApplyNow = React.memo(({ sectionData, inputSchemas, mobileDetector 
     } = {},
   } = sectionData;
   const { textInput, selectInputOptions } = inputSchemas;
+  const [courseData, setCourseData] = useState({
+    studentName: "",
+    studentEmail: "",
+    studentMobile: "",
+    courseName: "",
+    professional: "",
+  });
+  const handleInputData = useCallback(
+    (e) => {
+      const { name, value } = e.target;
+      setCourseData({
+        ...courseData,
+        [name]: value,
+      });
+    },
+    [courseData]
+  );
+  const submitQuery = async () => {
+    try {
+      const response = await axios(
+        `${process.env.REACT_APP_API_BASE_URL}/api/queries/`,
+        {
+          method: "POST",
+          data: JSON.stringify({
+            name: courseData.studentName,
+            email: courseData.studentEmail,
+            number: courseData.studentMobile,
+            courseName: courseDetector, // Newly added field kindly add into the DB
+            profession: courseData.professional,
+          }),
+        }
+      );
+    } catch (error) {
+      alert(error);
+    }
+  };
 
   return (
     <Div divClass="container mt-5" id="applyNow">
@@ -34,13 +71,23 @@ export const ApplyNow = React.memo(({ sectionData, inputSchemas, mobileDetector 
               {paragraphText}
             </Paragraph>
             {textInput && textInput.length !== 0 ? (
-              textInput.map((item) => (
+              textInput.map((item,index) => (
                 <TextInput
                   textInputClass="form-control mb-3 rounded-0 outline-0"
                   key={item.id}
+                  textInputValue={
+                    item.textInputName !== "courseName"
+                      ? Object.values(courseData)[index]
+                      : courseDetector
+                  }
                   textInputType={item.textInputType}
                   textInputPlaceholder={item.textInputPlaceholder}
                   textInputName={item.textInputName}
+                  textInputHandler={
+                    item.textInputName !== "courseName"
+                      ? handleInputData
+                      : () => {}
+                  }
                 />
               ))
             ) : (
@@ -50,10 +97,12 @@ export const ApplyNow = React.memo(({ sectionData, inputSchemas, mobileDetector 
               selectInputName="professional"
               selectInputData={selectInputOptions}
               selectInputClass="form-select rounded-0"
+              onChange={handleInputData}
+              value={courseData.professional}
             />
             <Div divClass="d-grid gap-2 col-6 mx-auto mt-4">
-                  <Button buttonClass="btn btn-primary rounded-0">{buttonText}</Button>
-                </Div>
+              <Button buttonHandler={submitQuery} buttonClass="btn btn-primary rounded-0">{buttonText}</Button>
+            </Div>
           </CommonCard>
         </Div>
 

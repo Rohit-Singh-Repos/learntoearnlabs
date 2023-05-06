@@ -52,8 +52,8 @@ export const SliderComponent = React.memo(
                   imageClass={imgClass}
                   imageAltText={item.altText}
                   imagePath={item.imagePath}
-                  width={item.imgWidth}
-                  height={item.imgHeight}
+                  width={imgWidth}
+                  height={imgHeight}
                 />
                 {item.imageName &&
                 item.imageEducation &&

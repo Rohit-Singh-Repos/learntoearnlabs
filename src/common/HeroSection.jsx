@@ -17,6 +17,7 @@ export const HeroSection = React.memo(
     headingText,
     subHeadingText,
     paragraphText,
+    paragraphText2,
     primaryButtonText,
     outlinedButtonText,
     cardData,
@@ -142,11 +143,29 @@ export const HeroSection = React.memo(
           </Heading>
         )
       }else if(pathname === "/c-programming-course"){
-        return "C Programming"
+        return(
+          <Heading headingClass="text-primary fw-bold fs-30">
+              <Span spanClass="fw-bold text-dark">{headingText}</Span><Break/>
+              <Span spanClass="fw-bold text-primary">{subHeadingText}</Span><Break/>
+              <Span spanClass="fs-20 text-dark">{paragraphText}</Span>
+          </Heading>
+        )
       }else if(pathname === "/cpp-programming-course"){
-        return "C++ Programming"
+        return(
+          <Heading headingClass="text-primary fw-bold fs-30">
+              <Span spanClass="fw-bold text-dark">{headingText}</Span><Break/>
+              <Span spanClass="fw-bold text-primary">{subHeadingText}</Span><Break/>
+              <Span spanClass="fs-20 text-dark">{paragraphText}</Span>
+          </Heading>
+        )
       }else if(pathname === "/data-structure-and-algorithm-course"){
-        return "Data Structure"
+        return(
+          <Heading headingClass="text-primary fw-bold fs-30">
+              <Span spanClass="fw-bold text-dark">{headingText}</Span><Break/>
+              <Span spanClass="fw-bold text-primary">{subHeadingText}</Span><Break/>
+              <Span spanClass="fs-20 text-dark">{paragraphText}</Span>
+          </Heading>
+        )
       }else if(pathname === "/power-bi-course"){
         return(
           <Heading headingClass="text-primary fw-bold fs-30">
@@ -212,7 +231,7 @@ export const HeroSection = React.memo(
           </Heading>
         )
       }else{
-        return "No Data"
+        return ""
       }
     },[pathname])
 
@@ -229,11 +248,9 @@ export const HeroSection = React.memo(
         </Div>
         <Div divClass="col-sm-12 col-md-5 col-lg-6">
           {headingText && renderCoverPageHeading()}
-          {/* {paragraphText && (
-            <Paragraph paragraphClass="fs-30 align-justify">
-              {paragraphText}
-            </Paragraph>
-          )} */}
+          {
+            paragraphText2 && <Paragraph paragraphClass="fs-30-2 fw-bold align-justify">{paragraphText2}</Paragraph>
+          }
           {primaryButtonText && (
             <Div divClass={mobileDetector ? "d-grid gap-2 col-6 mx-auto mb-4" : "w-100"}>
             <Button buttonClass={mobileDetector ? `btn btn-primary rounded-0 border-0 mt-3` : "btn btn-primary rounded-0 border-0 mt-3 w-25"}>

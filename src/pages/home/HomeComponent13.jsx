@@ -31,9 +31,10 @@ export const StudentReviews = React.memo(() => {
       <Div divClass="col-lg-12 col-md-12 col-sm-12 mt-3">
           <SliderComponent 
             sliderData={sliderData}
-            contentClass="card h-100"
+            verticalAlign={true}
+            contentClass="h-100"
             imgClass="img-fluid"
-            imgHeight={250}
+            // imgHeight={250}
             imgWidth={300}
           />
         </Div>

@@ -26,7 +26,8 @@ Questionaire
 => Why Choose Section alignment -- Done
 => Join Now / Apply now button -- Done
 => Footer State 
-=> Cover Page Heading
-=> Slider Card Alignment / Card Height
+=> Cover Page Heading -- Done
+=> Slider Card Alignment / Card Height -- Partially Done
 => Course Schema
-=> Apply Now Form
+=> Apply Now Form -- Partialy Done (Regular Expression Pending)
+=> Homepage Image
