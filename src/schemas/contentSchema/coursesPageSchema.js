@@ -4874,7 +4874,7 @@ export const powerBI = {
 export const mentorship = {
   landingPageSection: {
     imagePath: COVER_IMAGES.mentorshipImage,
-    headingText: "Get Higher Salary",
+    headingText: "Get Higher Salaries",
     subHeadingText:"Promotions and Career Stability",
     paragraphText:"With our mentorship program",
     primaryButtonText: "Apply Now",
@@ -4974,21 +4974,28 @@ export const mentorship = {
   whoCanJoinSection: {
     headingText: "Who can join",
     paragraphText1:
-      "Any graduate student can join the Power Bi training program. The student must have basic computer knowledge and have interest in business intelligence, consultation and mentoring.",
+      "Any graduate student can join the mentorship program who are looking to improve his/her practical skills & working experience for better career opportunities & get the benefits to work on freelancing projects.",
     paragraphText2:
-      "Working professionals or job seekers, who are looking to learn about business intelligence, consultation and mentoring can join the Power Bi training program."
+      "Any Working professional can join the mentorship program who are looking for mentorship support for better career opportunities & job stability."
   },
   programDetailsSection: {
     headingText: "Program Details",
     paragraphText:
-      "During the Mentorship training program, you will go through with the below course modules & topics.",
+      "The main objective of this mentorship program is to train people & students for a better career by providing a perfect learning path for those who have good self-learning capabilities so they can improve their practical knowledge & get experience, recognized training certificates, career support, etc. During the mentorship program, we will focus on improving the quality and practical skills of each candidate and will provide the benefits of freelancing projects & incentives.",
     moduleTextData: [
       {
         id: uuid(),
-        moduleName: "Module 1",
-        listText: "Introduction & Python Programming",
+        moduleName: "Module 1 : Introduction :  Mentorship Program",
+        listText: "Under this module, we will discuss upon various topics like Introduction to Mentorship, why mentorship is important for career growth, What to do or not do, What to learn and not to learn, Why to learn and not to learn, How to improve your practical skills, How to work on projects, How to get work experience while studying, How to prepare for an interview, Various factors to consider before joining any company, career growth, etc.",
       },
-      { id: uuid(), moduleName: "Module 2", listText: "Numpy" },
+      { id: uuid(), moduleName: "Module 2 : Learning Content Accessibility", listText: "Under this module, we will provide a perfect learning path & guidance to the enrolled candidate. As a huge amount of learning material is available over the internet & people don’t have any idea about what to learn, where to start, how to explore, etc. so we will provide the relevant video tutorials, and references to the candidates to improve their skills and knowledge. It is required that the enrolled candidates must have the ability of self learning or learning by video tutorials." },
+      { id: uuid(), moduleName: "Module 3 : Professional Development Training", listText: "Under this module, we will provide professional development training to the enrolled candidates so they can prepare themselves for better job & career opportunities. The candidates will get support & guidance to work on Personal branding, Profile headlines, LinkedIn summaries, Writing LinkedIn profile, adding media, E-Networking, Job hunting with Facebook, Facebook groups and pages, WhatsApp groups, Telegram groups, sending powerful emails, and Referrals. To showcase their candidature, the candidates will get the guidance & support to use job portals, job boards & understand the requirements like creating and managing profiles over job boards, making it a habit, profile scanning, recruiters and staffing agencies, effective search, finding targets, formal and informal chats. The enrolled candidates will also get guidance support in understanding the interview preparation process so they can focus on various parameters like Company Information, Hiring Process, Job Description, Key Skills employers look for, Preparation and grooming for success, etc. before appearing in any interview. At last, we will train candidates according to the interview requirements & train them about Interview Formats, Great Impression, introduce yourself, communication, presentation, confidence, Body language do’s & don’ts, selling yourself without selling, Active Listening, Answer strategies, overcoming interview nerves, Phone Interviews, Skype Interview, Interview follow up, etc." },
+      { id: uuid(), moduleName: "Module 4 : Internship & Job Role", listText: "Under this module, we will offer internship opportunities (unpaid & free) to the enrolled candidates for the duration of three months & six months depending upon their performance, skills & recommendations. The candidates would get jobs roles (intern) to work in one of our services domain like website design, front-end development, web development, API design, automation, business analytics, business intelligence, mobile app development, database administration, cloud architecture, UI/UX design, digital marketing, SEO, Google ads,  social media marketing, API Designer, FrontEnd Developer, Database Administrator, Cloud Architect, etc. In respect of the contribution, a valid internship letter would be provided to the qualified candidates." },
+      { id: uuid(), moduleName: "Module 5 : Assignments, Interviews & Presentations", listText: "Under this module, we will conduct various exercises & activities to observe the performance of enrolled candidates. As each candidate will go through with our dynamic & vibrant learning path, so they would be required to complete assignments, & homework on time, and appear in the mock interviews & presentations. These activities will help candidates in improving their knowledge, experience & presentation skills so they can compete with others & get a good career." },
+      { id: uuid(), moduleName: "Module 6 : Short Term Projects", listText: "Under this module, we will assign various short-term projects to improve the practical knowledge & experience of the candidates. The projects would be assigned on the basis of the area of interest, performance & recommendations. These projects will help candidates to make an attractive resume or portfolio & showcase their candidature in front of job recruiters, staffing managers & corporate HR’s." },
+      { id: uuid(), moduleName: "Module 7 : Resume & Portfolio", listText: "Under this module, we will provide training & guidance to the enrolled candidate in writing cover letters and preparing their resume & portfolio. We will guide candidates to understand the various aspects like effective content strategies, design principles, resume structure and elements, Experience, Skillset, Performance, Achievements, Building the layout, writing an effective Resume, developing great References, Do’s & Don’ts, Proofreading, Resume Templates, Cover letter importance, design cover letter, samples, etc." },
+      { id: uuid(), moduleName: "Module 8 : Training Certificate & Experience", listText: "On the basis of the mentorship tenure, performance & practical knowledge, candidates will get the benefits of various training certificates in their respective domains. The candidates can avail of the benefits to get up to 4 training certificates with 6 months mentorship program and get up to 6 training certificates with 12 months mentorship program. Only the candidate will need to appear in the test & interviews and secure a minimum of 50% marks. On the basis of their performance in projects, they will get 3 months project experience letter with 6 months mentorship program & 6 months work experience as an intern with 12 months mentorship program." },
+      { id: uuid(), moduleName: "Module 9 : Freelancing Projects & Work Incentives", listText: "Only available for those candidates, who will be enrolled in our 12 months mentorship program. On the basis of project experience, the candidates would be recommended & get the benefits of freelancing projects which they need to complete in the given time. As per the profit sharing concern, Learn2Earn Labs will take 25% of the project cost while the rest 75% of the shares will be given to the candidate. During this, the candidates must follow the Non-Disclosure Agreement (NDA) guidelines." },
     ],
     contactCardData1: {
       phoneNumber: "+91-9548868337",
@@ -5035,13 +5042,13 @@ export const mentorship = {
     paragrphTextData: [
       {
         id: uuid(),
-        text: "A bachelor’s / master’s degree in Engg / Computers.",
+        text: "A bachelor’s / master’s degree in any specialization.",
       },
       {
         id: uuid(),
-        text: "Knowledge of operating system & shell script (preferred).",
+        text: "Knowledge of Computer & Internet.",
       },
-      { id: uuid(), text: "Having basic programming & development knowledge." },
+      { id: uuid(), text: "Having self learning capabilities." },
     ],
   },
 };
