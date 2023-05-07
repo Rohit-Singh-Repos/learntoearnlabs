@@ -25,9 +25,6 @@ export const TrainerProgram = React.memo(() => {
         <Div divClass="col-lg-4 col-md-6 col-sm-12 mb-2">
           <CommonCard cardClass="card d-flex align-items-center rounded-0">
             <Image width="200" height="200" imagePath={HOME_PAGE_IMAGES.trainTheTrainerImage} imageClass="img-fluid" imageAltText=""/>
-            <Paragraph paragraphClass="text-dark fw-bold text-center pt-2 mb-2">
-              Google Ads
-            </Paragraph>
           </CommonCard>
         </Div>
       </Div>
