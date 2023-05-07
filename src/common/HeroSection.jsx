@@ -7,7 +7,8 @@ import {
   Paragraph,
   Button,
   Span,
-  Break
+  Break,
+  LinkComponent
 } from "components";
 import { useLocation } from "react-router-dom";
 
@@ -253,9 +254,9 @@ export const HeroSection = React.memo(
           }
           {primaryButtonText && (
             <Div divClass={mobileDetector ? "d-grid gap-2 col-6 mx-auto mb-4" : "w-100"}>
-            <Button buttonClass={mobileDetector ? `btn btn-primary rounded-0 border-0 mt-3` : "btn btn-primary rounded-0 border-0 mt-3 w-25"}>
+            <LinkComponent pathName="/contact-us" linkClass={mobileDetector ? `btn btn-primary rounded-0 border-0 mt-3` : "btn btn-primary rounded-0 border-0 mt-3 w-25"}>
               {primaryButtonText}
-            </Button>
+            </LinkComponent>
             {outlinedButtonText && (
             <Button buttonClass={`btn btn-outline-primary rounded-0 mt-3 ${mobileDetector ? "w-100" : "ms-3"}`}>
               {outlinedButtonText}
