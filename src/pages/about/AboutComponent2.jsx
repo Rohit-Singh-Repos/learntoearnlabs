@@ -25,11 +25,6 @@ export const VissionAndMission = React.memo(() => {
               knowledge, skills, and working experience.
             </Paragraph>
             <Paragraph paragraphClass="align-justify text-15">
-              To provide quality education and learning solutions to students
-              and working professionals in order to enhance their practical
-              knowledge, skills, and working experience.
-            </Paragraph>
-            <Paragraph paragraphClass="align-justify text-15">
               To provide an environment for high-quality education and outcome
               based training to students and working professionals, equipping
               them with the practical knowledge, skills, and attitude required
