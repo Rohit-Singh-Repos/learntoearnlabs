@@ -31,7 +31,7 @@ export const YoungTalent = React.memo(() => {
                 At Learn2Earn Labs, we are proud to say that we always put our efforts in nurturing young talents and guiding students towards a successful career.
             </Paragraph>
             <Paragraph paragraphClass="align-justify pt-2 mb-2">
-                One of our star performer, Nikhil Garg who came to us at the age of 12 with a curiosity and passion for games, websites and hacking. With the guidance of our experts and his determination, Nikhil Garg honed his skills and now earning an impressive average of 3 lacs per month as a professional freelancer in the area of mobile app development and MERN Stack. In Dec, 2023 he registered his own company, ByteCube Techsolutions Private Limited, Agra on the basis of his elder brother and mother.
+                One of our star performer, Nikhil Garg who came to us at the age of 10 with a curiosity and passion for games, websites and hacking. With the guidance of our experts and his determination, Nikhil Garg honed his skills and now earning an impressive average of 3 lacs per month as a professional freelancer in the area of mobile app development and MERN Stack. In Dec, 2023 he registered his own company, ByteCube Techsolutions Private Limited, Agra on the basis of his elder brother and mother.
             </Paragraph>
             <Paragraph paragraphClass="align-justify pt-2 mb-2">
                 We are proud to have played a crucial role in his career journey and continuing work with him as he will achieve a greater heights in his professional journey.
