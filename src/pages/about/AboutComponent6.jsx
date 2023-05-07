@@ -29,6 +29,7 @@ export const CoreTeamMembers = React.memo(() => {
         <Div divClass="col-lg-12 col-md-12 col-sm-12 mt-5">
           <SliderComponent 
             sliderData={sliderData}
+            verticalAlign={true}
             contentClass="card border-1 rounded-0 text-light"
             imgClass="img-fluid"
             imgWidth={250}
