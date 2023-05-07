@@ -8,6 +8,7 @@ import {
   ListItem,
   Span,
   Paragraph,
+  LinkComponent,
 } from "components";
 import { navbarSchema } from "schemas";
 import {
@@ -99,9 +100,9 @@ export const Header = React.memo(() => {
                                       : () => {}
                                   }
                                 >
-                                  <Span>
+                                  <LinkComponent pathName={item2.navItemPath}>
                                     {item2.navItemName}
-                                  </Span>
+                                  </LinkComponent>
                                 </Span>
                                 <UnorderedList
                                   unorderedListClass={
