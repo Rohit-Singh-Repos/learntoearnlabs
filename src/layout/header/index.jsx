@@ -51,7 +51,12 @@ export const Header = React.memo(() => {
               navbarSchema.map((item) => (
                 <ListItem key={item.id} listItemClass="nav-item">
                   {item.navItemPath ? (
-                    <NavLink to={item.navItemPath}>{item.navItemName}</NavLink>
+                    <NavLink onClick={() => {
+                      setNavbarId(null);
+                      setNavbarId2(null);
+                      setNavbar2(false)
+                      setNavbar3(false)
+                    }} to={item.navItemPath}>{item.navItemName}</NavLink>
                   ) : (
                     <Div divClass="nav-item dropdown">
                       <Span
