@@ -20,7 +20,7 @@ export const cloudDevopsSchema = {
     cardData: [
       {
         id: uuid(),
-        heading: "8",
+        heading: "9",
         subHeading: "Training Modules",
         borderShow: true,
       },
@@ -236,7 +236,7 @@ export const dataScienceSchema = {
     cardData: [
       {
         id: uuid(),
-        heading: "12",
+        heading: "14+",
         subHeading: "Training Modules",
         borderShow: true,
       },
@@ -676,7 +676,7 @@ export const javaFullStackSchema = {
     cardData: [
       {
         id: uuid(),
-        heading: "8",
+        heading: "14",
         subHeading: "Training Modules",
         borderShow: true,
       },
@@ -894,7 +894,7 @@ export const mernStackSchema = {
     cardData: [
       {
         id: uuid(),
-        heading: "8",
+        heading: "16",
         subHeading: "Training Modules",
         borderShow: true,
       },
@@ -2184,7 +2184,7 @@ export const programmingSchema = {
     cardData: [
       {
         id: uuid(),
-        heading: "5",
+        heading: "6",
         subHeading: "Training Modules",
         borderShow: true,
       },
@@ -3442,7 +3442,7 @@ export const seoSchema = {
     cardData: [
       {
         id: uuid(),
-        heading: "5",
+        heading: "6",
         subHeading: "Training Modules",
         borderShow: true,
       },
@@ -4332,7 +4332,7 @@ export const digitalMarketing = {
     cardData: [
       {
         id: uuid(),
-        heading: "15+",
+        heading: "25+",
         subHeading: "Training Modules",
         borderShow: true,
       },
