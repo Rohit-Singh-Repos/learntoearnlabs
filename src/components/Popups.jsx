@@ -8,14 +8,19 @@ import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 const modalContainer = document.getElementById("popup")
 
-const ModalUI = React.memo(({modalHandler,children,emailData}) => {
+const ModalUI = React.memo(({modalHandler,children,emailData,courseDetector}) => {
   
   const downloadSyllabus = async() => {
     try {
       let response = await axios(`${process.env.REACT_APP_API_BASE_URL}/api/syllabuses`,{
         method:"POST",
-        data:JSON.stringify(emailData)
+        data:{
+          email:emailData,
+          specialization:courseDetector,
+          datetime:new Date().toLocaleString(),
+        },
       })
+      console.log("emailData",emailData)
       modalHandler(false)
     } catch (error) {
       alert(error)
@@ -55,6 +60,6 @@ const ModalUI = React.memo(({modalHandler,children,emailData}) => {
   );
 })
 
-export const ModalComponent = React.memo(({modalHandler,children,emailData}) => {
-  return ReactDOM.createPortal(<ModalUI modalHandler={modalHandler} emailData={emailData}>{children}</ModalUI>,modalContainer)
+export const ModalComponent = React.memo(({modalHandler,children,emailData,courseDetector}) => {
+  return ReactDOM.createPortal(<ModalUI modalHandler={modalHandler} emailData={emailData} courseDetector={courseDetector}>{children}</ModalUI>,modalContainer)
 })

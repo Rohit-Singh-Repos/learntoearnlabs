@@ -12,6 +12,7 @@ import { FaUserGraduate, AiOutlineGroup, FiMonitor } from "assets/icons"
 import axios from "axios";
 
 export const ApplyNow = React.memo(({ sectionData, inputSchemas, mobileDetector, courseDetector }) => {
+  const [showAlert, setShowAlert] = useState(false);
   const {
     applyNowSection: {
       headingText,
@@ -39,23 +40,56 @@ export const ApplyNow = React.memo(({ sectionData, inputSchemas, mobileDetector,
     },
     [courseData]
   );
-  const submitQuery = async () => {
-    try {
-      const response = await axios(
-        `${process.env.REACT_APP_API_BASE_URL}/api/queries/`,
-        {
-          method: "POST",
-          data: JSON.stringify({
-            name: courseData.studentName,
-            email: courseData.studentEmail,
-            number: courseData.studentMobile,
-            courseName: courseDetector, // Newly added field kindly add into the DB
-            profession: courseData.professional,
-          }),
-        }
-      );
-    } catch (error) {
-      alert(error);
+  // const submitQuery = async () => {
+  //   try {
+  //     const response = await axios(
+  //       `${process.env.REACT_APP_API_BASE_URL}/api/queries/`,
+  //       {
+  //         method: "POST",
+  //         data: JSON.stringify({
+  //           name: courseData.studentName,
+  //           email: courseData.studentEmail,
+  //           number: courseData.studentMobile,
+  //           courseName: courseDetector, // Newly added field kindly add into the DB
+  //           profession: courseData.professional,
+  //         }),
+  //       }
+  //     );
+  //   } catch (error) {
+  //     alert(error);
+  //   }
+  // };
+
+  const submitQuery = async() => {
+    const {
+      studentName,
+      studentEmail,
+      studentMobile,
+      professional,
+    } = courseData;
+
+    if (studentName && studentEmail && studentMobile && professional) {
+      try {
+        const response = await axios(
+          `${process.env.REACT_APP_API_BASE_URL}/api/queries/`,
+          {
+            method: "POST",
+            data: {
+              name: studentName,
+              email: studentEmail,
+              number: studentMobile,
+              datetime: new Date().toLocaleString(),
+              specialization:courseDetector, // Newly added field kindly add into the DB
+              profession: courseData.professional,
+            },
+          }
+        );
+      } catch (error) {
+        alert(error);
+      }
+      setShowAlert(false);
+    } else {
+      setShowAlert(true);
     }
   };
 

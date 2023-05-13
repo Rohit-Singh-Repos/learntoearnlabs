@@ -14,6 +14,7 @@ const Footer = lazy(() => import('layout/footer').then(module => ({ default: mod
 const HomePage = lazy(() => import('pages/home/Home').then(module => ({ default: module.HomePage })));
 const AboutPage = lazy(() => import('pages/about/About').then(module => ({ default: module.AboutPage })));
 const ContactPage = lazy(() => import('pages/contact/Contact').then(module => ({ default: module.ContactPage })));
+const IDE = lazy(() => import('pages/IDE/IDE').then(module => ({ default: module.IDE })));
 
 // Courses
 const JavaFullStack = lazy(() => import('pages/courses/javaFullStack/JavaFullStack').then(module => ({ default: module.JavaFullStack })));
@@ -55,6 +56,7 @@ export const Layout = React.memo(() => {
           <Route path="/login" element={<AboutPage/>}/>
           <Route path="/about-us" element={<AboutPage/>}/>
           <Route path="/contact-us" element={<ContactPage/>}/>
+          <Route path="/ide" element={<IDE/>}/>
           <Route path="/cashback" element={<CashbackComponent/>}/>
           <Route path="/verify-certificate" element={<Certificates/>}/>
           <Route path="/full-stack-engineer-course" element={<FullStackEngineer/>}/>

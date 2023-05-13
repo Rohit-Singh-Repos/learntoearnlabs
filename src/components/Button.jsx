@@ -14,7 +14,7 @@ export const Button = React.memo(
     return (
       <>
         {showModal && (
-          <ModalComponent modalHandler={setShowModal} emailData={email}>
+          <ModalComponent courseDetector={props.courseDetector} modalHandler={setShowModal} emailData={email}>
             <Div divClass="mb-3">
               <label htmlFor="exampleFormControlInput1" className="form-label">
                 Email address

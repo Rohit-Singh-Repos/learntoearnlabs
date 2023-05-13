@@ -24,6 +24,7 @@ export const HeroSection = React.memo(
     coverImage,
     imagePath,
     mobileDetector,
+    courseDetector
   }) => {
     const { pathname } = useLocation();
     const renderCoverPageHeading = useCallback(() => {
@@ -338,6 +339,7 @@ export const HeroSection = React.memo(
             )}
             {outlinedButtonText && (
               <Button
+                courseDetector={courseDetector}
                 buttonClass={`btn btn-outline-primary rounded-0 mt-3 ${
                   mobileDetector ? "w-100" : "ms-3"
                 }`}

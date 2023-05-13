@@ -9,6 +9,7 @@ import {
   SelectInput,
   Button,
   Image,
+  Alert,
 } from "components";
 import { MdOutlinePhoneInTalk } from "assets/icons";
 import axios from "axios";
@@ -26,6 +27,7 @@ export const ProgramDetails = React.memo(
       } = {},
     } = sectionData;
     const { textInput, selectInputOptions } = inputSchemas;
+    const [showAlert, setShowAlert] = useState(false);
     const [courseData, setCourseData] = useState({
       studentName: "",
       studentEmail: "",
@@ -43,23 +45,36 @@ export const ProgramDetails = React.memo(
       },
       [courseData]
     );
-    const submitQuery = async () => {
-      try {
-        const response = await axios(
-          `${process.env.REACT_APP_API_BASE_URL}/api/queries/`,
-          {
-            method: "POST",
-            data: JSON.stringify({
-              name: courseData.studentName,
-              email: courseData.studentEmail,
-              number: courseData.studentMobile,
-              courseName: courseDetector, // Newly added field kindly add into the DB
-              profession: courseData.professional,
-            }),
-          }
-        );
-      } catch (error) {
-        alert(error);
+    const submitQuery = async() => {
+      const {
+        studentName,
+        studentEmail,
+        studentMobile,
+        professional,
+      } = courseData;
+
+      if (studentName && studentEmail && studentMobile && professional) {
+        try {
+          const response = await axios(
+            `${process.env.REACT_APP_API_BASE_URL}/api/queries/`,
+            {
+              method: "POST",
+              data: {
+                name: studentName,
+                email: studentEmail,
+                number: studentMobile,
+                datetime: new Date().toGMTString(),
+                specialization:courseDetector, // Newly added field kindly add into the DB
+                profession: courseData.professional,
+              },
+            }
+          );
+        } catch (error) {
+          alert(error);
+        }
+        setShowAlert(false);
+      } else {
+        setShowAlert(true);
       }
     };
     return (
@@ -85,6 +100,7 @@ export const ProgramDetails = React.memo(
                 <MdOutlinePhoneInTalk size={30} /> {phoneNumber}
               </SubHeading>
             </CommonCard>
+            {showAlert && <Alert setShowAlert={setShowAlert}/>}
             <CommonCard cardClass="card rounded-0 col-sm-12 col-md-12 col-lg-12 mt-3">
               <SubHeading subheadingClass="text-center fw-bold mb-5">
                 Request More Information
