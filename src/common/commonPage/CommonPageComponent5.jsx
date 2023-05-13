@@ -9,7 +9,7 @@ import {
 } from "components";
 
 export const CloudDevopsTraining = React.memo(
-  ({ sectionData, mobileDetector }) => {
+  ({ sectionData, mobileDetector, courseDetector }) => {
     const {
       cloudDevopsTrainingSection: {
         headingText,
@@ -35,7 +35,7 @@ export const CloudDevopsTraining = React.memo(
                   mobileDetector ? "d-grid" : "d-grid col-6 mx-auto mt-5"
                 }
               >
-                <Button buttonClass="btn btn-light rounded-0 mt-5">
+                <Button buttonClass="btn btn-light rounded-0 mt-5" coursedetector={courseDetector}>
                   {buttonText}
                 </Button>
               </Div>

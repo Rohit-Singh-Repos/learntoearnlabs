@@ -11,7 +11,7 @@ import {
 } from "components";
 import { MdLocationPin } from "assets/icons";
 
-export const TrainingMode = React.memo(({ sectionData, mobileDetector }) => {
+export const TrainingMode = React.memo(({ sectionData, mobileDetector, courseDetector }) => {
   const {
     trainingModeSection: {
       headingText,
@@ -86,7 +86,7 @@ export const TrainingMode = React.memo(({ sectionData, mobileDetector }) => {
                   : "d-grid mt-5d-grid col-6 mx-auto"
               }
             >
-              <Button buttonClass="btn btn-outline-light rounded-0">
+              <Button buttonClass="btn btn-outline-light rounded-0" coursedetector={courseDetector} >
                 {buttonText2}
               </Button>
             </Div>
