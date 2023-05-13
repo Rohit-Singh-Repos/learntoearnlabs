@@ -63,9 +63,9 @@ export const ProgramDetails = React.memo(
                 name: studentName,
                 email: studentEmail,
                 number: studentMobile,
-                datetime: new Date().toGMTString(),
+                datetime: new Date().toLocaleString(),
                 specialization:courseDetector, // Newly added field kindly add into the DB
-                profession: courseData.professional,
+                profession: professional,
               },
             }
           );

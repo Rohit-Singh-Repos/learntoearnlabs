@@ -40,25 +40,6 @@ export const ApplyNow = React.memo(({ sectionData, inputSchemas, mobileDetector,
     },
     [courseData]
   );
-  // const submitQuery = async () => {
-  //   try {
-  //     const response = await axios(
-  //       `${process.env.REACT_APP_API_BASE_URL}/api/queries/`,
-  //       {
-  //         method: "POST",
-  //         data: JSON.stringify({
-  //           name: courseData.studentName,
-  //           email: courseData.studentEmail,
-  //           number: courseData.studentMobile,
-  //           courseName: courseDetector, // Newly added field kindly add into the DB
-  //           profession: courseData.professional,
-  //         }),
-  //       }
-  //     );
-  //   } catch (error) {
-  //     alert(error);
-  //   }
-  // };
 
   const submitQuery = async() => {
     const {
@@ -80,7 +61,7 @@ export const ApplyNow = React.memo(({ sectionData, inputSchemas, mobileDetector,
               number: studentMobile,
               datetime: new Date().toLocaleString(),
               specialization:courseDetector, // Newly added field kindly add into the DB
-              profession: courseData.professional,
+              profession: professional,
             },
           }
         );
