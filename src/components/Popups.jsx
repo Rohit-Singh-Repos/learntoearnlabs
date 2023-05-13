@@ -94,7 +94,7 @@ const ModalUI = React.memo(
       } else {
         return "No Data";
       }
-    }, [pathname]);
+    }, [pathname,detector]);
 
     return (
       <Div divClass="modal modal-bg rounded-0">
