@@ -11,3 +11,4 @@ export { Accordion } from "components/Accordion";
 export { TextInput, SelectInput } from "components/FormInput";
 export { Map } from "components/Map";
 export { Alert } from "components/Alert";
+export { Anchor } from "components/Anchor";

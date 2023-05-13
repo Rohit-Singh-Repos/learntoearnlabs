@@ -339,7 +339,7 @@ export const HeroSection = React.memo(
             )}
             {outlinedButtonText && (
               <Button
-                courseDetector={courseDetector}
+                coursedetector={courseDetector}
                 buttonClass={`btn btn-outline-primary rounded-0 mt-3 ${
                   mobileDetector ? "w-100" : "ms-3"
                 }`}

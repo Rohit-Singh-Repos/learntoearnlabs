@@ -28,7 +28,7 @@ export const SelectInput = React.memo(
   ({ selectInputData, selectInputName, selectInputClass, ...props }) => {
     return (
       <select name={selectInputName} className={selectInputClass} {...props}>
-        <option selected>Select your profession</option>
+        <option>Select your profession</option>
         {selectInputData && selectInputData.length !== 0 ? (
           selectInputData.map((item,index) => (
             <option value={item.optionValue} key={item.id}>

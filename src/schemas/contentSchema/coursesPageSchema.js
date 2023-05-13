@@ -4419,6 +4419,7 @@ export const digitalMarketing = {
       text1: "Digital Marketing Executive",
       text2: "Duration : 3 months",
       text3: "(Job Assistance)",
+      detector:"3 Months",
       buttonText: "Download Syllabus",
     },
     {
@@ -4427,6 +4428,7 @@ export const digitalMarketing = {
       text1: "Digital Marketing Associate",
       text2: "Duration : 6 months",
       text3: "(Job Guarantee)",
+      detector:"6 Months",
       buttonText: "Download Syllabus",
     },
     {
@@ -4435,6 +4437,7 @@ export const digitalMarketing = {
       text1: "Digital Marketing Professional",
       text2: "Duration - 12 months",
       text3: "(Job Guarantee)",
+      detector:"12 Months",
       buttonText: "Download Syllabus",
     },
   ],

@@ -117,7 +117,7 @@ export const CommonPageComponent = React.memo(
         {cloudDevopsCareerSection && <CloudDevopsCareer sectionData={sectionData} mobileDetector={mobile}/>}
         {trainingRoadmapSection && <TrainingRoadMap sectionData={sectionData} mobileDetector={mobile}/>}
         {careerOptionSection && <CareerOptions sectionData={sectionData} mobileDetector={mobile}/>}
-        {availableProgramsSection && <AvailablePrograms sectionData={availableProgramsSection}/>}
+        {availableProgramsSection && <AvailablePrograms sectionData={availableProgramsSection} courseDetector={courseDetector}/>}
         {cloudDevopsTrainingSection && <CloudDevopsTraining sectionData={sectionData} mobileDetector={mobile}/>}
         {whoCanJoinSection && <WhoCanJoin sectionData={sectionData} />}
         {trainingModeSection && <TrainingMode sectionData={sectionData} mobileDetector={mobile}/>}

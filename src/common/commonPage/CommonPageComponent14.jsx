@@ -1,7 +1,7 @@
 import React from "react";
 import { Div, CommonCard, SubHeading, Button, Image, Span } from "components";
 
-export const AvailablePrograms = React.memo(({ sectionData }) => {
+export const AvailablePrograms = React.memo(({ sectionData, courseDetector }) => {
   return (
     <Div divClass="container mt-5">
       <SubHeading subheadingClass="fw-bold">Available Programs</SubHeading>
@@ -26,7 +26,7 @@ export const AvailablePrograms = React.memo(({ sectionData }) => {
                 <Span paragraphClass="text-dark text-center pt-2 mb-2">
                   {item.text3}
                 </Span>
-                <Button buttonClass="btn btn-primary rounded-0 mt-3">
+                <Button buttonClass="btn btn-primary rounded-0 mt-3" detector={item.detector} coursedetector={courseDetector}>
                     {item.buttonText}
                 </Button>
               </CommonCard>
