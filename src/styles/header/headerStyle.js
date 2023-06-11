@@ -28,7 +28,7 @@ export const NavBrandLink = styled(Link)`
 `;
   
 export const NavLink = styled(Link)`
-  color: #000;
+  color: #e3eff3;
   display: flex;
   font-weight: bold;
   align-items: center;
@@ -37,6 +37,9 @@ export const NavLink = styled(Link)`
   height: 100%;
   cursor: pointer;
   &.active {
+    color: #fff;
+  }
+  &:hover {
     color: #fff;
   }
   @media screen and (max-width: 768px) {

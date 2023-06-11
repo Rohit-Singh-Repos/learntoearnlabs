@@ -60,7 +60,7 @@ export const Header = React.memo(() => {
                   ) : (
                     <Div divClass="nav-item dropdown">
                       <Span
-                        spanClass="nav-link dropdown-toggle fw-bold text-dark show"
+                        spanClass="nav-link dropdown-toggle fw-bold show navbar-color-normal"
                         role="button"
                         data-bs-toggle="dropdown"
                         aria-expanded="false"

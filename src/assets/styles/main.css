@@ -7,6 +7,10 @@ body {
   box-sizing: border-box;
 }
 
+.navbar-color-normal{
+  color:#e3eff3 !important;
+}
+
 .navbar-dropdown{
   right: 10px;
 }
