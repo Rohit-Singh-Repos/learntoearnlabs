@@ -195,6 +195,9 @@ import googleTagManager from "assets/images/tools/google-tag-manager-logo.webp";
 //Certificate Verification
 import verifyCertificate from "assets/images/miscellaneous/verify-certificate.webp"
 
+// Learn2Earn Labs Logo
+import l2elogo from "assets/images/logo/logo.png"
+
 
 export const COVER_IMAGES = {
     homePageCoverImage,
@@ -401,5 +404,6 @@ export const JOB_ORIENTED_IMAGES = {
 
 export const MISCELLANEOUS_IMAGES = {
     verifyCertificate,
-    cashbackImage
+    cashbackImage,
+    l2elogo
 }

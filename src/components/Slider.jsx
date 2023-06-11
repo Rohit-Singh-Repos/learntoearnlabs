@@ -12,6 +12,7 @@ export const SliderComponent = React.memo(
     imgWidth,
     verticalAlign = false,
     imgClass,
+    sectionDetector=false
   }) => {
     return (
       <Swiper
@@ -68,7 +69,7 @@ export const SliderComponent = React.memo(
                 ) : (
                   <></>
                 )}
-                {item.imageName ? (
+                {item.imageName && !sectionDetector ? (
                   <Paragraph paragraphClass="text-center mt-3 fw-bold">
                     {item.imageName}
                   </Paragraph>

@@ -9,6 +9,7 @@ import {
   Span,
   Paragraph,
   LinkComponent,
+  Image,
 } from "components";
 import { navbarSchema } from "schemas";
 import {
@@ -17,6 +18,7 @@ import {
   AiOutlineMenu,
   MdOutlineClose,
 } from "assets/icons";
+import { MISCELLANEOUS_IMAGES } from "assets/images";
 
 export const Header = React.memo(() => {
   const [navbar, setNavbar] = useState(false);
@@ -42,7 +44,14 @@ export const Header = React.memo(() => {
       <>
         <NavBrand>
           <NavBrandLink to="/">
-            <Heading headingClass="brand-name">Learn2Earn Labs</Heading>
+            <Image 
+              imagePath={MISCELLANEOUS_IMAGES.l2elogo}
+              imageClass="img-thumbnail"
+              width="100"
+              height="100"
+              imageAltText=""
+            />
+            <Heading headingClass="brand-name ps-2 fw-bold">Learn2Earn Labs</Heading>
           </NavBrandLink>
         </NavBrand>
         <Div divClass="collapse navbar-collapse" id="navbarNavDropdown">

@@ -4363,7 +4363,7 @@ export const digitalMarketing = {
       "Every business needs a digital marketer to promote their product or service digitally. Every organization need to promote their products or service or content by attractive posts, images, videos, campaigns & websites." },
       { id: uuid(), cardText: "Offering Good Salary Packages",listText:
       "People are living digital life they interact with each other via social media or internet so digital marketing is in demand." },
-      { id: uuid(), cardText: "Lost of Freelancing Work",listText:
+      { id: uuid(), cardText: "Lots of Freelancing Work",listText:
       "With digital marketing, you can work with any company to market their product or service or to manage their content over website or mobile app." },
       { id: uuid(), cardText: "Digital is the Future",listText:
       "You can design the content, work with the advertiser, you can design websites, develop ecommerce websites, you can start your earning by working online, you can work as a freelancer or open your own advertising agency and many more."},
@@ -4638,13 +4638,13 @@ export const digitalMarketing = {
     paragrphTextData: [
       {
         id: uuid(),
-        text: "A bachelor’s / master’s degree in Engg / Computers.",
+        text: "Having a bachelor’s / master’s degree in any stream.",
       },
       {
         id: uuid(),
-        text: "Knowledge of operating system & shell script (preferred).",
+        text: "Basic Knowledge of computer.",
       },
-      { id: uuid(), text: "Having basic programming & development knowledge." },
+      { id: uuid(), text: "Having basic knowledge of marketing and business." },
     ],
   },
   jobOrientedPrograms: {

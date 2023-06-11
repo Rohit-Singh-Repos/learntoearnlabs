@@ -4,7 +4,7 @@ export const navbarSchema = [
     {id:uuid(),navItemName:"Home",navItemPath:"/"},
     {id:uuid(),navItemName:"About Us",navItemPath:"/about-us"}, 
     {id:uuid(),navItemName:"Training",navsubItems:[
-        {id:uuid(),navItemName:"Job Gurantee",navsubItems:[
+        {id:uuid(),navItemName:"Job Guarantee",navsubItems:[
             {id:uuid(),navItemName:"Digital Marketing",navItemPath:"/digital-marketing-course"},
             {id:uuid(),navItemName:"Full Stack Engineer",navItemPath:"/full-stack-engineer-course"},
         ]},

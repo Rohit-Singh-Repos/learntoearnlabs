@@ -16,7 +16,7 @@ export const WorkingExperience = React.memo(() => {
         <SubHeading subheadingClass="fw-bold text-primary">
           Get working experience & job
         </SubHeading>
-        <SubHeading subheadingClass="fw-bold">Job Guarantee Courses</SubHeading>
+        <SubHeading subheadingClass="fw-bold">Job Guarantee Training Programs</SubHeading>
       </Div>
       <Div divClass="row mt-5 d-lg-flex align-items-center">
         <Div divClass="col-lg-4 col-md-6 col-sm-12 card-image-bottom-margin">
