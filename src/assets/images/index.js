@@ -192,6 +192,10 @@ import wordpressLogo from "assets/images/tools/wordpress-logo.webp";
 import hubSpot from "assets/images/tools/hubspot-logo.webp";
 import googleTagManager from "assets/images/tools/google-tag-manager-logo.webp";
 
+//Certificate Verification
+import verifyCertificate from "assets/images/miscellaneous/verify-certificate.webp"
+
+
 export const COVER_IMAGES = {
     homePageCoverImage,
     cloudDevopsCoverImage,
@@ -393,4 +397,9 @@ export const JOB_ORIENTED_IMAGES = {
     digitalMarketingImage2,
     uiuxCourseImage,
     fullStackEngineerCoverImage
+}
+
+export const MISCELLANEOUS_IMAGES = {
+    verifyCertificate,
+    cashbackImage
 }

@@ -1,7 +1,7 @@
 import React,{useCallback,useState} from 'react'
 import { Div, Heading, TextInput, Image, Span, Button } from "components";
-import verifyCertificate from "assets/images/miscellaneous/verify-certificate.webp"
 import axios from 'axios';
+import { MISCELLANEOUS_IMAGES } from 'assets/images';
 
 export const CertificateVerification = React.memo(({mobileDetector}) => {
     const [textInputVal, setTextInputVal] = useState("")
@@ -23,7 +23,7 @@ export const CertificateVerification = React.memo(({mobileDetector}) => {
             <Image
               width="1200"
               height="800"
-              imagePath={verifyCertificate}
+              imagePath={MISCELLANEOUS_IMAGES.verifyCertificate}
               imageClass="img-fluid"
               imageAltText="learn2earnlabs-home-cover"
             />

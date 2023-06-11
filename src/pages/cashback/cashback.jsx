@@ -1,9 +1,70 @@
-import React, { useEffect, useState } from "react";
-import { Div, Heading, TextInput, Image, Span, Button } from "components";
+import React, { useEffect, useState, useCallback } from "react";
+import { Div, Heading, TextInput, Image, Span, Button, Alert } from "components";
 import { cashbackInputSchema } from "schemas";
+import { MISCELLANEOUS_IMAGES } from "assets/images";
+import axios from 'axios';
+
 
 export const CashbackComponent = React.memo(() => {
   const [mobile, setMobile] = useState(false);
+  const [showAlertDanger, setShowAlertDanger] = useState(false);
+  const [showAlertSuccess, setShowAlertSuccess] = useState(false);
+  const [showAlertNetwork, setShowAlertNetwork] = useState(false);
+  const [inputVal, setInputVal] = useState({
+    receiptNumber:"",
+    enrollmentNumber:"",
+    accountNumber:"",
+    ifscCode:"",
+  })
+  const handleInput = useCallback((e) => {
+    const { name, value } = e.target;
+    setInputVal({
+      ...inputVal,
+      [name]:value
+    })
+  },[
+    inputVal.receiptNumber,
+    inputVal.enrollmentNumber,
+    inputVal.accountNumber,
+    inputVal.ifscCode
+  ])
+  const submitCashbackInfo = async() => {
+    const { receiptNumber, enrollmentNumber, accountNumber, ifscCode } = inputVal
+    if(receiptNumber && enrollmentNumber && accountNumber && ifscCode){
+      try {
+        const response = await axios(`${process.env.REACT_APP_API_BASE_URL}/api/cashbacks/`,{
+          method:"POST",
+          data:{
+            receiptNo:receiptNumber,
+            enrollmentNo:enrollmentNumber,
+            accountNo:accountNumber,
+            ifscCode:ifscCode,
+            datetime:new Date().toLocaleString(),
+          },
+        })
+        if(response.status === 200){
+          setShowAlertSuccess(true);
+          setShowAlertDanger(false);
+          setShowAlertNetwork(false);
+          setInputVal({
+            studentName:"",
+            studentEmail:"",
+            studentMobile:"",
+            studentMessage:"",
+            studentProfession:""
+          })
+        }
+      } catch (error) {
+        setShowAlertNetwork(true)
+        setShowAlertSuccess(false);
+        setShowAlertDanger(false);
+      }
+    }else{
+      setShowAlertDanger(true);
+      setShowAlertSuccess(false);
+      setShowAlertNetwork(false)
+    }
+  }
   const { textInput } = cashbackInputSchema;
   const handleResize = () => {
     if (window.innerWidth < 990) {
@@ -22,9 +83,9 @@ export const CashbackComponent = React.memo(() => {
       <Div divClass="row align-items-center">
         <Div divClass="col-sm-12 col-md-7 col-lg-6">
           <Image
-            width="1200"
-            height="800"
-            // imagePath={coverImage ? coverImage : imagePath}
+            width="400"
+            height="300"
+            imagePath={MISCELLANEOUS_IMAGES.cashbackImage}
             imageClass="img-fluid"
             imageAltText="learn2earnlabs-home-cover"
           />
@@ -34,21 +95,26 @@ export const CashbackComponent = React.memo(() => {
             <Span spanClass="text-primary">Claim for </Span>
             <Span>Cashback</Span>
           </Heading>
+          {showAlertDanger && <Alert alertMessage="All fields are required" alertType="alert-danger" setShowAlert={setShowAlertDanger}/>}
+          {showAlertSuccess && <Alert alertMessage="Details Successfully Submitted" alertType="alert-success" setShowAlert={setShowAlertSuccess}/>}
+          {showAlertNetwork && <Alert alertMessage="Something Went Wrong" alertType="alert-danger" setShowAlert={setShowAlertNetwork}/>}
           {textInput && textInput.length !== 0 ? (
-            textInput.map((item) => (
+            textInput.map((item,index) => (
               <TextInput
                 key={item.id}
                 textInputClass="form-control mb-3 rounded-0"
                 textInputType={item.textInputType}
                 textInputPlaceholder={item.textInputPlaceholder}
                 textInputName={item.textInputName}
+                textInputValue={Object.values(inputVal)[index]}
+                textInputHandler={handleInput}
               />
             ))
           ) : (
             <></>
           )}
           <Div divClass={mobile ? "d-grid gap-2 col-6 mx-auto" : ""}>
-            <Button buttonClass="btn btn-primary rounded-0">Submit</Button>
+            <Button buttonClass="btn btn-primary rounded-0" buttonHandler={submitCashbackInfo}>Submit</Button>
           </Div>
         </Div>
       </Div>
