@@ -7,12 +7,16 @@ import {
   TextInput,
   SelectInput,
   Button,
+  Alert
 } from "components";
 import { FaUserGraduate, AiOutlineGroup, FiMonitor } from "assets/icons"
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 export const ApplyNow = React.memo(({ sectionData, inputSchemas, mobileDetector, courseDetector }) => {
-  const [showAlert, setShowAlert] = useState(false);
+  const navigate = useNavigate()
+  const [showAlertDanger, setShowAlertDanger] = useState(false);
+  const [showAlertNetwork, setShowAlertNetwork] = useState(false);
   const {
     applyNowSection: {
       headingText,
@@ -65,12 +69,18 @@ export const ApplyNow = React.memo(({ sectionData, inputSchemas, mobileDetector,
             },
           }
         );
+        if(response.status === 200){
+          navigate("/thank-you")
+          setShowAlertNetwork(false)
+          setShowAlertDanger(false)
+        }
       } catch (error) {
-        alert(error);
+        setShowAlertNetwork(true);
+        setShowAlertDanger(false)
       }
-      setShowAlert(false);
     } else {
-      setShowAlert(true);
+      setShowAlertDanger(true);
+      setShowAlertNetwork(false)
     }
   };
 
@@ -83,6 +93,8 @@ export const ApplyNow = React.memo(({ sectionData, inputSchemas, mobileDetector,
             <Paragraph paragraphClass="align-justify mb-4">
               {paragraphText}
             </Paragraph>
+            {showAlertDanger && <Alert alertMessage="All fields are required" alertType="alert-danger" setShowAlert={setShowAlertDanger}/>}
+            {showAlertNetwork && <Alert alertMessage="Something Went Wrong" alertType="alert-danger" setShowAlert={setShowAlertNetwork}/>}
             {textInput && textInput.length !== 0 ? (
               textInput.map((item,index) => (
                 <TextInput

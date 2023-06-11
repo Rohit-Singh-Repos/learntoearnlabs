@@ -13,6 +13,7 @@ import {
 } from "components";
 import { MdOutlinePhoneInTalk } from "assets/icons";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 export const ProgramDetails = React.memo(
   ({ sectionData, inputSchemas, mobileDetector, courseDetector }) => {
@@ -26,8 +27,10 @@ export const ProgramDetails = React.memo(
         discountAndOffersSection: { discountHeadingText, discountCard } = {},
       } = {},
     } = sectionData;
+    const navigate = useNavigate()
     const { textInput, selectInputOptions } = inputSchemas;
-    const [showAlert, setShowAlert] = useState(false);
+    const [showAlertDanger, setShowAlertDanger] = useState(false);
+    const [showAlertNetwork, setShowAlertNetwork] = useState(false);
     const [courseData, setCourseData] = useState({
       studentName: "",
       studentEmail: "",
@@ -69,12 +72,18 @@ export const ProgramDetails = React.memo(
               },
             }
           );
+          if(response.status === 200){
+            navigate("/thank-you")
+            setShowAlertNetwork(false)
+            setShowAlertDanger(false)
+          }
         } catch (error) {
-          alert(error);
+          setShowAlertNetwork(true);
+          setShowAlertDanger(false)
         }
-        setShowAlert(false);
       } else {
-        setShowAlert(true);
+        setShowAlertDanger(true);
+        setShowAlertNetwork(false)
       }
     };
     return (
@@ -100,7 +109,8 @@ export const ProgramDetails = React.memo(
                 <MdOutlinePhoneInTalk size={30} /> {phoneNumber}
               </SubHeading>
             </CommonCard>
-            {showAlert && <Alert alertMessage="All fields are required" alertType="alert-danger" setShowAlert={setShowAlert}/>}
+            {showAlertDanger && <Alert alertMessage="All fields are required" alertType="alert-danger" setShowAlert={setShowAlertDanger}/>}
+            {showAlertNetwork && <Alert alertMessage="Something Went Wrong" alertType="alert-danger" setShowAlert={setShowAlertNetwork}/>}
             <CommonCard cardClass="card rounded-0 col-sm-12 col-md-12 col-lg-12 mt-3">
               <SubHeading subheadingClass="text-center fw-bold mb-5">
                 Request More Information

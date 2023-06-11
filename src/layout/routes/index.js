@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 // Utils
 const ErrorLogger = lazy(() => import('components/ErrorLogger').then(module => ({ default: module.ErrorLogger })));
 const FallbackLoader = lazy(() => import('components/Loaders').then(module => ({ default: module.FallbackLoader })));
+const ThankYou = lazy(() => import('pages/thankyou/ThankYou').then(module => ({ default: module.ThankYou })));
 const ErrorPage = lazy(() => import('pages/404/404Page').then(module => ({ default: module.ErrorPage })));
 
 // Common
@@ -86,6 +87,7 @@ export const Layout = React.memo(() => {
           <Route path="/affiliate-marketing-course" element={<AffiliateMarketingCourse/>}/>
           <Route path="/claim-cashback" element={<CashbackComponent/>}/>
           <Route path="/verify-certificate" element={<Certificates/>}/>
+          <Route path="/thank-you" element={<ThankYou/>}/>
           <Route path="*" element={<ErrorPage/>}/>
         </Routes>
         <Footer />

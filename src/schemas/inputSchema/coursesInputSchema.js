@@ -8,11 +8,12 @@ export const coursesInputSchemas = {
         {id:uuid(),textInputName:"courseName",textInputType:"text",textInputPlaceholder:""},
     ],
     selectInputOptions:[
-        {id:uuid(),optionText:"Graduates",optionValue:"Graduates"},
-        {id:uuid(),optionText:"Post Graduates",optionValue:"Post Graduates"},
-        {id:uuid(),optionText:"Students",optionValue:"Students"},
-        {id:uuid(),optionText:"Working Professionals",optionValue:"Working Professionals"},
+        {id:uuid(),optionText:"Student",optionValue:"Student"},
+        {id:uuid(),optionText:"Job Seeker",optionValue:"Job Seeker"},
+        {id:uuid(),optionText:"Working Professional",optionValue:"Working Professional"},
         {id:uuid(),optionText:"Business Owner",optionValue:"Business Owner"},
+        {id:uuid(),optionText:"Freelancer",optionValue:"Freelancer"},
+        {id:uuid(),optionText:"House Wife",optionValue:"House Wife"},
         {id:uuid(),optionText:"Others",optionValue:"Others"},
     ]
 
