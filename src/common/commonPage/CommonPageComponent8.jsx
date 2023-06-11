@@ -100,7 +100,7 @@ export const ProgramDetails = React.memo(
                 <MdOutlinePhoneInTalk size={30} /> {phoneNumber}
               </SubHeading>
             </CommonCard>
-            {showAlert && <Alert setShowAlert={setShowAlert}/>}
+            {showAlert && <Alert alertMessage="All fields are required" alertType="alert-danger" setShowAlert={setShowAlert}/>}
             <CommonCard cardClass="card rounded-0 col-sm-12 col-md-12 col-lg-12 mt-3">
               <SubHeading subheadingClass="text-center fw-bold mb-5">
                 Request More Information

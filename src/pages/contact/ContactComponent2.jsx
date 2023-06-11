@@ -1,34 +1,114 @@
-import React from 'react'
-import { CommonCard, Div, SelectInput, SubHeading, TextInput, Button } from 'components'
+import React,{useCallback, useState} from 'react'
+import { CommonCard, Div, SelectInput, SubHeading, TextInput, Button, TextAreaInput, Alert } from 'components'
+import axios from 'axios'
 
 export const ContactFormAreaComponent = React.memo(({inputSchemas}) => {
-    const { textInput, selectInputOptions } = inputSchemas
+    const [showAlertDanger, setShowAlertDanger] = useState(false);
+    const [showAlertSuccess, setShowAlertSuccess] = useState(false);
+    const [showAlertNetwork, setShowAlertNetwork] = useState(false);
+    const [inputVal, setInputVal] = useState({
+      studentName:"",
+      studentEmail:"",
+      studentMobile:"",
+      studentMessage:"",
+      studentProfession:""
+    })
+    const { textInput, selectInputOptions } = inputSchemas;
+    const handleInput = useCallback((e) => {
+      const { name, value } = e.target;
+      setInputVal({
+        ...inputVal,
+        [name]:value
+      })
+    },[
+      inputVal.studentName,
+      inputVal.studentEmail,
+      inputVal.studentMobile,
+      inputVal.studentMessage,
+      inputVal.studentProfession
+    ])
+    const submitContactInfo = async() => {
+      const { studentName, studentEmail, studentMobile, studentMessage, studentProfession } = inputVal
+      if(studentName && studentEmail && studentMobile && studentMessage && studentProfession){
+        try {
+          const response = await axios(`${process.env.REACT_APP_API_BASE_URL}/api/contacts/`,{
+            method:"POST",
+            data:{
+              name:studentName,
+              profession:studentProfession,
+              email:studentEmail,
+              number:studentMobile,
+              msgbody:studentMessage,
+              datetime:new Date().toLocaleString(),
+            },
+          })
+          if(response.status === 200){
+            setShowAlertSuccess(true);
+            setShowAlertDanger(false);
+            setShowAlertNetwork(false);
+            setInputVal({
+              studentName:"",
+              studentEmail:"",
+              studentMobile:"",
+              studentMessage:"",
+              studentProfession:""
+            })
+          }
+        } catch (error) {
+          setShowAlertNetwork(true)
+          setShowAlertSuccess(false);
+          setShowAlertDanger(false);
+        }
+      }else{
+        setShowAlertDanger(true);
+        setShowAlertSuccess(false);
+        setShowAlertNetwork(false)
+      }
+    }
     return (
       <Div divClass="col-sm-12 col-md-6 col-lg-6">
           <CommonCard cardClass="card rounded-0 col-sm-12 col-md-12 col-lg-12 h-100">
               <SubHeading subheadingClass="text-center fw-bold mb-5">
                 Submit your query
               </SubHeading>
+              {showAlertDanger && <Alert alertMessage="All fields are required" alertType="alert-danger" setShowAlert={setShowAlertDanger}/>}
+              {showAlertSuccess && <Alert alertMessage="Query Successfully Submitted" alertType="alert-success" setShowAlert={setShowAlertSuccess}/>}
+              {showAlertNetwork && <Alert alertMessage="Something Went Wrong" alertType="alert-danger" setShowAlert={setShowAlertNetwork}/>}
               {textInput && textInput.length !== 0 ? (
-                textInput.map((item) => (
-                  <TextInput
-                    textInputClass="form-control mb-3 rounded-0 outline-0"
-                    key={item.id}
-                    textInputType={item.textInputType}
-                    textInputPlaceholder={item.textInputPlaceholder}
-                    textInputName={item.textInputName}
+                textInput.map((item,index) => {
+                  if(item?.textInputName !== "courseName"){
+                    return <TextInput
+                      textInputClass="form-control mb-3 rounded-0 outline-0"
+                      key={item.id}
+                      textInputType={item.textInputType}
+                      textInputPlaceholder={item.textInputPlaceholder}
+                      textInputName={item.textInputName}
+                      textInputValue={Object.values(inputVal)[index]}
+                      textInputHandler={handleInput}
                   />
-                ))
+                  }else{
+                    return <TextAreaInput
+                      textInputClass="form-control mb-3 rounded-0 outline-0 textarea-resize"
+                      key={index+"textarea"}
+                      textInputPlaceholder="Enter message ..."
+                      textInputName="studentMessage"
+                      textInputValue={inputVal.studentMessage}
+                      textInputHandler={handleInput}
+                    />
+                  }
+                })
               ) : (
                 <></>
               )}
               <SelectInput
-                selectInputName="professional"
+                selectInputName="studentProfession"
                 selectInputData={selectInputOptions}
                 selectInputClass="form-select rounded-0"
+                selectInputValue={inputVal.studentProfession}
+                selectInputHandler={handleInput}
               />
                 <Div divClass="d-grid mt-5">
-                    <Button buttonClass="btn btn-primary rounded-0">Submit</Button>
+                    <Button buttonClass="btn btn-primary rounded-0" buttonHandler={submitContactInfo}>Submit</Button>
                 </Div>
             </CommonCard>
       </Div>

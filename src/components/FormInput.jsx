@@ -25,9 +25,9 @@ export const TextInput = React.memo(
 );
 
 export const SelectInput = React.memo(
-  ({ selectInputData, selectInputName, selectInputClass, ...props }) => {
+  ({ selectInputData, selectInputName, selectInputClass, selectInputValue, selectInputHandler, ...props }) => {
     return (
-      <select name={selectInputName} className={selectInputClass} {...props}>
+      <select value={selectInputValue} onChange={selectInputHandler} name={selectInputName} className={selectInputClass} {...props}>
         <option>Select your profession</option>
         {selectInputData && selectInputData.length !== 0 ? (
           selectInputData.map((item,index) => (
@@ -39,6 +39,30 @@ export const SelectInput = React.memo(
           <></>
         )}
       </select>
+    );
+  }
+);
+
+export const TextAreaInput = React.memo(
+  ({
+    textInputPlaceholder,
+    textInputName,
+    textInputClass,
+    textInputValue,
+    textInputHandler,
+    ...props
+  }) => {
+    return (
+      <textarea
+        rows={5}
+        cols={12}
+        className={textInputClass}
+        value={textInputValue}
+        placeholder={textInputPlaceholder}
+        name={textInputName}
+        onChange={textInputHandler}
+        {...props}
+      ></textarea>
     );
   }
 );

@@ -3,13 +3,13 @@ import { Div } from "./Div";
 import { Span } from "./Text";
 import { Button } from "./Button";
 
-export const Alert = React.memo(({setShowAlert}) => {
+export const Alert = React.memo(({setShowAlert,alertMessage,alertType}) => {
   return (
     <Div
-      divClass="alert alert-danger rounded-0 d-flex align-items-center alert-dismissible fade show mt-2"
+      divClass={`alert ${alertType} rounded-0 d-flex align-items-center alert-dismissible fade show mt-2`}
       role="alert"
     >
-      <Span>All fields are required</Span>
+      <Span>{alertMessage}</Span>
       <Button
         type="button"
         className="btn-close"
