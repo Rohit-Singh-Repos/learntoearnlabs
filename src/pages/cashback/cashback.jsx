@@ -3,6 +3,8 @@ import { Div, Heading, TextInput, Image, Span, Button, Alert } from "components"
 import { cashbackInputSchema } from "schemas";
 import { MISCELLANEOUS_IMAGES } from "assets/images";
 import axios from 'axios';
+import { useHookstate } from "@hookstate/core"
+import { PAGE_STATE } from "globalStore/globalState";
 
 
 export const CashbackComponent = React.memo(() => {
@@ -16,6 +18,7 @@ export const CashbackComponent = React.memo(() => {
     accountNumber:"",
     ifscCode:"",
   })
+  const { pageVisiblity } = useHookstate(PAGE_STATE)
   const handleInput = useCallback((e) => {
     const { name, value } = e.target;
     setInputVal({
@@ -42,10 +45,10 @@ export const CashbackComponent = React.memo(() => {
             datetime:new Date().toLocaleString(),
           },
         })
+        setShowAlertDanger(false);
+        setShowAlertNetwork(false);
         if(response.status === 200){
           setShowAlertSuccess(true);
-          setShowAlertDanger(false);
-          setShowAlertNetwork(false);
           setInputVal({
             studentName:"",
             studentEmail:"",
@@ -73,6 +76,10 @@ export const CashbackComponent = React.memo(() => {
       setMobile(false);
     }
   };
+
+  useEffect(() => {
+    pageVisiblity.set(false)
+  },[])
 
   useEffect(() => {
     window.addEventListener("resize", handleResize);

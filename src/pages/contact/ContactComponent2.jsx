@@ -42,10 +42,10 @@ export const ContactFormAreaComponent = React.memo(({inputSchemas}) => {
               datetime:new Date().toLocaleString(),
             },
           })
+          setShowAlertDanger(false);
+          setShowAlertNetwork(false);
           if(response.status === 200){
             setShowAlertSuccess(true);
-            setShowAlertDanger(false);
-            setShowAlertNetwork(false);
             setInputVal({
               studentName:"",
               studentEmail:"",

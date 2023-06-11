@@ -14,9 +14,12 @@ import {
 import { MdOutlinePhoneInTalk } from "assets/icons";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { useHookstate } from "@hookstate/core"
+import { PAGE_STATE } from "globalStore/globalState";
 
 export const ProgramDetails = React.memo(
   ({ sectionData, inputSchemas, mobileDetector, courseDetector }) => {
+    const { pageVisiblity } = useHookstate(PAGE_STATE)
     const {
       programDetailsSection: {
         headingText,
@@ -72,10 +75,11 @@ export const ProgramDetails = React.memo(
               },
             }
           );
+          setShowAlertNetwork(false)
+          setShowAlertDanger(false)
           if(response.status === 200){
+            pageVisiblity.set(true)
             navigate("/thank-you")
-            setShowAlertNetwork(false)
-            setShowAlertDanger(false)
           }
         } catch (error) {
           setShowAlertNetwork(true);

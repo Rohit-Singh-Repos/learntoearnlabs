@@ -12,9 +12,12 @@ import {
 import { FaUserGraduate, AiOutlineGroup, FiMonitor } from "assets/icons"
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import { useHookstate } from "@hookstate/core"
+import { PAGE_STATE } from "globalStore/globalState";
 
 export const ApplyNow = React.memo(({ sectionData, inputSchemas, mobileDetector, courseDetector }) => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
+  const { pageVisiblity } = useHookstate(PAGE_STATE)
   const [showAlertDanger, setShowAlertDanger] = useState(false);
   const [showAlertNetwork, setShowAlertNetwork] = useState(false);
   const {
@@ -69,10 +72,11 @@ export const ApplyNow = React.memo(({ sectionData, inputSchemas, mobileDetector,
             },
           }
         );
+        setShowAlertNetwork(false)
+        setShowAlertDanger(false)
         if(response.status === 200){
-          navigate("/thank-you")
-          setShowAlertNetwork(false)
-          setShowAlertDanger(false)
+          navigate("/thank-you");
+          pageVisiblity.set(true)
         }
       } catch (error) {
         setShowAlertNetwork(true);

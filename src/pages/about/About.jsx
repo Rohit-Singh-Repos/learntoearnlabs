@@ -1,4 +1,6 @@
-import React,{Suspense,lazy} from 'react'
+import React,{Suspense,lazy,useEffect} from 'react'
+import { useHookstate } from "@hookstate/core"
+import { PAGE_STATE } from "globalStore/globalState";
 
 const FallbackLoader = lazy(() => import('components/Loaders').then(module => ({ default: module.FallbackLoader })));
 const AboutLandingPage = lazy(() => import('pages/about/AboutComponent1').then(module => ({ default: module.AboutLandingPage })));
@@ -10,6 +12,10 @@ const CoreTeamMembers = lazy(() => import('pages/about/AboutComponent6').then(mo
 const PictureGallery = lazy(() => import('pages/about/AboutComponent7').then(module => ({ default: module.PictureGallery })));
 
 export const AboutPage = () => {
+  const { pageVisiblity } = useHookstate(PAGE_STATE)
+  useEffect(() => {
+    pageVisiblity.set(false)
+  },[])
   return (
     <Suspense fallback={<FallbackLoader/>}>
         <AboutLandingPage/>

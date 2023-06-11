@@ -1,4 +1,6 @@
 import React,{Suspense,lazy, useEffect, useState} from 'react'
+import { useHookstate } from "@hookstate/core"
+import { PAGE_STATE } from "globalStore/globalState";
 
 const FallbackLoader = lazy(() => import('components/Loaders').then(module => ({ default: module.FallbackLoader })));
 const LandingPage = lazy(() => import('pages/home/HomeComponent1').then(module => ({ default: module.LandingPage })));
@@ -17,6 +19,7 @@ const StudentReviews = lazy(() => import('pages/home/HomeComponent13').then(modu
 
 export const HomePage = React.memo(() => {
   const [mobile, setMobile] = useState(false);
+  const { pageVisiblity } = useHookstate(PAGE_STATE)
 
   const handleResize = () => {
     if (window.innerWidth < 990) {
@@ -25,6 +28,10 @@ export const HomePage = React.memo(() => {
       setMobile(false);
     }
   };
+
+  useEffect(() => {
+    pageVisiblity.set(false)
+  },[])
 
   useEffect(() => {
     window.addEventListener("resize", handleResize);

@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useMemo } from "react";
+import { useHookstate } from "@hookstate/core"
+import { PAGE_STATE } from "globalStore/globalState";
 import { useLocation } from "react-router-dom";
 import { LandingPage } from "common/commonPage/CommonPageComponent1";
 import { CloudDevopsCareer } from "common/commonPage/CommonPageComponent2";
@@ -20,7 +22,7 @@ export const CommonPageComponent = React.memo(
     sectionData,
     inputSchemas,
   }) => {
-
+    const { pageVisiblity } = useHookstate(PAGE_STATE)
     const { 
       landingPageSection,
       cloudDevopsCareerSection,
@@ -46,6 +48,10 @@ export const CommonPageComponent = React.memo(
         setMobile(false);
       }
     };
+
+    useEffect(() => {
+      pageVisiblity.set(false)
+    },[])
     
     useEffect(() => {
       window.scrollTo(0, 0);

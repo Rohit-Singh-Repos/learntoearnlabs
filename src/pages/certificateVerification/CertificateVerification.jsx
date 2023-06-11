@@ -1,5 +1,7 @@
 import { Div } from 'components';
 import React,{useState, useEffect, Suspense, lazy} from 'react'
+import { useHookstate } from "@hookstate/core"
+import { PAGE_STATE } from "globalStore/globalState";
 
 const FallbackLoader = lazy(() => import('components/Loaders').then(module => ({ default: module.FallbackLoader })));
 const CertificateVerification = lazy(() => import('pages/certificateVerification/CertificateVerificationComponent1').then(module => ({ default: module.CertificateVerification })));
@@ -7,6 +9,7 @@ const CertificateInformation = lazy(() => import('pages/certificateVerification/
 
 export const Certificates = React.memo(() => {
   const [mobile, setMobile] = useState(false);
+  const { pageVisiblity } = useHookstate(PAGE_STATE)
   const handleResize = () => {
       if (window.innerWidth < 990) {
         setMobile(true);
@@ -14,6 +17,10 @@ export const Certificates = React.memo(() => {
         setMobile(false);
       }
   };
+
+  useEffect(() => {
+    pageVisiblity.set(false)
+  },[])
   
   useEffect(() => {
     window.addEventListener("resize", handleResize);

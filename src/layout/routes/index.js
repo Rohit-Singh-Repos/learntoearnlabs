@@ -1,5 +1,7 @@
 import React,{Suspense,lazy} from "react";
 import { Routes, Route } from "react-router-dom";
+import { useHookstate } from "@hookstate/core"
+import { PAGE_STATE } from "globalStore/globalState";
 
 // Utils
 const ErrorLogger = lazy(() => import('components/ErrorLogger').then(module => ({ default: module.ErrorLogger })));
@@ -48,6 +50,7 @@ const Certificates = lazy(() => import('pages/certificateVerification/Certificat
 
 
 export const Layout = React.memo(() => {
+  const { pageVisiblity } = useHookstate(PAGE_STATE)
   return (
     <ErrorLogger>
       <Suspense fallback={<FallbackLoader/>}>
@@ -87,7 +90,9 @@ export const Layout = React.memo(() => {
           <Route path="/affiliate-marketing-course" element={<AffiliateMarketingCourse/>}/>
           <Route path="/claim-cashback" element={<CashbackComponent/>}/>
           <Route path="/verify-certificate" element={<Certificates/>}/>
-          <Route path="/thank-you" element={<ThankYou/>}/>
+          {
+           pageVisiblity.get() && <Route path="/thank-you" element={<ThankYou/>}/>
+          }
           <Route path="*" element={<ErrorPage/>}/>
         </Routes>
         <Footer />
