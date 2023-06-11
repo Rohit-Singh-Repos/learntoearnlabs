@@ -19,8 +19,10 @@ import {
   MdOutlineClose,
 } from "assets/icons";
 import { MISCELLANEOUS_IMAGES } from "assets/images";
+import { useLocation } from "react-router-dom";
 
 export const Header = React.memo(() => {
+  const { pathname } = useLocation()
   const [navbar, setNavbar] = useState(false);
   const [navbar2, setNavbar2] = useState(false);
   const [navbar3, setNavbar3] = useState(false);
@@ -34,6 +36,14 @@ export const Header = React.memo(() => {
       setMobile(false);
     }
   };
+
+  useEffect(() => {
+    setNavbar(false)
+    setNavbar2(false)
+    setNavbar3(false)
+    setNavbarId(null)
+    setNavbarId2(null)
+  },[pathname]);
 
   useEffect(() => {
     window.addEventListener("resize", handleResize);
