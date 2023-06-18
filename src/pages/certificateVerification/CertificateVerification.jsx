@@ -9,6 +9,8 @@ const CertificateInformation = lazy(() => import('pages/certificateVerification/
 
 export const Certificates = React.memo(() => {
   const [mobile, setMobile] = useState(false);
+  const [showCertificateInfo, setShowCertificateInfo] = useState(false)
+  const [certificateInfoData, setCertificateInfoData] = useState(null)
   const { pageVisiblity } = useHookstate(PAGE_STATE)
   const handleResize = () => {
       if (window.innerWidth < 990) {
@@ -30,8 +32,9 @@ export const Certificates = React.memo(() => {
     <Suspense fallback={<FallbackLoader/>}>
       <Div divClass="container mt-5 pt-4">
         <Div divClass="row align-items-center">
-            <CertificateVerification mobileDetector={mobile}/>
-            <CertificateInformation mobileDetector={mobile}/>
+            {
+              showCertificateInfo && certificateInfoData ? <CertificateInformation mobileDetector={mobile} certificateInfoData={certificateInfoData}/> : <CertificateVerification mobileDetector={mobile} setShowCertificateInfo={setShowCertificateInfo} setCertificateInfoData={setCertificateInfoData}/>
+            }
         </Div>
       </Div>
     </Suspense>

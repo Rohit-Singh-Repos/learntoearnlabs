@@ -3,19 +3,26 @@ import { Div, Heading, TextInput, Image, Span, Button } from "components";
 import axios from 'axios';
 import { MISCELLANEOUS_IMAGES } from 'assets/images';
 
-export const CertificateVerification = React.memo(({mobileDetector}) => {
+export const CertificateVerification = React.memo(({mobileDetector,setShowCertificateInfo,setCertificateInfoData}) => {
     const [textInputVal, setTextInputVal] = useState("")
-    const verifyCertificateHandler = useCallback(async() => {
+    const verifyCertificateHandler = async() => {
       if(textInputVal){
         try {
-          const response = await axios(`${process.env.REACT_APP_API_BASE_URL}/api/certificates/`)
+          const response = await axios(`${process.env.REACT_APP_API_BASE_URL}/api/certificates?certificateCode=${textInputVal}`)
+          if(response.status === 200) {
+            setShowCertificateInfo(true)
+            setCertificateInfoData(response?.data)
+          }else{
+            setShowCertificateInfo(false)
+            setCertificateInfoData(null)
+          }
         } catch (error) {
           
         }
       }else{
 
       }
-    },[])
+    }
 
     return (
       <>
