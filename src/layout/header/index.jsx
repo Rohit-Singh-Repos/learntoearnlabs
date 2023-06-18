@@ -187,15 +187,15 @@ export const Header = React.memo(() => {
            <Image 
               imagePath={MISCELLANEOUS_IMAGES.l2elogo}
               imageClass="img-thumbnail"
-              width="50"
-              height="50"
+              width="70"
+              height="70"
               imageAltText=""
             />
-            <Heading headingClass="brand-name fs-12">Learn2Earn Labs</Heading>
+            <Heading headingClass="brand-name fs-12 mt-2 ms-2">Learn2Earn Labs</Heading>
           </NavBrandLink>
         </NavBrand>
         <Button
-          buttonClass={`me-2 remove-shadow border-0 ${
+          buttonClass={`me-2 remove-shadow border-0 fw-bold ${
             navbar ? "navbar-toggler" : "navbar-toggler collapsed"
           }`}
           type="button"
@@ -204,7 +204,7 @@ export const Header = React.memo(() => {
           {navbar ? (
             <MdOutlineClose color="#fff" className="fw-bold" />
           ) : (
-            <AiOutlineMenu className="fw-bold" />
+            <AiOutlineMenu color="#fff" className="fw-bold" />
           )}
         </Button>
         <Div
@@ -222,7 +222,7 @@ export const Header = React.memo(() => {
                   ) : (
                     <Div>
                       <Paragraph
-                        paragraphClass="ms-3 fw-bold d-flex justify-content-between align-items-center"
+                        paragraphClass="ms-3 fw-bold d-flex justify-content-between align-items-center text-light"
                         onClick={() => {
                           setNavbar2(!navbar2);
                           setNavbarId(item.id);
@@ -244,7 +244,7 @@ export const Header = React.memo(() => {
                         </Button>
                       </Paragraph>
                       <Div
-                        divClass={`collapse navbar-collapse ${
+                        divClass={`collapse navbar-collapse text-light ${
                           navbar2 && navbarId === item.id
                             ? "collapse show"
                             : "collapse"

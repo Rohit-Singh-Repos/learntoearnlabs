@@ -90,6 +90,7 @@ export const NavBrand = styled.div`
   white-space: nowrap; */
   @media screen and (max-width: 768px) {
     font-size: 18px;
+    margin-left: -20px;
   }
 `;
 
