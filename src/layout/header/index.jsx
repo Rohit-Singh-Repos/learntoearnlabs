@@ -184,7 +184,14 @@ export const Header = React.memo(() => {
       <>
         <NavBrand>
           <NavBrandLink to="/">
-            <Heading headingClass="brand-name">Learn2Earn Labs</Heading>
+           <Image 
+              imagePath={MISCELLANEOUS_IMAGES.l2elogo}
+              imageClass="img-thumbnail"
+              width="50"
+              height="50"
+              imageAltText=""
+            />
+            <Heading headingClass="brand-name fs-12">Learn2Earn Labs</Heading>
           </NavBrandLink>
         </NavBrand>
         <Button

@@ -1,6 +1,6 @@
-import React, { useMemo } from "react";
+import React, { useMemo, useState } from "react";
 import ReactDOM from "react-dom";
-import { Div } from "./Div";
+import { Div, Alert, Span } from "components";
 import { Button } from "./Button";
 import { SubHeading } from "./Text";
 import axios from "axios";
@@ -12,25 +12,53 @@ import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 const modalContainer = document.getElementById("popup");
 
 const ModalUI = React.memo(
-  ({ modalHandler, children, emailData, coursedetector, detector }) => {
+  ({ modalHandler, children, emailData, coursedetector, detector, setEmail }) => {
     const { pathname } = useLocation();
+    const [showAlertDanger, setShowAlertDanger] = useState(false);
+    const [showAlertSuccess, setShowAlertSuccess] = useState(false);
+    const [alertMessage, setAlertMessage] = useState("")
     const download = async () => {
-      try {
-        let response = await axios(`${process.env.REACT_APP_API_BASE_URL}/api/syllabuses`,{
-          method:"POST",
-          data:{
-            email:emailData,
-            specialization:detector ? coursedetector + " " + detector : coursedetector,
-            datetime:new Date().toLocaleString(),
-          },
-        })
-
-        if(response && response.status === 200){
-          document.getElementById("download_btn").click();
-          modalHandler(false)
+      if(emailData){
+        const emailRegExp = /^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/
+        if(emailData.match(emailRegExp)){
+          try {
+            setShowAlertSuccess(true)
+            let response = await axios(`${process.env.REACT_APP_API_BASE_URL}/api/syllabuses`,{
+              method:"POST",
+              data:{
+                email:emailData,
+                specialization:detector ? coursedetector + " " + detector : coursedetector,
+                datetime:new Date().toLocaleString(),
+              },
+            })
+            if(response && response.status === 200){
+              setShowAlertSuccess(false)
+              setEmail("")
+              document.getElementById("download_btn").click();
+              modalHandler(false)
+            }else{
+              setShowAlertDanger(true)
+              setAlertMessage("Something went wrong1")
+              setShowAlertSuccess(false)
+              setEmail("")
+            }
+          } catch (error) {
+            setShowAlertDanger(true)
+            setAlertMessage("Something went wrong2")
+            setShowAlertSuccess(false)
+            setEmail("")
+          }
+        }else{
+          setShowAlertDanger(true)
+          setAlertMessage("Enter valid email address")
+          setShowAlertSuccess(false)
+          setEmail("")
         }
-      } catch (error) {
-        alert(error)
+      }else{
+        setShowAlertDanger(true)
+        setAlertMessage("Email address can't be empty.")
+        setShowAlertSuccess(false)
+        setEmail("")
       }
     };
 
@@ -112,7 +140,10 @@ const ModalUI = React.memo(
                 buttonHandler={() => modalHandler(false)}
               />
             </Div>
-            <Div divClass="modal-body">{children}</Div>
+            <Div divClass="modal-body">
+              {showAlertDanger && <Alert alertMessage={alertMessage} alertType="alert-danger fw-bold" setShowAlert={setShowAlertDanger}/>}
+              {children}
+            </Div>
             <Div divClass="modal-footer">
               <Button
                 type="button"
@@ -120,7 +151,11 @@ const ModalUI = React.memo(
                 data-bs-dismiss="modal"
                 buttonHandler={download}
               >
-                Download
+                {
+                  showAlertSuccess ? <>
+                    Please wait <Span spanClass="spinner-border spinner-border-sm" role="status" aria-hidden="true"></Span>
+                  </> : "Download"
+                }              
               </Button>
               <Anchor
                 href={getFileName}
@@ -139,13 +174,14 @@ const ModalUI = React.memo(
 );
 
 export const ModalComponent = React.memo(
-  ({ modalHandler, children, emailData, coursedetector, detector }) => {
+  ({ modalHandler, children, emailData, coursedetector, detector, setEmail }) => {
     return ReactDOM.createPortal(
       <ModalUI
         detector={detector}
         modalHandler={modalHandler}
         emailData={emailData}
         coursedetector={coursedetector}
+        setEmail={setEmail}
       >
         {children}
       </ModalUI>,

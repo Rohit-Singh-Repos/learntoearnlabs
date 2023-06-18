@@ -33,6 +33,7 @@ export const ProgramDetails = React.memo(
     const navigate = useNavigate()
     const { textInput, selectInputOptions } = inputSchemas;
     const [showAlertDanger, setShowAlertDanger] = useState(false);
+    const [showAlertDanger2, setShowAlertDanger2] = useState(false);
     const [showAlertNetwork, setShowAlertNetwork] = useState(false);
     const [courseData, setCourseData] = useState({
       studentName: "",
@@ -60,34 +61,51 @@ export const ProgramDetails = React.memo(
       } = courseData;
 
       if (studentName && studentEmail && studentMobile && professional) {
-        try {
-          const response = await axios(
-            `${process.env.REACT_APP_API_BASE_URL}/api/queries/`,
-            {
-              method: "POST",
-              data: {
-                name: studentName,
-                email: studentEmail,
-                number: studentMobile,
-                datetime: new Date().toLocaleString(),
-                specialization:courseDetector, // Newly added field kindly add into the DB
-                profession: professional,
-              },
+        const emailRegExp = /^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/
+        if(studentEmail.match(emailRegExp)){
+          try {
+            const response = await axios(
+              `${process.env.REACT_APP_API_BASE_URL}/api/queries/`,
+              {
+                method: "POST",
+                data: {
+                  name: studentName,
+                  email: studentEmail,
+                  number: studentMobile,
+                  datetime: new Date().toLocaleString(),
+                  specialization:courseDetector, // Newly added field kindly add into the DB
+                  profession: professional,
+                },
+              }
+            );
+            setShowAlertNetwork(false)
+            setShowAlertDanger(false)
+            setShowAlertDanger2(false)
+            if(response.status === 200){
+              setCourseData({
+                ...courseData,
+                studentName: "",
+                studentEmail: "",
+                studentMobile: "",
+                professional: "",
+              })
+              pageVisiblity.set(true)
+              navigate("/thank-you")
             }
-          );
-          setShowAlertNetwork(false)
-          setShowAlertDanger(false)
-          if(response.status === 200){
-            pageVisiblity.set(true)
-            navigate("/thank-you")
+          } catch (error) {
+            setShowAlertNetwork(true);
+            setShowAlertDanger(false)
+            setShowAlertDanger2(false)
           }
-        } catch (error) {
-          setShowAlertNetwork(true);
+        }else{
+          setShowAlertDanger2(true)
           setShowAlertDanger(false)
+          setShowAlertNetwork(false)
         }
       } else {
         setShowAlertDanger(true);
         setShowAlertNetwork(false)
+        setShowAlertDanger2(false)
       }
     };
     return (
@@ -119,6 +137,7 @@ export const ProgramDetails = React.memo(
                 Request More Information
               </SubHeading>
               {showAlertDanger && <Alert alertMessage="All fields are required" alertType="alert-danger fw-bold" setShowAlert={setShowAlertDanger}/>}
+              {showAlertDanger2 && <Alert alertMessage="Enter valid email address" alertType="alert-danger fw-bold" setShowAlert={setShowAlertDanger2}/>}
             {showAlertNetwork && <Alert alertMessage="Something Went Wrong" alertType="alert-danger fw-bold" setShowAlert={setShowAlertNetwork}/>}
               {textInput && textInput.length !== 0 ? (
                 textInput.map((item, index) => (
