@@ -31,7 +31,7 @@ export const Footer = React.memo(() => {
       <Div divClass="container-fluid">
         <Div divClass="row">
           <Div divClass="col-lg-3 col-sm-12">
-            <Paragraph paragraphClass="text-white align-justify">
+            <Paragraph paragraphClass="text-white align-justify fs-14">
               {paragraph1} <br /> <br /> {paragraph2}
             </Paragraph>
           </Div>
@@ -49,12 +49,12 @@ export const Footer = React.memo(() => {
                   <LinkComponent
                     key={item.id}
                     pathName={item.pathName}
-                    linkClass="col-lg-6 col-sm-12 mb-4"
+                    linkClass="col-lg-6 col-sm-12 mb-4 "
                   >
                     {mobile ? (
                       <ListItem>{item.text}</ListItem>
                     ) : (
-                      <Span>{item.text}</Span>
+                      <Span spanClass="fs-12">{item.text}</Span>
                     )}
                   </LinkComponent>
                 ))
@@ -71,43 +71,43 @@ export const Footer = React.memo(() => {
             ></Div>
           </Div>
           <Div divClass="col-lg-3 col-sm-12">
-            <Paragraph paragraphClass="text-light">{headingText}</Paragraph>
-            <Paragraph paragraphClass="text-light align-justify">
+            <Paragraph paragraphClass="text-light fw-bold">{headingText}</Paragraph>
+            <Paragraph paragraphClass="text-light align-justify fs-14">
               {addressText}
             </Paragraph>
-            <Paragraph paragraphClass="text-light align-justify">
+            <Paragraph paragraphClass="text-light align-justify fw-bold">
               Email
             </Paragraph>
             {emailData && emailData.length !== 0 ? (
               emailData.map((item) => (
                 <React.Fragment key={item.id}>
-                  <Span spanClass="text-light">{item.text}</Span>
+                  <Span spanClass="text-light fs-14">{item.text}</Span>
                   <br />
                 </React.Fragment>
               ))
             ) : (
               <></>
             )}
-            <Paragraph paragraphClass="text-light align-justify mt-3">
+            <Paragraph paragraphClass="text-light align-justify mt-3 fw-bold">
               Contact Number
             </Paragraph>
             {contactData && contactData.length !== 0 ? (
               contactData.map((item) => (
                 <React.Fragment key={item.id}>
-                  <Span spanClass="text-light">{item.text}</Span>
+                  <Span spanClass="text-light fs-14">{item.text}</Span>
                   <br />
                 </React.Fragment>
               ))
             ) : (
               <></>
             )}
-            <Paragraph paragraphClass="text-light align-justify mt-3">
+            <Paragraph paragraphClass="text-light align-justify mt-3 fw-bold">
               YouTube Channel
             </Paragraph>
             <Paragraph>
               <LinkComponent
                 pathName={youtubeLink}
-                linkClass="text-light text-break"
+                linkClass="text-light text-break fs-14"
               >
                 {youtubeLink}
               </LinkComponent>
