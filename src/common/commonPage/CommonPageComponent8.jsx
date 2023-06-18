@@ -118,8 +118,8 @@ export const ProgramDetails = React.memo(
               <SubHeading subheadingClass="text-center fw-bold mb-5">
                 Request More Information
               </SubHeading>
-              {showAlertDanger && <Alert alertMessage="All fields are required" alertType="alert-danger" setShowAlert={setShowAlertDanger}/>}
-            {showAlertNetwork && <Alert alertMessage="Something Went Wrong" alertType="alert-danger" setShowAlert={setShowAlertNetwork}/>}
+              {showAlertDanger && <Alert alertMessage="All fields are required" alertType="alert-danger fw-bold" setShowAlert={setShowAlertDanger}/>}
+            {showAlertNetwork && <Alert alertMessage="Something Went Wrong" alertType="alert-danger fw-bold" setShowAlert={setShowAlertNetwork}/>}
               {textInput && textInput.length !== 0 ? (
                 textInput.map((item, index) => (
                   <TextInput

@@ -71,9 +71,9 @@ export const ContactFormAreaComponent = React.memo(({inputSchemas}) => {
               <SubHeading subheadingClass="text-center fw-bold mb-5">
                 Submit your query
               </SubHeading>
-              {showAlertDanger && <Alert alertMessage="All fields are required" alertType="alert-danger" setShowAlert={setShowAlertDanger}/>}
-              {showAlertSuccess && <Alert alertMessage="Query Successfully Submitted" alertType="alert-success" setShowAlert={setShowAlertSuccess}/>}
-              {showAlertNetwork && <Alert alertMessage="Something Went Wrong" alertType="alert-danger" setShowAlert={setShowAlertNetwork}/>}
+              {showAlertDanger && <Alert alertMessage="All fields are required" alertType="alert-danger fw-bold" setShowAlert={setShowAlertDanger}/>}
+              {showAlertSuccess && <Alert alertMessage="Query Successfully Submitted" alertType="alert-success fw-bold" setShowAlert={setShowAlertSuccess}/>}
+              {showAlertNetwork && <Alert alertMessage="Something Went Wrong" alertType="alert-danger fw-bold" setShowAlert={setShowAlertNetwork}/>}
               {textInput && textInput.length !== 0 ? (
                 textInput.map((item,index) => {
                   if(item?.textInputName !== "courseName"){
