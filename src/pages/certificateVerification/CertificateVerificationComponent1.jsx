@@ -53,9 +53,9 @@ export const CertificateVerification = React.memo(({mobileDetector,setShowCertif
               <Span spanClass="text-primary">Verify the </Span>
               <Span>Certificate</Span>
             </Heading>
-            {showAlertDanger && <Alert alertMessage="Enter Valid Verification Code" alertType="alert-danger fw-bold" setShowAlert={setShowAlertDanger}/>}
-            {showAlertDanger2 && <Alert alertMessage="Invalid Certificate Code" alertType="alert-danger fw-bold" setShowAlert={setShowAlertDanger2}/>}
-            {showAlertNetwork && <Alert alertMessage="Something Went Wrong" alertType="alert-danger fw-bold" setShowAlert={setShowAlertNetwork}/>}
+            {showAlertDanger && <Alert alertMessage="Enter valid certificate code" alertType="alert-danger fw-bold" setShowAlert={setShowAlertDanger}/>}
+            {showAlertDanger2 && <Alert alertMessage="Invalid certificate code" alertType="alert-danger fw-bold" setShowAlert={setShowAlertDanger2}/>}
+            {showAlertNetwork && <Alert alertMessage="Something went wrong" alertType="alert-danger fw-bold" setShowAlert={setShowAlertNetwork}/>}
             <TextInput
                 textInputClass="form-control rounded-0 mb-3"
                 textInputType="text"
