@@ -24,12 +24,13 @@ import {
   MdOutlineClose,
 } from "assets/icons";
 import { MISCELLANEOUS_IMAGES } from "assets/images";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useHookstate } from "@hookstate/core";
 import { MOBILE_DETECTOR } from "globalStore/globalState";
 
 export const Header = React.memo(() => {
   const { pathname } = useLocation();
+  const navigate = useNavigate()
   const [navbar, setNavbar] = useState(false);
   const [navbar2, setNavbar2] = useState(false);
   const [navbar3, setNavbar3] = useState(false);
@@ -278,37 +279,32 @@ export const Header = React.memo(() => {
                                 {item2?.navItemName === "Contact Us" ||
                                 item2?.navItemName === "Claim Cashback" ||
                                 item2?.navItemName === "Verify Certificate" ? (
-                                    <Div>
-                                    <Paragraph
-                                      paragraphClass={`ms-3 fw-bold d-flex justify-content-between align-items-center ${
-                                        navbar3 && navbarId2 === item2.id
+                                  <Div>
+                                  <Paragraph
+                                    paragraphClass={`ms-3 fw-bold d-flex justify-content-between align-items-center ${
+                                      navbar3 && navbarId2 === item2.id
                                         ? "text-light"
                                         : ""
-                                      }`}
-                                      onClick={() => {
-                                        setNavbar3(!navbar3);
-                                        setNavbarId2(item2.id);
-                                      }}
-                                      >
-                                      <NavLink to={item2.navItemPath}>
-                                      {item2.navItemName}
-                                  </NavLink>
-                                      <Button
-                                        type="button"
-                                        buttonClass="btn me-3 mtt-0 remove-shadow border-0"
-                                      >
-                                        <NavLink to={item2.navItemPath}></NavLink>
-                                        {navbar3 && navbarId2 === item2.id ? (
-                                          <BsFillArrowUpCircleFill
-                                            color="#fff"
-                                            className="fw-bold"
-                                          />
-                                        ) : (
-                                          <BsFillArrowDownCircleFill />
-                                        )}
-                                      </Button>
-                                    </Paragraph>
-                                    </Div>
+                                    }`}
+                                    onClick={() => navigate(item2.navItemPath)}
+                                  >
+                                    {item2.navItemName}
+                                    {/* Contact Items */}
+                                    <Button
+                                      type="button"
+                                      buttonClass="btn me-3 mtt-0 remove-shadow border-0"
+                                    >
+                                      {navbar3 && navbarId2 === item2.id ? (
+                                        <BsFillArrowUpCircleFill
+                                          color="#fff"
+                                          className="fw-bold"
+                                        />
+                                      ) : (
+                                        <BsFillArrowDownCircleFill />
+                                      )}
+                                    </Button>
+                                  </Paragraph>
+                                </Div>
                                 ) : (
                                   <Div>
                                     <Paragraph

@@ -658,8 +658,8 @@ export const designThinkingSchema = {
     buttonText: "Submit",
     subheadingText: "Eligibility Criteria",
     paragrphTextData: [
-      { id: uuid(), text: "Any Engg / Management graduate" },
-      { id: uuid(), text: "Must be creative" },
+      { id: uuid(), text: "Any Engineering / Management graduate." },
+      { id: uuid(), text: "Must have problem solving skills and creativity." },
       { id: uuid(), text: "Having basic programming & development knowledge." },
     ],
   },
@@ -1193,7 +1193,7 @@ export const trainTheTrainerSchema = {
         imagePath: COURSES_PAGE_IMAGES.careerSupportImage1,
         subheadingText: "Practical Based Sessions",
         paragraphText:
-          "Training program available in four months & six months duration",
+          "Training program available in 2 months and 3 months duration",
       },
       {
         id: uuid(),
@@ -1363,7 +1363,7 @@ export const htmlCssJSScheme = {
         imagePath: COURSES_PAGE_IMAGES.careerSupportImage1,
         subheadingText: "Practical Based Sessions",
         paragraphText:
-          "Training program available in four months & six months duration",
+          "Training program available in 60 days and 90 days duration",
       },
       {
         id: uuid(),
@@ -1535,7 +1535,7 @@ export const javaSchema = {
         imagePath: COURSES_PAGE_IMAGES.careerSupportImage1,
         subheadingText: "Practical Based Sessions",
         paragraphText:
-          "Training program available in four months & six months duration",
+          "Training program available in 30 days, 60 days and 90 days duration",
       },
       {
         id: uuid(),
@@ -1707,7 +1707,7 @@ export const pythonSchema = {
         imagePath: COURSES_PAGE_IMAGES.careerSupportImage1,
         subheadingText: "Practical Based Sessions",
         paragraphText:
-          "Training program available in four months & six months duration",
+          "Training program available in 30 days, 60 days and 90 days duration",
       },
       {
         id: uuid(),
@@ -1884,7 +1884,7 @@ export const linuxSchema = {
         imagePath: COURSES_PAGE_IMAGES.careerSupportImage1,
         subheadingText: "Practical Based Sessions",
         paragraphText:
-          "Training program available in four months & six months duration",
+          "Training program available in 60 days and 90 days duration",
       },
       {
         id: uuid(),
@@ -1991,9 +1991,9 @@ export const linuxSchema = {
     paragrphTextData: [
       {
         id: uuid(),
-        text: "Any student/job seeker/working professional can join",
+        text: "Any student/job seeker/working professional can join.",
       },
-      { id: uuid(), text: "Having interest in Linux & AWS" },
+      { id: uuid(), text: "Having interest in Linux & Cloud Computing." },
       { id: uuid(), text: "Having basic knowledge of computer." },
     ],
   },
@@ -2055,7 +2055,7 @@ export const mySQLSchema = {
         imagePath: COURSES_PAGE_IMAGES.careerSupportImage1,
         subheadingText: "Practical Based Sessions",
         paragraphText:
-          "Training program available in four months & six months duration",
+          "Training program available in 30 days and 45 days duration",
       },
       {
         id: uuid(),
@@ -2229,7 +2229,7 @@ export const programmingSchema = {
         imagePath: COURSES_PAGE_IMAGES.careerSupportImage1,
         subheadingText: "Practical Based Sessions",
         paragraphText:
-          "Training program available in four months & six months duration",
+          "Training program available in 30 days and 60 days duration",
       },
       {
         id: uuid(),
@@ -2427,7 +2427,7 @@ export const cProgrammingSchema = {
         imagePath: COURSES_PAGE_IMAGES.careerSupportImage1,
         subheadingText: "Practical Based Sessions",
         paragraphText:
-          "Training program available in four months & six months duration",
+          "Training program available in 30 days and 60 days duration",
       },
       {
         id: uuid(),
@@ -2598,7 +2598,7 @@ export const cPlusSchema = {
         imagePath: COURSES_PAGE_IMAGES.careerSupportImage1,
         subheadingText: "Practical Based Sessions",
         paragraphText:
-          "Training program available in four months & six months duration",
+          "Training program available in 30 days and 60 days duration",
       },
       {
         id: uuid(),
@@ -2769,7 +2769,7 @@ export const dsSchema = {
         imagePath: COURSES_PAGE_IMAGES.careerSupportImage1,
         subheadingText: "Practical Based Sessions",
         paragraphText:
-          "Training program available in four months & six months duration",
+          "Training program available in 60 days duration",
       },
       {
         id: uuid(),
@@ -2949,7 +2949,7 @@ export const socialMediaSchema = {
         imagePath: COURSES_PAGE_IMAGES.careerSupportImage1,
         subheadingText: "Practical Based Sessions",
         paragraphText:
-          "Training program available in four months & six months duration",
+          "Training program available in 30 days, 60 days and 90 days duration",
       },
       {
         id: uuid(),
@@ -3129,7 +3129,7 @@ export const googleAdsSchema = {
         imagePath: COURSES_PAGE_IMAGES.careerSupportImage1,
         subheadingText: "Practical Based Sessions",
         paragraphText:
-          "Training program available in four months & six months duration",
+          "Training program available in 30 days and 60 days duration",
       },
       {
         id: uuid(),
@@ -3311,7 +3311,7 @@ export const wordpressSchema = {
         imagePath: COURSES_PAGE_IMAGES.careerSupportImage1,
         subheadingText: "Practical Based Sessions",
         paragraphText:
-          "Training program available in four months & six months duration",
+          "Training program available in 30 days and 60 days duration",
       },
       {
         id: uuid(),
@@ -3492,7 +3492,7 @@ export const seoSchema = {
         imagePath: COURSES_PAGE_IMAGES.careerSupportImage1,
         subheadingText: "Practical Based Sessions",
         paragraphText:
-          "Training program available in four months & six months duration",
+          "Training program available in 30 days duration",
       },
       {
         id: uuid(),
@@ -3670,7 +3670,7 @@ export const contentMarketingSchema = {
         imagePath: COURSES_PAGE_IMAGES.careerSupportImage1,
         subheadingText: "Practical Based Sessions",
         paragraphText:
-          "Training program available in four months & six months duration",
+          "Training program available in 30 days duration",
       },
       {
         id: uuid(),
@@ -3844,7 +3844,7 @@ export const affiliateMarketingSchema = {
         imagePath: COURSES_PAGE_IMAGES.careerSupportImage1,
         subheadingText: "Practical Based Sessions",
         paragraphText:
-          "Training program available in four months & six months duration",
+          "Training program available in 30 days duration",
       },
       {
         id: uuid(),
@@ -4451,7 +4451,7 @@ export const digitalMarketing = {
         id: uuid(),
         imagePath: COURSES_PAGE_IMAGES.careerSupportImage1,
         subheadingText: "Practical Based Sessions",
-        paragraphText: "of 3 months or 6 Months Duration",
+        paragraphText: "Training program available in 6 months and 12 months duration",
       },
       {
         id: uuid(),
@@ -4755,7 +4755,7 @@ export const powerBI = {
         id: uuid(),
         imagePath: COURSES_PAGE_IMAGES.careerSupportImage1,
         subheadingText: "Practical Based Sessions",
-        paragraphText: "Training program available in four months & six months duration",
+        paragraphText: "Training program available in 30 days duration",
       },
       {
         id: uuid(),
@@ -4863,13 +4863,13 @@ export const powerBI = {
     paragrphTextData: [
       {
         id: uuid(),
-        text: "A bachelor’s / master’s degree in Engg / Computers.",
+        text: "A bachelor’s / master’s degree in any specialization.",
       },
       {
         id: uuid(),
-        text: "Knowledge of operating system & shell script (preferred).",
+        text: "Knowledge of data analysis and business intelligence.",
       },
-      { id: uuid(), text: "Having basic programming & development knowledge." },
+      { id: uuid(), text: "Having basic knowledge of computer." },
     ],
   },
 };
@@ -4946,7 +4946,7 @@ export const mentorship = {
         id: uuid(),
         imagePath: COURSES_PAGE_IMAGES.careerSupportImage1,
         subheadingText: "Practical Based Sessions",
-        paragraphText: "Training program available in four months & six months duration",
+        paragraphText: "Training program available in 6 months and 12 months duration",
       },
       {
         id: uuid(),
