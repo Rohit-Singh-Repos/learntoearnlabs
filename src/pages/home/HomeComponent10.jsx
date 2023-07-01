@@ -15,8 +15,9 @@ export const JobAssistance = React.memo(() => {
   };
 
   useEffect(() => {
-    handleResize()
-  },[]);
+    window.addEventListener("resize", handleResize);
+      handleResize()
+  });
   return (
     <Div divClass="container mb-5 mt-5">
       <Div divClass="row">

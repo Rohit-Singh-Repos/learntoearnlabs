@@ -27,8 +27,9 @@ export const Footer = React.memo(() => {
   };
 
   useEffect(() => {
-    handleResize()
-  },[]);
+    window.addEventListener("resize", handleResize);
+      handleResize()
+  });
   return (
     <Div divClass="bg-7 mt-5 p-5">
       <Div divClass="container-fluid">

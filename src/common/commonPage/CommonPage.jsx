@@ -61,9 +61,9 @@ export const CommonPageComponent = React.memo(
     }, [pathname]);
 
     useEffect(() => {
-      // window.addEventListener("resize", handleResize);
+      window.addEventListener("resize", handleResize);
       handleResize()
-    },[]);
+    });
 
     const courseDetector = useMemo(() => {
       if(pathname === "/full-stack-engineer-course"){

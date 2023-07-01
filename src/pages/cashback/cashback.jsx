@@ -83,8 +83,9 @@ export const CashbackComponent = React.memo(() => {
   },[])
 
   useEffect(() => {
-    handleResize()
-  },[]);
+    window.addEventListener("resize", handleResize);
+      handleResize()
+  });
   
   return (
     <Div divClass="container mt-5 pt-4">

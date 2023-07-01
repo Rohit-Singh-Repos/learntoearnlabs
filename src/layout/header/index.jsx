@@ -1,5 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { NavLink, NavBrand, NavBrandLink, NavLink2 } from "styles/header/headerStyle";
+import {
+  NavLink,
+  NavBrand,
+  NavBrandLink,
+  NavLink2,
+} from "styles/header/headerStyle";
 import {
   Heading,
   Button,
@@ -24,7 +29,7 @@ import { useHookstate } from "@hookstate/core";
 import { MOBILE_DETECTOR } from "globalStore/globalState";
 
 export const Header = React.memo(() => {
-  const { pathname } = useLocation()
+  const { pathname } = useLocation();
   const [navbar, setNavbar] = useState(false);
   const [navbar2, setNavbar2] = useState(false);
   const [navbar3, setNavbar3] = useState(false);
@@ -42,31 +47,33 @@ export const Header = React.memo(() => {
   };
 
   useEffect(() => {
-    setNavbar(false)
-    setNavbar2(false)
-    setNavbar3(false)
-    setNavbarId(null)
-    setNavbarId2(null)
-  },[pathname]);
+    setNavbar(false);
+    setNavbar2(false);
+    setNavbar3(false);
+    setNavbarId(null);
+    setNavbarId2(null);
+  }, [pathname]);
 
   useEffect(() => {
-    // window.addEventListener("resize", handleResize);
-    handleResize()
-  },[]);
+    window.addEventListener("resize", handleResize);
+    handleResize();
+  });
 
   const desktopNavMenu = () => {
     return (
       <>
         <NavBrand>
           <NavBrandLink to="/">
-            <Image 
+            <Image
               imagePath={MISCELLANEOUS_IMAGES.l2elogo}
               imageClass="img-thumbnail"
               width="100"
               height="100"
               imageAltText=""
             />
-            <Heading headingClass="brand-name ps-2 fw-bold">Learn2Earn Labs</Heading>
+            <Heading headingClass="brand-name ps-2 fw-bold">
+              Learn2Earn Labs
+            </Heading>
           </NavBrandLink>
         </NavBrand>
         <Div divClass="collapse navbar-collapse" id="navbarNavDropdown">
@@ -75,12 +82,17 @@ export const Header = React.memo(() => {
               navbarSchema.map((item) => (
                 <ListItem key={item.id} listItemClass="nav-item">
                   {item.navItemPath ? (
-                    <NavLink onClick={() => {
-                      setNavbarId(null);
-                      setNavbarId2(null);
-                      setNavbar2(false)
-                      setNavbar3(false)
-                    }} to={item.navItemPath}>{item.navItemName}</NavLink>
+                    <NavLink
+                      onClick={() => {
+                        setNavbarId(null);
+                        setNavbarId2(null);
+                        setNavbar2(false);
+                        setNavbar3(false);
+                      }}
+                      to={item.navItemPath}
+                    >
+                      {item.navItemName}
+                    </NavLink>
                   ) : (
                     <Div divClass="nav-item dropdown">
                       <Span
@@ -90,7 +102,7 @@ export const Header = React.memo(() => {
                         aria-expanded="false"
                         onClick={() => {
                           setNavbar2(!navbar2);
-                          setNavbar3(false)
+                          setNavbar3(false);
                           setNavbarId(item.id);
                         }}
                       >
@@ -152,8 +164,8 @@ export const Header = React.memo(() => {
                                           to={item3.navItemPath}
                                           onClick={() => {
                                             setNavbar2(false);
-                                            setNavbar3(false)
-                                            setNavbarId2(null)
+                                            setNavbar3(false);
+                                            setNavbarId2(null);
                                           }}
                                         >
                                           {item3.navItemName}
@@ -189,18 +201,20 @@ export const Header = React.memo(() => {
       <>
         <NavBrand>
           <NavBrandLink to="/">
-           <Image 
+            <Image
               imagePath={MISCELLANEOUS_IMAGES.l2elogo}
               imageClass="img-thumbnail"
               width="70"
               height="70"
               imageAltText=""
             />
-            <Heading headingClass="brand-name fs-12 mt-2 ms-2">Learn2Earn Labs</Heading>
+            <Heading headingClass="brand-name fs-12 mt-2 ms-2">
+              Learn2Earn Labs
+            </Heading>
           </NavBrandLink>
         </NavBrand>
         <Button
-          buttonClass={`me-2 remove-shadow border-0 fw-bold ${
+          buttonClass={`remove-shadow border-0 fw-bold ${
             navbar ? "navbar-toggler" : "navbar-toggler collapsed"
           }`}
           type="button"
@@ -261,57 +275,97 @@ export const Header = React.memo(() => {
                           item?.navsubItems.length !== 0 ? (
                             item?.navsubItems.map((item2) => (
                               <ListItem key={item2.id}>
-                                <Div>
-                                  <Paragraph
-                                    paragraphClass={`ms-3 fw-bold d-flex justify-content-between align-items-center ${
-                                      navbar3 && navbarId2 === item2.id
+                                {item2?.navItemName === "Contact Us" ||
+                                item2?.navItemName === "Claim Cashback" ||
+                                item2?.navItemName === "Verify Certificate" ? (
+                                    <Div>
+                                    <Paragraph
+                                      paragraphClass={`ms-3 fw-bold d-flex justify-content-between align-items-center ${
+                                        navbar3 && navbarId2 === item2.id
                                         ? "text-light"
                                         : ""
-                                    }`}
-                                    onClick={() => {
-                                      setNavbar3(!navbar3);
-                                      setNavbarId2(item2.id);
-                                    }}
-                                  >
-                                    {item2.navItemName}
-                                    <Button
-                                      type="button"
-                                      buttonClass="btn me-3 mtt-0 remove-shadow border-0"
+                                      }`}
+                                      onClick={() => {
+                                        setNavbar3(!navbar3);
+                                        setNavbarId2(item2.id);
+                                      }}
+                                      >
+                                      <NavLink to={item2.navItemPath}>
+                                      {item2.navItemName}
+                                  </NavLink>
+                                      <Button
+                                        type="button"
+                                        buttonClass="btn me-3 mtt-0 remove-shadow border-0"
+                                      >
+                                        <NavLink to={item2.navItemPath}></NavLink>
+                                        {navbar3 && navbarId2 === item2.id ? (
+                                          <BsFillArrowUpCircleFill
+                                            color="#fff"
+                                            className="fw-bold"
+                                          />
+                                        ) : (
+                                          <BsFillArrowDownCircleFill />
+                                        )}
+                                      </Button>
+                                    </Paragraph>
+                                    </Div>
+                                ) : (
+                                  <Div>
+                                    <Paragraph
+                                      paragraphClass={`ms-3 fw-bold d-flex justify-content-between align-items-center ${
+                                        navbar3 && navbarId2 === item2.id
+                                          ? "text-light"
+                                          : ""
+                                      }`}
+                                      onClick={() => {
+                                        setNavbar3(!navbar3);
+                                        setNavbarId2(item2.id);
+                                      }}
                                     >
-                                      {navbar3 && navbarId2 === item2.id ? (
-                                        <BsFillArrowUpCircleFill
-                                          color="#fff"
-                                          className="fw-bold"
-                                        />
-                                      ) : (
-                                        <BsFillArrowDownCircleFill />
-                                      )}
-                                    </Button>
-                                  </Paragraph>
-                                  <Div
-                                    divClass={`collapse navbar-collapse ${
-                                      navbar3 && navbarId2 === item2.id
-                                        ? "collapse show"
-                                        : "collapse"
-                                    }`}
-                                    id="navbarNavDropdown "
-                                  >
-                                    <UnorderedList unorderedListClass="navbar-nav ms-auto">
-                                      {item2?.navsubItems &&
-                                      item2?.navsubItems.length !== 0 ? (
-                                        item2?.navsubItems.map((item3) => (
-                                          <ListItem key={item3.id}>
-                                            <NavLink to={item3.navItemPath}>
-                                              {item3.navItemName}
-                                            </NavLink>
-                                          </ListItem>
-                                        ))
-                                      ) : (
-                                        <></>
-                                      )}
-                                    </UnorderedList>
+                                      {item2.navItemName}
+                                      {/* Contact Items */}
+                                      <Button
+                                        type="button"
+                                        buttonClass="btn me-3 mtt-0 remove-shadow border-0"
+                                      >
+                                        {navbar3 && navbarId2 === item2.id ? (
+                                          <BsFillArrowUpCircleFill
+                                            color="#fff"
+                                            className="fw-bold"
+                                          />
+                                        ) : (
+                                          <BsFillArrowDownCircleFill />
+                                        )}
+                                      </Button>
+                                    </Paragraph>
+                                    <Div
+                                      divClass={`collapse navbar-collapse ${
+                                        navbar3 && navbarId2 === item2.id
+                                          ? "collapse show"
+                                          : "collapse"
+                                      }`}
+                                      id="navbarNavDropdown "
+                                    >
+                                      <UnorderedList unorderedListClass="navbar-nav ms-auto">
+                                        {item2?.navsubItems &&
+                                        item2?.navsubItems.length !== 0 ? (
+                                          item2?.navsubItems.map((item3) => (
+                                            <ListItem key={item3.id}>
+                                              <NavLink
+                                                key={item3.id}
+                                                to={item3.navItemPath}
+                                              >
+                                                {item3.navItemName}
+                                              </NavLink>
+                                            </ListItem>
+                                          ))
+                                        ) : (
+                                          <></>
+                                        )}
+                                      </UnorderedList>
+                                    </Div>
                                   </Div>
-                                </Div>
+                                )}
                               </ListItem>
                             ))
                           ) : (

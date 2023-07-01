@@ -45,8 +45,9 @@ export const Certificates = React.memo(() => {
   }, [pathname]);
 
   useEffect(() => {
-    handleResize()
-  },[]);
+    window.addEventListener("resize", handleResize);
+      handleResize()
+  });
 
   return (
     <Suspense fallback={<FallbackLoader />}>

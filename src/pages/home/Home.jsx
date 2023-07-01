@@ -35,8 +35,9 @@ export const HomePage = React.memo(() => {
   },[])
 
   useEffect(() => {
-    handleResize()
-  },[]);
+    window.addEventListener("resize", handleResize);
+      handleResize()
+  });
   
   return (
     <Suspense fallback={<FallbackLoader/>}>
