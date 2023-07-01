@@ -4,7 +4,7 @@ import { cashbackInputSchema } from "schemas";
 import { MISCELLANEOUS_IMAGES } from "assets/images";
 import axios from 'axios';
 import { useHookstate } from "@hookstate/core"
-import { PAGE_STATE } from "globalStore/globalState";
+import { PAGE_STATE, MOBILE_DETECTOR } from "globalStore/globalState";
 
 
 export const CashbackComponent = React.memo(() => {
@@ -19,6 +19,7 @@ export const CashbackComponent = React.memo(() => {
     ifscCode:"",
   })
   const { pageVisiblity } = useHookstate(PAGE_STATE)
+  const { mobileDetector } = useHookstate(MOBILE_DETECTOR)
   const handleInput = useCallback((e) => {
     const { name, value } = e.target;
     setInputVal({
@@ -70,7 +71,7 @@ export const CashbackComponent = React.memo(() => {
   }
   const { textInput } = cashbackInputSchema;
   const handleResize = () => {
-    if (window.innerWidth < 990) {
+    if (mobileDetector.get()) {
       setMobile(true);
     } else {
       setMobile(false);
@@ -82,8 +83,8 @@ export const CashbackComponent = React.memo(() => {
   },[])
 
   useEffect(() => {
-    window.addEventListener("resize", handleResize);
-  });
+    handleResize()
+  },[]);
   
   return (
     <Div divClass="container mt-5 pt-4">

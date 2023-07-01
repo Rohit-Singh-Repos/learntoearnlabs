@@ -305,7 +305,7 @@ export const HeroSection = React.memo(
         <Div divClass="col-sm-12 col-md-5 col-lg-6">
           {headingText && renderCoverPageHeading()}
           {paragraphText2 && (
-            <Paragraph paragraphClass="fs-30-2 fw-bold align-justify">
+            <Paragraph paragraphClass={`fs-30-2 fw-bold ${mobileDetector ? "text-center" : "align-justify"}`}>
               {paragraphText2}
             </Paragraph>
           )}

@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Div, Paragraph, Span, LinkComponent, ListItem } from "components";
 import { footerSchemaData } from "schemas/footerSchema/footerSchema";
+import { useHookstate } from "@hookstate/core";
+import { MOBILE_DETECTOR } from "globalStore/globalState";
 
 export const Footer = React.memo(() => {
+  const { mobileDetector } = useHookstate(MOBILE_DETECTOR);
   const {
     firstContainerData: { paragraph1, paragraph2 } = {},
     secondContainerData: { listItemData } = {},
@@ -16,7 +19,7 @@ export const Footer = React.memo(() => {
   } = footerSchemaData;
   const [mobile, setMobile] = useState(false);
   const handleResize = () => {
-    if (window.innerWidth < 990) {
+    if (mobileDetector.get()) {
       setMobile(true);
     } else {
       setMobile(false);
@@ -24,8 +27,8 @@ export const Footer = React.memo(() => {
   };
 
   useEffect(() => {
-    window.addEventListener("resize", handleResize);
-  });
+    handleResize()
+  },[]);
   return (
     <Div divClass="bg-7 mt-5 p-5">
       <Div divClass="container-fluid">

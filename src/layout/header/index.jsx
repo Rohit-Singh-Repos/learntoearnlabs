@@ -20,6 +20,8 @@ import {
 } from "assets/icons";
 import { MISCELLANEOUS_IMAGES } from "assets/images";
 import { useLocation } from "react-router-dom";
+import { useHookstate } from "@hookstate/core";
+import { MOBILE_DETECTOR } from "globalStore/globalState";
 
 export const Header = React.memo(() => {
   const { pathname } = useLocation()
@@ -29,8 +31,10 @@ export const Header = React.memo(() => {
   const [navbarId, setNavbarId] = useState(null);
   const [navbarId2, setNavbarId2] = useState(null);
   const [mobile, setMobile] = useState(false);
+  const { mobileDetector } = useHookstate(MOBILE_DETECTOR);
+
   const handleResize = () => {
-    if (window.innerWidth < 990) {
+    if (mobileDetector.get()) {
       setMobile(true);
     } else {
       setMobile(false);
@@ -46,8 +50,9 @@ export const Header = React.memo(() => {
   },[pathname]);
 
   useEffect(() => {
-    window.addEventListener("resize", handleResize);
-  });
+    // window.addEventListener("resize", handleResize);
+    handleResize()
+  },[]);
 
   const desktopNavMenu = () => {
     return (

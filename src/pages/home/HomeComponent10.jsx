@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { Div, Paragraph, SubHeading } from "components";
+import { useHookstate } from "@hookstate/core";
+import { MOBILE_DETECTOR } from "globalStore/globalState";
 
 export const JobAssistance = React.memo(() => {
   const [handleRow, setHandleRow] = useState("row");
-
+  const { mobileDetector } = useHookstate(MOBILE_DETECTOR);
   const handleResize = () => {
-    if (window.innerWidth < 990) {
+    if (mobileDetector.get()) {
       setHandleRow("");
     } else {
       setHandleRow("row");
@@ -13,8 +15,8 @@ export const JobAssistance = React.memo(() => {
   };
 
   useEffect(() => {
-    window.addEventListener("resize", handleResize);
-  });
+    handleResize()
+  },[]);
   return (
     <Div divClass="container mb-5 mt-5">
       <Div divClass="row">

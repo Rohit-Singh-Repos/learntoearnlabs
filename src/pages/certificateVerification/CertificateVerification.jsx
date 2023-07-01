@@ -1,7 +1,7 @@
 import { Div } from "components";
 import React, { useState, useEffect, Suspense, lazy } from "react";
 import { useHookstate } from "@hookstate/core";
-import { PAGE_STATE } from "globalStore/globalState";
+import { PAGE_STATE, MOBILE_DETECTOR } from "globalStore/globalState";
 import { useLocation } from "react-router-dom";
 
 const FallbackLoader = lazy(() =>
@@ -26,8 +26,9 @@ export const Certificates = React.memo(() => {
   const [showCertificateInfo, setShowCertificateInfo] = useState(false);
   const [certificateInfoData, setCertificateInfoData] = useState(null);
   const { pageVisiblity } = useHookstate(PAGE_STATE);
+  const { mobileDetector } = useHookstate(MOBILE_DETECTOR);
   const handleResize = () => {
-    if (window.innerWidth < 990) {
+    if (mobileDetector.get()) {
       setMobile(true);
     } else {
       setMobile(false);
@@ -44,8 +45,8 @@ export const Certificates = React.memo(() => {
   }, [pathname]);
 
   useEffect(() => {
-    window.addEventListener("resize", handleResize);
-  });
+    handleResize()
+  },[]);
 
   return (
     <Suspense fallback={<FallbackLoader />}>

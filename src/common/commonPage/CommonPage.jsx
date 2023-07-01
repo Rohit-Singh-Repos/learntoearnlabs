@@ -16,13 +16,15 @@ import { GuidanceSection } from "common/commonPage/CommonPageComponent11";
 import { CompanyPortfolio } from "common/commonPage/CommonPageComponent12";
 import { JobOrientedPrograms } from "common/commonPage/CommonPageComponent13";
 import { AvailablePrograms } from "./CommonPageComponent14";
+import { MOBILE_DETECTOR } from "globalStore/globalState";
 
 export const CommonPageComponent = React.memo(
   ({
     sectionData,
     inputSchemas,
   }) => {
-    const { pageVisiblity } = useHookstate(PAGE_STATE)
+    const { pageVisiblity } = useHookstate(PAGE_STATE);
+    const { mobileDetector } = useHookstate(MOBILE_DETECTOR);
     const { 
       landingPageSection,
       cloudDevopsCareerSection,
@@ -41,8 +43,9 @@ export const CommonPageComponent = React.memo(
      } = sectionData
     const { pathname } = useLocation()
     const [mobile, setMobile] = useState(false);    
+    
     const handleResize = () => {
-      if (window.innerWidth < 990) {
+      if (mobileDetector.get()) {
         setMobile(true);
       } else {
         setMobile(false);
@@ -58,7 +61,8 @@ export const CommonPageComponent = React.memo(
     }, [pathname]);
 
     useEffect(() => {
-      window.addEventListener("resize", handleResize);
+      // window.addEventListener("resize", handleResize);
+      handleResize()
     },[]);
 
     const courseDetector = useMemo(() => {
